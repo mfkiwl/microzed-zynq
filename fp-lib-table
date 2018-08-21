@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name microzed)(type KiCad)(uri ${KIPRJMOD}/microzed.pretty)(options "")(descr ""))
+)
