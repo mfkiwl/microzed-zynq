@@ -6,8 +6,8 @@ EESchema-LIBRARY Version 2.4
 DEF 0821-1X1T-43-F J 0 40 Y Y 1 F N
 F0 "J" 0 50 60 H V C CNN
 F1 "0821-1X1T-43-F" 0 150 60 H V C CNN
-F2 "microzed:BEL_0821-1X1T-43-F" 0 250 60 H I C CNN
-F3 "" 0 50 60 H V C CNN
+F2 "microzed:BEL_0821-1X1T-43-F" -50 -2300 60 H I C CNN
+F3 "https://belfuse.com/resources/drawings/magneticsolutions/dr-mag-0821-1x1t-43-f.pdf" 0 -2400 60 H I C CNN
 DRAW
 T 0 50 -700 50 0 0 0 RJ-45 Normal 0 C C
 T 0 50 -2000 50 0 0 0 USB-A Normal 0 C C
