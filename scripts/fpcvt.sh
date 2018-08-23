@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 if [ "$1" == "" ]; then
 	echo "$0 source"
+	echo "convert old .mod to new .kicad_mod footprint file"
 	exit 1
 fi
 
