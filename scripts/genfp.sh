@@ -3,7 +3,12 @@ set -e
 
 EXE=$0
 print_help() {
-	echo "${EXE} [pad size] [x number] [y number]"
+	echo "${EXE} [pad] [pitch] [x number] [y number]"
+}
+
+calc_res() {
+	maxima --very-quiet --batch-string="float($1);"|tail -n1 | tr -d ' '
+	#echo "$1" | bc -l
 }
 
 YA=(A B C D E F G H #I
@@ -19,25 +24,24 @@ YA=(A B C D E F G H #I
 )
 
 
-if [ "$2" == "" ]; then
+if [ "$3" == "" ]; then
 	print_help
 	exit 1
 fi
-if [ "$3" == "" ]; then
+if [ "$4" == "" ]; then
 	print_help
 	exit 2
 fi
 
-PadSize=$1
-XN=$2
-YN=$3
+Pad=`calc_res "$1"`
+Pitch=$2
+XN=$3
+YN=$4
 
-YPOS=`echo "-${YN} * ${PadSize} / 2" | bc`
 for i in `seq 0 $((${YN} - 1))`; do
-	XPOS=`echo "-${XN} * ${PadSize} / 2" | bc`
 	for j in `seq 1 ${XN}`; do
-		echo "(pad ${YA[$i]}$j smd circle (at ${XPOS} ${YPOS}) (size $PadSize $PadSize) (layers F.Cu F.Paste F.Mask))"
-		XPOS=`echo "${XPOS} + ${PadSize}" | bc`
+		YPOS=`calc_res "${Pitch} * ($i - ($YN - 1) / 2)"`
+		XPOS=`calc_res "${Pitch} * ($j - 1 - ($XN - 1)/2)"`
+		echo "  (pad ${YA[$i]}$j smd circle (at ${XPOS} ${YPOS}) (size $Pad $Pad) (layers F.Cu F.Paste F.Mask))"
 	done
-	YPOS=`echo "${YPOS} + ${PadSize}" | bc`
 done
