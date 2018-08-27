@@ -40,6 +40,36 @@ X GND U4 -600 -2150 200 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# 10104111-0001LF
+#
+DEF 10104111-0001LF J 0 30 Y Y 1 F N
+F0 "J" -350 500 50 H V L CNN
+F1 "10104111-0001LF" -350 400 50 H V L CNN
+F2 "microzed:MICRO_USB_AB_TYPE_RECEPTACLE" 750 550 50 H I L CNN
+F3 "http://docs-europe.electrocomponents.com/webdocs/0ed1/0900766b80ed1ae2.pdf" 750 450 50 H I L CNN
+F4 "FCI Right Angle SMT Female Type AB Version 2.0 Micro USB Connector, 100 V ac, 1.8A" 750 350 50 H I L CNN "Description"
+F5 "FCI" 750 150 50 H I L CNN "Manufacturer_Name"
+F6 "10104111-0001LF" 750 50 50 H I L CNN "Manufacturer_Part_Number"
+F7 "1622014" 750 -50 50 H I L CNN "RS Part Number"
+F8 "http://uk.rs-online.com/web/p/products/1622014" 750 -150 50 H I L CNN "RS Price/Stock"
+F9 "70236825" 750 -450 50 H I L CNN "Allied_Number"
+F10 "http://www.alliedelec.com/fci-10104111-0001lf/70236825/" 750 -550 50 H I L CNN "Allied Price/Stock"
+F11 "10104111-0001LF" 750 -650 50 H I L CNN "Arrow Part Number"
+F12 "https://www.arrow.com/en/products/10104111-0001lf/amphenol-fci" 750 -750 50 H I L CNN "Arrow Price/Stock"
+DRAW
+P 5 0 1 6 -200 300 200 300 200 -300 -200 -300 -200 300 N
+X 1 1 -400 200 200 R 50 50 0 0 B
+X 2 2 400 200 200 L 50 50 0 0 B
+X 3 3 -400 100 200 R 50 50 0 0 B
+X 4 4 400 100 200 L 50 50 0 0 B
+X 5 5 -400 0 200 R 50 50 0 0 B
+X 6 6 400 0 200 L 50 50 0 0 B
+X 7 7 -400 -100 200 R 50 50 0 0 B
+X 8 8 400 -100 200 L 50 50 0 0 B
+X 9 9 -400 -200 200 R 50 50 0 0 B
+ENDDRAW
+ENDDEF
+#
 # Zynq_7010_7020_SOC_CLG400
 #
 DEF Zynq_7010_7020_SOC_CLG400 U 0 40 Y Y 11 L N
