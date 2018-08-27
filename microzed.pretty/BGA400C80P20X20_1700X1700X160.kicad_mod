@@ -1,4 +1,4 @@
-(module BGA400C80P20X20_1700X1700X160 (layer F.Cu) (tedit 5B7FCF75)
+(module BGA400C80P20X20_1700X1700X160 (layer F.Cu) (tedit 5B83BB89)
   (descr CLG400)
   (tags "Integrated Circuit")
   (attr smd)
@@ -423,7 +423,7 @@
   (pad Y18 smd circle (at 6 7.6 90) (size 0.45 0.45) (layers F.Cu F.Paste F.Mask))
   (pad Y19 smd circle (at 6.8 7.6 90) (size 0.45 0.45) (layers F.Cu F.Paste F.Mask))
   (pad Y20 smd circle (at 7.6 7.6 90) (size 0.45 0.45) (layers F.Cu F.Paste F.Mask))
-  (model ${KIPRJMOD}/packages3d/XC7Z020-1CLG400I.wrl
+  (model ${KIPRJMOD}/packages3d/XC7Z020-1CLG400I.stp
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
