@@ -1,4 +1,4 @@
-(module MICRO_USB_AB_TYPE_RECEPTACLE (layer F.Cu) (tedit 5B83C416)
+(module MICRO_USB_AB_TYPE_RECEPTACLE (layer F.Cu) (tedit 5B83C6F4)
   (descr MICRO_USB_A/B_TYPE_RECEPTACLE)
   (tags Connector)
   (attr smd)
@@ -29,4 +29,9 @@
   (pad 7 smd rect (at 0.05 -2.15 90) (size 1.9 2.3) (layers F.Cu F.Paste F.Mask))
   (pad 8 smd rect (at 4.925 -2.15) (size 1.85 1.9) (layers F.Cu F.Paste F.Mask))
   (pad 9 smd rect (at 2.675 -2.15) (size 1.85 1.9) (layers F.Cu F.Paste F.Mask))
+  (model ${KIPRJMOD}/packages3d/10104111C.stp
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )
