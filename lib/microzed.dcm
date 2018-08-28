@@ -25,15 +25,19 @@ D ESD Suppressors / TVS Diodes STEERING DIODE ARRAY
 F https://www.bourns.com/docs/Product-Datasheets/CDSOT23-SR208.pdf
 $ENDCMP
 #
+$CMP CP2104-F03-GM
+D USB-to-UART Bridge,2Mbps,OTP,QFN24 Silicon Labs CP2104-F03-GM, USB Controller, 12MBps, USB to UART, 3  3.6 V, 24-Pin QFN
+F https://www.silabs.com/Support%20Documents/TechnicalDocs/cp2104.pdf
+$ENDCMP
+#
+$CMP DSC1001DI1-024.0000
+D Standard Clock Oscillators MEMS Oscillator, Low Power, -40C-85C, 50ppm
+F http://ww1.microchip.com/downloads/en/DeviceDoc/20005529B.pdf
+$ENDCMP
+#
 $CMP MT41K256M16HA-125_E_TR
 D DRAM Chip DDR3L SDRAM 4Gbit 256Mx16 1.35V 96-Pin FBGA T/R
 F https://www.micron.com/~/media/Documents/Products/Data%20Sheet/DRAM/DDR3/4Gb_1_35V_DDR3L.pdf
-$ENDCMP
-#
-$CMP CP2104-F03-GM
-D USB-to-UART Bridge,2Mbps,OTP,QFN24 Silicon Labs CP2104-F03-GM, USB Controller, 12MBps, USB to UART, 3  3.6 V, 24-Pin QFN
-K
-F https://www.silabs.com/Support%20Documents/TechnicalDocs/cp2104.pdf
 $ENDCMP
 #
 $CMP Zynq_7010_7020_SOC_CLG400
