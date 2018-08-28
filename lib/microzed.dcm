@@ -30,6 +30,12 @@ D DRAM Chip DDR3L SDRAM 4Gbit 256Mx16 1.35V 96-Pin FBGA T/R
 F https://www.micron.com/~/media/Documents/Products/Data%20Sheet/DRAM/DDR3/4Gb_1_35V_DDR3L.pdf
 $ENDCMP
 #
+$CMP CP2104-F03-GM
+D USB-to-UART Bridge,2Mbps,OTP,QFN24 Silicon Labs CP2104-F03-GM, USB Controller, 12MBps, USB to UART, 3  3.6 V, 24-Pin QFN
+K
+F https://www.silabs.com/Support%20Documents/TechnicalDocs/cp2104.pdf
+$ENDCMP
+#
 $CMP Zynq_7010_7020_SOC_CLG400
 D XILINX - XC7Z020-1CLG400I - PSOC, ARM CORTEX-A9, 667MHZ, BGA-400
 F https://www.xilinx.com/support/documentation/data_sheets/ds187-XC7Z010-XC7Z020-Data-Sheet.pdf
