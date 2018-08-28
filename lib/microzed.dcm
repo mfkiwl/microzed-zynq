@@ -20,6 +20,11 @@ D FCI 0.8mm 100 Way 2 Row Straight PCB Socket Surface Mount Board to Board
 F http://portal.fciconnect.com/Comergent/fci/drawing/61082.pdf
 $ENDCMP
 #
+$CMP CDSOT23-SR208
+D ESD Suppressors / TVS Diodes STEERING DIODE ARRAY
+F https://www.bourns.com/docs/Product-Datasheets/CDSOT23-SR208.pdf
+$ENDCMP
+#
 $CMP MT41K256M16HA-125_E_TR
 D DRAM Chip DDR3L SDRAM 4Gbit 256Mx16 1.35V 96-Pin FBGA T/R
 F https://www.micron.com/~/media/Documents/Products/Data%20Sheet/DRAM/DDR3/4Gb_1_35V_DDR3L.pdf
