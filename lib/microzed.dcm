@@ -15,6 +15,11 @@ D Header vert 3 way 2.54mm AmpModu
 F http://pdl.designspark.com/api/v1/manufacturers/53f31a629b4759f8698ba80b/part/53f33e0b9b4759f869d709b8/55bff39a8759c5ef5e8d0d63/1.pdf
 $ENDCMP
 #
+$CMP 61082-101400LF
+D FCI 0.8mm 100 Way 2 Row Straight PCB Socket Surface Mount Board to Board
+F http://portal.fciconnect.com/Comergent/fci/drawing/61082.pdf
+$ENDCMP
+#
 $CMP Zynq_7010_7020_SOC_CLG400
 D XILINX - XC7Z020-1CLG400I - PSOC, ARM CORTEX-A9, 667MHZ, BGA-400
 F https://www.xilinx.com/support/documentation/data_sheets/ds187-XC7Z010-XC7Z020-Data-Sheet.pdf
