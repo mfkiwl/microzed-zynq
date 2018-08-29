@@ -362,13 +362,25 @@ F1 "DSC1001DI1-024.0000" 200 200 50 H V L CNN
 F2 "microzed:DSC1001DI10240000" 1850 100 50 H I L CNN
 F3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005529B.pdf" 1850 0 50 H I L CNN
 F4 "Standard Clock Oscillators MEMS Oscillator, Low Power, -40C-85C, 50ppm" 1850 -100 50 H I L CNN "Description"
-F5 "0" 1850 -200 50 H I L CNN "Height"
-F6 "Microchip" 1850 -300 50 H I L CNN "Manufacturer_Name"
-F7 "DSC1001DI1-024.0000" 1850 -400 50 H I L CNN "Manufacturer_Part_Number"
-F8 "1771540" 1850 -500 50 H I L CNN "RS Part Number"
-F9 "http://uk.rs-online.com/web/p/products/1771540" 1850 -600 50 H I L CNN "RS Price/Stock"
-F10 "DSC1001DI1-024.0000" 1850 -700 50 H I L CNN "Arrow Part Number"
-F11 "https://www.arrow.com/en/products/dsc1001di1-024.0000/microchip-technology" 1850 -800 50 H I L CNN "Arrow Price/Stock"
+F5 "Microchip" 1850 -300 50 H I L CNN "Manufacturer_Name"
+DRAW
+P 5 0 1 6 200 100 1200 100 1200 -200 200 -200 200 100 N
+X STANDBY# 1 0 0 200 R 50 50 0 0 B
+X GND 2 0 -100 200 R 50 50 0 0 B
+X OUTPUT 3 1400 0 200 L 50 50 0 0 B
+X VDD 4 1400 -100 200 L 50 50 0 0 B
+ENDDRAW
+ENDDEF
+#
+# DSC1001DI1-033.3300
+#
+DEF DSC1001DI1-033.3300 Y 0 30 Y Y 1 F N
+F0 "Y" 200 300 50 H V L CNN
+F1 "DSC1001DI1-033.3300" 200 200 50 H V L CNN
+F2 "microzed:DSC1001DI10240000" 1850 100 50 H I L CNN
+F3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005529B.pdf" 1850 0 50 H I L CNN
+F4 "Standard Clock Oscillators MEMS Oscillator, Low Power, -40C-85C, 50ppm" 1850 -100 50 H I L CNN "Description"
+F5 "Microchip" 1850 -300 50 H I L CNN "Manufacturer_Name"
 DRAW
 P 5 0 1 6 200 100 1200 100 1200 -200 200 -200 200 100 N
 X STANDBY# 1 0 0 200 R 50 50 0 0 B
