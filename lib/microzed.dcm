@@ -1,5 +1,10 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP +0V75
+D power-flag symbol +0.75V
+K Power Flag Symbol
+$ENDCMP
+#
 $CMP 0821-1X1T-43-F
 D Conn RJ-45/USB F 16 POS 2.03mm Solder RA Thru-Hole 20 Terminal 2 Port Tray
 F https://belfuse.com/resources/drawings/magneticsolutions/dr-mag-0821-1x1t-43-f.pdf
