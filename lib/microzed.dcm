@@ -45,6 +45,11 @@ D DRAM Chip DDR3L SDRAM 4Gbit 256Mx16 1.35V 96-Pin FBGA T/R
 F https://www.micron.com/~/media/Documents/Products/Data%20Sheet/DRAM/DDR3/4Gb_1_35V_DDR3L.pdf
 $ENDCMP
 #
+$CMP TPS51206DSQR
+D 2A Peak Sink/Source DDR Termination Regulator with VTTREF Buffered Reference for DDR2/3/3L/4
+F http://www.ti.com/lit/ds/symlink/tps51206.pdf
+$ENDCMP
+#
 $CMP Zynq_7010_7020_SOC_CLG400
 D XILINX - XC7Z020-1CLG400I - PSOC, ARM CORTEX-A9, 667MHZ, BGA-400
 F https://www.xilinx.com/support/documentation/data_sheets/ds187-XC7Z010-XC7Z020-Data-Sheet.pdf
