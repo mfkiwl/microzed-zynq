@@ -40,6 +40,11 @@ D Standard Clock Oscillators MEMS Oscillator, Low Power, -40C-85C, 50ppm
 F http://ww1.microchip.com/downloads/en/DeviceDoc/20005529B.pdf
 $ENDCMP
 #
+$CMP GRM033R60J104KE19D
+D Ceramic SMT capacitor 100nF 6.3Vdc Murata 0201 GRM 100nF Ceramic Multilayer Capacitor, 6.3 V dc, +85C, X5R Dielectric, 10%
+F http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.pdf
+$ENDCMP
+#
 $CMP MT41K256M16HA-125_E_TR
 D DRAM Chip DDR3L SDRAM 4Gbit 256Mx16 1.35V 96-Pin FBGA T/R
 F https://www.micron.com/~/media/Documents/Products/Data%20Sheet/DRAM/DDR3/4Gb_1_35V_DDR3L.pdf
