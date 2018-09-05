@@ -24,109 +24,57 @@ F 3 "https://www.micron.com/~/media/Documents/Products/Data%20Sheet/DRAM/DDR3/4G
 	1    2850 3400
 	1    0    0    -1  
 $EndComp
-Text Label 900  3600 0    50   ~ 0
+Text GLabel 1300 3600 0    50   Input ~ 0
 DDR3_A0
-Text Label 900  3700 0    50   ~ 0
+Text GLabel 1300 3700 0    50   Input ~ 0
 DDR3_A1
-Text Label 900  3800 0    50   ~ 0
+Text GLabel 1300 3800 0    50   Input ~ 0
 DDR3_A2
-Text Label 900  3900 0    50   ~ 0
+Text GLabel 1300 3900 0    50   Input ~ 0
 DDR3_A3
-Text Label 900  4000 0    50   ~ 0
+Text GLabel 1300 4000 0    50   Input ~ 0
 DDR3_A4
-Text Label 900  4100 0    50   ~ 0
+Text GLabel 1300 4100 0    50   Input ~ 0
 DDR3_A5
-Text Label 900  4200 0    50   ~ 0
+Text GLabel 1300 4200 0    50   Input ~ 0
 DDR3_A6
-Text Label 900  4300 0    50   ~ 0
+Text GLabel 1300 4300 0    50   Input ~ 0
 DDR3_A7
-Text Label 900  4400 0    50   ~ 0
+Text GLabel 1300 4400 0    50   Input ~ 0
 DDR3_A8
-Text Label 900  4500 0    50   ~ 0
+Text GLabel 1300 4500 0    50   Input ~ 0
 DDR3_A9
-Text Label 900  4600 0    50   ~ 0
+Text GLabel 1300 4600 0    50   Input ~ 0
 DDR3_A10
-Text Label 900  4700 0    50   ~ 0
+Text GLabel 1300 4700 0    50   Input ~ 0
 DDR3_A11
-Text Label 900  4800 0    50   ~ 0
+Text GLabel 1300 4800 0    50   Input ~ 0
 DDR3_A12
-Text Label 900  4900 0    50   ~ 0
+Text GLabel 1300 4900 0    50   Input ~ 0
 DDR3_A13
-Text Label 900  5000 0    50   ~ 0
+Text GLabel 1300 5000 0    50   Input ~ 0
 DDR3_A14
-Wire Wire Line
-	1300 3600 850  3600
-Wire Wire Line
-	1300 3700 850  3700
-Wire Wire Line
-	1300 3800 850  3800
-Wire Wire Line
-	1300 3900 850  3900
-Wire Wire Line
-	1300 4000 850  4000
-Wire Wire Line
-	1300 4100 850  4100
-Wire Wire Line
-	1300 4200 850  4200
-Wire Wire Line
-	1300 4300 850  4300
-Wire Wire Line
-	1300 4400 850  4400
-Wire Wire Line
-	1300 4500 850  4500
-Wire Wire Line
-	1300 4600 850  4600
-Wire Wire Line
-	1300 4700 850  4700
-Wire Wire Line
-	1300 4800 850  4800
-Wire Wire Line
-	1300 4900 850  4900
-Wire Wire Line
-	1300 5000 850  5000
-Wire Wire Line
-	850  5200 1300 5200
-Wire Wire Line
-	850  5300 1300 5300
-Wire Wire Line
-	850  5400 1300 5400
-Wire Wire Line
-	850  5600 1300 5600
-Wire Wire Line
-	850  5700 1300 5700
-Wire Wire Line
-	850  5800 1300 5800
-Wire Wire Line
-	850  5900 1300 5900
-Wire Wire Line
-	850  6100 1300 6100
-Wire Wire Line
-	850  6200 1300 6200
-Wire Wire Line
-	850  6300 1300 6300
-Wire Wire Line
-	850  6500 1300 6500
-Text Label 900  5200 0    50   ~ 0
+Text GLabel 1300 5200 0    50   Input ~ 0
 DDR3_BA0
-Text Label 900  5300 0    50   ~ 0
+Text GLabel 1300 5300 0    50   Input ~ 0
 DDR3_BA1
-Text Label 900  5400 0    50   ~ 0
+Text GLabel 1300 5400 0    50   Input ~ 0
 DDR3_BA2
-Text Label 900  5600 0    50   ~ 0
+Text GLabel 1300 5600 0    50   Input ~ 0
 DDR3_CS
-Text Label 900  5700 0    50   ~ 0
+Text GLabel 1300 5700 0    50   Input ~ 0
 DDR3_WE
-Text Label 900  5800 0    50   ~ 0
+Text GLabel 1300 5800 0    50   Input ~ 0
 DDR3_CAS
-Text Label 900  5900 0    50   ~ 0
+Text GLabel 1300 5900 0    50   Input ~ 0
 DDR3_RAS
-Text Label 900  6100 0    50   ~ 0
+Text GLabel 1300 6100 0    50   Input ~ 0
 DDR3_CKE
-Text Label 900  6200 0    50   ~ 0
+Text GLabel 1300 6200 0    50   Input ~ 0
 DDR3_CK_P
-Text Label 900  6300 0    50   ~ 0
+Text GLabel 1300 6300 0    50   Input ~ 0
 DDR3_CK_N
-Text Label 900  6500 0    50   ~ 0
+Text GLabel 1300 6500 0    50   Input ~ 0
 DDR3_RST
 Wire Wire Line
 	1900 7400 2000 7400
@@ -223,98 +171,52 @@ F 3 "" H 4600 6850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4450 6550 4600 6550
-Text Label 4450 6350 0    50   ~ 0
+Text GLabel 4450 6350 2    50   Input ~ 0
 DDR3_ODT
-Wire Wire Line
-	4450 6350 4850 6350
-Text Label 4450 6050 0    50   ~ 0
+Text GLabel 4450 6050 2    50   Input ~ 0
 DDR3_DQS0_P
-Text Label 4450 6150 0    50   ~ 0
+Text GLabel 4450 6150 2    50   Input ~ 0
 DDR3_DQS0_N
-Wire Wire Line
-	4450 6050 5000 6050
-Wire Wire Line
-	4450 6150 5000 6150
-Text Label 4450 5750 0    50   ~ 0
+Text GLabel 4450 5750 2    50   Input ~ 0
 DDR3_DQS1_P
-Text Label 4450 5850 0    50   ~ 0
+Text GLabel 4450 5850 2    50   Input ~ 0
 DDR3_DQS1_N
-Wire Wire Line
-	4450 5750 5000 5750
-Wire Wire Line
-	4450 5850 5000 5850
-Text Label 4450 5450 0    50   ~ 0
+Text GLabel 4450 5450 2    50   Input ~ 0
 DDR3_DM1
-Text Label 4450 5550 0    50   ~ 0
+Text GLabel 4450 5550 2    50   Input ~ 0
 DDR3_DM0
-Wire Wire Line
-	4450 5450 5000 5450
-Wire Wire Line
-	4450 5550 5000 5550
-Text Label 4450 3750 0    50   ~ 0
+Text GLabel 4450 3750 2    50   BiDi ~ 0
 DDR3_DQ0
-Text Label 4450 3850 0    50   ~ 0
+Text GLabel 4450 3850 2    50   BiDi ~ 0
 DDR3_DQ1
-Text Label 4450 3950 0    50   ~ 0
+Text GLabel 4450 3950 2    50   BiDi ~ 0
 DDR3_DQ2
-Text Label 4450 4050 0    50   ~ 0
+Text GLabel 4450 4050 2    50   BiDi ~ 0
 DDR3_DQ3
-Text Label 4450 4150 0    50   ~ 0
+Text GLabel 4450 4150 2    50   BiDi ~ 0
 DDR3_DQ4
-Text Label 4450 4250 0    50   ~ 0
+Text GLabel 4450 4250 2    50   BiDi ~ 0
 DDR3_DQ5
-Text Label 4450 4350 0    50   ~ 0
+Text GLabel 4450 4350 2    50   BiDi ~ 0
 DDR3_DQ6
-Text Label 4450 4450 0    50   ~ 0
+Text GLabel 4450 4450 2    50   BiDi ~ 0
 DDR3_DQ7
-Text Label 4450 4550 0    50   ~ 0
+Text GLabel 4450 4550 2    50   BiDi ~ 0
 DDR3_DQ8
-Text Label 4450 4650 0    50   ~ 0
+Text GLabel 4450 4650 2    50   BiDi ~ 0
 DDR3_DQ9
-Text Label 4450 4750 0    50   ~ 0
+Text GLabel 4450 4750 2    50   BiDi ~ 0
 DDR3_DQ10
-Text Label 4450 4850 0    50   ~ 0
+Text GLabel 4450 4850 2    50   BiDi ~ 0
 DDR3_DQ11
-Text Label 4450 4950 0    50   ~ 0
+Text GLabel 4450 4950 2    50   BiDi ~ 0
 DDR3_DQ12
-Text Label 4450 5050 0    50   ~ 0
+Text GLabel 4450 5050 2    50   BiDi ~ 0
 DDR3_DQ13
-Text Label 4450 5150 0    50   ~ 0
+Text GLabel 4450 5150 2    50   BiDi ~ 0
 DDR3_DQ14
-Text Label 4450 5250 0    50   ~ 0
+Text GLabel 4450 5250 2    50   BiDi ~ 0
 DDR3_DQ15
-Wire Wire Line
-	4450 3750 4900 3750
-Wire Wire Line
-	4450 3850 4900 3850
-Wire Wire Line
-	4450 3950 4900 3950
-Wire Wire Line
-	4450 4050 4900 4050
-Wire Wire Line
-	4450 4150 4900 4150
-Wire Wire Line
-	4450 4250 4900 4250
-Wire Wire Line
-	4450 4350 4900 4350
-Wire Wire Line
-	4450 4450 4900 4450
-Wire Wire Line
-	4450 4550 4900 4550
-Wire Wire Line
-	4450 4650 4900 4650
-Wire Wire Line
-	4450 4750 4900 4750
-Wire Wire Line
-	4450 4850 4900 4850
-Wire Wire Line
-	4450 4950 4900 4950
-Wire Wire Line
-	4450 5050 4900 5050
-Wire Wire Line
-	4450 5150 4900 5150
-Wire Wire Line
-	4450 5250 4900 5250
 Wire Wire Line
 	3750 3200 3650 3200
 Connection ~ 2050 3200
@@ -414,7 +316,7 @@ U 1 1 5B93F77F
 P 2050 1300
 F 0 "C41" H 2050 1400 50  0000 L CNN
 F 1 "47uF" H 2050 1200 50  0000 L CNN
-F 2 "" H 2088 1150 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805" H 2088 1150 50  0001 C CNN
 F 3 "~" H 2050 1300 50  0001 C CNN
 	1    2050 1300
 	1    0    0    -1  
@@ -425,7 +327,7 @@ U 1 1 5B942FE5
 P 2450 1300
 F 0 "C170" H 2450 1400 50  0000 L CNN
 F 1 "0.1uF" H 2450 1200 50  0000 L CNN
-F 2 "" H 2488 1150 50  0001 C CNN
+F 2 "microzed:CAPC0603X33N" H 2488 1150 50  0001 C CNN
 F 3 "~" H 2450 1300 50  0001 C CNN
 	1    2450 1300
 	1    0    0    -1  
@@ -436,7 +338,7 @@ U 1 1 5B9467BE
 P 2850 1300
 F 0 "C176" H 2850 1400 50  0000 L CNN
 F 1 "0.1uF" H 2850 1200 50  0000 L CNN
-F 2 "" H 2888 1150 50  0001 C CNN
+F 2 "microzed:CAPC0603X33N" H 2888 1150 50  0001 C CNN
 F 3 "~" H 2850 1300 50  0001 C CNN
 	1    2850 1300
 	1    0    0    -1  
@@ -447,7 +349,7 @@ U 1 1 5B949F9D
 P 3250 1300
 F 0 "C181" H 3250 1400 50  0000 L CNN
 F 1 "0.1uF" H 3250 1200 50  0000 L CNN
-F 2 "" H 3288 1150 50  0001 C CNN
+F 2 "microzed:CAPC0603X33N" H 3288 1150 50  0001 C CNN
 F 3 "~" H 3250 1300 50  0001 C CNN
 	1    3250 1300
 	1    0    0    -1  
@@ -458,7 +360,7 @@ U 1 1 5B94D77C
 P 3650 1300
 F 0 "C188" H 3650 1400 50  0000 L CNN
 F 1 "0.1uF" H 3650 1200 50  0000 L CNN
-F 2 "" H 3688 1150 50  0001 C CNN
+F 2 "microzed:CAPC0603X33N" H 3688 1150 50  0001 C CNN
 F 3 "~" H 3650 1300 50  0001 C CNN
 	1    3650 1300
 	1    0    0    -1  
@@ -469,7 +371,7 @@ U 1 1 5B950F71
 P 2050 1750
 F 0 "C193" H 2050 1850 50  0000 L CNN
 F 1 "0.01uF" H 2050 1650 50  0000 L CNN
-F 2 "" H 2088 1600 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0201" H 2088 1600 50  0001 C CNN
 F 3 "~" H 2050 1750 50  0001 C CNN
 	1    2050 1750
 	1    0    0    -1  
@@ -480,7 +382,7 @@ U 1 1 5B95475E
 P 2450 1750
 F 0 "C196" H 2450 1850 50  0000 L CNN
 F 1 "0.01uF" H 2450 1650 50  0000 L CNN
-F 2 "" H 2488 1600 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0201" H 2488 1600 50  0001 C CNN
 F 3 "~" H 2450 1750 50  0001 C CNN
 	1    2450 1750
 	1    0    0    -1  
@@ -491,7 +393,7 @@ U 1 1 5B957F41
 P 2850 1750
 F 0 "C200" H 2850 1850 50  0000 L CNN
 F 1 "0.01uF" H 2850 1650 50  0000 L CNN
-F 2 "" H 2888 1600 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0201" H 2888 1600 50  0001 C CNN
 F 3 "~" H 2850 1750 50  0001 C CNN
 	1    2850 1750
 	1    0    0    -1  
@@ -502,7 +404,7 @@ U 1 1 5B95B728
 P 3250 1750
 F 0 "C203" H 3250 1850 50  0000 L CNN
 F 1 "0.01uF" H 3250 1650 50  0000 L CNN
-F 2 "" H 3288 1600 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0201" H 3288 1600 50  0001 C CNN
 F 3 "~" H 3250 1750 50  0001 C CNN
 	1    3250 1750
 	1    0    0    -1  
@@ -567,7 +469,7 @@ U 1 1 5B980D8D
 P 2050 2300
 F 0 "C43" H 2050 2400 50  0000 L CNN
 F 1 "47uF" H 2050 2200 50  0000 L CNN
-F 2 "" H 2088 2150 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805" H 2088 2150 50  0001 C CNN
 F 3 "~" H 2050 2300 50  0001 C CNN
 	1    2050 2300
 	1    0    0    -1  
@@ -578,7 +480,7 @@ U 1 1 5B980D94
 P 2450 2300
 F 0 "C199" H 2450 2400 50  0000 L CNN
 F 1 "0.1uF" H 2450 2200 50  0000 L CNN
-F 2 "" H 2488 2150 50  0001 C CNN
+F 2 "microzed:CAPC0603X33N" H 2488 2150 50  0001 C CNN
 F 3 "~" H 2450 2300 50  0001 C CNN
 	1    2450 2300
 	1    0    0    -1  
@@ -589,7 +491,7 @@ U 1 1 5B980D9B
 P 2850 2300
 F 0 "C194" H 2850 2400 50  0000 L CNN
 F 1 "0.1uF" H 2850 2200 50  0000 L CNN
-F 2 "" H 2888 2150 50  0001 C CNN
+F 2 "microzed:CAPC0603X33N" H 2888 2150 50  0001 C CNN
 F 3 "~" H 2850 2300 50  0001 C CNN
 	1    2850 2300
 	1    0    0    -1  
@@ -600,7 +502,7 @@ U 1 1 5B980DA2
 P 3250 2300
 F 0 "C186" H 3250 2400 50  0000 L CNN
 F 1 "0.1uF" H 3250 2200 50  0000 L CNN
-F 2 "" H 3288 2150 50  0001 C CNN
+F 2 "microzed:CAPC0603X33N" H 3288 2150 50  0001 C CNN
 F 3 "~" H 3250 2300 50  0001 C CNN
 	1    3250 2300
 	1    0    0    -1  
@@ -611,7 +513,7 @@ U 1 1 5B980DA9
 P 3650 2300
 F 0 "C184" H 3650 2400 50  0000 L CNN
 F 1 "0.1uF" H 3650 2200 50  0000 L CNN
-F 2 "" H 3688 2150 50  0001 C CNN
+F 2 "microzed:CAPC0603X33N" H 3688 2150 50  0001 C CNN
 F 3 "~" H 3650 2300 50  0001 C CNN
 	1    3650 2300
 	1    0    0    -1  
@@ -622,7 +524,7 @@ U 1 1 5B980DB0
 P 2050 2750
 F 0 "C180" H 2050 2850 50  0000 L CNN
 F 1 "0.01uF" H 2050 2650 50  0000 L CNN
-F 2 "" H 2088 2600 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0201" H 2088 2600 50  0001 C CNN
 F 3 "~" H 2050 2750 50  0001 C CNN
 	1    2050 2750
 	1    0    0    -1  
@@ -633,7 +535,7 @@ U 1 1 5B980DB7
 P 2450 2750
 F 0 "C178" H 2450 2850 50  0000 L CNN
 F 1 "0.01uF" H 2450 2650 50  0000 L CNN
-F 2 "" H 2488 2600 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0201" H 2488 2600 50  0001 C CNN
 F 3 "~" H 2450 2750 50  0001 C CNN
 	1    2450 2750
 	1    0    0    -1  
@@ -644,7 +546,7 @@ U 1 1 5B980DBE
 P 2850 2750
 F 0 "C172" H 2850 2850 50  0000 L CNN
 F 1 "0.01uF" H 2850 2650 50  0000 L CNN
-F 2 "" H 2888 2600 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0201" H 2888 2600 50  0001 C CNN
 F 3 "~" H 2850 2750 50  0001 C CNN
 	1    2850 2750
 	1    0    0    -1  
@@ -655,7 +557,7 @@ U 1 1 5B980DC5
 P 3250 2750
 F 0 "C174" H 3250 2850 50  0000 L CNN
 F 1 "0.01uF" H 3250 2650 50  0000 L CNN
-F 2 "" H 3288 2600 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0201" H 3288 2600 50  0001 C CNN
 F 3 "~" H 3250 2750 50  0001 C CNN
 	1    3250 2750
 	1    0    0    -1  
