@@ -50,8 +50,18 @@ D DRAM Chip DDR3L SDRAM 4Gbit 256Mx16 1.35V 96-Pin FBGA T/R
 F https://www.micron.com/~/media/Documents/Products/Data%20Sheet/DRAM/DDR3/4Gb_1_35V_DDR3L.pdf
 $ENDCMP
 #
-$CMP PWR_CMM
-D power-flag symbol PWR_CMM
+$CMP VCCO_DDR3
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP VTTREF
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP DDR3_VTT
+D power-flag symbol
 K Power Flag Symbol
 $ENDCMP
 #
