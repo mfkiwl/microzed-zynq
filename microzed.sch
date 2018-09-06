@@ -16,8 +16,8 @@ $EndDescr
 $Sheet
 S 900  900  500  500 
 U 5BBC4FB6
-F0 "ZYNQ_DDR3" 50
-F1 "sch/ZYNQ_DDR3.sch" 50
+F0 "BANK502" 50
+F1 "sch/BANK502.sch" 50
 $EndSheet
 $Sheet
 S 2000 900  600  500 
