@@ -25,6 +25,11 @@ D FCI 0.8mm 100 Way 2 Row Straight PCB Socket Surface Mount Board to Board
 F http://portal.fciconnect.com/Comergent/fci/drawing/61082.pdf
 $ENDCMP
 #
+$CMP ASDMB-12.000MHZ-LC-T
+D Standard Clock Oscillators 12.000MHZ 50ppm -40 + 85C
+F http://www.abracon.com/Oscillators/ASDMB.pdf
+$ENDCMP
+#
 $CMP CDSOT23-SR208
 D ESD Suppressors / TVS Diodes STEERING DIODE ARRAY
 F https://www.bourns.com/docs/Product-Datasheets/CDSOT23-SR208.pdf
@@ -33,6 +38,11 @@ $ENDCMP
 $CMP CP2104-F03-GM
 D USB-to-UART Bridge,2Mbps,OTP,QFN24 Silicon Labs CP2104-F03-GM, USB Controller, 12MBps, USB to UART, 3  3.6 V, 24-Pin QFN
 F https://www.silabs.com/Support%20Documents/TechnicalDocs/cp2104.pdf
+$ENDCMP
+#
+$CMP DDR3_VTT
+D power-flag symbol
+K Power Flag Symbol
 $ENDCMP
 #
 $CMP DSC1001DI1-024.0000
@@ -50,6 +60,11 @@ D DRAM Chip DDR3L SDRAM 4Gbit 256Mx16 1.35V 96-Pin FBGA T/R
 F https://www.micron.com/~/media/Documents/Products/Data%20Sheet/DRAM/DDR3/4Gb_1_35V_DDR3L.pdf
 $ENDCMP
 #
+$CMP TPS51206DSQR
+D 2A Peak Sink/Source DDR Termination Regulator with VTTREF Buffered Reference for DDR2/3/3L/4
+F http://www.ti.com/lit/ds/symlink/tps51206.pdf
+$ENDCMP
+#
 $CMP VCCO_DDR3
 D power-flag symbol
 K Power Flag Symbol
@@ -58,16 +73,6 @@ $ENDCMP
 $CMP VTTREF
 D power-flag symbol
 K Power Flag Symbol
-$ENDCMP
-#
-$CMP DDR3_VTT
-D power-flag symbol
-K Power Flag Symbol
-$ENDCMP
-#
-$CMP TPS51206DSQR
-D 2A Peak Sink/Source DDR Termination Regulator with VTTREF Buffered Reference for DDR2/3/3L/4
-F http://www.ti.com/lit/ds/symlink/tps51206.pdf
 $ENDCMP
 #
 $CMP Zynq_7010_7020_SOC_CLG400
