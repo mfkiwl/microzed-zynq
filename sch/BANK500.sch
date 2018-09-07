@@ -24,4 +24,107 @@ F 3 "https://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pk
 	5    1400 950 
 	1    0    0    -1  
 $EndComp
+$Comp
+L microzed:ASDMB-33.333MHZ-LC-T U10
+U 1 1 5B91F1A0
+P 1300 3700
+F 0 "U10" H 1875 3965 50  0000 C CNN
+F 1 "ASDMB-33.333MHZ-LC-T" H 1875 3874 50  0000 C CNN
+F 2 "microzed:ABRACON-ASDMB" H 2800 3800 50  0001 L CNN
+F 3 "http://www.abracon.com/Oscillators/ASDMB.pdf" H 2800 3700 50  0001 L CNN
+F 4 "Standard Clock Oscillators 33.333MHZ 50ppm -40 + 85C" H 2800 3600 50  0001 L CNN "Description"
+	1    1300 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R13
+U 1 1 5B9256A7
+P 2450 3200
+F 0 "R13" H 2520 3246 50  0000 L CNN
+F 1 "40.2" H 2520 3155 50  0000 L CNN
+F 2 "Resistors_SMD:R_0402" V 2380 3200 50  0001 C CNN
+F 3 "~" H 2450 3200 50  0001 C CNN
+	1    2450 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B92CE9C
+P 2450 3800
+F 0 "#PWR?" H 2450 3550 50  0001 C CNN
+F 1 "GND" H 2455 3627 50  0000 C CNN
+F 2 "" H 2450 3800 50  0001 C CNN
+F 3 "" H 2450 3800 50  0001 C CNN
+	1    2450 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R100
+U 1 1 5B92CEE9
+P 1150 3800
+F 0 "R100" V 1250 3800 50  0000 C CNN
+F 1 "4.99K" V 1350 3800 50  0000 C CNN
+F 2 "" V 1080 3800 50  0001 C CNN
+F 3 "~" H 1150 3800 50  0001 C CNN
+	1    1150 3800
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5B92D064
+P 1350 4050
+F 0 "TP1" H 1350 4300 50  0000 C TNN
+F 1 "TestPoint" H 1293 4168 50  0001 R CNN
+F 2 "" H 1550 4050 50  0001 C CNN
+F 3 "~" H 1550 4050 50  0001 C CNN
+	1    1350 4050
+	1    0    0    1   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5B92D2E0
+P 850 3700
+F 0 "#PWR?" H 850 3550 50  0001 C CNN
+F 1 "+3.3V" H 865 3873 50  0000 C CNN
+F 2 "" H 850 3700 50  0001 C CNN
+F 3 "" H 850 3700 50  0001 C CNN
+	1    850  3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C152
+U 1 1 5B92D34A
+P 850 3950
+F 0 "C152" H 800 4000 50  0000 R BNN
+F 1 "0.1uF" H 800 3900 50  0000 R TNN
+F 2 "Capacitor_SMD:C_0201" H 888 3800 50  0001 C CNN
+F 3 "~" H 850 3950 50  0001 C CNN
+	1    850  3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B92D3D6
+P 850 4100
+F 0 "#PWR?" H 850 3850 50  0001 C CNN
+F 1 "GND" H 855 3927 50  0000 C CNN
+F 2 "" H 850 4100 50  0001 C CNN
+F 3 "" H 850 4100 50  0001 C CNN
+	1    850  4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 3800 850  3800
+Wire Wire Line
+	1300 3700 850  3700
+Wire Wire Line
+	850  3800 850  3700
+Connection ~ 850  3800
+Connection ~ 850  3700
+Wire Wire Line
+	1350 4050 1350 3800
+Wire Wire Line
+	2000 3050 2450 3050
+Wire Wire Line
+	2450 3350 2450 3700
 $EndSCHEMATC
