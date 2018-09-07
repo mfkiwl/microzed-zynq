@@ -30,6 +30,11 @@ D Standard Clock Oscillators 12.000MHZ 50ppm -40 + 85C
 F http://www.abracon.com/Oscillators/ASDMB.pdf
 $ENDCMP
 #
+$CMP ASDMB-33.333MHZ-LC-T
+D Standard Clock Oscillators 33.333MHZ 50ppm -40 + 85C
+F http://www.abracon.com/Oscillators/ASDMB.pdf
+$ENDCMP
+#
 $CMP CDSOT23-SR208
 D ESD Suppressors / TVS Diodes STEERING DIODE ARRAY
 F https://www.bourns.com/docs/Product-Datasheets/CDSOT23-SR208.pdf
