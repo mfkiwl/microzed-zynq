@@ -3,7 +3,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -30,5 +30,11 @@ S 3100 900  700  500
 U 5B95643F
 F0 "BANK500" 50
 F1 "sch/BANK500.sch" 50
+$EndSheet
+$Sheet
+S 4250 800  700  550 
+U 5B98CBC9
+F0 "BANK501" 50
+F1 "sch/BANK501.sch" 50
 $EndSheet
 $EndSCHEMATC
