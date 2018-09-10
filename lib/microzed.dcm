@@ -65,6 +65,11 @@ D DRAM Chip DDR3L SDRAM 4Gbit 256Mx16 1.35V 96-Pin FBGA T/R
 F https://www.micron.com/~/media/Documents/Products/Data%20Sheet/DRAM/DDR3/4Gb_1_35V_DDR3L.pdf
 $ENDCMP
 #
+$CMP NC7WZ07FHX
+D Fairchild Semiconductor NC7WZ07FHX, Dual, Buffer, Open Drain, Non-Inverting, 1.65  5.5 V, 6-Pin MicroPak
+F http://www.onsemi.com/pub/Collateral/NC7WZ07-D.pdf
+$ENDCMP
+#
 $CMP TPS51206DSQR
 D 2A Peak Sink/Source DDR Termination Regulator with VTTREF Buffered Reference for DDR2/3/3L/4
 F http://www.ti.com/lit/ds/symlink/tps51206.pdf
