@@ -420,10 +420,10 @@ Wire Notes Line
 Wire Notes Line
 	5200 1150 5800 1150
 $Comp
-L Jumper:Jumper_3_Open JT1
+L Jumper:Jumper_3_Open JT6
 U 1 1 5BBC7EBD
 P 6650 4050
-F 0 "JT1" V 6650 4182 50  0000 C CNN
+F 0 "JT6" V 6650 4182 50  0000 C CNN
 F 1 "Jumper_3_Open" H 6650 4183 50  0001 C CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 6650 4050 50  0001 C CNN
 F 3 "~" H 6650 4050 50  0001 C CNN
