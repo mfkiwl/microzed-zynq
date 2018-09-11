@@ -17,12 +17,620 @@ $EndDescr
 $Comp
 L microzed:Zynq_7010_7020_SOC_CLG400 U9
 U 6 1 5B98CF82
-P 1500 1000
-F 0 "U9" H 1561 1187 60  0000 C CNN
-F 1 "Zynq_7010_7020_SOC_CLG400" H 1561 1081 60  0000 C CNN
-F 2 "microzed:BGA400C80P20X20_1700X1700X160" H 1400 1500 60  0001 C CNN
-F 3 "https://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pkg-Pinout.pdf" H 1500 1900 60  0001 C CNN
-	6    1500 1000
+P 2100 1000
+F 0 "U9" H 2161 1187 60  0000 C CNN
+F 1 "Zynq_7010_7020_SOC_CLG400" H 2161 1081 60  0000 C CNN
+F 2 "microzed:BGA400C80P20X20_1700X1700X160" H 2000 1500 60  0001 C CNN
+F 3 "https://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pkg-Pinout.pdf" H 2100 1900 60  0001 C CNN
+	6    2100 1000
 	1    0    0    -1  
 $EndComp
+$Comp
+L microzed:NC7WZ07FHX U19
+U 1 1 5B9764C3
+P 2200 6800
+F 0 "U19" H 2700 7065 50  0000 C CNN
+F 1 "NC7WZ07FHX" H 2700 6974 50  0000 C CNN
+F 2 "microzed:6-LEAD_MICROPAK" H 3550 6900 50  0001 L CNN
+F 3 "http://www.onsemi.com/pub/Collateral/NC7WZ07-D.pdf" H 3550 6800 50  0001 L CNN
+F 4 "Fairchild Semiconductor NC7WZ07FHX, Dual, Buffer, Open Drain, Non-Inverting, 1.65  5.5 V, 6-Pin MicroPak" H 3550 6700 50  0001 L CNN "Description"
+F 5 "Fairchild Semiconductor" H 3550 6500 50  0001 L CNN "Manufacturer_Name"
+	1    2200 6800
+	1    0    0    -1  
+$EndComp
+Text GLabel 1200 6900 0    50   Input ~ 0
+JTAG_RST#
+Text GLabel 1200 7000 0    50   Input ~ 0
+CARRIER_SRST#
+Wire Wire Line
+	1200 6900 1300 6900
+Wire Wire Line
+	1200 7000 1800 7000
+$Comp
+L Device:R R62
+U 1 1 5B976605
+P 1300 6650
+F 0 "R62" H 1370 6696 50  0000 L CNN
+F 1 "10.00K" H 1370 6605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1230 6650 50  0001 C CNN
+F 3 "~" H 1300 6650 50  0001 C CNN
+	1    1300 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R63
+U 1 1 5B976827
+P 1800 6650
+F 0 "R63" H 1870 6696 50  0000 L CNN
+F 1 "10.00K" H 1870 6605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1730 6650 50  0001 C CNN
+F 3 "~" H 1800 6650 50  0001 C CNN
+	1    1800 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 6800 1300 6900
+Connection ~ 1300 6900
+Wire Wire Line
+	1300 6900 2200 6900
+Wire Wire Line
+	1800 6800 1800 7000
+Connection ~ 1800 7000
+Wire Wire Line
+	1800 7000 2200 7000
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5B977486
+P 1300 6200
+F 0 "#PWR?" H 1300 6050 50  0001 C CNN
+F 1 "+3V3" H 1315 6373 50  0000 C CNN
+F 2 "" H 1300 6200 50  0001 C CNN
+F 3 "" H 1300 6200 50  0001 C CNN
+	1    1300 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 6200 1300 6300
+Wire Wire Line
+	2200 6500 2200 6800
+Wire Wire Line
+	1800 6500 2200 6500
+Connection ~ 1800 6500
+Connection ~ 1300 6500
+Wire Wire Line
+	1300 6500 1800 6500
+$Comp
+L Device:C C12
+U 1 1 5B979401
+P 1750 6300
+F 0 "C12" V 1498 6300 50  0000 C CNN
+F 1 "0.1uF" V 1589 6300 50  0000 C CNN
+F 2 "" H 1788 6150 50  0001 C CNN
+F 3 "~" H 1750 6300 50  0001 C CNN
+	1    1750 6300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1300 6300 1600 6300
+Connection ~ 1300 6300
+Wire Wire Line
+	1300 6300 1300 6500
+$Comp
+L power:GND #PWR?
+U 1 1 5B9795B9
+P 1900 6300
+F 0 "#PWR?" H 1900 6050 50  0001 C CNN
+F 1 "GND" V 1905 6172 50  0000 R CNN
+F 2 "" H 1900 6300 50  0001 C CNN
+F 3 "" H 1900 6300 50  0001 C CNN
+	1    1900 6300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2650 5300 3200 5300
+Wire Wire Line
+	3200 5300 3200 6800
+Connection ~ 3200 6800
+Wire Wire Line
+	3200 6800 3200 6900
+$Comp
+L power:GND #PWR?
+U 1 1 5B97A3C9
+P 3200 7000
+F 0 "#PWR?" H 3200 6750 50  0001 C CNN
+F 1 "GND" H 3205 6827 50  0000 C CNN
+F 2 "" H 3200 7000 50  0001 C CNN
+F 3 "" H 3200 7000 50  0001 C CNN
+	1    3200 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5B97A54D
+P 3600 6800
+F 0 "#PWR?" H 3600 6650 50  0001 C CNN
+F 1 "+1V8" H 3615 6973 50  0000 C CNN
+F 2 "" H 3600 6800 50  0001 C CNN
+F 3 "" H 3600 6800 50  0001 C CNN
+	1    3600 6800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 6800 3600 6800
+$Comp
+L microzed:7914J-1-000E S2
+U 1 1 5B97B78C
+P 3600 7000
+F 0 "S2" H 4100 7265 50  0000 C CNN
+F 1 "7914J-1-000E" H 4100 7174 50  0000 C CNN
+F 2 "microzed:7914J1000E" H 4900 7100 50  0001 L CNN
+F 3 "http://www.bourns.com/docs/Product-Datasheets/7914.pdf" H 4900 7000 50  0001 L CNN
+F 4 "BOURNS - 7914J-1-000E - SWITCH, SPST, 0.1A, 16V, J LEGS" H 4900 6900 50  0001 L CNN "Description"
+F 5 "4" H 4900 6800 50  0001 L CNN "Height"
+F 6 "Bourns" H 4900 6700 50  0001 L CNN "Manufacturer_Name"
+F 7 "7914J-1-000E" H 4900 6600 50  0001 L CNN "Manufacturer_Part_Number"
+	1    3600 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 6800 3600 7000
+Connection ~ 3600 6800
+Connection ~ 3600 7000
+Wire Wire Line
+	3600 7000 3600 7100
+$Comp
+L power:GND #PWR?
+U 1 1 5B97B903
+P 4600 7100
+F 0 "#PWR?" H 4600 6850 50  0001 C CNN
+F 1 "GND" H 4605 6927 50  0000 C CNN
+F 2 "" H 4600 7100 50  0001 C CNN
+F 3 "" H 4600 7100 50  0001 C CNN
+	1    4600 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 7000 4600 7100
+Connection ~ 4600 7100
+Text GLabel 3450 5300 2    50   Output ~ 0
+PS_SRST#
+Wire Wire Line
+	3450 5300 3200 5300
+Connection ~ 3200 5300
+Text GLabel 2650 5100 2    50   BiDi ~ 0
+ETH_MDIO
+Text GLabel 2650 5000 2    50   BiDi ~ 0
+ETH_MDC
+Text GLabel 2650 4800 2    50   Input ~ 0
+SD_WP
+Text GLabel 2650 4700 2    50   Output ~ 0
+USB_UART_TXD
+Text GLabel 2650 4600 2    50   Input ~ 0
+USB_UART_RXD
+Text GLabel 2650 3700 2    50   BiDi ~ 0
+USB_D7
+Text GLabel 2650 3600 2    50   BiDi ~ 0
+USB_D6
+Text GLabel 2650 3500 2    50   BiDi ~ 0
+USB_D5
+Text GLabel 2650 3400 2    50   BiDi ~ 0
+USB_CLK
+Text GLabel 2650 3300 2    50   BiDi ~ 0
+USB_D3
+Text GLabel 2650 3200 2    50   BiDi ~ 0
+USB_D2
+Text GLabel 2650 3100 2    50   BiDi ~ 0
+USB_D1
+Text GLabel 2650 3000 2    50   BiDi ~ 0
+USB_D0
+Text GLabel 2650 2900 2    50   BiDi ~ 0
+USB_NXT
+Text GLabel 2650 2800 2    50   BiDi ~ 0
+USB_STP
+Text GLabel 2650 2700 2    50   BiDi ~ 0
+USB_DIR
+Text GLabel 2650 2600 2    50   BiDi ~ 0
+USB_D4
+Text GLabel 2650 2500 2    50   BiDi ~ 0
+ETH_RX_CTRL
+Text GLabel 2650 2400 2    50   BiDi ~ 0
+ETH_RXD3
+Text GLabel 2650 2300 2    50   BiDi ~ 0
+ETH_RXD2
+Text GLabel 2650 2200 2    50   BiDi ~ 0
+ETH_RXD1
+Text GLabel 2650 2100 2    50   BiDi ~ 0
+ETH_RXD0
+Text GLabel 2650 2000 2    50   BiDi ~ 0
+ETH_RX_CLK
+Text GLabel 2650 1900 2    50   BiDi ~ 0
+ETH_TX_CTRL
+Text GLabel 2650 1800 2    50   BiDi ~ 0
+ETH_TXD3
+Text GLabel 2650 1700 2    50   BiDi ~ 0
+ETH_TXD2
+Text GLabel 2650 1600 2    50   BiDi ~ 0
+ETH_TXD1
+Text GLabel 2650 1500 2    50   BiDi ~ 0
+ETH_TXD0
+Text GLabel 2650 1400 2    50   BiDi ~ 0
+ETH_TX_CLK
+$Comp
+L Device:R R73
+U 1 1 5B984C4F
+P 3400 1050
+F 0 "R73" H 3470 1096 50  0000 L CNN
+F 1 "1.00K" H 3470 1005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3330 1050 50  0001 C CNN
+F 3 "~" H 3400 1050 50  0001 C CNN
+	1    3400 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R72
+U 1 1 5B984E1F
+P 3400 1350
+F 0 "R72" H 3470 1396 50  0000 L CNN
+F 1 "1.00K" H 3470 1305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3330 1350 50  0001 C CNN
+F 3 "~" H 3400 1350 50  0001 C CNN
+	1    3400 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 1200 3400 1200
+Connection ~ 3400 1200
+$Comp
+L power:GND #PWR?
+U 1 1 5B984FE5
+P 3400 1500
+F 0 "#PWR?" H 3400 1250 50  0001 C CNN
+F 1 "GND" H 3405 1327 50  0000 C CNN
+F 2 "" H 3400 1500 50  0001 C CNN
+F 3 "" H 3400 1500 50  0001 C CNN
+	1    3400 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5B985026
+P 3400 900
+F 0 "#PWR?" H 3400 750 50  0001 C CNN
+F 1 "+1V8" H 3415 1073 50  0000 C CNN
+F 2 "" H 3400 900 50  0001 C CNN
+F 3 "" H 3400 900 50  0001 C CNN
+	1    3400 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L microzed:7914J-1-000E S1
+U 1 1 5B985F52
+P 4000 4900
+F 0 "S1" H 4500 5165 50  0000 C CNN
+F 1 "7914J-1-000E" H 4500 5074 50  0000 C CNN
+F 2 "microzed:7914J1000E" H 5300 5000 50  0001 L CNN
+F 3 "http://www.bourns.com/docs/Product-Datasheets/7914.pdf" H 5300 4900 50  0001 L CNN
+F 4 "BOURNS - 7914J-1-000E - SWITCH, SPST, 0.1A, 16V, J LEGS" H 5300 4800 50  0001 L CNN "Description"
+F 5 "4" H 5300 4700 50  0001 L CNN "Height"
+F 6 "Bourns" H 5300 4600 50  0001 L CNN "Manufacturer_Name"
+F 7 "7914J-1-000E" H 5300 4500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    4000 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 4900 4000 4900
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5B986F85
+P 5000 4800
+F 0 "#PWR?" H 5000 4650 50  0001 C CNN
+F 1 "+1V8" H 5015 4973 50  0000 C CNN
+F 2 "" H 5000 4800 50  0001 C CNN
+F 3 "" H 5000 4800 50  0001 C CNN
+	1    5000 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 5000 5000 4900
+Connection ~ 5000 4900
+Wire Wire Line
+	5000 4900 5000 4800
+$Comp
+L Device:R R68
+U 1 1 5B98717C
+P 4000 5550
+F 0 "R68" H 4070 5596 50  0000 L CNN
+F 1 "4.99K" H 4070 5505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3930 5550 50  0001 C CNN
+F 3 "~" H 4000 5550 50  0001 C CNN
+	1    4000 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 5400 4000 5000
+Connection ~ 4000 4900
+Connection ~ 4000 5000
+Wire Wire Line
+	4000 5000 4000 4900
+$Comp
+L power:GND #PWR?
+U 1 1 5B987542
+P 4000 5700
+F 0 "#PWR?" H 4000 5450 50  0001 C CNN
+F 1 "GND" H 4005 5527 50  0000 C CNN
+F 2 "" H 4000 5700 50  0001 C CNN
+F 3 "" H 4000 5700 50  0001 C CNN
+	1    4000 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L microzed:TXS02612RTWR U1
+U 1 1 5B99441F
+P 5200 2300
+F 0 "U1" H 6750 3350 50  0000 L CNN
+F 1 "TXS02612RTWR" H 6750 3200 50  0000 L CNN
+F 2 "microzed:QFN50P400X400X80-25N-D" H 7150 2750 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/txs02612" H 7150 2650 50  0001 L CNN
+F 4 "SDIO Port Expander With Voltage-Level Translation" H 7150 2550 50  0001 L CNN "Description"
+F 5 "0.8" H 7150 2450 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 7150 2350 50  0001 L CNN "Manufacturer_Name"
+	1    5200 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 3800 4200 3800
+$Comp
+L Device:R R9
+U 1 1 5B994B69
+P 4700 1800
+F 0 "R9" V 4600 1700 50  0000 C CNN
+F 1 "40.2" V 4600 1900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4630 1800 50  0001 C CNN
+F 3 "~" H 4700 1800 50  0001 C CNN
+	1    4700 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 3900 4300 3900
+Wire Wire Line
+	2650 4000 4400 4000
+Wire Wire Line
+	2650 4100 4500 4100
+Wire Wire Line
+	2650 4200 4600 4200
+Wire Wire Line
+	2650 4300 4700 4300
+$Comp
+L Device:C C7
+U 1 1 5B997C5D
+P 5050 1050
+F 0 "C7" H 5100 1150 50  0000 L CNN
+F 1 "0.1uF" H 5100 950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 5088 900 50  0001 C CNN
+F 3 "~" H 5050 1050 50  0001 C CNN
+	1    5050 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C8
+U 1 1 5B997D3F
+P 5450 1050
+F 0 "C8" H 5500 1150 50  0000 L CNN
+F 1 "0.1uF" H 5500 950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 5488 900 50  0001 C CNN
+F 3 "~" H 5450 1050 50  0001 C CNN
+	1    5450 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B997F40
+P 5050 1200
+F 0 "#PWR?" H 5050 950 50  0001 C CNN
+F 1 "GND" H 5055 1027 50  0000 C CNN
+F 2 "" H 5050 1200 50  0001 C CNN
+F 3 "" H 5050 1200 50  0001 C CNN
+	1    5050 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 1200 5050 1200
+Connection ~ 5050 1200
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5B998EA4
+P 5800 900
+F 0 "#PWR?" H 5800 750 50  0001 C CNN
+F 1 "+1V8" H 5815 1073 50  0000 C CNN
+F 2 "" H 5800 900 50  0001 C CNN
+F 3 "" H 5800 900 50  0001 C CNN
+	1    5800 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 900  5800 1300
+Wire Wire Line
+	5050 900  5450 900 
+Connection ~ 5800 900 
+Connection ~ 5450 900 
+Wire Wire Line
+	5450 900  5800 900 
+Wire Wire Line
+	6200 1300 6100 1300
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5B99B3F3
+P 6200 900
+F 0 "#PWR?" H 6200 750 50  0001 C CNN
+F 1 "+3V3" H 6215 1073 50  0000 C CNN
+F 2 "" H 6200 900 50  0001 C CNN
+F 3 "" H 6200 900 50  0001 C CNN
+	1    6200 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 900  6200 1300
+Connection ~ 6200 1300
+$Comp
+L Device:C C5
+U 1 1 5B99BCE1
+P 6400 1050
+F 0 "C5" H 6450 1150 50  0000 L CNN
+F 1 "0.1uF" H 6450 950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 6438 900 50  0001 C CNN
+F 3 "~" H 6400 1050 50  0001 C CNN
+	1    6400 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 900  6200 900 
+Connection ~ 6200 900 
+$Comp
+L power:GND #PWR?
+U 1 1 5B99C667
+P 6400 1200
+F 0 "#PWR?" H 6400 950 50  0001 C CNN
+F 1 "GND" H 6405 1027 50  0000 C CNN
+F 2 "" H 6400 1200 50  0001 C CNN
+F 3 "" H 6400 1200 50  0001 C CNN
+	1    6400 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B99D492
+P 5200 2800
+F 0 "#PWR?" H 5200 2550 50  0001 C CNN
+F 1 "GND" H 5205 2627 50  0000 C CNN
+F 2 "" H 5200 2800 50  0001 C CNN
+F 3 "" H 5200 2800 50  0001 C CNN
+	1    5200 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 3100 6100 3100
+Connection ~ 6100 3100
+Wire Wire Line
+	6100 3100 6200 3100
+$Comp
+L power:GND #PWR?
+U 1 1 5B99DF64
+P 6200 3100
+F 0 "#PWR?" H 6200 2850 50  0001 C CNN
+F 1 "GND" H 6205 2927 50  0000 C CNN
+F 2 "" H 6200 3100 50  0001 C CNN
+F 3 "" H 6200 3100 50  0001 C CNN
+	1    6200 3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 6200 3100
+Wire Wire Line
+	4200 3800 4200 1800
+Wire Wire Line
+	4200 1800 4550 1800
+Wire Wire Line
+	4850 1800 5200 1800
+Wire Wire Line
+	4300 3900 4300 1900
+Wire Wire Line
+	4300 1900 5200 1900
+Wire Wire Line
+	4400 4000 4400 2000
+Wire Wire Line
+	4400 2000 5200 2000
+Wire Wire Line
+	4500 4100 4500 2100
+Wire Wire Line
+	4500 2100 5200 2100
+Wire Wire Line
+	4600 4200 4600 2200
+Wire Wire Line
+	4600 2200 5200 2200
+Wire Wire Line
+	4700 4300 4700 2300
+Wire Wire Line
+	4700 2300 5200 2300
+$Comp
+L microzed:HSMH-C191 LED3
+U 1 1 5B9ABE7B
+P 6200 4100
+F 0 "LED3" H 6500 4487 50  0000 C CNN
+F 1 "HSMH-C191" H 6500 4396 50  0000 C CNN
+F 2 "microzed:LEDC1608X60N" H 7150 4250 50  0001 L BNN
+F 3 "https://www.broadcom.com/products/leds-and-displays/chip-leds/0603-1.6-x-0.88mm-top-mount/hsmh-c191#documentation" H 7150 4150 50  0001 L BNN
+F 4 "ChipLED,Red,diffused,17mcd,SMD Avago HSMH-C191 Red LED, 639 nm, 1608 (0603) Clear, Dome Lens SMD Package" H 7150 4050 50  0001 L BNN "Description"
+F 5 "0.6" H 7150 3950 50  0001 L BNN "Height"
+F 6 "Avago Technologies" H 7150 3850 50  0001 L BNN "Manufacturer_Name"
+	1    6200 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q1
+U 1 1 5B9AE142
+P 5900 4500
+F 0 "Q1" H 6091 4546 50  0000 L CNN
+F 1 "MMBT3904" H 6091 4455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6100 4425 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 5900 4500 50  0001 L CNN
+	1    5900 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R14
+U 1 1 5B9AE979
+P 5550 4500
+F 0 "R14" V 5450 4500 50  0000 C BNN
+F 1 "240" V 5650 4500 50  0000 C TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5480 4500 50  0001 C CNN
+F 3 "~" H 5550 4500 50  0001 C CNN
+	1    5550 4500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 4500 5400 4500
+$Comp
+L power:GND #PWR?
+U 1 1 5B9B1428
+P 6000 4800
+F 0 "#PWR?" H 6000 4550 50  0001 C CNN
+F 1 "GND" H 6005 4627 50  0000 C CNN
+F 2 "" H 6000 4800 50  0001 C CNN
+F 3 "" H 6000 4800 50  0001 C CNN
+	1    6000 4800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4300 6000 4100
+Wire Wire Line
+	6000 4100 6200 4100
+$Comp
+L Device:R R10
+U 1 1 5B9B2102
+P 7150 4100
+F 0 "R10" V 7050 4100 50  0000 C BNN
+F 1 "240" V 7250 4100 50  0000 C TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7080 4100 50  0001 C CNN
+F 3 "~" H 7150 4100 50  0001 C CNN
+	1    7150 4100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6800 4100 7000 4100
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5B9B2ED6
+P 7500 3900
+F 0 "#PWR?" H 7500 3750 50  0001 C CNN
+F 1 "+3V3" H 7515 4073 50  0000 C CNN
+F 2 "" H 7500 3900 50  0001 C CNN
+F 3 "" H 7500 3900 50  0001 C CNN
+	1    7500 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 4100 7500 4100
+Wire Wire Line
+	7500 4100 7500 3900
+Wire Wire Line
+	6000 4700 6000 4800
 $EndSCHEMATC

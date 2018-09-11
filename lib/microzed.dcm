@@ -5,6 +5,12 @@ D power-flag symbol +0.75V
 K Power Flag Symbol
 $ENDCMP
 #
+$CMP MMBT3904LT1G
+D NPN transistor,MMBT3904 0.2A Ic 1Vce ON Semi MMBT3904LT1G NPN Bipolar Transistor,  0.2 A 40 V, 3-Pin SOT-23
+K
+F http://www.onsemi.com/pub/Collateral/MMBT3904LT1-D.PDF
+$ENDCMP
+#
 $CMP 0821-1X1T-43-F
 D Conn RJ-45/USB F 16 POS 2.03mm Solder RA Thru-Hole 20 Terminal 2 Port Tray
 F https://belfuse.com/resources/drawings/magneticsolutions/dr-mag-0821-1x1t-43-f.pdf
@@ -23,6 +29,11 @@ $ENDCMP
 $CMP 61082-101400LF
 D FCI 0.8mm 100 Way 2 Row Straight PCB Socket Surface Mount Board to Board
 F http://portal.fciconnect.com/Comergent/fci/drawing/61082.pdf
+$ENDCMP
+#
+$CMP 7914J-1-000E
+D BOURNS - 7914J-1-000E - SWITCH, SPST, 0.1A, 16V, J LEGS
+F http://www.bourns.com/docs/Product-Datasheets/7914.pdf
 $ENDCMP
 #
 $CMP ASDMB-12.000MHZ-LC-T
@@ -60,6 +71,11 @@ D Ceramic SMT capacitor 100nF 6.3Vdc Murata 0201 GRM 100nF Ceramic Multilayer Ca
 F http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.pdf
 $ENDCMP
 #
+$CMP HSMH-C191
+D ChipLED,Red,diffused,17mcd,SMD Avago HSMH-C191 Red LED, 639 nm, 1608 (0603) Clear, Dome Lens SMD Package
+F https://www.broadcom.com/products/leds-and-displays/chip-leds/0603-1.6-x-0.88mm-top-mount/hsmh-c191#documentation
+$ENDCMP
+#
 $CMP MT41K256M16HA-125_E_TR
 D DRAM Chip DDR3L SDRAM 4Gbit 256Mx16 1.35V 96-Pin FBGA T/R
 F https://www.micron.com/~/media/Documents/Products/Data%20Sheet/DRAM/DDR3/4Gb_1_35V_DDR3L.pdf
@@ -73,6 +89,11 @@ $ENDCMP
 $CMP TPS51206DSQR
 D 2A Peak Sink/Source DDR Termination Regulator with VTTREF Buffered Reference for DDR2/3/3L/4
 F http://www.ti.com/lit/ds/symlink/tps51206.pdf
+$ENDCMP
+#
+$CMP TXS02612RTWR
+D SDIO Port Expander With Voltage-Level Translation
+F http://www.ti.com/lit/gpn/txs02612
 $ENDCMP
 #
 $CMP VCCO_DDR3

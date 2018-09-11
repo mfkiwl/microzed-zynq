@@ -315,7 +315,7 @@ F 3 "~" H 9950 2650 50  0001 C CNN
 	1    9950 2650
 	1    0    0    -1  
 $EndComp
-Text GLabel 9950 2800 3    50   BiDi ~ 0
+Text GLabel 9950 2800 3    50   Input ~ 0
 PS_SRST#
 $Comp
 L power:+3.3V #PWR?
