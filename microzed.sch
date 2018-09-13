@@ -3,7 +3,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -36,5 +36,11 @@ S 4250 800  700  550
 U 5B98CBC9
 F0 "BANK501" 50
 F1 "sch/BANK501.sch" 50
+$EndSheet
+$Sheet
+S 5400 900  800  550 
+U 5BA19F84
+F0 "USB-UART" 50
+F1 "sch/USB-UART.sch" 50
 $EndSheet
 $EndSCHEMATC

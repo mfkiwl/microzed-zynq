@@ -1,0 +1,270 @@
+EESchema Schematic File Version 4
+LIBS:microzed-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Transistor_FET:BSS138 Q7
+U 1 1 5BA1F833
+P 9100 3900
+F 0 "Q7" V 9350 3900 50  0000 C CNN
+F 1 "BSS138-7-F" V 9441 3900 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9300 3825 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 9100 3900 50  0001 L CNN
+	1    9100 3900
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5BA20624
+P 9100 3650
+F 0 "#PWR?" H 9100 3500 50  0001 C CNN
+F 1 "+1V8" H 9115 3823 50  0000 C CNN
+F 2 "" H 9100 3650 50  0001 C CNN
+F 3 "" H 9100 3650 50  0001 C CNN
+	1    9100 3650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 3700 9100 3650
+$Comp
+L Device:R R60
+U 1 1 5BA20675
+P 9500 3850
+F 0 "R60" H 9570 3896 50  0000 L CNN
+F 1 "10.00K" H 9570 3805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9430 3850 50  0001 C CNN
+F 3 "~" H 9500 3850 50  0001 C CNN
+	1    9500 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 4000 9500 4000
+Connection ~ 9500 4000
+Wire Wire Line
+	9500 4000 10000 4000
+Text GLabel 10000 4000 2    50   Input ~ 0
+USB_UART_RxD
+Wire Wire Line
+	9100 3650 9500 3650
+Wire Wire Line
+	9500 3650 9500 3700
+Connection ~ 9100 3650
+$Comp
+L Device:R R108
+U 1 1 5BA23DF3
+P 8600 3750
+F 0 "R108" H 8670 3796 50  0000 L CNN
+F 1 "10.00K" H 8670 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8530 3750 50  0001 C CNN
+F 3 "~" H 8600 3750 50  0001 C CNN
+	1    8600 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_FET:BSS138 Q8
+U 1 1 5BA251EA
+P 9100 4950
+F 0 "Q8" V 9350 4950 50  0000 C CNN
+F 1 "BSS138-7-F" V 9441 4950 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 9300 4875 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 9100 4950 50  0001 L CNN
+	1    9100 4950
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5BA251F1
+P 9100 4700
+F 0 "#PWR?" H 9100 4550 50  0001 C CNN
+F 1 "+1V8" H 9115 4873 50  0000 C CNN
+F 2 "" H 9100 4700 50  0001 C CNN
+F 3 "" H 9100 4700 50  0001 C CNN
+	1    9100 4700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 4750 9100 4700
+$Comp
+L Device:R R109
+U 1 1 5BA251F8
+P 9500 4900
+F 0 "R109" H 9570 4946 50  0000 L CNN
+F 1 "10.00K" H 9570 4855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9430 4900 50  0001 C CNN
+F 3 "~" H 9500 4900 50  0001 C CNN
+	1    9500 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 5050 9500 5050
+Connection ~ 9500 5050
+Wire Wire Line
+	9500 5050 10000 5050
+Text GLabel 10000 5050 2    50   Input ~ 0
+USB_UART_TxD
+Wire Wire Line
+	9100 4700 9500 4700
+Wire Wire Line
+	9500 4700 9500 4750
+Connection ~ 9100 4700
+$Comp
+L Device:R R110
+U 1 1 5BA25207
+P 8100 3750
+F 0 "R110" H 8170 3796 50  0000 L CNN
+F 1 "10.00K" H 8170 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8030 3750 50  0001 C CNN
+F 3 "~" H 8100 3750 50  0001 C CNN
+	1    8100 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R111
+U 1 1 5BA28FB5
+P 7600 3750
+F 0 "R111" H 7670 3796 50  0000 L CNN
+F 1 "4.99K" H 7670 3705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7530 3750 50  0001 C CNN
+F 3 "~" H 7600 3750 50  0001 C CNN
+	1    7600 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 4100 8100 4100
+Wire Wire Line
+	8600 4100 8600 5050
+Wire Wire Line
+	8600 5050 8900 5050
+Wire Wire Line
+	6900 4000 8600 4000
+Wire Wire Line
+	8600 3900 8600 4000
+Connection ~ 8600 4000
+Wire Wire Line
+	8600 4000 8900 4000
+Wire Wire Line
+	8100 3900 8100 4100
+Connection ~ 8100 4100
+Wire Wire Line
+	8100 4100 8600 4100
+NoConn ~ 6400 3200
+Wire Wire Line
+	6000 3200 6000 3000
+Wire Wire Line
+	8600 3000 8600 3600
+Wire Wire Line
+	8100 3600 8100 3000
+Connection ~ 8100 3000
+Wire Wire Line
+	8100 3000 8600 3000
+Wire Wire Line
+	7600 3600 7600 3000
+Connection ~ 7600 3000
+Wire Wire Line
+	7600 3000 8100 3000
+$Comp
+L Interface_USB:CP2104 U2
+U 1 1 5BA1C0F8
+P 6200 4100
+F 0 "U2" H 6200 3014 50  0000 C CNN
+F 1 "CP2104-F03-GM" H 6200 2923 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 6350 3150 50  0001 L CNN
+F 3 "https://www.silabs.com/Support%20Documents/TechnicalDocs/cp2104.pdf" H 5650 5350 50  0001 C CNN
+	1    6200 4100
+	1    0    0    -1  
+$EndComp
+NoConn ~ 5500 4300
+NoConn ~ 5500 4400
+NoConn ~ 5500 4500
+NoConn ~ 5500 4600
+NoConn ~ 6900 3500
+NoConn ~ 6900 4300
+NoConn ~ 6900 4400
+NoConn ~ 6900 3600
+NoConn ~ 6900 3700
+NoConn ~ 6900 3800
+NoConn ~ 6900 4700
+NoConn ~ 6900 4800
+Wire Wire Line
+	6900 4600 7600 4600
+Wire Wire Line
+	7600 3900 7600 4600
+$Comp
+L Device:C C225
+U 1 1 5BA3A79B
+P 7600 4750
+F 0 "C225" H 7715 4796 50  0000 L CNN
+F 1 "0.1uF" H 7715 4705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 7638 4600 50  0001 C CNN
+F 3 "~" H 7600 4750 50  0001 C CNN
+	1    7600 4750
+	1    0    0    -1  
+$EndComp
+Connection ~ 7600 4600
+Wire Wire Line
+	6000 3000 6200 3000
+Wire Wire Line
+	6200 3200 6200 3000
+Connection ~ 6200 3000
+Wire Wire Line
+	6200 3000 7600 3000
+Text Label 7150 3000 0    50   ~ 0
+VIO_USB
+$Comp
+L Device:C C219
+U 1 1 5BA3E66A
+P 6600 2350
+F 0 "C219" H 6715 2396 50  0000 L CNN
+F 1 "0.1uF" H 6715 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 6638 2200 50  0001 C CNN
+F 3 "~" H 6600 2350 50  0001 C CNN
+	1    6600 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C220
+U 1 1 5BA3E740
+P 7200 2350
+F 0 "C220" H 7315 2396 50  0000 L CNN
+F 1 "2.2uF" H 7315 2305 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 7238 2200 50  0001 C CNN
+F 3 "~" H 7200 2350 50  0001 C CNN
+	1    7200 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BA3F62A
+P 6600 2600
+F 0 "#PWR?" H 6600 2350 50  0001 C CNN
+F 1 "GND" H 6605 2427 50  0000 C CNN
+F 2 "" H 6600 2600 50  0001 C CNN
+F 3 "" H 6600 2600 50  0001 C CNN
+	1    6600 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6600 2500 6600 2600
+Wire Wire Line
+	7200 2500 6600 2500
+Connection ~ 6600 2500
+Wire Wire Line
+	6200 3000 6200 2200
+Wire Wire Line
+	6200 2200 6600 2200
+Connection ~ 6600 2200
+Wire Wire Line
+	6600 2200 7200 2200
+$EndSCHEMATC
