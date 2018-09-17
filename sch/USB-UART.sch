@@ -178,8 +178,8 @@ $Comp
 L Interface_USB:CP2104 U2
 U 1 1 5BA1C0F8
 P 6200 4100
-F 0 "U2" H 6200 3014 50  0000 C CNN
-F 1 "CP2104-F03-GM" H 6200 2923 50  0000 C CNN
+F 0 "U2" H 5650 4950 50  0000 C CNN
+F 1 "CP2104-F03-GM" H 6800 3150 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 6350 3150 50  0001 L CNN
 F 3 "https://www.silabs.com/Support%20Documents/TechnicalDocs/cp2104.pdf" H 5650 5350 50  0001 C CNN
 	1    6200 4100
@@ -267,4 +267,100 @@ Wire Wire Line
 Connection ~ 6600 2200
 Wire Wire Line
 	6600 2200 7200 2200
+$Comp
+L power:GND #PWR?
+U 1 1 5B9F9FB7
+P 7600 5000
+F 0 "#PWR?" H 7600 4750 50  0001 C CNN
+F 1 "GND" H 7605 4827 50  0000 C CNN
+F 2 "" H 7600 5000 50  0001 C CNN
+F 3 "" H 7600 5000 50  0001 C CNN
+	1    7600 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 4900 7600 5000
+Wire Wire Line
+	6200 5100 6300 5100
+$Comp
+L power:GND #PWR?
+U 1 1 5B9FBF42
+P 6300 5200
+F 0 "#PWR?" H 6300 4950 50  0001 C CNN
+F 1 "GND" H 6305 5027 50  0000 C CNN
+F 2 "" H 6300 5200 50  0001 C CNN
+F 3 "" H 6300 5200 50  0001 C CNN
+	1    6300 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 5100 6300 5200
+Connection ~ 6300 5100
+NoConn ~ 5500 4800
+$Comp
+L microzed:CDSOT23-SR208 D1
+U 1 1 5BA007AD
+P 3250 4500
+F 0 "D1" H 3850 4800 50  0000 C CNN
+F 1 "CDSOT23-SR208" H 3850 4700 50  0000 C CNN
+F 2 "microzed:SOT95P280X130-6N" H 4800 4600 50  0001 L CNN
+F 3 "https://www.bourns.com/docs/Product-Datasheets/CDSOT23-SR208.pdf" H 4800 4500 50  0001 L CNN
+F 4 "ESD Suppressors / TVS Diodes STEERING DIODE ARRAY" H 4800 4400 50  0001 L CNN "Description"
+F 5 "1.3" H 4800 4300 50  0001 L CNN "Height"
+F 6 "Bourns" H 4800 4200 50  0001 L CNN "Manufacturer_Name"
+F 7 "CDSOT23-SR208" H 4800 4100 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "CDSOT23-SR208" H 4800 3800 50  0001 L CNN "Arrow Part Number"
+F 9 "https://www.arrow.com/en/products/cdsot23-sr208/bourns" H 4800 3700 50  0001 L CNN "Arrow Price/Stock"
+	1    3250 4500
+	1    0    0    1   
+$EndComp
+$Comp
+L microzed:10104111-0001LF J?
+U 1 1 5BA02C0F
+P 1950 4100
+F 0 "J?" H 2000 4565 50  0000 C CNN
+F 1 "10104111-0001LF" H 2000 4474 50  0000 C CNN
+F 2 "microzed:MICRO_USB_AB_TYPE_RECEPTACLE" H 2700 4650 50  0001 L CNN
+F 3 "http://docs-europe.electrocomponents.com/webdocs/0ed1/0900766b80ed1ae2.pdf" H 2700 4550 50  0001 L CNN
+F 4 "FCI Right Angle SMT Female Type AB Version 2.0 Micro USB Connector, 100 V ac, 1.8A" H 2700 4450 50  0001 L CNN "Description"
+F 5 "FCI" H 2700 4250 50  0001 L CNN "Manufacturer_Name"
+F 6 "10104111-0001LF" H 2700 4150 50  0001 L CNN "Manufacturer_Part_Number"
+F 7 "1622014" H 2700 4050 50  0001 L CNN "RS Part Number"
+F 8 "http://uk.rs-online.com/web/p/products/1622014" H 2700 3950 50  0001 L CNN "RS Price/Stock"
+F 9 "70236825" H 2700 3650 50  0001 L CNN "Allied_Number"
+F 10 "http://www.alliedelec.com/fci-10104111-0001lf/70236825/" H 2700 3550 50  0001 L CNN "Allied Price/Stock"
+F 11 "10104111-0001LF" H 2700 3450 50  0001 L CNN "Arrow Part Number"
+F 12 "https://www.arrow.com/en/products/10104111-0001lf/amphenol-fci" H 2700 3350 50  0001 L CNN "Arrow Price/Stock"
+	1    1950 4100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 4000 3250 4000
+Wire Wire Line
+	5500 4100 4450 4100
+Wire Wire Line
+	3250 4300 3250 4000
+Connection ~ 3250 4000
+Wire Wire Line
+	3250 4000 5500 4000
+Wire Wire Line
+	4450 4300 4450 4100
+Connection ~ 4450 4100
+Wire Wire Line
+	4450 4100 2350 4100
+$Comp
+L power:GND #PWR?
+U 1 1 5BA08C92
+P 4600 4550
+F 0 "#PWR?" H 4600 4300 50  0001 C CNN
+F 1 "GND" H 4605 4377 50  0000 C CNN
+F 2 "" H 4600 4550 50  0001 C CNN
+F 3 "" H 4600 4550 50  0001 C CNN
+	1    4600 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4400 4600 4400
+Wire Wire Line
+	4600 4400 4600 4550
 $EndSCHEMATC
