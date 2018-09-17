@@ -109,6 +109,11 @@ D power-flag symbol
 K Power Flag Symbol
 $ENDCMP
 #
+$CMP VIN
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
 $CMP VIO_USB
 D power-flag symbol
 K Power Flag Symbol
