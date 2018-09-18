@@ -104,6 +104,11 @@ D SDIO Port Expander With Voltage-Level Translation
 F http://www.ti.com/lit/gpn/txs02612
 $ENDCMP
 #
+$CMP USB3320C-EZK
+D Highly Integrated Full Featured Hi-Speed USB 2.0 ULPI Transceiver
+F http://ww1.microchip.com/downloads/en/DeviceDoc/00001792B.pdf
+$ENDCMP
+#
 $CMP VCCO_DDR3
 D power-flag symbol
 K Power Flag Symbol

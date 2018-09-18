@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 6
+Sheet 5 7
 Title ""
 Date ""
 Rev ""
@@ -197,10 +197,10 @@ Text GLabel 2650 5100 2    50   BiDi ~ 0
 ETH_MDIO
 Text GLabel 2650 5000 2    50   BiDi ~ 0
 ETH_MDC
-Text GLabel 2650 4700 2    50   Output ~ 0
-USB_UART_TXD
-Text GLabel 2650 4600 2    50   Input ~ 0
+Text GLabel 2650 4700 2    50   Input ~ 0
 USB_UART_RXD
+Text GLabel 2650 4600 2    50   Output ~ 0
+USB_UART_TXD
 Text GLabel 2650 3700 2    50   BiDi ~ 0
 USB_D7
 Text GLabel 2650 3600 2    50   BiDi ~ 0

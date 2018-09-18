@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 6
+Sheet 6 7
 Title ""
 Date ""
 Rev ""
@@ -54,7 +54,7 @@ Wire Wire Line
 Connection ~ 2300 4000
 Wire Wire Line
 	2300 4000 1800 4000
-Text GLabel 1800 4000 0    50   Input ~ 0
+Text GLabel 1800 4000 0    50   Output ~ 0
 USB_UART_RxD
 Wire Wire Line
 	2700 3650 2300 3650
