@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:microzed-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,4 +13,250 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L microzed:USB3320C-EZK U4
+U 1 1 5BA63B9F
+P 4400 3100
+F 0 "U4" H 5600 1000 50  0000 C CNN
+F 1 "USB3320C-EZK" H 5650 850 50  0000 C CNN
+F 2 "microzed:QFN50P500X500X100-33N-D" H 6300 2600 50  0001 L CNN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/00001792B.pdf" H 6300 2500 50  0001 L CNN
+F 4 "Highly Integrated Full Featured Hi-Speed USB 2.0 ULPI Transceiver" H 6300 2400 50  0001 L CNN "Description"
+F 5 "1" H 6300 2300 50  0001 L CNN "Height"
+F 6 "Microchip" H 6300 2200 50  0001 L CNN "Manufacturer_Name"
+	1    4400 3100
+	1    0    0    -1  
+$EndComp
+Text GLabel 4100 3500 0    50   BiDi ~ 0
+USB_D0
+Text GLabel 4100 3600 0    50   BiDi ~ 0
+USB_D1
+Text GLabel 4100 3700 0    50   BiDi ~ 0
+USB_D2
+Text GLabel 4100 3800 0    50   BiDi ~ 0
+USB_D3
+Text GLabel 4100 3900 0    50   BiDi ~ 0
+USB_D4
+Text GLabel 4100 4000 0    50   BiDi ~ 0
+USB_D5
+Text GLabel 4100 4100 0    50   BiDi ~ 0
+USB_D6
+Text GLabel 4100 4200 0    50   BiDi ~ 0
+USB_D7
+Wire Wire Line
+	4100 3500 4400 3500
+Wire Wire Line
+	4100 3600 4400 3600
+Wire Wire Line
+	4100 3700 4400 3700
+Wire Wire Line
+	4100 3800 4400 3800
+Wire Wire Line
+	4100 3900 4400 3900
+Wire Wire Line
+	4100 4000 4400 4000
+Wire Wire Line
+	4100 4100 4400 4100
+Wire Wire Line
+	4100 4200 4400 4200
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5BA68A0A
+P 6200 3300
+F 0 "#PWR?" H 6200 3150 50  0001 C CNN
+F 1 "+1V8" H 6215 3473 50  0000 C CNN
+F 2 "" H 6200 3300 50  0001 C CNN
+F 3 "" H 6200 3300 50  0001 C CNN
+	1    6200 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3300 6200 3400
+Wire Wire Line
+	6200 3600 6000 3600
+Wire Wire Line
+	6000 3400 6200 3400
+Connection ~ 6200 3400
+Wire Wire Line
+	6200 3400 6200 3500
+Wire Wire Line
+	6000 3500 6200 3500
+Connection ~ 6200 3500
+Wire Wire Line
+	6200 3500 6200 3600
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5BA69A86
+P 4600 2000
+F 0 "#PWR?" H 4600 1850 50  0001 C CNN
+F 1 "+3V3" H 4615 2173 50  0000 C CNN
+F 2 "" H 4600 2000 50  0001 C CNN
+F 3 "" H 4600 2000 50  0001 C CNN
+	1    4600 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5BA69B7B
+P 4600 2250
+F 0 "C7" H 4700 2300 50  0000 L CNN
+F 1 "2.2uF" H 4700 2200 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 4638 2100 50  0001 C CNN
+F 3 "~" H 4600 2250 50  0001 C CNN
+	1    4600 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BA69C26
+P 4600 2400
+F 0 "#PWR?" H 4600 2150 50  0001 C CNN
+F 1 "GND" H 4605 2227 50  0000 C CNN
+F 2 "" H 4600 2400 50  0001 C CNN
+F 3 "" H 4600 2400 50  0001 C CNN
+	1    4600 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2100 5000 2100
+Wire Wire Line
+	5000 2100 5000 2700
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5BA6B4CB
+P 5700 2000
+F 0 "#PWR?" H 5700 1850 50  0001 C CNN
+F 1 "+1V8" H 5715 2173 50  0000 C CNN
+F 2 "" H 5700 2000 50  0001 C CNN
+F 3 "" H 5700 2000 50  0001 C CNN
+	1    5700 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5700 2700 5700 2100
+$Comp
+L Device:C C80
+U 1 1 5BA6B714
+P 5900 2250
+F 0 "C80" H 6015 2296 50  0000 L CNN
+F 1 "0.1uF" H 6015 2205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 5938 2100 50  0001 C CNN
+F 3 "~" H 5900 2250 50  0001 C CNN
+	1    5900 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C82
+U 1 1 5BA6B7AC
+P 6400 2250
+F 0 "C82" H 6515 2296 50  0000 L CNN
+F 1 "0.1uF" H 6515 2205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 6438 2100 50  0001 C CNN
+F 3 "~" H 6400 2250 50  0001 C CNN
+	1    6400 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C84
+U 1 1 5BA6B7F0
+P 6900 2250
+F 0 "C84" H 7015 2296 50  0000 L CNN
+F 1 "0.1uF" H 7015 2205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 6938 2100 50  0001 C CNN
+F 3 "~" H 6900 2250 50  0001 C CNN
+	1    6900 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 2400 6400 2400
+Connection ~ 6400 2400
+Wire Wire Line
+	6400 2400 5900 2400
+Wire Wire Line
+	6900 2100 6400 2100
+Wire Wire Line
+	5450 2100 5450 2700
+Connection ~ 5900 2100
+Wire Wire Line
+	5900 2100 5700 2100
+Connection ~ 6400 2100
+Wire Wire Line
+	6400 2100 5900 2100
+Wire Wire Line
+	5550 2700 5550 2100
+Connection ~ 5550 2100
+Wire Wire Line
+	5550 2100 5450 2100
+Connection ~ 5700 2100
+Wire Wire Line
+	5700 2100 5700 2000
+Wire Wire Line
+	5700 2100 5550 2100
+$Comp
+L power:GND #PWR?
+U 1 1 5BA6F147
+P 6900 2400
+F 0 "#PWR?" H 6900 2150 50  0001 C CNN
+F 1 "GND" H 6905 2227 50  0000 C CNN
+F 2 "" H 6900 2400 50  0001 C CNN
+F 3 "" H 6900 2400 50  0001 C CNN
+	1    6900 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 6900 2400
+Wire Wire Line
+	4600 2100 4600 2000
+Connection ~ 4600 2100
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5BA7198E
+P 5250 2000
+F 0 "#PWR?" H 5250 1850 50  0001 C CNN
+F 1 "+3V3" H 5265 2173 50  0000 C CNN
+F 2 "" H 5250 2000 50  0001 C CNN
+F 3 "" H 5250 2000 50  0001 C CNN
+	1    5250 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 2000 5250 2700
+NoConn ~ 4400 4800
+NoConn ~ 4400 4900
+NoConn ~ 5000 5300
+$Comp
+L power:GND #PWR?
+U 1 1 5BA73E84
+P 5150 5300
+F 0 "#PWR?" H 5150 5050 50  0001 C CNN
+F 1 "GND" H 5155 5127 50  0000 C CNN
+F 2 "" H 5150 5300 50  0001 C CNN
+F 3 "" H 5150 5300 50  0001 C CNN
+	1    5150 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R57
+U 1 1 5BA7565B
+P 6400 5150
+F 0 "R57" H 6470 5196 50  0000 L CNN
+F 1 "8.06K" H 6470 5105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6330 5150 50  0001 C CNN
+F 3 "" H 6400 5150 50  0001 C CNN
+	1    6400 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 5000 6400 5000
+$Comp
+L power:GND #PWR?
+U 1 1 5BA75A5B
+P 6400 5300
+F 0 "#PWR?" H 6400 5050 50  0001 C CNN
+F 1 "GND" H 6405 5127 50  0000 C CNN
+F 2 "" H 6400 5300 50  0001 C CNN
+F 3 "" H 6400 5300 50  0001 C CNN
+	1    6400 5300
+	1    0    0    -1  
+$EndComp
+NoConn ~ 6000 4900
 $EndSCHEMATC
