@@ -40,6 +40,11 @@ D Standard Clock Oscillators 12.000MHZ 50ppm -40 + 85C
 F http://www.abracon.com/Oscillators/ASDMB.pdf
 $ENDCMP
 #
+$CMP ASDMB-24.000MHZ-LC-T
+D Standard Clock Oscillators 24.000MHZ 50ppm -40 + 85C
+F http://www.abracon.com/Oscillators/ASDMB.pdf
+$ENDCMP
+#
 $CMP ASDMB-33.333MHZ-LC-T
 D Standard Clock Oscillators 33.333MHZ 50ppm -40 + 85C
 F http://www.abracon.com/Oscillators/ASDMB.pdf
@@ -92,6 +97,11 @@ $ENDCMP
 $CMP NC7WZ07FHX
 D Fairchild Semiconductor NC7WZ07FHX, Dual, Buffer, Open Drain, Non-Inverting, 1.65  5.5 V, 6-Pin MicroPak
 F http://www.onsemi.com/pub/Collateral/NC7WZ07-D.pdf
+$ENDCMP
+#
+$CMP TPS2051BDBVR
+D TEXAS INSTRUMENTS - TPS2051BDBVR - CURRENT LIMITED POWER SWITCH, 5.5V SOT23-5, FULL REEL
+F http://www.ti.com/lit/ds/symlink/tps2051b.pdf
 $ENDCMP
 #
 $CMP TPS51206DSQR
