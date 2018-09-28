@@ -3,7 +3,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -48,5 +48,11 @@ S 6850 900  900  550
 U 5BA4E924
 F0 "usb2.0" 50
 F1 "sch/usb2.0.sch" 50
+$EndSheet
+$Sheet
+S 8300 1000 850  600 
+U 5BB10DF7
+F0 "ethernet" 50
+F1 "sch/ethernet.sch" 50
 $EndSheet
 $EndSCHEMATC

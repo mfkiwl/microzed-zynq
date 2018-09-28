@@ -3,7 +3,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 7
+Sheet 7 8
 Title ""
 Date ""
 Rev ""
@@ -260,14 +260,14 @@ NoConn ~ 3300 4400
 $Comp
 L microzed:ASDMB-24.000MHZ-LC-T U5
 U 1 1 5BAB3309
-P 3900 5200
-F 0 "U5" H 4475 5465 50  0000 C CNN
-F 1 "ASDMB-24.000MHZ-LC-T" H 4475 5374 50  0000 C CNN
-F 2 "microzed:ABRACON-ASDMB" H 5400 5300 50  0001 L CNN
-F 3 "http://www.abracon.com/Oscillators/ASDMB.pdf" H 5400 5200 50  0001 L CNN
-F 4 "Standard Clock Oscillators 24.000MHZ 50ppm -40 + 85C" H 5400 5100 50  0001 L CNN "Description"
-	1    3900 5200
-	1    0    0    -1  
+P 5050 5200
+F 0 "U5" H 5625 5465 50  0000 C CNN
+F 1 "ASDMB-24.000MHZ-LC-T" H 5625 5374 50  0000 C CNN
+F 2 "microzed:ABRACON-ASDMB" H 6550 5300 50  0001 L CNN
+F 3 "http://www.abracon.com/Oscillators/ASDMB.pdf" H 6550 5200 50  0001 L CNN
+F 4 "Standard Clock Oscillators 24.000MHZ 50ppm -40 + 85C" H 6550 5100 50  0001 L CNN "Description"
+	1    5050 5200
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Device:R R5
@@ -359,10 +359,10 @@ Connection ~ 5200 5300
 Wire Wire Line
 	5200 5300 5400 5300
 $Comp
-L microzed:TPS2051BDBVR U?
+L microzed:TPS2051BDBVR U1000
 U 1 1 5BABFD1A
 P 5650 2600
-F 0 "U?" H 6150 2865 50  0000 C CNN
+F 0 "U1000" H 6150 2865 50  0000 C CNN
 F 1 "TPS2051BDBVR" H 6150 2774 50  0000 C CNN
 F 2 "microzed:SOT95P280X145-5N" H 7050 2700 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tps2051b.pdf" H 7050 2600 50  0001 L CNN
@@ -646,4 +646,20 @@ Wire Wire Line
 	6100 3650 3300 3650
 NoConn ~ 7300 4500
 NoConn ~ 6100 4500
+Text GLabel 1400 2900 0    50   Output ~ 0
+USB_CLK
+Wire Wire Line
+	1700 2900 1400 2900
+Text GLabel 1400 2600 0    50   Output ~ 0
+USB_DIR
+Text GLabel 1400 2700 0    50   Input ~ 0
+USB_STP
+Text GLabel 1400 2800 0    50   Output ~ 0
+USB_NXT
+Wire Wire Line
+	1400 2600 1700 2600
+Wire Wire Line
+	1400 2700 1700 2700
+Wire Wire Line
+	1400 2800 1700 2800
 $EndSCHEMATC
