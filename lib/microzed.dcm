@@ -45,6 +45,11 @@ D Standard Clock Oscillators 24.000MHZ 50ppm -40 + 85C
 F http://www.abracon.com/Oscillators/ASDMB.pdf
 $ENDCMP
 #
+$CMP ASDMB-25.000MHZ-LC-T
+D Standard Clock Oscillators 25.000MHZ 50ppm -40 + 85C
+F http://www.abracon.com/Oscillators/ASDMB.pdf
+$ENDCMP
+#
 $CMP ASDMB-33.333MHZ-LC-T
 D Standard Clock Oscillators 33.333MHZ 50ppm -40 + 85C
 F http://www.abracon.com/Oscillators/ASDMB.pdf
