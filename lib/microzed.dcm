@@ -119,6 +119,11 @@ D 2A Peak Sink/Source DDR Termination Regulator with VTTREF Buffered Reference f
 F http://www.ti.com/lit/ds/symlink/tps51206.pdf
 $ENDCMP
 #
+$CMP TXS0102DQER
+D 2-Bit Bidirectional Voltage-Level Shifter for Open-Drain and Push-Pull Application
+F http://www.ti.com/lit/gpn/txs0102
+$ENDCMP
+#
 $CMP TXS02612RTWR
 D SDIO Port Expander With Voltage-Level Translation
 F http://www.ti.com/lit/gpn/txs02612
@@ -127,6 +132,11 @@ $ENDCMP
 $CMP USB3320C-EZK
 D Highly Integrated Full Featured Hi-Speed USB 2.0 ULPI Transceiver
 F http://ww1.microchip.com/downloads/en/DeviceDoc/00001792B.pdf
+$ENDCMP
+#
+$CMP VCCO_34
+D power-flag symbol
+K Power Flag Symbol
 $ENDCMP
 #
 $CMP VCCO_DDR3

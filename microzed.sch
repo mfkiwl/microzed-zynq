@@ -3,7 +3,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title ""
 Date ""
 Rev ""
@@ -54,5 +54,11 @@ S 8300 1000 850  600
 U 5BB10DF7
 F0 "ethernet" 50
 F1 "sch/ethernet.sch" 50
+$EndSheet
+$Sheet
+S 1000 2400 800  750 
+U 5BD3E6BF
+F0 "BANK34_35" 50
+F1 "sch/BANK34_35.sch" 50
 $EndSheet
 $EndSCHEMATC
