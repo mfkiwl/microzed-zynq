@@ -1,9 +1,10 @@
 EESchema Schematic File Version 4
+LIBS:microzed-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 1 12
 Title ""
 Date ""
 Rev ""
@@ -60,5 +61,23 @@ S 1000 2400 800  750
 U 5BD3E6BF
 F0 "BANK34_35" 50
 F1 "sch/BANK34_35.sch" 50
+$EndSheet
+$Sheet
+S 2550 2450 950  750 
+U 5BC4E791
+F0 "BANK0" 50
+F1 "sch/BANK0.sch" 50
+$EndSheet
+$Sheet
+S 4100 2200 950  800 
+U 5BCACC31
+F0 "BANK13" 50
+F1 "sch/BANK13.sch" 50
+$EndSheet
+$Sheet
+S 5650 2350 1000 850 
+U 5BCB62A5
+F0 "zynqpwr" 50
+F1 "sch/zynqpwr.sch" 50
 $EndSheet
 $EndSCHEMATC

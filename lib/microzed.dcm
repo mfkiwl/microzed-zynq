@@ -134,7 +134,17 @@ D Highly Integrated Full Featured Hi-Speed USB 2.0 ULPI Transceiver
 F http://ww1.microchip.com/downloads/en/DeviceDoc/00001792B.pdf
 $ENDCMP
 #
+$CMP VCCO_13
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
 $CMP VCCO_34
+D power-flag symbol
+K Power Flag Symbol
+$ENDCMP
+#
+$CMP VCCO_35
 D power-flag symbol
 K Power Flag Symbol
 $ENDCMP
