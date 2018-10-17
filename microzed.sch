@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:microzed-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 12
+Sheet 1 13
 Title ""
 Date ""
 Rev ""
@@ -77,7 +76,13 @@ $EndSheet
 $Sheet
 S 5650 2350 1000 850 
 U 5BCB62A5
-F0 "zynqpwr" 50
-F1 "sch/zynqpwr.sch" 50
+F0 "corepwr" 50
+F1 "sch/corepwr.sch" 50
+$EndSheet
+$Sheet
+S 7100 2250 900  700 
+U 5BDABB02
+F0 "iopower" 50
+F1 "sch/iopower.sch" 50
 $EndSheet
 $EndSCHEMATC

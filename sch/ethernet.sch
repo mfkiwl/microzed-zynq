@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:microzed-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 12
+Sheet 8 13
 Title ""
 Date ""
 Rev ""
@@ -572,11 +571,9 @@ F 3 "" H 2600 6800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R101
 U 1 1 5BB74B8C
 P 2250 7000
-AR Path="/5BA4E924/5BB74B8C" Ref="R?"  Part="1" 
-AR Path="/5BB10DF7/5BB74B8C" Ref="R101"  Part="1" 
 F 0 "R101" V 2350 6850 50  0000 C CNN
 F 1 "4.99K" V 2350 7150 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 2180 7000 50  0001 C CNN
@@ -591,11 +588,9 @@ Wire Wire Line
 Wire Wire Line
 	1800 6900 1800 7000
 $Comp
-L Device:C C?
+L Device:C C92
 U 1 1 5BB74B96
 P 1800 7150
-AR Path="/5BA4E924/5BB74B96" Ref="C?"  Part="1" 
-AR Path="/5BB10DF7/5BB74B96" Ref="C92"  Part="1" 
 F 0 "C92" H 1915 7196 50  0000 L CNN
 F 1 "0.1uF" H 1915 7105 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 1838 7000 50  0001 C CNN
@@ -612,11 +607,9 @@ Wire Wire Line
 	2100 7000 1800 7000
 Connection ~ 1800 7000
 $Comp
-L Connector:TestPoint TP?
+L Connector:TestPoint TP2
 U 1 1 5BB74BA2
 P 2600 7200
-AR Path="/5BA4E924/5BB74BA2" Ref="TP?"  Part="1" 
-AR Path="/5BB10DF7/5BB74BA2" Ref="TP2"  Part="1" 
 F 0 "TP2" H 2543 7227 50  0000 R CNN
 F 1 "TestPoint" H 2543 7318 50  0000 R CNN
 F 2 "" H 2800 7200 50  0001 C CNN

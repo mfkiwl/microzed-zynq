@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:microzed-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 12
+Sheet 5 13
 Title ""
 Date ""
 Rev ""
@@ -848,11 +847,9 @@ Wire Wire Line
 	4100 4900 4100 5300
 Connection ~ 4100 5300
 $Comp
-L Jumper:Jumper_3_Open JT?
+L Jumper:Jumper_3_Open JT5
 U 1 1 5BA02F66
 P 7150 5600
-AR Path="/5B95643F/5BA02F66" Ref="JT?"  Part="1" 
-AR Path="/5B98CBC9/5BA02F66" Ref="JT5"  Part="1" 
 F 0 "JT5" V 7196 5687 50  0000 L CNN
 F 1 "default: 1-2 0 ohms" V 7105 5687 50  0000 L CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 7150 5600 50  0001 C CNN
@@ -864,8 +861,6 @@ $Comp
 L power:GND #PWR?
 U 1 1 5BA02F76
 P 7150 5900
-AR Path="/5B95643F/5BA02F76" Ref="#PWR?"  Part="1" 
-AR Path="/5B98CBC9/5BA02F76" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 7150 5650 50  0001 C CNN
 F 1 "GND" H 7155 5727 50  0000 C CNN
 F 2 "" H 7150 5900 50  0001 C CNN

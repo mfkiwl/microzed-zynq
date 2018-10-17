@@ -1,10 +1,9 @@
 EESchema Schematic File Version 4
-LIBS:microzed-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 12
+Sheet 9 13
 Title ""
 Date ""
 Rev ""
@@ -237,12 +236,9 @@ JX2_LVDS_23_N
 Text GLabel 8500 6100 2    50   BiDi ~ 0
 JX2_SE_1
 $Comp
-L Jumper:Jumper_3_Open JT?
+L Jumper:Jumper_3_Open JT4
 U 1 1 5BD5FC2F
 P 1900 2050
-AR Path="/5B95643F/5BD5FC2F" Ref="JT?"  Part="1" 
-AR Path="/5B98CBC9/5BD5FC2F" Ref="JT?"  Part="1" 
-AR Path="/5BD3E6BF/5BD5FC2F" Ref="JT4"  Part="1" 
 F 0 "JT4" V 1850 2150 50  0000 L CNN
 F 1 "default: 1-2 1K" V 1950 2150 50  0000 L CNN
 F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 1900 2050 50  0001 C CNN
@@ -254,9 +250,6 @@ $Comp
 L power:GND #PWR?
 U 1 1 5BD5FC36
 P 1900 2350
-AR Path="/5B95643F/5BD5FC36" Ref="#PWR?"  Part="1" 
-AR Path="/5B98CBC9/5BD5FC36" Ref="#PWR?"  Part="1" 
-AR Path="/5BD3E6BF/5BD5FC36" Ref="#PWR?"  Part="1" 
 F 0 "#PWR?" H 1900 2100 50  0001 C CNN
 F 1 "GND" H 1905 2177 50  0000 C CNN
 F 2 "" H 1900 2350 50  0001 C CNN
