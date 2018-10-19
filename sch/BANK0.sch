@@ -3,7 +3,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 13
+Sheet 10 14
 Title ""
 Date ""
 Rev ""
@@ -140,8 +140,6 @@ F 3 "" H 6600 3500 50  0001 C CNN
 	1    6600 3500
 	1    0    0    -1  
 $EndComp
-Text GLabel 5500 3400 2    50   Input ~ 0
-FPGA_VBATT
 Wire Wire Line
 	5000 3900 5000 4000
 Connection ~ 5000 4000
@@ -224,29 +222,6 @@ Wire Wire Line
 Wire Wire Line
 	6100 3700 6100 3900
 Connection ~ 6100 3900
-$Comp
-L Device:R R12
-U 1 1 5BC714C3
-P 6350 3600
-F 0 "R12" V 6250 3500 50  0000 C CNN
-F 1 "0" V 6250 3700 50  0000 C CNN
-F 2 "" V 6280 3600 50  0001 C CNN
-F 3 "~" H 6350 3600 50  0001 C CNN
-	1    6350 3600
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6500 3600 6600 3600
-Connection ~ 6600 3600
-Wire Wire Line
-	6200 3600 5300 3600
-Wire Wire Line
-	5300 3400 5300 3600
-Connection ~ 5300 3600
-Wire Wire Line
-	5300 3600 4750 3600
-Wire Wire Line
-	5500 3400 5300 3400
 $Comp
 L power:GND #PWR?
 U 1 1 5BC77D8B
@@ -354,6 +329,19 @@ F 1 "+3V3" H 5915 2473 50  0000 C CNN
 F 2 "" H 5900 2300 50  0001 C CNN
 F 3 "" H 5900 2300 50  0001 C CNN
 	1    5900 2300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3600 5200 3600
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5BE3D673
+P 5200 3600
+F 0 "#PWR?" H 5200 3450 50  0001 C CNN
+F 1 "+1V8" H 5350 3650 50  0000 C CNN
+F 2 "" H 5200 3600 50  0001 C CNN
+F 3 "" H 5200 3600 50  0001 C CNN
+	1    5200 3600
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

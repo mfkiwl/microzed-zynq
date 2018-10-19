@@ -3,7 +3,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 13
+Sheet 3 14
 Title ""
 Date ""
 Rev ""
@@ -61,13 +61,13 @@ DDR3_BA1
 Text GLabel 1300 5400 0    50   Input ~ 0
 DDR3_BA2
 Text GLabel 1300 5600 0    50   Input ~ 0
-DDR3_CS
+DDR3_CS#
 Text GLabel 1300 5700 0    50   Input ~ 0
-DDR3_WE
+DDR3_WE#
 Text GLabel 1300 5800 0    50   Input ~ 0
-DDR3_CAS
+DDR3_CAS#
 Text GLabel 1300 5900 0    50   Input ~ 0
-DDR3_RAS
+DDR3_RAS#
 Text GLabel 1300 6100 0    50   Input ~ 0
 DDR3_CKE
 Text GLabel 1300 6200 0    50   Input ~ 0
@@ -75,7 +75,7 @@ DDR3_CK_P
 Text GLabel 1300 6300 0    50   Input ~ 0
 DDR3_CK_N
 Text GLabel 1300 6500 0    50   Input ~ 0
-DDR3_RST
+DDR3_RST#
 Wire Wire Line
 	1900 7400 2000 7400
 Connection ~ 2000 7400
@@ -173,13 +173,13 @@ Wire Wire Line
 	4450 6550 4600 6550
 Text GLabel 4450 6350 2    50   Input ~ 0
 DDR3_ODT
-Text GLabel 4450 6050 2    50   Input ~ 0
+Text GLabel 4450 6050 2    50   BiDi ~ 0
 DDR3_DQS0_P
-Text GLabel 4450 6150 2    50   Input ~ 0
+Text GLabel 4450 6150 2    50   BiDi ~ 0
 DDR3_DQS0_N
-Text GLabel 4450 5750 2    50   Input ~ 0
+Text GLabel 4450 5750 2    50   BiDi ~ 0
 DDR3_DQS1_P
-Text GLabel 4450 5850 2    50   Input ~ 0
+Text GLabel 4450 5850 2    50   BiDi ~ 0
 DDR3_DQS1_N
 Text GLabel 4450 5450 2    50   Input ~ 0
 DDR3_DM1
@@ -716,13 +716,13 @@ DDR3_BA1
 Text GLabel 5750 4350 0    50   Input ~ 0
 DDR3_BA2
 Text GLabel 5750 4550 0    50   Input ~ 0
-DDR3_CS
+DDR3_CS#
 Text GLabel 5750 4650 0    50   Input ~ 0
-DDR3_WE
+DDR3_WE#
 Text GLabel 5750 4750 0    50   Input ~ 0
-DDR3_CAS
+DDR3_CAS#
 Text GLabel 5750 4850 0    50   Input ~ 0
-DDR3_RAS
+DDR3_RAS#
 Text GLabel 5750 5050 0    50   Input ~ 0
 DDR3_CKE
 Text GLabel 5750 5150 0    50   Input ~ 0
@@ -730,7 +730,7 @@ DDR3_CK_P
 Text GLabel 5750 5250 0    50   Input ~ 0
 DDR3_CK_N
 Text GLabel 5750 5450 0    50   Input ~ 0
-DDR3_RST
+DDR3_RST#
 Wire Wire Line
 	6350 6350 6450 6350
 Connection ~ 6450 6350
@@ -828,13 +828,13 @@ Wire Wire Line
 	8900 5500 9050 5500
 Text GLabel 8900 5300 2    50   Input ~ 0
 DDR3_ODT
-Text GLabel 8900 5000 2    50   Input ~ 0
+Text GLabel 8900 5000 2    50   BiDi ~ 0
 DDR3_DQS0_P
-Text GLabel 8900 5100 2    50   Input ~ 0
+Text GLabel 8900 5100 2    50   BiDi ~ 0
 DDR3_DQS0_N
-Text GLabel 8900 4700 2    50   Input ~ 0
+Text GLabel 8900 4700 2    50   BiDi ~ 0
 DDR3_DQS1_P
-Text GLabel 8900 4800 2    50   Input ~ 0
+Text GLabel 8900 4800 2    50   BiDi ~ 0
 DDR3_DQS1_N
 Text GLabel 8900 4400 2    50   Input ~ 0
 DDR3_DM1

@@ -3,7 +3,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 13
+Sheet 8 14
 Title ""
 Date ""
 Rev ""
@@ -265,7 +265,7 @@ Wire Wire Line
 	2100 4500 1300 4500
 NoConn ~ 2400 5150
 Text GLabel 2000 5250 0    50   Input ~ 0
-ETH_RST_N
+ETH_RST#
 Wire Wire Line
 	2000 5250 2400 5250
 $Comp

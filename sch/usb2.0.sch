@@ -3,7 +3,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 13
+Sheet 7 14
 Title ""
 Date ""
 Rev ""
@@ -652,4 +652,8 @@ Wire Wire Line
 	1400 2700 1700 2700
 Wire Wire Line
 	1400 2800 1700 2800
+Text GLabel 1400 4100 0    50   Input ~ 0
+USB_RST#
+Wire Wire Line
+	1700 4100 1400 4100
 $EndSCHEMATC

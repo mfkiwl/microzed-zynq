@@ -3,7 +3,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 13
+Sheet 1 14
 Title ""
 Date ""
 Rev ""
@@ -84,5 +84,11 @@ S 7100 2250 900  700
 U 5BDABB02
 F0 "iopower" 50
 F1 "sch/iopower.sch" 50
+$EndSheet
+$Sheet
+S 8400 2300 900  750 
+U 5BE4514C
+F0 "pwrcvt" 50
+F1 "sch/pwrcvt.sch" 50
 $EndSheet
 $EndSCHEMATC
