@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+EELAYER 28 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -1242,4 +1242,8 @@ Wire Notes Line
 	5800 4300 5800 1000
 Wire Notes Line
 	5800 1000 5100 1000
+Text Notes 4700 950  0    50   ~ 0
+DDR_T:\nUse Fly-by routing and termination for\nDDR3 control signals. Resistors should\nbe placed past the last memory IC,\nand as close to the device as possible. 
+Text Notes 6500 4300 0    50   ~ 0
+DDR3 target  trace impedances\nare as follows:\nSingle Ended Signals = 40 ohms\nDifferential Signals = 80 ohms
 $EndSCHEMATC

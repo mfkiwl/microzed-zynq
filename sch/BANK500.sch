@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+EELAYER 28 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -457,7 +457,7 @@ $EndComp
 Wire Wire Line
 	7900 4150 7900 4400
 $Comp
-L microzed:HSMH-C191 LED?
+L microzed:HSMH-C191 LED3
 U 1 1 5BDA4E71
 P 5200 1800
 F 0 "LED3" H 5500 2187 50  0000 C CNN
@@ -471,7 +471,7 @@ F 6 "Avago Technologies" H 6150 1550 50  0001 L BNN "Manufacturer_Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:MMBT3904 Q?
+L Transistor_BJT:MMBT3904 Q1
 U 1 1 5BDA4E78
 P 4900 2200
 F 0 "Q1" H 5091 2246 50  0000 L CNN
@@ -482,7 +482,7 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 4900 2200 50  000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L Device:R R14
 U 1 1 5BDA4E7F
 P 4550 2200
 F 0 "R14" V 4450 2200 50  0000 C BNN
@@ -508,7 +508,7 @@ Wire Wire Line
 Wire Wire Line
 	5000 1800 5200 1800
 $Comp
-L Device:R R?
+L Device:R R10
 U 1 1 5BDA4E8E
 P 6150 1800
 F 0 "R10" V 6050 1800 50  0000 C BNN

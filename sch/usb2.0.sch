@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+EELAYER 28 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -96,10 +96,10 @@ F 3 "" H 1900 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C7
+L Device:C C10
 U 1 1 5BA69B7B
 P 1900 1750
-F 0 "C7" H 2000 1800 50  0000 L CNN
+F 0 "C10" H 2000 1800 50  0000 L CNN
 F 1 "2.2uF" H 2000 1700 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 1938 1600 50  0001 C CNN
 F 3 "~" H 1900 1750 50  0001 C CNN

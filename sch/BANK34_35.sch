@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-EELAYER 26 0
+EELAYER 28 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -279,11 +279,9 @@ Wire Wire Line
 Wire Wire Line
 	3400 1400 3800 1400
 Wire Wire Line
-	3400 1500 3600 1500
-Wire Wire Line
 	3400 1600 3800 1600
 Wire Wire Line
-	3400 1700 3800 1700
+	3400 1700 3600 1700
 Wire Wire Line
 	3400 1800 3800 1800
 Wire Wire Line
@@ -377,12 +375,7 @@ Wire Wire Line
 Wire Wire Line
 	2400 1000 3600 1000
 Wire Wire Line
-	3600 1000 3600 1500
-Wire Wire Line
 	2050 2050 2400 2050
-Connection ~ 3600 1500
-Wire Wire Line
-	3600 1500 3800 1500
 Wire Wire Line
 	8100 1200 8500 1200
 Wire Wire Line
@@ -483,4 +476,11 @@ Wire Wire Line
 	8100 6000 8500 6000
 Wire Wire Line
 	8100 6100 8500 6100
+Wire Wire Line
+	3400 1500 3800 1500
+Wire Wire Line
+	3600 1000 3600 1700
+Connection ~ 3600 1700
+Wire Wire Line
+	3600 1700 3800 1700
 $EndSCHEMATC
