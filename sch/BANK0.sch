@@ -24,12 +24,6 @@ F 3 "https://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pk
 	1    4250 1600
 	1    0    0    -1  
 $EndComp
-Text GLabel 5000 1800 2    50   BiDi ~ 0
-DX_0_P
-Wire Wire Line
-	4750 1800 5000 1800
-Wire Wire Line
-	4750 1900 5000 1900
 Wire Wire Line
 	4750 2000 5000 2000
 Wire Wire Line
@@ -56,8 +50,6 @@ Wire Wire Line
 	4750 4100 5000 4100
 Wire Wire Line
 	4750 4400 5000 4400
-Text GLabel 5000 1900 2    50   BiDi ~ 0
-DX_0_N
 Text GLabel 5000 2000 2    50   BiDi ~ 0
 V_0_P
 Text GLabel 5000 2100 2    50   BiDi ~ 0
@@ -344,4 +336,16 @@ F 3 "" H 5200 3600 50  0001 C CNN
 	1    5200 3600
 	1    0    0    -1  
 $EndComp
+NoConn ~ 4750 1800
+NoConn ~ 4750 1900
+Text Notes 4850 1900 0    50   ~ 0
+UG865 P17 Table 1-5:\nrecommend use XADC external inputs.
+Wire Notes Line
+	4800 1700 6350 1700
+Wire Notes Line
+	6350 1700 6350 1950
+Wire Notes Line
+	6350 1950 4800 1950
+Wire Notes Line
+	4800 1950 4800 1700
 $EndSCHEMATC
