@@ -109,6 +109,11 @@ D Fairchild Semiconductor NC7WZ07FHX, Dual, Buffer, Open Drain, Non-Inverting, 1
 F http://www.onsemi.com/pub/Collateral/NC7WZ07-D.pdf
 $ENDCMP
 #
+$CMP REF3012AIDBZR
+D 1.25V 50ppm/Degrees C, 50uA in SOT23-3 Series (Bandgap) Voltage Reference
+F http://www.ti.com/lit/gpn/ref3012
+$ENDCMP
+#
 $CMP TLV62130RGTR
 D Texas Instruments, TLV62130RGTR DC-DC Converter 3A Adjustable, 0.9  5 V, 16-Pin QFN
 F http://www.ti.com/lit/gpn/tlv62130
