@@ -179,6 +179,11 @@ D power-flag symbol
 K Power Flag Symbol
 $ENDCMP
 #
+$CMP XC7Z020-1CLG484C
+D XC7Z020-1CLG484C, FPGA ZYNQ-7 1.2  3.3 V 484-pin CLG
+F http://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pkg-Pinout.pdf
+$ENDCMP
+#
 $CMP Zynq_7010_7020_SOC_CLG400
 D XILINX - XC7Z020-1CLG400I - PSOC, ARM CORTEX-A9, 667MHZ, BGA-400
 F https://www.xilinx.com/support/documentation/data_sheets/ds187-XC7Z010-XC7Z020-Data-Sheet.pdf
