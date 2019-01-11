@@ -3,7 +3,7 @@ EELAYER 28 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 14 14
+Sheet 10 17
 Title ""
 Date ""
 Rev ""
@@ -525,7 +525,7 @@ F 3 "" H 4400 4000 50  0001 C CNN
 	1    4400 4000
 	1    0    0    -1  
 $EndComp
-Text Label 2950 3250 0    50   ~ 0
+Text Label 2950 3300 0    50   ~ 0
 PG_1V
 Wire Wire Line
 	5500 2100 5500 3300
@@ -766,7 +766,7 @@ Wire Wire Line
 	9900 4700 9900 5000
 Wire Wire Line
 	4900 4600 6900 4600
-Text Label 5550 4550 0    50   ~ 0
+Text Label 5550 4600 0    50   ~ 0
 PG_1V8
 $Comp
 L microzed:VCCO_DDR3 #PWR?
@@ -1031,7 +1031,7 @@ Wire Wire Line
 	6000 3300 6000 2100
 Wire Wire Line
 	6000 2100 6900 2100
-Text Label 8150 3250 0    50   ~ 0
+Text Label 8150 3300 0    50   ~ 0
 PG_1V5
 Text GLabel 10200 2200 2    50   Output ~ 0
 PG_MODULE
