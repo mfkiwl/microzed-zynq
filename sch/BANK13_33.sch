@@ -3,7 +3,7 @@ EELAYER 28 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 17
+Sheet 6 17
 Title ""
 Date ""
 Rev ""
@@ -114,10 +114,10 @@ BANK13_LVDS_24_N
 Text GLabel 3550 1400 2    50   BiDi ~ 0
 BANK13_SE_25
 $Comp
-L microzed:XC7Z020-1CLG484C IC?
+L microzed:XC7Z020-1CLG484C IC1
 U 2 1 5C542F9B
 P 2150 1200
-F 0 "IC?" H 2758 1365 50  0000 C CNN
+F 0 "IC1" H 2758 1365 50  0000 C CNN
 F 1 "XC7Z020-1CLG484C" H 2758 1274 50  0000 C CNN
 F 2 "microzed:BGA484C100P22X22_2300X2300X254" H 4800 1300 50  0001 L CNN
 F 3 "http://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pkg-Pinout.pdf" H 4800 1200 50  0001 L CNN
@@ -229,10 +229,10 @@ Wire Wire Line
 Wire Wire Line
 	3350 6200 3550 6200
 $Comp
-L microzed:XC7Z020-1CLG484C IC?
+L microzed:XC7Z020-1CLG484C IC1
 U 3 1 5C55DA0F
 P 5700 1200
-F 0 "IC?" H 6308 1365 50  0000 C CNN
+F 0 "IC1" H 6308 1365 50  0000 C CNN
 F 1 "XC7Z020-1CLG484C" H 6308 1274 50  0000 C CNN
 F 2 "microzed:BGA484C100P22X22_2300X2300X254" H 8350 1300 50  0001 L CNN
 F 3 "http://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pkg-Pinout.pdf" H 8350 1200 50  0001 L CNN

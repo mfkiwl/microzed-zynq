@@ -3,7 +3,7 @@ EELAYER 28 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 17
+Sheet 10 17
 Title ""
 Date ""
 Rev ""
@@ -1225,10 +1225,10 @@ DDR_T:\nUse Fly-by routing and termination for\nDDR3 control signals. Resistors 
 Text Notes 4950 5000 0    50   ~ 0
 DDR3 target  trace impedances\nare as follows:\nSingle Ended Signals = 40 ohms\nDifferential Signals = 80 ohms
 $Comp
-L microzed:XC7Z020-1CLG484C IC?
+L microzed:XC7Z020-1CLG484C IC1
 U 6 1 5C48888B
 P 8500 850
-F 0 "IC?" H 9400 1015 50  0000 C CNN
+F 0 "IC1" H 9400 1015 50  0000 C CNN
 F 1 "XC7Z020-1CLG484C" H 9400 924 50  0000 C CNN
 F 2 "microzed:BGA484C100P22X22_2300X2300X254" H 11150 950 50  0001 L CNN
 F 3 "http://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pkg-Pinout.pdf" H 11150 850 50  0001 L CNN

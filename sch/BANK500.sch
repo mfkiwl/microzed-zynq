@@ -3,7 +3,7 @@ EELAYER 28 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 17
+Sheet 8 17
 Title ""
 Date ""
 Rev ""
@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L microzed:ASDMB-33.333MHZ-LC-T U10
+L microzed:ASDMB-33.333MHZ-LC-T U?
 U 1 1 5B91F1A0
 P 2250 1350
-F 0 "U10" H 2825 1615 50  0000 C CNN
+F 0 "U?" H 2825 1615 50  0000 C CNN
 F 1 "ASDMB-33.333MHZ-LC-T" H 2825 1524 50  0000 C CNN
 F 2 "microzed:ABRACON-ASDMB" H 3750 1450 50  0001 L CNN
 F 3 "http://www.abracon.com/Oscillators/ASDMB.pdf" H 3750 1350 50  0001 L CNN
@@ -26,10 +26,10 @@ F 4 "Standard Clock Oscillators 33.333MHZ 50ppm -40 + 85C" H 3750 1250 50  0001 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R13
+L Device:R R?
 U 1 1 5B9256A7
 P 3600 2000
-F 0 "R13" H 3670 2046 50  0000 L CNN
+F 0 "R?" H 3670 2046 50  0000 L CNN
 F 1 "40.2" H 3670 1955 50  0000 L CNN
 F 2 "Resistors_SMD:R_0402" V 3530 2000 50  0001 C CNN
 F 3 "~" H 3600 2000 50  0001 C CNN
@@ -48,10 +48,10 @@ F 3 "" H 3400 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R100
+L Device:R R?
 U 1 1 5B92CEE9
 P 2100 1450
-F 0 "R100" V 2200 1450 50  0000 C CNN
+F 0 "R?" V 2200 1450 50  0000 C CNN
 F 1 "4.99K" V 2300 1450 50  0000 C CNN
 F 2 "" V 2030 1450 50  0001 C CNN
 F 3 "~" H 2100 1450 50  0001 C CNN
@@ -59,10 +59,10 @@ F 3 "~" H 2100 1450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:TestPoint TP1
+L Connector:TestPoint TP?
 U 1 1 5B92D064
 P 2300 1700
-F 0 "TP1" H 2300 1950 50  0000 C TNN
+F 0 "TP?" H 2300 1950 50  0000 C TNN
 F 1 "TestPoint" H 2243 1818 50  0001 R CNN
 F 2 "" H 2500 1700 50  0001 C CNN
 F 3 "~" H 2500 1700 50  0001 C CNN
@@ -81,10 +81,10 @@ F 3 "" H 1800 1350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C152
+L Device:C C?
 U 1 1 5B92D34A
 P 1800 1600
-F 0 "C152" H 1750 1650 50  0000 R BNN
+F 0 "C?" H 1750 1650 50  0000 R BNN
 F 1 "0.1uF" H 1750 1550 50  0000 R TNN
 F 2 "Capacitor_SMD:C_0201" H 1838 1450 50  0001 C CNN
 F 3 "~" H 1800 1600 50  0001 C CNN
@@ -126,10 +126,10 @@ F 3 "" H 8800 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R76
+L Device:R R?
 U 1 1 5B960C36
 P 8800 2650
-F 0 "R76" H 8870 2696 50  0000 L CNN
+F 0 "R?" H 8870 2696 50  0000 L CNN
 F 1 "20.0K" H 8870 2605 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402" V 8730 2650 50  0001 C CNN
 F 3 "~" H 8800 2650 50  0001 C CNN
@@ -163,10 +163,10 @@ F 3 "" H 10000 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L microzed:HSMH-C191 LED3
+L microzed:HSMH-C191 LED?
 U 1 1 5BDA4E71
 P 5200 1800
-F 0 "LED3" H 5500 2187 50  0000 C CNN
+F 0 "LED?" H 5500 2187 50  0000 C CNN
 F 1 "HSMH-C191" H 5500 2096 50  0000 C CNN
 F 2 "microzed:LEDC1608X60N" H 6150 1950 50  0001 L BNN
 F 3 "https://www.broadcom.com/products/leds-and-displays/chip-leds/0603-1.6-x-0.88mm-top-mount/hsmh-c191#documentation" H 6150 1850 50  0001 L BNN
@@ -177,10 +177,10 @@ F 6 "Avago Technologies" H 6150 1550 50  0001 L BNN "Manufacturer_Name"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:MMBT3904 Q1
+L Transistor_BJT:MMBT3904 Q?
 U 1 1 5BDA4E78
 P 4900 2200
-F 0 "Q1" H 5091 2246 50  0000 L CNN
+F 0 "Q?" H 5091 2246 50  0000 L CNN
 F 1 "MMBT3904" H 5091 2155 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5100 2125 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 4900 2200 50  0001 L CNN
@@ -188,10 +188,10 @@ F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 4900 2200 50  000
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R14
+L Device:R R?
 U 1 1 5BDA4E7F
 P 4550 2200
-F 0 "R14" V 4450 2200 50  0000 C BNN
+F 0 "R?" V 4450 2200 50  0000 C BNN
 F 1 "240" V 4650 2200 50  0000 C TNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 4480 2200 50  0001 C CNN
 F 3 "~" H 4550 2200 50  0001 C CNN
@@ -214,10 +214,10 @@ Wire Wire Line
 Wire Wire Line
 	5000 1800 5200 1800
 $Comp
-L Device:R R10
+L Device:R R?
 U 1 1 5BDA4E8E
 P 6150 1800
-F 0 "R10" V 6050 1800 50  0000 C BNN
+F 0 "R?" V 6050 1800 50  0000 C BNN
 F 1 "240" V 6250 1800 50  0000 C TNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6080 1800 50  0001 C CNN
 F 3 "~" H 6150 1800 50  0001 C CNN
@@ -292,10 +292,10 @@ PS_MIO8
 Wire Wire Line
 	2750 3500 3150 3500
 $Comp
-L microzed:XC7Z020-1CLG484C IC?
+L microzed:XC7Z020-1CLG484C IC1
 U 7 1 5C3AAAB4
 P 1850 2550
-F 0 "IC?" H 2308 2715 50  0000 C CNN
+F 0 "IC1" H 2308 2715 50  0000 C CNN
 F 1 "XC7Z020-1CLG484C" H 2308 2624 50  0000 C CNN
 F 2 "microzed:BGA484C100P22X22_2300X2300X254" H 4500 2650 50  0001 L CNN
 F 3 "http://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pkg-Pinout.pdf" H 4500 2550 50  0001 L CNN
@@ -578,4 +578,5 @@ Wire Wire Line
 	2750 4500 3150 4500
 Wire Wire Line
 	2750 4600 3150 4600
+Connection ~ 2300 1450
 $EndSCHEMATC
