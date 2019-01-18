@@ -486,4 +486,6 @@ Text GLabel 3500 6300 2    50   Input ~ 0
 VCCBATT
 Wire Wire Line
 	3250 6300 3500 6300
+Text Notes 4400 1800 0    50   ~ 0
+DS187 P8 power-on sequence:\nPS: PINT -> PAUX/PLL -> MIO0/MIO1/DDR\nPL: INT -> BRAM -> AUX -> O
 $EndSCHEMATC

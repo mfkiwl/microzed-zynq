@@ -1469,4 +1469,20 @@ Text Notes 9400 2100 0    50   ~ 0
 100µF:\n1.0 nH, 1 mΩ < ESR < 40 mΩ, 3.3V\nmurata, GRM32EE70G107ME19
 Text Notes 9300 3450 0    50   ~ 0
 47µF:\n1.0 nH, 1 mΩ < ESR < 40 mΩ, 6.3V \nKEMET, T543B476(1)006A(2)(3)025\nPanasonic, 10TPE47MAZB
+Text Notes 3950 5400 0    50   ~ 0
+122mA\n70mA
+Text Notes 7000 950  0    50   ~ 0
+13mA\n40mA
+Text Notes 6950 1950 0    50   ~ 0
+4mA\n100mA
+Text Notes 4000 950  0    50   ~ 0
+78mA\n70mA
+Text Notes 4000 3450 0    50   ~ 0
+38mA\n60mA
+Text Notes 3950 4450 0    50   ~ 0
+3mA\n90mA
+Text Notes 3900 2450 0    50   ~ 0
+6mA\n40mA
+Text Notes 1550 7100 0    50   ~ 0
+DS187 P5 Table5 Iccq\nDS187 P9 Table6 Iccmin plus when power-on
 $EndSCHEMATC

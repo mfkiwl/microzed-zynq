@@ -531,7 +531,7 @@ Wire Wire Line
 	9050 5000 9050 4850
 Connection ~ 9050 5000
 Text Notes 8200 1900 0    50   ~ 0
-Boot Mode Pin Settings\nUG585 P166 Table 6-4.
+Boot Mode Pin Settings\nUG585 P166 Table 6-4.\n\nUG585 P166 section 6.2.6\nI/O Pin Connections for Boot Devices\nonly SDIO1 can used as boot device, SIO0 can't.\n\nBoot Time:\nhttps://www.xilinx.com/support/answers/55572.html\nZynq-7000_Boot_time_estimator_QSPI_NAND_rev3.0.xlsm\nboot from NAND is slower than boot from QSPI,\nand the NAND will use more pins.
 Text GLabel 3150 3800 2    50   BiDi ~ 0
 PS_MIO7
 Text GLabel 3150 3900 2    50   BiDi ~ 0
@@ -578,5 +578,8 @@ Wire Wire Line
 	2750 4500 3150 4500
 Wire Wire Line
 	2750 4600 3150 4600
-Connection ~ 2300 1450
+Text Notes 2800 2800 0    50   ~ 0
+30M-60MHZ
+Text Notes 3600 3000 0    50   ~ 0
+DS187P8\nPS_PRO_B must connected\nto GND during power-on.
 $EndSCHEMATC

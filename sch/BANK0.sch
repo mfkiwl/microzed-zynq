@@ -168,9 +168,9 @@ Wire Notes Line
 Wire Wire Line
 	3750 2100 4250 2100
 Text GLabel 2150 3750 2    50   Input ~ 0
-V_0_N
+XADC0_N
 Text GLabel 2150 3650 2    50   Input ~ 0
-V_0_P
+XADC0_P
 Wire Notes Line
 	1950 3500 1950 3250
 Wire Notes Line
@@ -212,4 +212,20 @@ Wire Wire Line
 	3700 3850 4000 3850
 Wire Wire Line
 	3800 3750 4000 3750
+Text Notes 2700 2950 0    50   ~ 0
+1: config done
+Text Notes 2700 3150 0    50   ~ 0
+pull-up, ≤4.7kΩ
+Text Notes 2700 3050 0    50   ~ 0
+pull-up, ≤4.7kΩ
+Text Notes 1900 4200 0    50   ~ 0
+1: 2.5V or 3.3V\n0: 1.8V or 1.5V\ncontrol BANK14 / BANK15 during configuration
+Text Notes 2900 1350 0    50   ~ 0
+BANK0\n3.3V\nUG470
+Text Notes 1950 1950 0    50   ~ 0
+pull-up, 10kΩ
+Text Notes 1950 2050 0    50   ~ 0
+pull-up, 10kΩ
+Text Notes 2600 3850 0    50   ~ 0
+UG480 (BANK35)\nconnect to GND\nif not used.
 $EndSCHEMATC

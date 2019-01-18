@@ -14,45 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Jumper:Jumper_3_Open JT4
-U 1 1 5BD5FC2F
-P 5700 1800
-F 0 "JT4" V 5650 1900 50  0000 L CNN
-F 1 "default: 1-2 1K" V 5750 1900 50  0000 L CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Open_Pad1.0x1.5mm" H 5700 1800 50  0001 C CNN
-F 3 "~" H 5700 1800 50  0001 C CNN
-	1    5700 1800
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5BD5FC36
-P 5700 2100
-F 0 "#PWR?" H 5700 1850 50  0001 C CNN
-F 1 "GND" H 5705 1927 50  0000 C CNN
-F 2 "" H 5700 2100 50  0001 C CNN
-F 3 "" H 5700 2100 50  0001 C CNN
-	1    5700 2100
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	5700 2050 5700 2100
-Wire Wire Line
-	5700 1450 5700 1550
-$Comp
-L microzed:VCCO_34 #PWR?
-U 1 1 5BD63E40
-P 5700 1450
-F 0 "#PWR?" H 5700 1300 50  0001 C CNN
-F 1 "VCCO_34" H 5717 1623 50  0000 C CNN
-F 2 "" H 5700 1450 50  0001 C CNN
-F 3 "" H 5700 1450 50  0001 C CNN
-	1    5700 1450
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	5550 1800 4850 1800
-$Comp
 L microzed:XC7Z020-1CLG484C IC1
 U 4 1 5C38B8A3
 P 2000 1000
@@ -481,7 +442,38 @@ Wire Wire Line
 Wire Wire Line
 	3350 6000 3550 6000
 Wire Wire Line
-	3350 1800 3550 1800
-Text Label 4850 1800 0    50   ~ 0
-BANK34_LVDS_3_P
+	3350 1800 3450 1800
+Wire Wire Line
+	3450 1800 3450 850 
+Wire Wire Line
+	3450 850  4750 850 
+Connection ~ 3450 1800
+Wire Wire Line
+	3450 1800 3550 1800
+$Comp
+L power:GND #PWR?
+U 1 1 5C443114
+P 4750 1350
+F 0 "#PWR?" H 4750 1100 50  0001 C CNN
+F 1 "GND" H 4755 1177 50  0000 C CNN
+F 2 "" H 4750 1350 50  0001 C CNN
+F 3 "" H 4750 1350 50  0001 C CNN
+	1    4750 1350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C455B7A
+P 4750 1200
+F 0 "R?" H 4820 1246 50  0000 L CNN
+F 1 "1K" H 4820 1155 50  0000 L CNN
+F 2 "" V 4680 1200 50  0001 C CNN
+F 3 "~" H 4750 1200 50  0001 C CNN
+	1    4750 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1050 4750 850 
+Text Notes 5050 1200 0    50   ~ 0
+UG865 P13
 $EndSCHEMATC
