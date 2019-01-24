@@ -444,36 +444,61 @@ Wire Wire Line
 Wire Wire Line
 	3350 1800 3450 1800
 Wire Wire Line
-	3450 1800 3450 850 
+	3450 1800 3450 1000
 Wire Wire Line
-	3450 850  4750 850 
+	3450 1000 4750 1000
 Connection ~ 3450 1800
 Wire Wire Line
 	3450 1800 3550 1800
 $Comp
 L power:GND #PWR?
 U 1 1 5C443114
-P 4750 1350
-F 0 "#PWR?" H 4750 1100 50  0001 C CNN
-F 1 "GND" H 4755 1177 50  0000 C CNN
-F 2 "" H 4750 1350 50  0001 C CNN
-F 3 "" H 4750 1350 50  0001 C CNN
-	1    4750 1350
+P 4750 1250
+F 0 "#PWR?" H 4750 1000 50  0001 C CNN
+F 1 "GND" H 4755 1077 50  0000 C CNN
+F 2 "" H 4750 1250 50  0001 C CNN
+F 3 "" H 4750 1250 50  0001 C CNN
+	1    4750 1250
 	-1   0    0    -1  
 $EndComp
+Text Notes 4550 3550 0    50   ~ 0
+UG865 P13\nUG470 P27 Table 2-4\nPull-Up During Configuration (bar)\nActive-Low PUDC_B input enables internal pull-up\nresistors on the SelectIO pins after power-up and during\nconfiguration.\n• When PUDC_B is Low, internal pull-up resistors are\nenabled on each SelectIO pin.\n• When PUDC_B is High, internal pull-up resistors are\ndisabled on each SelectIO pin.\nPUDC_B must be tied either directly, or via a ≤ 1 kΩ to\nVCCO_14 or GND. When PUDC_B is tied to GND, the\nactivation of internal pull-ups during power-on depends\non the power sequence because the PUDC_B control\nsignal is forwarded through an input buffer in bank 14\nand internal paths to the enables of internal pull-ups at\napplicable pins in their respective I/O banks. An\nexternal pull-up resistor is recommended between a pin\nand the pin’s VCCO power supply when it is critical for\nthe pin to be pulled High immediately as the pin’s VCCO\npower ramps up.\nCaution! Do not allow this pin to float before and\nduring configuration.\n
 $Comp
-L Device:R R?
-U 1 1 5C455B7A
-P 4750 1200
-F 0 "R?" H 4820 1246 50  0000 L CNN
-F 1 "1K" H 4820 1155 50  0000 L CNN
-F 2 "" V 4680 1200 50  0001 C CNN
-F 3 "~" H 4750 1200 50  0001 C CNN
-	1    4750 1200
+L microzed:5-146280-3 J?
+U 1 1 5C472AAB
+P 4750 900
+F 0 "J?" H 5078 846 50  0000 L CNN
+F 1 "5-146280-3" H 5078 755 50  0000 L CNN
+F 2 "microzed:HDRV3W97P0X254_1X3_721X234X821P" H 5400 1000 50  0001 L CNN
+F 3 "http://pdl.designspark.com/api/v1/manufacturers/53f31a629b4759f8698ba80b/part/53f33e0b9b4759f869d709b8/55bff39a8759c5ef5e8d0d63/1.pdf" H 5400 900 50  0001 L CNN
+F 4 "Header vert 3 way 2.54mm AmpModu" H 5400 800 50  0001 L CNN "Description"
+F 5 "8.21" H 5400 700 50  0001 L CNN "Height"
+F 6 "TE Connectivity" H 5400 600 50  0001 L CNN "Manufacturer_Name"
+F 7 "5-146280-3" H 5400 500 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "7176592P" H 5400 400 50  0001 L CNN "RS Part Number"
+F 9 "http://uk.rs-online.com/web/p/products/7176592P" H 5400 300 50  0001 L CNN "RS Price/Stock"
+F 10 "70042445" H 5400 200 50  0001 L CNN "Allied_Number"
+F 11 "https://www.alliedelec.com/te-connectivity-5-146280-3/70042445/" H 5400 100 50  0001 L CNN "Allied Price/Stock"
+F 12 "5-146280-3" H 5400 0   50  0001 L CNN "Arrow Part Number"
+F 13 "https://www.arrow.com/en/products/5-146280-3/te-connectivity" H 5400 -100 50  0001 L CNN "Arrow Price/Stock"
+	1    4750 900 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4750 1050 4750 850 
-Text Notes 5050 1200 0    50   ~ 0
-UG865 P13
+	4750 1100 4750 1250
+$Comp
+L microzed:VCCO_34 #PWR?
+U 1 1 5C491156
+P 4750 750
+F 0 "#PWR?" H 4750 600 50  0001 C CNN
+F 1 "VCCO_34" H 4765 923 50  0000 C CNN
+F 2 "" H 4750 750 50  0001 C CNN
+F 3 "" H 4750 750 50  0001 C CNN
+	1    4750 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 900  4750 750 
+Text Notes 4950 1350 0    50   ~ 0
+default: 2-3 R1K
 $EndSCHEMATC

@@ -130,7 +130,7 @@ L Device:R R?
 U 1 1 5B960C36
 P 8800 2650
 F 0 "R?" H 8870 2696 50  0000 L CNN
-F 1 "20.0K" H 8870 2605 50  0000 L CNN
+F 1 "20K" H 8870 2605 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402" V 8730 2650 50  0001 C CNN
 F 3 "~" H 8800 2650 50  0001 C CNN
 	1    8800 2650
@@ -143,7 +143,7 @@ L Device:R R70
 U 1 1 5B9611C5
 P 10000 4500
 F 0 "R70" H 10070 4546 50  0000 L CNN
-F 1 "20.0K" H 10070 4455 50  0000 L CNN
+F 1 "20K" H 10070 4455 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402" V 9930 4500 50  0001 C CNN
 F 3 "~" H 10000 4500 50  0001 C CNN
 	1    10000 4500
@@ -349,7 +349,7 @@ L Device:R R?
 U 1 1 5C3F7CA1
 P 8250 4500
 F 0 "R?" H 8320 4546 50  0000 L CNN
-F 1 "20.0K" H 8320 4455 50  0000 L CNN
+F 1 "20K" H 8320 4455 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402" V 8180 4500 50  0001 C CNN
 F 3 "~" H 8250 4500 50  0001 C CNN
 	1    8250 4500
@@ -375,7 +375,7 @@ L Device:R R?
 U 1 1 5C402B90
 P 7650 4500
 F 0 "R?" H 7720 4546 50  0000 L CNN
-F 1 "20.0K" H 7720 4455 50  0000 L CNN
+F 1 "20K" H 7720 4455 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402" V 7580 4500 50  0001 C CNN
 F 3 "~" H 7650 4500 50  0001 C CNN
 	1    7650 4500
@@ -410,7 +410,7 @@ L Device:R R?
 U 1 1 5C408F95
 P 7050 2650
 F 0 "R?" H 7120 2696 50  0000 L CNN
-F 1 "20.0K" H 7120 2605 50  0000 L CNN
+F 1 "20K" H 7120 2605 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402" V 6980 2650 50  0001 C CNN
 F 3 "~" H 7050 2650 50  0001 C CNN
 	1    7050 2650
@@ -423,7 +423,7 @@ L Device:R R?
 U 1 1 5C4157BA
 P 10700 4500
 F 0 "R?" H 10770 4546 50  0000 L CNN
-F 1 "20.0K" H 10770 4455 50  0000 L CNN
+F 1 "20K" H 10770 4455 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402" V 10630 4500 50  0001 C CNN
 F 3 "~" H 10700 4500 50  0001 C CNN
 	1    10700 4500
@@ -487,7 +487,7 @@ L Device:R R?
 U 1 1 5C46B1A9
 P 9350 4500
 F 0 "R?" H 9420 4546 50  0000 L CNN
-F 1 "20.0K" H 9420 4455 50  0000 L CNN
+F 1 "20K" H 9420 4455 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402" V 9280 4500 50  0001 C CNN
 F 3 "~" H 9350 4500 50  0001 C CNN
 	1    9350 4500
@@ -534,10 +534,6 @@ Text Notes 8200 1900 0    50   ~ 0
 Boot Mode Pin Settings\nUG585 P166 Table 6-4.\n\nUG585 P166 section 6.2.6\nI/O Pin Connections for Boot Devices\nonly SDIO1 can used as boot device, SIO0 can't.\n\nBoot Time:\nhttps://www.xilinx.com/support/answers/55572.html\nZynq-7000_Boot_time_estimator_QSPI_NAND_rev3.0.xlsm\nboot from NAND is slower than boot from QSPI,\nand the NAND will use more pins.
 Text GLabel 3150 3800 2    50   BiDi ~ 0
 PS_MIO7
-Text GLabel 3150 3900 2    50   BiDi ~ 0
-PS_MIO8
-Text GLabel 3150 4000 2    50   BiDi ~ 0
-PS_MIO9
 Text GLabel 3150 4100 2    50   BiDi ~ 0
 PS_MIO10
 Text GLabel 3150 4200 2    50   BiDi ~ 0
@@ -582,4 +578,12 @@ Text Notes 2800 2800 0    50   ~ 0
 30M-60MHZ
 Text Notes 3600 3000 0    50   ~ 0
 DS187P8\nPS_PRO_B must connected\nto GND during power-on.
+Text Notes 5400 2000 0    50   ~ 0
+20mA
+Text Notes 3850 3550 0    50   ~ 0
+UG933 P57 Table5-3\nMIO7 2.5V,3.3V mode\nMIO0-MIO15: 20 KΩ resistor to ground
+Text GLabel 3150 4000 2    50   Input ~ 0
+USB_UART_RXD
+Text GLabel 3150 3900 2    50   Output ~ 0
+USB_UART_TXD
 $EndSCHEMATC

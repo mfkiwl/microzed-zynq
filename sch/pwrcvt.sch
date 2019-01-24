@@ -77,7 +77,7 @@ L Device:R R?
 U 1 1 5BE5C1CD
 P 1200 1250
 F 0 "R?" H 1100 1300 50  0000 R BNN
-F 1 "10.00K" H 1100 1200 50  0000 R TNN
+F 1 "10K" H 1100 1200 50  0000 R TNN
 F 2 "" V 1130 1250 50  0001 C CNN
 F 3 "~" H 1200 1250 50  0001 C CNN
 	1    1200 1250
@@ -628,7 +628,7 @@ L Device:R R?
 U 1 1 5BE8E03B
 P 9900 4150
 F 0 "R?" H 9970 4196 50  0000 L CNN
-F 1 "1.00K" H 9970 4105 50  0000 L CNN
+F 1 "1K" H 9970 4105 50  0000 L CNN
 F 2 "" V 9830 4150 50  0001 C CNN
 F 3 "~" H 9900 4150 50  0001 C CNN
 	1    9900 4150
@@ -863,7 +863,7 @@ L Device:R R?
 U 1 1 5BEA06E3
 P 9900 1650
 F 0 "R?" H 9970 1696 50  0000 L CNN
-F 1 "1.00K" H 9970 1605 50  0000 L CNN
+F 1 "1K" H 9970 1605 50  0000 L CNN
 F 2 "" V 9830 1650 50  0001 C CNN
 F 3 "~" H 9900 1650 50  0001 C CNN
 	1    9900 1650
@@ -1042,7 +1042,7 @@ Text Notes 2950 1100 0    50   ~ 0
 Text Notes 3150 1800 0    50   ~ 0
 2mA\nmax: 10mA
 Text Notes 3750 3000 0    50   ~ 0
-for the PG pin:\nhttp://zedboard.org/zh-hant/node/2414\nmaybe the pull-down resistore is for\nhigh impendance (P9 section 8.3.3)
+for the PG pin:\n1: > 0.9V\nhttp://zedboard.org/zh-hant/node/2414\nmaybe the pull-down resistore is for\nhigh impendance (P9 section 8.3.3)
 Text Notes 750  2100 0    50   ~ 0
 1.5µA\n-0.3 - VIN+0.3\nL: < 0.3V\nH: > 0.9V
 Text Notes 900  4450 0    50   ~ 0

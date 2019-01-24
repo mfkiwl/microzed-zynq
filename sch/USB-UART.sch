@@ -13,172 +13,17 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Transistor_FET:BSS138 Q7
-U 1 1 5BA1F833
-P 2700 3900
-F 0 "Q7" V 2950 3900 50  0000 C CNN
-F 1 "BSS138" V 3041 3900 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2900 3825 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 2700 3900 50  0001 L CNN
-	1    2700 3900
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+1V8 #PWR?
-U 1 1 5BA20624
-P 2700 3650
-F 0 "#PWR?" H 2700 3500 50  0001 C CNN
-F 1 "+1V8" H 2715 3823 50  0000 C CNN
-F 2 "" H 2700 3650 50  0001 C CNN
-F 3 "" H 2700 3650 50  0001 C CNN
-	1    2700 3650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2700 3700 2700 3650
-$Comp
-L Device:R R60
-U 1 1 5BA20675
-P 2300 3850
-F 0 "R60" H 2370 3896 50  0000 L CNN
-F 1 "10.00K" H 2370 3805 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2230 3850 50  0001 C CNN
-F 3 "~" H 2300 3850 50  0001 C CNN
-	1    2300 3850
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	2500 4000 2300 4000
-Connection ~ 2300 4000
-Wire Wire Line
-	2300 4000 1800 4000
 Text GLabel 1800 4000 0    50   Output ~ 0
 USB_UART_RxD
-Wire Wire Line
-	2700 3650 2300 3650
-Wire Wire Line
-	2300 3650 2300 3700
-Connection ~ 2700 3650
-$Comp
-L Device:R R108
-U 1 1 5BA23DF3
-P 3200 3750
-F 0 "R108" H 3270 3796 50  0000 L CNN
-F 1 "10.00K" H 3270 3705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3130 3750 50  0001 C CNN
-F 3 "~" H 3200 3750 50  0001 C CNN
-	1    3200 3750
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Transistor_FET:BSS138 Q8
-U 1 1 5BA251EA
-P 2700 4950
-F 0 "Q8" V 2950 4950 50  0000 C CNN
-F 1 "BSS138" V 3041 4950 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2900 4875 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 2700 4950 50  0001 L CNN
-	1    2700 4950
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+1V8 #PWR?
-U 1 1 5BA251F1
-P 2700 4700
-F 0 "#PWR?" H 2700 4550 50  0001 C CNN
-F 1 "+1V8" H 2715 4873 50  0000 C CNN
-F 2 "" H 2700 4700 50  0001 C CNN
-F 3 "" H 2700 4700 50  0001 C CNN
-	1    2700 4700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2700 4750 2700 4700
-$Comp
-L Device:R R109
-U 1 1 5BA251F8
-P 2300 4900
-F 0 "R109" H 2370 4946 50  0000 L CNN
-F 1 "10.00K" H 2370 4855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2230 4900 50  0001 C CNN
-F 3 "~" H 2300 4900 50  0001 C CNN
-	1    2300 4900
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	2500 5050 2300 5050
-Connection ~ 2300 5050
-Wire Wire Line
-	2300 5050 1800 5050
-Text GLabel 1800 5050 0    50   Input ~ 0
+Text GLabel 1800 4100 0    50   Input ~ 0
 USB_UART_TxD
-Wire Wire Line
-	2700 4700 2300 4700
-Wire Wire Line
-	2300 4700 2300 4750
-Connection ~ 2700 4700
-$Comp
-L Device:R R110
-U 1 1 5BA25207
-P 3700 3750
-F 0 "R110" H 3770 3796 50  0000 L CNN
-F 1 "10.00K" H 3770 3705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3630 3750 50  0001 C CNN
-F 3 "~" H 3700 3750 50  0001 C CNN
-	1    3700 3750
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:R R111
-U 1 1 5BA28FB5
-P 4200 3750
-F 0 "R111" H 4270 3796 50  0000 L CNN
-F 1 "4.99K" H 4270 3705 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4130 3750 50  0001 C CNN
-F 3 "~" H 4200 3750 50  0001 C CNN
-	1    4200 3750
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	4900 4100 3700 4100
-Wire Wire Line
-	3200 4100 3200 5050
-Wire Wire Line
-	3200 5050 2900 5050
-Wire Wire Line
-	4900 4000 3200 4000
-Wire Wire Line
-	3200 3900 3200 4000
-Connection ~ 3200 4000
-Wire Wire Line
-	3200 4000 2900 4000
-Wire Wire Line
-	3700 3900 3700 4100
-Connection ~ 3700 4100
-Wire Wire Line
-	3700 4100 3200 4100
 NoConn ~ 5400 3200
-Wire Wire Line
-	5800 3200 5800 3000
-Wire Wire Line
-	3200 3000 3200 3600
-Wire Wire Line
-	3700 3600 3700 3000
-Connection ~ 3700 3000
-Wire Wire Line
-	3700 3000 3200 3000
-Wire Wire Line
-	4200 3600 4200 3000
-Connection ~ 4200 3000
-Wire Wire Line
-	4200 3000 3700 3000
 $Comp
 L Interface_USB:CP2104 U2
 U 1 1 5BA1C0F8
 P 5600 4100
-F 0 "U2" H 5050 4950 50  0000 C CNN
-F 1 "CP2104-F03-GM" H 6200 3150 50  0000 C CNN
+F 0 "U2" H 5200 3100 50  0000 C CNN
+F 1 "CP2104-F03-GM" H 5100 3000 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 5750 3150 50  0001 L CNN
 F 3 "https://www.silabs.com/Support%20Documents/TechnicalDocs/cp2104.pdf" H 5050 5350 50  0001 C CNN
 	1    5600 4100
@@ -197,88 +42,7 @@ NoConn ~ 4900 3800
 NoConn ~ 4900 4700
 NoConn ~ 4900 4800
 Wire Wire Line
-	4900 4600 4200 4600
-Wire Wire Line
-	4200 3900 4200 4600
-$Comp
-L Device:C C225
-U 1 1 5BA3A79B
-P 4200 4750
-F 0 "C225" H 4315 4796 50  0000 L CNN
-F 1 "0.1uF" H 4315 4705 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 4238 4600 50  0001 C CNN
-F 3 "~" H 4200 4750 50  0001 C CNN
-	1    4200 4750
-	-1   0    0    -1  
-$EndComp
-Connection ~ 4200 4600
-Wire Wire Line
-	5800 3000 5600 3000
-Wire Wire Line
-	5600 3200 5600 3000
-Connection ~ 5600 3000
-Wire Wire Line
-	5600 3000 4200 3000
-Text Label 4650 3000 2    50   ~ 0
-VIO_USB
-$Comp
-L Device:C C219
-U 1 1 5BA3E66A
-P 5200 2350
-F 0 "C219" H 5315 2396 50  0000 L CNN
-F 1 "0.1uF" H 5315 2305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 5238 2200 50  0001 C CNN
-F 3 "~" H 5200 2350 50  0001 C CNN
-	1    5200 2350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Device:C C220
-U 1 1 5BA3E740
-P 4600 2350
-F 0 "C220" H 4715 2396 50  0000 L CNN
-F 1 "2.2uF" H 4715 2305 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 4638 2200 50  0001 C CNN
-F 3 "~" H 4600 2350 50  0001 C CNN
-	1    4600 2350
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5BA3F62A
-P 5200 2600
-F 0 "#PWR?" H 5200 2350 50  0001 C CNN
-F 1 "GND" H 5205 2427 50  0000 C CNN
-F 2 "" H 5200 2600 50  0001 C CNN
-F 3 "" H 5200 2600 50  0001 C CNN
-	1    5200 2600
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 2500 5200 2600
-Wire Wire Line
-	4600 2500 5200 2500
-Connection ~ 5200 2500
-Wire Wire Line
-	5600 3000 5600 2200
-Wire Wire Line
-	5600 2200 5200 2200
-Connection ~ 5200 2200
-Wire Wire Line
-	5200 2200 4600 2200
-$Comp
-L power:GND #PWR?
-U 1 1 5B9F9FB7
-P 4200 5000
-F 0 "#PWR?" H 4200 4750 50  0001 C CNN
-F 1 "GND" H 4205 4827 50  0000 C CNN
-F 2 "" H 4200 5000 50  0001 C CNN
-F 3 "" H 4200 5000 50  0001 C CNN
-	1    4200 5000
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	4200 4900 4200 5000
+	4900 4600 4600 4600
 Wire Wire Line
 	5600 5100 5500 5100
 $Comp
@@ -314,10 +78,10 @@ F 9 "https://www.arrow.com/en/products/cdsot23-sr208/bourns" H 9350 3700 50  000
 	1    0    0    1   
 $EndComp
 $Comp
-L microzed:10104111-0001LF J2
+L microzed:10104111-0001LF J?
 U 1 1 5BA02C0F
 P 10100 4100
-F 0 "J2" H 10150 4565 50  0000 C CNN
+F 0 "J?" H 10150 4565 50  0000 C CNN
 F 1 "10104111-0001LF" H 10150 4474 50  0000 C CNN
 F 2 "microzed:MICRO_USB_AB_TYPE_RECEPTACLE" H 10850 4650 50  0001 L CNN
 F 3 "http://docs-europe.electrocomponents.com/webdocs/0ed1/0900766b80ed1ae2.pdf" H 10850 4550 50  0001 L CNN
@@ -347,10 +111,10 @@ $EndComp
 NoConn ~ 7800 4500
 NoConn ~ 9000 4500
 $Comp
-L Device:R R96
+L Device:R R?
 U 1 1 5BA0EFF6
 P 6550 3700
-F 0 "R96" V 6450 3700 50  0000 C CNN
+F 0 "R?" V 6450 3700 50  0000 C CNN
 F 1 "100" V 6650 3700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6480 3700 50  0001 C CNN
 F 3 "~" H 6550 3700 50  0001 C CNN
@@ -372,22 +136,22 @@ Wire Wire Line
 Wire Wire Line
 	9000 4300 9000 4100
 $Comp
-L Device:C C9
+L Device:C C?
 U 1 1 5BA1AE22
 P 7100 2950
-F 0 "C9" H 7050 3000 50  0000 R BNN
-F 1 "0.1uF" H 7050 2900 50  0000 R TNN
+F 0 "C?" H 7050 3000 50  0000 R BNN
+F 1 "0.1μF" H 7050 2900 50  0000 R TNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 7138 2800 50  0001 C CNN
 F 3 "~" H 7100 2950 50  0001 C CNN
 	1    7100 2950
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C C6
+L Device:C C?
 U 1 1 5BA1AE29
 P 6700 2950
-F 0 "C6" H 6650 3000 50  0000 R BNN
-F 1 "4.7uF" H 6650 2900 50  0000 R TNN
+F 0 "C?" H 6650 3000 50  0000 R BNN
+F 1 "4.7μF" H 6650 2900 50  0000 R TNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 6738 2800 50  0001 C CNN
 F 3 "~" H 6700 2950 50  0001 C CNN
 	1    6700 2950
@@ -422,42 +186,37 @@ Wire Wire Line
 	6700 2700 7100 2700
 Wire Wire Line
 	7100 2800 7100 2700
-Connection ~ 7100 2700
 Wire Wire Line
 	6700 3700 7500 3700
 Wire Wire Line
 	7500 3700 7500 2700
 Connection ~ 7500 2700
-Text Label 6700 2650 0    50   ~ 0
-USB_VBUS_UART
 $Comp
-L Power_Protection:ZEN056V130A24LS D12
+L Power_Protection:ZEN056V130A24LS D?
 U 1 1 5BA232A1
-P 8000 2800
-F 0 "D12" H 8000 3167 50  0000 C CNN
-F 1 "ZEN056V130A24LS" H 8000 3076 50  0000 C CNN
-F 2 "Diode_SMD:Littelfuse_PolyZen-LS" H 8000 2450 50  0001 C CNN
-F 3 "http://m.littelfuse.com/~/media/electronics/datasheets/polyzen_devices/littelfuse_polyzen_standard_polyzen_catalog_datasheet.pdf.pdf" H 8000 3200 50  0001 C CNN
-	1    8000 2800
+P 8450 2800
+F 0 "D?" H 8450 3167 50  0000 C CNN
+F 1 "ZEN056V130A24LS" H 8450 3076 50  0000 C CNN
+F 2 "Diode_SMD:Littelfuse_PolyZen-LS" H 8450 2450 50  0001 C CNN
+F 3 "http://m.littelfuse.com/~/media/electronics/datasheets/polyzen_devices/littelfuse_polyzen_standard_polyzen_catalog_datasheet.pdf.pdf" H 8450 3200 50  0001 C CNN
+	1    8450 2800
 	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5BA2582C
-P 8400 3200
-F 0 "#PWR?" H 8400 2950 50  0001 C CNN
-F 1 "GND" H 8405 3027 50  0000 C CNN
-F 2 "" H 8400 3200 50  0001 C CNN
-F 3 "" H 8400 3200 50  0001 C CNN
-	1    8400 3200
+P 8850 3200
+F 0 "#PWR?" H 8850 2950 50  0001 C CNN
+F 1 "GND" H 8855 3027 50  0000 C CNN
+F 2 "" H 8850 3200 50  0001 C CNN
+F 3 "" H 8850 3200 50  0001 C CNN
+	1    8850 3200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8400 3100 8400 3150
+	8850 3100 8850 3150
 Wire Wire Line
-	7500 2700 7700 2700
-Wire Wire Line
-	7100 2700 7500 2700
+	7500 2700 8150 2700
 Connection ~ 7800 4000
 Connection ~ 9000 4100
 Wire Wire Line
@@ -470,14 +229,14 @@ Wire Wire Line
 	7500 4400 7500 3700
 Connection ~ 7500 3700
 $Comp
-L Device:C C221
+L Device:C C?
 U 1 1 5BA3142D
-P 8400 2950
-F 0 "C221" H 8350 3000 50  0000 R BNN
-F 1 "2.2uF" H 8350 2900 50  0000 R TNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 8438 2800 50  0001 C CNN
-F 3 "~" H 8400 2950 50  0001 C CNN
-	1    8400 2950
+P 8850 2950
+F 0 "C?" H 8800 3000 50  0000 R BNN
+F 1 "2.2μF" H 8800 2900 50  0000 R TNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 8888 2800 50  0001 C CNN
+F 3 "~" H 8850 2950 50  0001 C CNN
+	1    8850 2950
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -485,24 +244,24 @@ Wire Wire Line
 Wire Wire Line
 	9600 3900 9600 2700
 Wire Wire Line
-	9600 2700 8400 2700
+	9600 2700 8850 2700
 Wire Wire Line
-	8400 2800 8400 2700
-Connection ~ 8400 2700
+	8850 2800 8850 2700
+Connection ~ 8850 2700
 Wire Wire Line
-	8400 2700 8300 2700
+	8850 2700 8750 2700
 Wire Wire Line
-	8000 3000 8000 3150
+	8450 3000 8450 3150
 Wire Wire Line
-	8000 3150 8400 3150
-Connection ~ 8400 3150
+	8450 3150 8850 3150
+Connection ~ 8850 3150
 Wire Wire Line
-	8400 3150 8400 3200
+	8850 3150 8850 3200
 $Comp
-L Diode:B330 D4
+L Diode:B330 D?
 U 1 1 5BA38660
 P 7150 2050
-F 0 "D4" H 7150 2266 50  0000 C CNN
+F 0 "D?" H 7150 2266 50  0000 C CNN
 F 1 "B330" H 7150 2175 50  0000 C CNN
 F 2 "Diode_SMD:D_SMC" H 7150 1875 50  0001 C CNN
 F 3 "http://www.jameco.com/Jameco/Products/ProdDS/1538777.pdf" H 7150 2050 50  0001 C CNN
@@ -585,4 +344,162 @@ Wire Wire Line
 Connection ~ 9700 4500
 Wire Wire Line
 	9700 4500 9700 4600
+Text Notes 4800 2200 0    50   ~ 0
+1μF - 5μF
+Wire Wire Line
+	5400 2600 5400 2700
+$Comp
+L power:GND #PWR?
+U 1 1 5BA3F62A
+P 5400 2700
+F 0 "#PWR?" H 5400 2450 50  0001 C CNN
+F 1 "GND" H 5405 2527 50  0000 C CNN
+F 2 "" H 5400 2700 50  0001 C CNN
+F 3 "" H 5400 2700 50  0001 C CNN
+	1    5400 2700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2600 5400 2600
+Connection ~ 7100 2700
+Wire Wire Line
+	7100 2700 7500 2700
+$Comp
+L Device:C C?
+U 1 1 5BA3E740
+P 4800 2450
+F 0 "C?" H 4915 2496 50  0000 L CNN
+F 1 "4.7μF" H 4915 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 4838 2300 50  0001 C CNN
+F 3 "~" H 4800 2450 50  0001 C CNN
+	1    4800 2450
+	-1   0    0    -1  
+$EndComp
+Connection ~ 5400 2600
+Wire Wire Line
+	5400 2300 4800 2300
+Wire Wire Line
+	5800 2300 5400 2300
+Connection ~ 5400 2300
+$Comp
+L Device:C C?
+U 1 1 5BA3E66A
+P 5400 2450
+F 0 "C?" H 5515 2496 50  0000 L CNN
+F 1 "0.1μF" H 5515 2405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 5438 2300 50  0001 C CNN
+F 3 "~" H 5400 2450 50  0001 C CNN
+	1    5400 2450
+	-1   0    0    -1  
+$EndComp
+Text Notes 2100 5900 0    50   ~ 0
+self-power problem (using 1.8V as VIO, drop two BSS138):\nfor picozed, usb-uart can't provide power for board,\nhttp://microzed.org/content/usb-uart-pzcc-fmc-wont-enumerate\nhttps://www.element14.com/community/thread/69193/l/usb-uart-in-picozed-fmc-carrier-card-v2\n\nfor our board (and microzed), the usb-uart can provide power for board, so we can use 1.8V VIO
+Wire Wire Line
+	1800 4000 4100 4000
+Wire Wire Line
+	1800 4100 4500 4100
+Text Notes 3550 4550 0    50   ~ 0
+connect to VIO
+Text Notes 4700 3150 0    50   ~ 0
+VDD is used as output
+$Comp
+L Device:R R?
+U 1 1 5C4F1CD8
+P 4300 4600
+F 0 "R?" V 4200 4600 50  0000 C CNN
+F 1 "4.7K" V 4400 4600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4230 4600 50  0001 C CNN
+F 3 "~" H 4300 4600 50  0001 C CNN
+	1    4300 4600
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	5800 2300 5800 3200
+$Comp
+L Device:R R?
+U 1 1 5C508499
+P 4100 3600
+AR Path="/5C3F5BB1/5C508499" Ref="R?"  Part="1" 
+AR Path="/5BA19F84/5C508499" Ref="R?"  Part="1" 
+F 0 "R?" H 4170 3646 50  0000 L CNN
+F 1 "10K" H 4170 3555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402" V 4030 3600 50  0001 C CNN
+F 3 "~" H 4100 3600 50  0001 C CNN
+	1    4100 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C509432
+P 4500 3600
+AR Path="/5C3F5BB1/5C509432" Ref="R?"  Part="1" 
+AR Path="/5BA19F84/5C509432" Ref="R?"  Part="1" 
+F 0 "R?" H 4570 3646 50  0000 L CNN
+F 1 "10K" H 4570 3555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402" V 4430 3600 50  0001 C CNN
+F 3 "~" H 4500 3600 50  0001 C CNN
+	1    4500 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3750 4100 4000
+Wire Wire Line
+	4100 4000 4900 4000
+Connection ~ 4100 4000
+Wire Wire Line
+	4500 3750 4500 4100
+Wire Wire Line
+	4500 4100 4900 4100
+Connection ~ 4500 4100
+Wire Wire Line
+	4100 3450 4100 3300
+Wire Wire Line
+	4100 3300 4500 3300
+Wire Wire Line
+	4500 3300 4500 3450
+Wire Wire Line
+	5600 3200 5800 3200
+Connection ~ 5800 3200
+Wire Wire Line
+	4800 2300 3500 2300
+Wire Wire Line
+	3500 2300 3500 3300
+Connection ~ 4800 2300
+Wire Wire Line
+	3500 4600 4150 4600
+Wire Wire Line
+	4100 3300 3500 3300
+Connection ~ 4100 3300
+Connection ~ 3500 3300
+Wire Wire Line
+	3500 3300 3500 4600
+$Comp
+L Device:C C?
+U 1 1 5C5670E0
+P 4600 4850
+F 0 "C?" H 4550 4900 50  0000 R BNN
+F 1 "0.1μF" H 4550 4800 50  0000 R TNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 4638 4700 50  0001 C CNN
+F 3 "~" H 4600 4850 50  0001 C CNN
+	1    4600 4850
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C5670E6
+P 4600 5100
+F 0 "#PWR?" H 4600 4850 50  0001 C CNN
+F 1 "GND" H 4605 4927 50  0000 C CNN
+F 2 "" H 4600 5100 50  0001 C CNN
+F 3 "" H 4600 5100 50  0001 C CNN
+	1    4600 5100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 5000 4600 5100
+Wire Wire Line
+	4600 4700 4600 4600
+Connection ~ 4600 4600
+Wire Wire Line
+	4600 4600 4450 4600
 $EndSCHEMATC
