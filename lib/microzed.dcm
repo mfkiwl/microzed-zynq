@@ -119,8 +119,8 @@ D Texas Instruments, TLV62130RGTR DC-DC Converter 3A Adjustable, 0.9  5 V, 16-Pi
 F http://www.ti.com/lit/gpn/tlv62130
 $ENDCMP
 #
-$CMP TPS2051BDBVR
-D TEXAS INSTRUMENTS - TPS2051BDBVR - CURRENT LIMITED POWER SWITCH, 5.5V SOT23-5, FULL REEL
+$CMP TPS2069D
+D TEXAS INSTRUMENTS - TPS2069D - TPS2069D Current Limited, Power-Distribution Switches, 5.5V SOT23(5)
 F http://www.ti.com/lit/ds/symlink/tps2051b.pdf
 $ENDCMP
 #
