@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-EELAYER 28 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -13,24 +13,24 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 2850 2900 0    50   Output ~ 0
+Text GLabel 2300 2900 0    50   Output ~ 0
 ETH_RX_CLK
-Text GLabel 2850 2800 0    50   Output ~ 0
+Text GLabel 2300 2800 0    50   Output ~ 0
 ETH_RX_CTRL
-Text GLabel 2850 2400 0    50   Output ~ 0
+Text GLabel 2300 2400 0    50   Output ~ 0
 ETH_RX_D0
-Text GLabel 2850 2500 0    50   Output ~ 0
+Text GLabel 2300 2500 0    50   Output ~ 0
 ETH_RX_D1
-Text GLabel 2850 2600 0    50   Output ~ 0
+Text GLabel 2300 2600 0    50   Output ~ 0
 ETH_RX_D2
-Text GLabel 2850 2700 0    50   Output ~ 0
+Text GLabel 2300 2700 0    50   Output ~ 0
 ETH_RX_D3
 Text GLabel 2850 3800 0    50   BiDi ~ 0
 ETH_MDIO
 Text GLabel 2850 3900 0    50   Input ~ 0
 ETH_MDC
 Wire Wire Line
-	3250 2900 2850 2900
+	3250 2900 3000 2900
 Wire Wire Line
 	3250 3600 2850 3600
 Wire Wire Line
@@ -59,17 +59,6 @@ Text GLabel 2850 3300 0    50   Input ~ 0
 ETH_TX_D2
 Text GLabel 2850 3400 0    50   Input ~ 0
 ETH_TX_D3
-$Comp
-L Device:R R?
-U 1 1 5BB2D7DA
-P 2150 3550
-F 0 "R?" H 2100 3600 50  0000 R CNN
-F 1 "4.99K" H 2100 3500 50  0000 R CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2080 3550 50  0001 C CNN
-F 3 "~" H 2150 3550 50  0001 C CNN
-	1    2150 3550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2950 3700 2950 3800
 Connection ~ 2950 3800
@@ -82,89 +71,89 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5BB74B7F
-P 1700 4900
-F 0 "#PWR?" H 1700 4650 50  0001 C CNN
-F 1 "GND" H 1705 4727 50  0000 C CNN
-F 2 "" H 1700 4900 50  0001 C CNN
-F 3 "" H 1700 4900 50  0001 C CNN
-	1    1700 4900
+P 3650 6100
+F 0 "#PWR?" H 3650 5850 50  0001 C CNN
+F 1 "GND" H 3655 5927 50  0000 C CNN
+F 2 "" H 3650 6100 50  0001 C CNN
+F 3 "" H 3650 6100 50  0001 C CNN
+	1    3650 6100
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1700 4800 1700 4900
+	3650 6000 3650 6100
 $Comp
 L Device:R R?
 U 1 1 5BB74B8C
-P 50 4800
-F 0 "R?" V 150 4650 50  0000 C CNN
-F 1 "4.99K" V 150 4950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V -20 4800 50  0001 C CNN
-F 3 "~" H 50  4800 50  0001 C CNN
-	1    50   4800
+P 2000 6000
+F 0 "R?" V 2100 5850 50  0000 C CNN
+F 1 "4.99K" V 2100 6150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1930 6000 50  0001 C CNN
+F 3 "~" H 2000 6000 50  0001 C CNN
+	1    2000 6000
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	550  4800 400  4800
+	2500 6000 2350 6000
 Wire Wire Line
-	550  4700 400  4700
+	2500 5900 2350 5900
 Wire Wire Line
-	-400 4700 -400 4800
+	1550 5900 1550 6000
 $Comp
 L Device:C C?
 U 1 1 5BB74B96
-P -400 4950
-F 0 "C?" H -285 4996 50  0000 L CNN
-F 1 "0.1μF" H -285 4905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H -362 4800 50  0001 C CNN
-F 3 "~" H -400 4950 50  0001 C CNN
-	1    -400 4950
+P 1550 6150
+F 0 "C?" H 1665 6196 50  0000 L CNN
+F 1 "0.1μF" H 1665 6105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 1588 6000 50  0001 C CNN
+F 3 "~" H 1550 6150 50  0001 C CNN
+	1    1550 6150
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	400  4500 400  4700
-Connection ~ 400  4700
+	2350 5700 2350 5900
+Connection ~ 2350 5900
 Wire Wire Line
-	400  4700 -400 4700
+	2350 5900 1550 5900
 Wire Wire Line
-	-100 4800 -400 4800
-Connection ~ -400 4800
+	1850 6000 1550 6000
+Connection ~ 1550 6000
 $Comp
 L Connector:TestPoint TP2
 U 1 1 5BB74BA2
-P 400 5000
-F 0 "TP2" H 343 5027 50  0000 R CNN
-F 1 "TestPoint" H 343 5118 50  0000 R CNN
-F 2 "" H 600 5000 50  0001 C CNN
-F 3 "~" H 600 5000 50  0001 C CNN
-	1    400  5000
+P 2350 6200
+F 0 "TP2" H 2293 6227 50  0000 R CNN
+F 1 "TestPoint" H 2293 6318 50  0000 R CNN
+F 2 "" H 2550 6200 50  0001 C CNN
+F 3 "~" H 2550 6200 50  0001 C CNN
+	1    2350 6200
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	400  5000 400  4800
-Connection ~ 400  4800
+	2350 6200 2350 6000
+Connection ~ 2350 6000
 Wire Wire Line
-	400  4800 200  4800
+	2350 6000 2150 6000
 $Comp
 L power:GND #PWR?
 U 1 1 5BB74BAC
-P -400 5100
-F 0 "#PWR?" H -400 4850 50  0001 C CNN
-F 1 "GND" H -395 4927 50  0000 C CNN
-F 2 "" H -400 5100 50  0001 C CNN
-F 3 "" H -400 5100 50  0001 C CNN
-	1    -400 5100
+P 1550 6300
+F 0 "#PWR?" H 1550 6050 50  0001 C CNN
+F 1 "GND" H 1555 6127 50  0000 C CNN
+F 2 "" H 1550 6300 50  0001 C CNN
+F 3 "" H 1550 6300 50  0001 C CNN
+	1    1550 6300
 	-1   0    0    -1  
 $EndComp
 $Comp
 L microzed:ASDMB-25.000MHZ-LC-T U6
 U 1 1 5BB76A34
-P 550 4700
-F 0 "U6" H 1125 4965 50  0000 C CNN
-F 1 "ASDMB-25.000MHZ-LC-T" H 1125 4874 50  0000 C CNN
-F 2 "microzed:ABRACON-ASDMB" H 2050 4800 50  0001 L CNN
-F 3 "http://www.abracon.com/Oscillators/ASDMB.pdf" H 2050 4700 50  0001 L CNN
-F 4 "Standard Clock Oscillators 25.000MHZ 50ppm -40 + 85C" H 2050 4600 50  0001 L CNN "Description"
-	1    550  4700
+P 2500 5900
+F 0 "U6" H 3075 6165 50  0000 C CNN
+F 1 "ASDMB-25.000MHZ-LC-T" H 3075 6074 50  0000 C CNN
+F 2 "microzed:ABRACON-ASDMB" H 4000 6000 50  0001 L CNN
+F 3 "http://www.abracon.com/Oscillators/ASDMB.pdf" H 4000 5900 50  0001 L CNN
+F 4 "Standard Clock Oscillators 25.000MHZ 50ppm -40 + 85C" H 4000 5800 50  0001 L CNN "Description"
+	1    2500 5900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -180,8 +169,6 @@ F 5 "Bel-Stewart" H 11250 1500 50  0001 L CNN "Manufacturer_Name"
 	1    9300 1800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2550 4700 1700 4700
 $Comp
 L Device:C C?
 U 1 1 5BB9DE74
@@ -395,16 +382,14 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5C5BB232
-P 2150 3350
-F 0 "#PWR?" H 2150 3200 50  0001 C CNN
-F 1 "+3V3" H 2165 3523 50  0000 C CNN
-F 2 "" H 2150 3350 50  0001 C CNN
-F 3 "" H 2150 3350 50  0001 C CNN
-	1    2150 3350
+P 1700 3550
+F 0 "#PWR?" H 1700 3400 50  0001 C CNN
+F 1 "+3V3" H 1715 3723 50  0000 C CNN
+F 2 "" H 1700 3550 50  0001 C CNN
+F 3 "" H 1700 3550 50  0001 C CNN
+	1    1700 3550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2150 3400 2150 3350
 NoConn ~ 3250 4200
 $Comp
 L power:GND #PWR?
@@ -434,16 +419,16 @@ Wire Wire Line
 	3250 4800 2850 4800
 NoConn ~ 3250 4900
 Wire Wire Line
-	3250 4700 2850 4700
+	3250 4700 3150 4700
 $Comp
 L Device:R R?
 U 1 1 5BBA781C
-P 2700 4700
-F 0 "R?" V 2800 4900 50  0000 R BNN
-F 1 "40.2" V 2750 4700 50  0000 R TNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2630 4700 50  0001 C CNN
-F 3 "~" H 2700 4700 50  0001 C CNN
-	1    2700 4700
+P 3000 4700
+F 0 "R?" V 3100 4900 50  0000 R BNN
+F 1 "40.2" V 3050 4700 50  0000 R TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2930 4700 50  0001 C CNN
+F 3 "~" H 3000 4700 50  0001 C CNN
+	1    3000 4700
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -462,7 +447,7 @@ Wire Wire Line
 Wire Wire Line
 	4600 5250 4600 5400
 Connection ~ 4600 5250
-Text Notes 2400 5750 0    50   ~ 0
+Text Notes 6400 6250 0    50   ~ 0
 29 PHYRSTB: keep low >= 10ms, then wait >= 30ms before access registers.
 Text Notes 3100 1750 0    50   ~ 0
 3.3V, 1A
@@ -471,17 +456,6 @@ Text Notes 5200 1600 0    50   ~ 0
 $Comp
 L Device:R R?
 U 1 1 5C700397
-P 2300 1150
-F 0 "R?" V 2300 1350 50  0000 R TNN
-F 1 "4.7K" V 2300 1050 50  0000 R TNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2230 1150 50  0001 C CNN
-F 3 "~" H 2300 1150 50  0001 C CNN
-	1    2300 1150
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5C702044
 P 2300 1050
 F 0 "R?" V 2300 1250 50  0000 R TNN
 F 1 "4.7K" V 2300 950 50  0000 R TNN
@@ -491,21 +465,45 @@ F 3 "~" H 2300 1050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
+L Device:R R?
+U 1 1 5C702044
+P 2300 950
+F 0 "R?" V 2300 1150 50  0000 R TNN
+F 1 "4.7K" V 2300 850 50  0000 R TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2230 950 50  0001 C CNN
+F 3 "~" H 2300 950 50  0001 C CNN
+	1    2300 950 
+	0    -1   -1   0   
+$EndComp
+$Comp
 L power:+3V3 #PWR?
 U 1 1 5C739163
-P 400 4500
-F 0 "#PWR?" H 400 4350 50  0001 C CNN
-F 1 "+3V3" H 415 4673 50  0000 C CNN
-F 2 "" H 400 4500 50  0001 C CNN
-F 3 "" H 400 4500 50  0001 C CNN
-	1    400  4500
+P 2350 5700
+F 0 "#PWR?" H 2350 5550 50  0001 C CNN
+F 1 "+3V3" H 2365 5873 50  0000 C CNN
+F 2 "" H 2350 5700 50  0001 C CNN
+F 3 "" H 2350 5700 50  0001 C CNN
+	1    2350 5700
 	1    0    0    -1  
 $EndComp
-Text Notes 550  750  0    50   ~ 0
+Text Notes 500  650  0    50   ~ 0
 P25 section7.7 Table13
 $Comp
 L Device:R R?
 U 1 1 5C79D8C1
+P 2300 1150
+F 0 "R?" V 2300 1350 50  0000 R TNN
+F 1 "4.7K" V 2300 1050 50  0000 R TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2230 1150 50  0001 C CNN
+F 3 "~" H 2300 1150 50  0001 C CNN
+	1    2300 1150
+	0    -1   -1   0   
+$EndComp
+Text Notes 500  950  0    50   ~ 0
+SELRGV:\n1: VB-3.3V, VL-1.5V/1.8V\n0: VB-2.5V
+$Comp
+L Device:R R?
+U 1 1 5C7F1747
 P 2300 1250
 F 0 "R?" V 2300 1450 50  0000 R TNN
 F 1 "4.7K" V 2300 1150 50  0000 R TNN
@@ -514,11 +512,11 @@ F 3 "~" H 2300 1250 50  0001 C CNN
 	1    2300 1250
 	0    -1   -1   0   
 $EndComp
-Text Notes 550  1050 0    50   ~ 0
-SELRGV:\n1: VB-3.3V, VL-1.5V/1.8V\n0: VB-2.5V
+Text Notes 5350 2900 0    50   ~ 0
+internal terminal resistors
 $Comp
 L Device:R R?
-U 1 1 5C7F1747
+U 1 1 5C8194A5
 P 2300 1350
 F 0 "R?" V 2300 1550 50  0000 R TNN
 F 1 "4.7K" V 2300 1250 50  0000 R TNN
@@ -527,39 +525,26 @@ F 3 "~" H 2300 1350 50  0001 C CNN
 	1    2300 1350
 	0    -1   -1   0   
 $EndComp
-Text Notes 5350 2900 0    50   ~ 0
-internal terminal resistors
-$Comp
-L Device:R R?
-U 1 1 5C8194A5
-P 2300 1450
-F 0 "R?" V 2300 1650 50  0000 R TNN
-F 1 "4.7K" V 2300 1350 50  0000 R TNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2230 1450 50  0001 C CNN
-F 3 "~" H 2300 1450 50  0001 C CNN
-	1    2300 1450
-	0    -1   -1   0   
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5C82DE0A
-P 2700 1850
-F 0 "#PWR?" H 2700 1600 50  0001 C CNN
-F 1 "GND" H 2705 1677 50  0000 C CNN
-F 2 "" H 2700 1850 50  0001 C CNN
-F 3 "" H 2700 1850 50  0001 C CNN
-	1    2700 1850
+P 2850 1750
+F 0 "#PWR?" H 2850 1500 50  0001 C CNN
+F 1 "GND" H 2855 1577 50  0000 C CNN
+F 2 "" H 2850 1750 50  0001 C CNN
+F 3 "" H 2850 1750 50  0001 C CNN
+	1    2850 1750
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5C841799
-P 2700 900
-F 0 "#PWR?" H 2700 750 50  0001 C CNN
-F 1 "+3V3" H 2715 1073 50  0000 C CNN
-F 2 "" H 2700 900 50  0001 C CNN
-F 3 "" H 2700 900 50  0001 C CNN
-	1    2700 900 
+P 2700 800
+F 0 "#PWR?" H 2700 650 50  0001 C CNN
+F 1 "+3V3" H 2715 973 50  0000 C CNN
+F 2 "" H 2700 800 50  0001 C CNN
+F 3 "" H 2700 800 50  0001 C CNN
+	1    2700 800 
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -567,17 +552,6 @@ Wire Wire Line
 $Comp
 L Device:R R?
 U 1 1 5C888A94
-P 2300 1750
-F 0 "R?" V 2300 1950 50  0000 R TNN
-F 1 "4.7K" V 2300 1650 50  0000 R TNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2230 1750 50  0001 C CNN
-F 3 "~" H 2300 1750 50  0001 C CNN
-	1    2300 1750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5C891C95
 P 2300 1650
 F 0 "R?" V 2300 1850 50  0000 R TNN
 F 1 "4.7K" V 2300 1550 50  0000 R TNN
@@ -586,22 +560,35 @@ F 3 "~" H 2300 1650 50  0001 C CNN
 	1    2300 1650
 	0    -1   -1   0   
 $EndComp
-Text Notes 550  1600 0    50   ~ 0
+$Comp
+L Device:R R?
+U 1 1 5C891C95
+P 2300 1550
+F 0 "R?" V 2300 1750 50  0000 R TNN
+F 1 "4.7K" V 2300 1450 50  0000 R TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2230 1550 50  0001 C CNN
+F 3 "~" H 2300 1550 50  0001 C CNN
+	1    2300 1550
+	0    -1   -1   0   
+$EndComp
+Text Notes 500  1500 0    50   ~ 0
 PHY_AD[2:0]: 001
 Wire Wire Line
-	2150 1050 1750 1050
+	2150 950  1700 950 
 Wire Wire Line
-	2150 1150 1750 1150
+	2150 1050 1700 1050
 Wire Wire Line
-	2150 1250 1750 1250
+	2150 1150 1700 1150
 Wire Wire Line
-	2150 1350 1750 1350
+	2150 1250 1700 1250
 Wire Wire Line
-	2150 1450 1750 1450
+	2150 1350 1700 1350
 Wire Wire Line
-	2150 1650 1750 1650
+	2150 1550 1700 1550
 Wire Wire Line
-	2150 1750 1750 1750
+	2150 1650 1700 1650
+Wire Wire Line
+	2450 950  2700 950 
 Wire Wire Line
 	2450 1050 2700 1050
 Wire Wire Line
@@ -611,31 +598,29 @@ Wire Wire Line
 Wire Wire Line
 	2450 1350 2700 1350
 Wire Wire Line
-	2450 1450 2700 1450
+	2450 1550 2850 1550
 Wire Wire Line
-	2450 1650 2700 1650
+	2450 1650 2850 1650
 Wire Wire Line
-	2450 1750 2700 1750
+	2750 2600 3250 2600
 Wire Wire Line
-	2850 2600 3250 2600
+	2750 2700 3250 2700
 Wire Wire Line
-	2850 2700 3250 2700
+	2750 2400 3250 2400
 Wire Wire Line
-	2850 2400 3250 2400
-Wire Wire Line
-	2850 2500 3250 2500
-Text Label 2950 2400 0    50   ~ 0
+	2750 2500 3250 2500
+Text Label 2900 2400 0    50   ~ 0
 SELRGV
-Text Label 2950 2500 0    50   ~ 0
+Text Label 2900 2500 0    50   ~ 0
 TXDLY
-Text Label 2950 2600 0    50   ~ 0
+Text Label 2900 2600 0    50   ~ 0
 AN0
-Text Label 2950 2700 0    50   ~ 0
+Text Label 2900 2700 0    50   ~ 0
 AN1
-Text Label 2950 2800 0    50   ~ 0
+Text Label 2900 2800 0    50   ~ 0
 PHY_AD2
 Wire Wire Line
-	2850 2800 3250 2800
+	2750 2800 3250 2800
 Wire Wire Line
 	5550 4150 6450 4150
 Wire Wire Line
@@ -646,64 +631,64 @@ Text Label 5550 4250 0    50   ~ 0
 PHY_AD1
 Text Label 5550 4350 0    50   ~ 0
 RXDLY
-Text Label 1750 1050 0    50   ~ 0
+Text Label 1700 950  0    50   ~ 0
 SELRGV
-Text Label 1750 1150 0    50   ~ 0
+Text Label 1700 1050 0    50   ~ 0
 TXDLY
-Text Label 1750 1250 0    50   ~ 0
+Text Label 1700 1150 0    50   ~ 0
 RXDLY
-Text Label 1750 1350 0    50   ~ 0
+Text Label 1700 1250 0    50   ~ 0
 AN0
-Text Label 1750 1450 0    50   ~ 0
+Text Label 1700 1350 0    50   ~ 0
 AN1
 Wire Wire Line
-	2700 1450 2700 1350
+	2700 1350 2700 1250
+Connection ~ 2700 950 
+Wire Wire Line
+	2700 950  2700 800 
 Connection ~ 2700 1050
 Wire Wire Line
-	2700 1050 2700 900 
+	2700 1050 2700 950 
 Connection ~ 2700 1150
 Wire Wire Line
 	2700 1150 2700 1050
 Connection ~ 2700 1250
 Wire Wire Line
 	2700 1250 2700 1150
-Connection ~ 2700 1350
 Wire Wire Line
-	2700 1350 2700 1250
+	2850 1550 2850 1650
+Connection ~ 2850 1650
 Wire Wire Line
-	2700 1650 2700 1750
-Connection ~ 2700 1750
-Wire Wire Line
-	2700 1750 2700 1850
+	2850 1650 2850 1750
 $Comp
 L Device:R R?
 U 1 1 5C9A1CA9
-P 2300 1550
-F 0 "R?" V 2300 1750 50  0000 R TNN
-F 1 "4.7K" V 2300 1450 50  0000 R TNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2230 1550 50  0001 C CNN
-F 3 "~" H 2300 1550 50  0001 C CNN
-	1    2300 1550
+P 2300 1450
+F 0 "R?" V 2300 1650 50  0000 R TNN
+F 1 "4.7K" V 2300 1350 50  0000 R TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2230 1450 50  0001 C CNN
+F 3 "~" H 2300 1450 50  0001 C CNN
+	1    2300 1450
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2150 1550 1750 1550
+	2150 1450 1700 1450
 Wire Wire Line
-	2450 1550 2700 1550
-Text Label 1750 1750 0    50   ~ 0
+	2450 1450 2700 1450
+Text Label 1700 1650 0    50   ~ 0
 PHY_AD2
-Text Label 1750 1650 0    50   ~ 0
+Text Label 1700 1550 0    50   ~ 0
 PHY_AD1
-Text Label 1750 1550 0    50   ~ 0
+Text Label 1700 1450 0    50   ~ 0
 PHY_AD0
 Wire Wire Line
-	2700 1550 2700 1450
-Connection ~ 2700 1450
-Text Notes 550  1150 0    50   ~ 0
+	2700 1450 2700 1350
+Connection ~ 2700 1350
+Text Notes 500  1050 0    50   ~ 0
 add 2ns delay to TXC for TXD
-Text Notes 550  1250 0    50   ~ 0
+Text Notes 500  1150 0    50   ~ 0
 add 2ns delay to RXC for RXD
-Text Notes 550  1450 0    50   ~ 0
+Text Notes 500  1350 0    50   ~ 0
 AN[1:0]: capability
 $Comp
 L Device:R R?
@@ -862,4 +847,191 @@ F 3 "" H 4400 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4400 1100
+Text Notes 6400 6350 0    50   ~ 0
+39 RSET: https://electronics.stackexchange.com/questions/384148/rset-pin-function-of-rtl8211e
+$Comp
+L Device:R R?
+U 1 1 5C4FE69D
+P 2600 2400
+F 0 "R?" V 2600 2600 50  0000 R TNN
+F 1 "22" V 2600 2300 50  0000 R TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2530 2400 50  0001 C CNN
+F 3 "~" H 2600 2400 50  0001 C CNN
+	1    2600 2400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2300 2400 2450 2400
+Wire Wire Line
+	2300 2500 2450 2500
+Wire Wire Line
+	2300 2600 2450 2600
+Wire Wire Line
+	2300 2700 2450 2700
+Wire Wire Line
+	2300 2800 2450 2800
+Wire Wire Line
+	2300 2900 2450 2900
+$Comp
+L Device:R R?
+U 1 1 5C50F1EE
+P 2600 2500
+F 0 "R?" V 2600 2700 50  0000 R TNN
+F 1 "22" V 2600 2400 50  0000 R TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2530 2500 50  0001 C CNN
+F 3 "~" H 2600 2500 50  0001 C CNN
+	1    2600 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C50F46D
+P 2600 2600
+F 0 "R?" V 2600 2800 50  0000 R TNN
+F 1 "22" V 2600 2500 50  0000 R TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2530 2600 50  0001 C CNN
+F 3 "~" H 2600 2600 50  0001 C CNN
+	1    2600 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C50F639
+P 2600 2700
+F 0 "R?" V 2600 2900 50  0000 R TNN
+F 1 "22" V 2600 2600 50  0000 R TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2530 2700 50  0001 C CNN
+F 3 "~" H 2600 2700 50  0001 C CNN
+	1    2600 2700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C50F79B
+P 2600 2800
+F 0 "R?" V 2600 3000 50  0000 R TNN
+F 1 "22" V 2600 2700 50  0000 R TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2530 2800 50  0001 C CNN
+F 3 "~" H 2600 2800 50  0001 C CNN
+	1    2600 2800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C50FA14
+P 2600 2900
+F 0 "R?" V 2600 3100 50  0000 R TNN
+F 1 "22" V 2600 2800 50  0000 R TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2530 2900 50  0001 C CNN
+F 3 "~" H 2600 2900 50  0001 C CNN
+	1    2600 2900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C53C01F
+P 1500 3000
+F 0 "C?" V 1450 2950 50  0000 R CNN
+F 1 "27pF" V 1450 3050 50  0000 L CNN
+F 2 "" H 1538 2850 50  0001 C CNN
+F 3 "~" H 1500 3000 50  0001 C CNN
+	1    1500 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1650 3000 3000 3000
+Wire Wire Line
+	3000 3000 3000 2900
+Connection ~ 3000 2900
+Wire Wire Line
+	3000 2900 2750 2900
+$Comp
+L power:GND #PWR?
+U 1 1 5C554630
+P 1200 3100
+F 0 "#PWR?" H 1200 2850 50  0001 C CNN
+F 1 "GND" H 1205 2927 50  0000 C CNN
+F 2 "" H 1200 3100 50  0001 C CNN
+F 3 "" H 1200 3100 50  0001 C CNN
+	1    1200 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 3000 1200 3000
+Wire Wire Line
+	1200 3000 1200 3100
+$Comp
+L Device:R R?
+U 1 1 5C55DD73
+P 2000 3700
+F 0 "R?" V 2000 3900 50  0000 R TNN
+F 1 "1.5K" V 2000 3600 50  0000 R TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1930 3700 50  0001 C CNN
+F 3 "~" H 2000 3700 50  0001 C CNN
+	1    2000 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1850 3700 1700 3700
+Wire Wire Line
+	1700 3700 1700 3550
+Wire Wire Line
+	2850 4700 2500 4700
+Wire Wire Line
+	2500 4700 2500 5300
+Wire Wire Line
+	2500 5300 3800 5300
+Wire Wire Line
+	3800 5300 3800 5900
+Wire Wire Line
+	3800 5900 3650 5900
+Text Label 2900 4500 0    50   ~ 0
+PHYRSTB
+Wire Wire Line
+	1700 1750 2050 1750
+Text Label 1700 1750 0    50   ~ 0
+PHYRSTB
+$Comp
+L Device:R R?
+U 1 1 5C5B9718
+P 2300 1750
+F 0 "R?" V 2300 1950 50  0000 R TNN
+F 1 "4.7K" V 2300 1650 50  0000 R TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2230 1750 50  0001 C CNN
+F 3 "~" H 2300 1750 50  0001 C CNN
+	1    2300 1750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2450 1750 2700 1750
+Wire Wire Line
+	2700 1750 2700 1450
+Connection ~ 2700 1450
+$Comp
+L Device:C C?
+U 1 1 5C6039F8
+P 2050 1950
+F 0 "C?" H 2050 2000 50  0000 L BNN
+F 1 "1μF" H 2050 1900 50  0000 L TNN
+F 2 "" H 2088 1800 50  0001 C CNN
+F 3 "~" H 2050 1950 50  0001 C CNN
+	1    2050 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C604B9D
+P 2050 2100
+F 0 "#PWR?" H 2050 1850 50  0001 C CNN
+F 1 "GND" H 2055 1927 50  0000 C CNN
+F 2 "" H 2050 2100 50  0001 C CNN
+F 3 "" H 2050 2100 50  0001 C CNN
+	1    2050 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 1800 2050 1750
+Connection ~ 2050 1750
+Wire Wire Line
+	2050 1750 2150 1750
 $EndSCHEMATC
