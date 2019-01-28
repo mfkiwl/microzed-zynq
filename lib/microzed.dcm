@@ -114,6 +114,11 @@ D 1.25V 50ppm/Degrees C, 50uA in SOT23-3 Series (Bandgap) Voltage Reference
 F http://www.ti.com/lit/gpn/ref3012
 $ENDCMP
 #
+$CMP RTL8211E-VB-CG
+D 10/100/1000M ethernet phy
+F http://download3.dvd-driver.cz/realtek/datasheets/pdf/rtl8211e(g)-vb(vl)-cg_datasheet_1.6.pdf
+$ENDCMP
+#
 $CMP TLV62130RGTR
 D Texas Instruments, TLV62130RGTR DC-DC Converter 3A Adjustable, 0.9  5 V, 16-Pin QFN
 F http://www.ti.com/lit/gpn/tlv62130
