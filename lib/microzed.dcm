@@ -94,6 +94,11 @@ D ChipLED,Red,diffused,17mcd,SMD Avago HSMH-C191 Red LED, 639 nm, 1608 (0603) Cl
 F https://www.broadcom.com/products/leds-and-displays/chip-leds/0603-1.6-x-0.88mm-top-mount/hsmh-c191#documentation
 $ENDCMP
 #
+$CMP L829-1J1T-43
+D STEWART CONNECTOR - L829-1J1T-43 - CONNECTOR, RJ45, JACK, 8P8C, THT
+F https://www.belfuse.com/resources/ICMs/ICMs%20Drawings/L829-1J1T-43.pdf
+$ENDCMP
+#
 $CMP MMBT3904LT1G
 D NPN transistor,MMBT3904 0.2A Ic 1Vce ON Semi MMBT3904LT1G NPN Bipolar Transistor,  0.2 A 40 V, 3-Pin SOT-23
 F http://www.onsemi.com/pub/Collateral/MMBT3904LT1-D.PDF
