@@ -580,10 +580,10 @@ Text Notes 3600 3000 0    50   ~ 0
 DS187P8\nPS_PRO_B must connected\nto GND during power-on.
 Text Notes 5400 2000 0    50   ~ 0
 20mA
-Text Notes 3850 3550 0    50   ~ 0
-UG933 P57 Table5-3\nMIO7 2.5V,3.3V mode\nMIO0-MIO15: 20 KΩ resistor to ground
-Text GLabel 3150 4000 2    50   Input ~ 0
-USB_UART_RXD
-Text GLabel 3150 3900 2    50   Output ~ 0
-USB_UART_TXD
+Text Notes 4000 3650 0    50   ~ 0
+UG933 P57 Table5-3\nMIO8           MIO16-MIO53\n1.8V mode     20 KΩ resistor to VCCO_MIO0\n3.3V mode     20 KΩ resistor to ground\n 
+Text GLabel 3150 3900 2    50   BiDi ~ 0
+PS_MIO8
+Text GLabel 3150 4000 2    50   BiDi ~ 0
+PS_MIO9
 $EndSCHEMATC

@@ -14,154 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L microzed:TXS02612RTWR U?
-U 1 1 5C3A8ED3
-P 3950 3300
-F 0 "U?" H 5500 4350 50  0000 L CNN
-F 1 "TXS02612RTWR" H 5500 4200 50  0000 L CNN
-F 2 "microzed:QFN50P400X400X80-25N-D" H 5900 3750 50  0001 L CNN
-F 3 "http://www.ti.com/lit/gpn/txs02612" H 5900 3650 50  0001 L CNN
-F 4 "SDIO Port Expander With Voltage-Level Translation" H 5900 3550 50  0001 L CNN "Description"
-F 5 "0.8" H 5900 3450 50  0001 L CNN "Height"
-F 6 "Texas Instruments" H 5900 3350 50  0001 L CNN "Manufacturer_Name"
-	1    3950 3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5C3A8ED9
-P 3800 2050
-F 0 "C?" H 3850 2150 50  0000 L CNN
-F 1 "0.1uF" H 3850 1950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 3838 1900 50  0001 C CNN
-F 3 "~" H 3800 2050 50  0001 C CNN
-	1    3800 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5C3A8EDF
-P 4200 2050
-F 0 "C?" H 4250 2150 50  0000 L CNN
-F 1 "0.1uF" H 4250 1950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 4238 1900 50  0001 C CNN
-F 3 "~" H 4200 2050 50  0001 C CNN
-	1    4200 2050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C3A8EE5
-P 3800 2200
-F 0 "#PWR?" H 3800 1950 50  0001 C CNN
-F 1 "GND" H 3805 2027 50  0000 C CNN
-F 2 "" H 3800 2200 50  0001 C CNN
-F 3 "" H 3800 2200 50  0001 C CNN
-	1    3800 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4200 2200 3800 2200
-Connection ~ 3800 2200
-$Comp
-L power:+1V8 #PWR?
-U 1 1 5C3A8EED
-P 4550 1900
-F 0 "#PWR?" H 4550 1750 50  0001 C CNN
-F 1 "+1V8" H 4565 2073 50  0000 C CNN
-F 2 "" H 4550 1900 50  0001 C CNN
-F 3 "" H 4550 1900 50  0001 C CNN
-	1    4550 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4550 1900 4550 2300
-Wire Wire Line
-	3800 1900 4200 1900
-Connection ~ 4550 1900
-Connection ~ 4200 1900
-Wire Wire Line
-	4200 1900 4550 1900
-Wire Wire Line
-	4950 2300 4850 2300
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5C3A8EF9
-P 4950 1900
-F 0 "#PWR?" H 4950 1750 50  0001 C CNN
-F 1 "+3V3" H 4965 2073 50  0000 C CNN
-F 2 "" H 4950 1900 50  0001 C CNN
-F 3 "" H 4950 1900 50  0001 C CNN
-	1    4950 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4950 1900 4950 2300
-Connection ~ 4950 2300
-$Comp
-L Device:C C?
-U 1 1 5C3A8F01
-P 5150 2050
-F 0 "C?" H 5200 2150 50  0000 L CNN
-F 1 "0.1uF" H 5200 1950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 5188 1900 50  0001 C CNN
-F 3 "~" H 5150 2050 50  0001 C CNN
-	1    5150 2050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5150 1900 4950 1900
-Connection ~ 4950 1900
-$Comp
-L power:GND #PWR?
-U 1 1 5C3A8F09
-P 5150 2200
-F 0 "#PWR?" H 5150 1950 50  0001 C CNN
-F 1 "GND" H 5155 2027 50  0000 C CNN
-F 2 "" H 5150 2200 50  0001 C CNN
-F 3 "" H 5150 2200 50  0001 C CNN
-	1    5150 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C3A8F0F
-P 3950 3800
-F 0 "#PWR?" H 3950 3550 50  0001 C CNN
-F 1 "GND" H 3955 3627 50  0000 C CNN
-F 2 "" H 3950 3800 50  0001 C CNN
-F 3 "" H 3950 3800 50  0001 C CNN
-	1    3950 3800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4550 4100 4850 4100
-Connection ~ 4850 4100
-Wire Wire Line
-	4850 4100 4950 4100
-$Comp
-L power:GND #PWR?
-U 1 1 5C3A8F18
-P 4950 4100
-F 0 "#PWR?" H 4950 3850 50  0001 C CNN
-F 1 "GND" H 4955 3927 50  0000 C CNN
-F 2 "" H 4950 4100 50  0001 C CNN
-F 3 "" H 4950 4100 50  0001 C CNN
-	1    4950 4100
-	1    0    0    -1  
-$EndComp
-Connection ~ 4950 4100
-Wire Wire Line
-	2950 2900 3950 2900
-Wire Wire Line
-	2950 3000 3950 3000
-Wire Wire Line
-	2950 3100 3950 3100
-Wire Wire Line
-	2950 3200 3950 3200
-Wire Wire Line
-	2950 3300 3950 3300
-$Comp
 L microzed:5025700893 J?
 U 1 1 5C3A8F27
 P 7150 2600
@@ -202,17 +54,6 @@ F 3 "~" H 6650 4950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6650 5100 6650 5400
-$Comp
-L power:+1V8 #PWR?
-U 1 1 5C3A8F3B
-P 6650 4800
-F 0 "#PWR?" H 6650 4650 50  0001 C CNN
-F 1 "+1V8" H 6665 4973 50  0000 C CNN
-F 2 "" H 6650 4800 50  0001 C CNN
-F 3 "" H 6650 4800 50  0001 C CNN
-	1    6650 4800
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5C3A8F41
@@ -342,12 +183,6 @@ Wire Wire Line
 Connection ~ 8550 3700
 Wire Wire Line
 	8550 3700 8550 3800
-NoConn ~ 5550 3300
-NoConn ~ 5550 3400
-NoConn ~ 5550 3500
-NoConn ~ 5550 3600
-NoConn ~ 5550 3700
-NoConn ~ 5550 3800
 $Comp
 L power:GND #PWR?
 U 1 1 5C3A8F8F
@@ -377,10 +212,7 @@ F 3 "" H 7150 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 2800 2950 2800
-Wire Wire Line
 	7050 3300 7050 5400
-Connection ~ 6650 5400
 Wire Wire Line
 	6650 5400 7050 5400
 Wire Wire Line
@@ -398,20 +230,34 @@ F 3 "" H 6850 1900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6850 2100 6850 1900
-Text GLabel 2950 2800 0    50   Input ~ 0
+Text GLabel 5550 2600 0    50   Input ~ 0
 SD_CLK
-Text GLabel 2950 2900 0    50   Input ~ 0
+Text GLabel 5550 2700 0    50   Input ~ 0
 SD_CMD
-Text GLabel 2950 3000 0    50   BiDi ~ 0
+Text GLabel 5550 2800 0    50   BiDi ~ 0
 SD_D0
-Text GLabel 2950 3100 0    50   BiDi ~ 0
+Text GLabel 5550 2900 0    50   BiDi ~ 0
 SD_D1
-Text GLabel 2950 3200 0    50   BiDi ~ 0
+Text GLabel 5550 3000 0    50   BiDi ~ 0
 SD_D2
-Text GLabel 2950 3300 0    50   BiDi ~ 0
+Text GLabel 5550 3100 0    50   BiDi ~ 0
 SD_D3
 Text GLabel 2950 5400 0    50   Output ~ 0
 SD_CD
 Text GLabel 2950 5500 0    50   Output ~ 0
 SD_WP
+Connection ~ 6650 5400
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CF30F55
+P 6650 4700
+F 0 "#PWR?" H 6650 4550 50  0001 C CNN
+F 1 "+3V3" H 6665 4873 50  0000 C CNN
+F 2 "" H 6650 4700 50  0001 C CNN
+F 3 "" H 6650 4700 50  0001 C CNN
+	1    6650 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 4800 6650 4700
 $EndSCHEMATC

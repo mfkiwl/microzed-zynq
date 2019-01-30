@@ -157,24 +157,14 @@ F 3 "" H 3050 1950 50  0001 C CNN
 	1    3050 1950
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1900 3350
-NoConn ~ 1900 3450
-Text Notes 2000 3450 0    50   ~ 0
-UG865 P17 Table 1-5:\nrecommend use XADC external inputs.
-Wire Notes Line
-	1950 3250 3500 3250
-Wire Notes Line
-	3500 3250 3500 3500
+Text Notes 4850 3450 0    50   ~ 0
+DXN_0, DXP_0:\nUG865 P17 Table 1-5:\nrecommend use XADC external inputs.
 Wire Wire Line
 	3750 2100 4250 2100
 Text GLabel 2150 3750 2    50   Input ~ 0
 XADC0_N
 Text GLabel 2150 3650 2    50   Input ~ 0
 XADC0_P
-Wire Notes Line
-	1950 3500 1950 3250
-Wire Notes Line
-	3500 3500 1950 3500
 $Comp
 L microzed:XC7Z020-1CLG484C IC1
 U 1 1 5C46CEA5
@@ -228,4 +218,20 @@ Text Notes 1950 2050 0    50   ~ 0
 pull-up, 10kΩ
 Text Notes 2600 3850 0    50   ~ 0
 UG480 (BANK35)\nconnect to GND\nif not used.
+Wire Wire Line
+	1900 3450 1900 3350
+Wire Wire Line
+	1900 3350 2250 3350
+Connection ~ 1900 3350
+$Comp
+L power:GND #PWR?
+U 1 1 5CF50B8A
+P 2250 3350
+F 0 "#PWR?" H 2250 3100 50  0001 C CNN
+F 1 "GND" H 2400 3300 50  0000 C CNN
+F 2 "" H 2250 3350 50  0001 C CNN
+F 3 "" H 2250 3350 50  0001 C CNN
+	1    2250 3350
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
