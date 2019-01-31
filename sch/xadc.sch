@@ -28,7 +28,7 @@ Text Notes 7750 2500 2    50   ~ 0
 Text Notes 8000 3600 2    50   ~ 0
 1.25V±0.2%
 Text Notes 3300 2850 0    50   ~ 0
-XADC:\nplease see UG480 P78.\nxapp554 pcb layout.
+UG480 P78.\nxapp554 pcb layout.\nxapp795 driving.
 $Comp
 L Device:L L?
 U 1 1 5C39CBE6

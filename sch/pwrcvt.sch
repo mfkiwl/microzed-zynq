@@ -1097,267 +1097,38 @@ F 3 "~" H 8450 3800 50  0001 C CNN
 	1    8450 3800
 	0    -1   -1   0   
 $EndComp
-$Comp
-L microzed:TLV62130RGTR U?
-U 1 1 5C49A9A9
-P 2100 5900
-F 0 "U?" H 2500 6065 50  0000 C CNN
-F 1 "TLV62130RGTR" H 2500 5974 50  0000 C CNN
-F 2 "microzed:QFN50P300X300X100-17N-D" H 3500 5850 50  0001 L CNN
-F 3 "http://www.ti.com/lit/gpn/tlv62130" H 3500 5750 50  0001 L CNN
-F 4 "Texas Instruments, TLV62130RGTR DC-DC Converter 3A Adjustable, 0.9  5 V, 16-Pin QFN" H 3500 5650 50  0001 L CNN "Description"
-F 5 "1" H 3500 5550 50  0001 L CNN "Height"
-F 6 "Texas Instruments" H 3500 5450 50  0001 L CNN "Manufacturer_Name"
-	1    2100 5900
-	1    0    0    -1  
-$EndComp
-$Comp
-L microzed:VIN #PWR?
-U 1 1 5C49A9AF
-P 1500 5800
-F 0 "#PWR?" H 1500 5650 50  0001 C CNN
-F 1 "VIN" H 1515 5973 50  0000 C CNN
-F 2 "" H 1500 5800 50  0001 C CNN
-F 3 "" H 1500 5800 50  0001 C CNN
-	1    1500 5800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1900 6200 1900 6100
-Wire Wire Line
-	1900 5800 1500 5800
-Connection ~ 1900 6000
-Wire Wire Line
-	1900 6000 1900 5800
-Connection ~ 1900 6100
-Wire Wire Line
-	1900 6100 1900 6000
-$Comp
-L Device:C C?
-U 1 1 5C49A9BB
-P 1500 6050
-F 0 "C?" H 1550 6100 50  0000 L BNN
-F 1 "10µF" H 1550 6000 50  0000 L TNN
-F 2 "Capacitor_SMD:C_1210_3225Metric" H 1538 5900 50  0001 C CNN
-F 3 "~" H 1500 6050 50  0001 C CNN
-	1    1500 6050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C49A9C1
-P 1500 6200
-F 0 "#PWR?" H 1500 5950 50  0001 C CNN
-F 1 "GND" H 1505 6027 50  0000 C CNN
-F 2 "" H 1500 6200 50  0001 C CNN
-F 3 "" H 1500 6200 50  0001 C CNN
-	1    1500 6200
-	1    0    0    -1  
-$EndComp
-Connection ~ 1500 5800
-Wire Wire Line
-	1500 5900 1500 5800
-Wire Wire Line
-	1900 6500 900  6500
-Wire Wire Line
-	1900 6700 1900 6800
-Wire Wire Line
-	1900 7300 2400 7300
-Connection ~ 1900 6800
-Wire Wire Line
-	1900 6800 1900 7300
-Connection ~ 2400 7300
-Wire Wire Line
-	2400 7300 2500 7300
-Connection ~ 2500 7300
-Wire Wire Line
-	2500 7300 2600 7300
-Connection ~ 2600 7300
-Wire Wire Line
-	2600 7300 2700 7300
-$Comp
-L Device:C C?
-U 1 1 5C49A9D4
-P 1500 6950
-F 0 "C?" H 1615 6996 50  0000 L CNN
-F 1 "3300pF" H 1615 6905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1538 6800 50  0001 C CNN
-F 3 "~" H 1500 6950 50  0001 C CNN
-	1    1500 6950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1900 6600 1500 6600
-Wire Wire Line
-	1500 6600 1500 6800
-Wire Wire Line
-	1500 7100 1500 7300
-Wire Wire Line
-	1500 7300 1900 7300
-Connection ~ 1900 7300
-$Comp
-L power:GND #PWR?
-U 1 1 5C49A9DF
-P 1900 7300
-F 0 "#PWR?" H 1900 7050 50  0001 C CNN
-F 1 "GND" H 1905 7127 50  0000 C CNN
-F 2 "" H 1900 7300 50  0001 C CNN
-F 3 "" H 1900 7300 50  0001 C CNN
-	1    1900 7300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3100 6200 3100 6100
-Connection ~ 3100 6100
-Wire Wire Line
-	3100 6100 3100 6000
-$Comp
-L Device:R R?
-U 1 1 5C49A9E8
-P 4900 6350
-F 0 "R?" H 4970 6396 50  0000 L CNN
-F 1 "1.50K" H 4970 6305 50  0000 L CNN
-F 2 "" V 4830 6350 50  0001 C CNN
-F 3 "~" H 4900 6350 50  0001 C CNN
-	1    4900 6350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5C49A9EE
-P 4000 6350
-F 0 "R?" H 4070 6396 50  0000 L CNN
-F 1 "210K" H 4070 6305 50  0000 L CNN
-F 2 "" V 3930 6350 50  0001 C CNN
-F 3 "~" H 4000 6350 50  0001 C CNN
-	1    4000 6350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5C49A9F4
-P 4000 7050
-F 0 "R?" H 4070 7096 50  0000 L CNN
-F 1 "40K" H 4070 7005 50  0000 L CNN
-F 2 "" V 3930 7050 50  0001 C CNN
-F 3 "~" H 4000 7050 50  0001 C CNN
-	1    4000 7050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5C49A9FA
-P 4900 7050
-F 0 "R?" H 4970 7096 50  0000 L CNN
-F 1 "4.99K" H 4970 7005 50  0000 L CNN
-F 2 "" V 4830 7050 50  0001 C CNN
-F 3 "~" H 4900 7050 50  0001 C CNN
-	1    4900 7050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5C49AA00
-P 4400 6350
-F 0 "C?" H 4450 6400 50  0000 L BNN
-F 1 "22µF" H 4450 6300 50  0000 L TNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 4438 6200 50  0001 C CNN
-F 3 "~" H 4400 6350 50  0001 C CNN
-	1    4400 6350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 6500 4000 6800
-Wire Wire Line
-	3100 6800 4000 6800
-Connection ~ 4000 6800
-Wire Wire Line
-	4000 6800 4000 6900
-Wire Wire Line
-	3100 6000 3300 6000
-Connection ~ 3100 6000
-Wire Wire Line
-	3600 6000 3800 6000
-Wire Wire Line
-	4000 6000 4000 6200
-Wire Wire Line
-	2700 7300 4000 7300
-Wire Wire Line
-	4000 7300 4000 7200
-Connection ~ 2700 7300
-Wire Wire Line
-	4400 6500 4400 7300
-Wire Wire Line
-	4400 7300 4000 7300
-Connection ~ 4000 7300
-Wire Wire Line
-	4400 6200 4400 6000
-Wire Wire Line
-	4400 6000 4000 6000
-Connection ~ 4000 6000
-Connection ~ 4400 6000
-Wire Wire Line
-	3100 6400 3800 6400
-Wire Wire Line
-	3800 6400 3800 6000
-Connection ~ 3800 6000
-Wire Wire Line
-	3800 6000 4000 6000
-Wire Wire Line
-	4900 6200 4900 6000
-Wire Wire Line
-	4900 6000 4400 6000
-Wire Wire Line
-	4900 6500 4900 6600
-Wire Wire Line
-	4900 7200 4900 7300
-Wire Wire Line
-	4900 7300 4400 7300
-Connection ~ 4400 7300
-Wire Wire Line
-	3100 6600 4900 6600
-Connection ~ 4900 6600
-Wire Wire Line
-	4900 6600 4900 6900
-Wire Wire Line
-	4900 6600 5450 6600
-Text Notes 900  6750 0    50   ~ 0
-1.5µA\nL: < 0.3V\nH: > 0.9V
-$Comp
-L Device:L L?
-U 1 1 5C49AA2D
-P 3450 6000
-F 0 "L?" V 3550 6000 50  0000 C BNN
-F 1 "1.0µH" V 3350 6000 50  0000 C TNN
-F 2 "microzed:SRN8040" H 3450 6000 50  0001 C CNN
-F 3 "~" H 3450 6000 50  0001 C CNN
-	1    3450 6000
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5C4B5EFE
-P 4400 6000
-F 0 "#PWR?" H 4400 5850 50  0001 C CNN
-F 1 "+5V" H 4415 6173 50  0000 C CNN
-F 2 "" H 4400 6000 50  0001 C CNN
-F 3 "" H 4400 6000 50  0001 C CNN
-	1    4400 6000
-	1    0    0    -1  
-$EndComp
-Text GLabel 5450 6600 2    50   Output ~ 0
-PG_5V
-Wire Wire Line
-	900  6500 900  4200
-Connection ~ 900  4200
 Text Notes 3200 2000 0    50   ~ 0
 1:4
 Text Notes 3200 4500 0    50   ~ 0
 5:4
-Text Notes 3200 6800 0    50   ~ 0
-21:4
 Text Notes 8150 4550 0    50   ~ 0
 7:8
 Text Notes 8150 2100 0    50   ~ 0
 25:8
+$Comp
+L microzed:VIN #PWR?
+U 1 1 5CF99DAF
+P 1500 6050
+F 0 "#PWR?" H 1500 5900 50  0001 C CNN
+F 1 "VIN" H 1515 6223 50  0000 C CNN
+F 2 "" H 1500 6050 50  0001 C CNN
+F 3 "" H 1500 6050 50  0001 C CNN
+	1    1500 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5CF9B150
+P 2250 6050
+F 0 "#PWR?" H 2250 5900 50  0001 C CNN
+F 1 "+5V" H 2265 6223 50  0000 C CNN
+F 2 "" H 2250 6050 50  0001 C CNN
+F 3 "" H 2250 6050 50  0001 C CNN
+	1    2250 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 6050 2250 6050
+Text Notes 1500 6250 0    50   ~ 0
+VIN must be +5V
 $EndSCHEMATC
