@@ -3,7 +3,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 17
+Sheet 1 18
 Title ""
 Date ""
 Rev ""
@@ -108,5 +108,11 @@ S 1000 4000 1000 1000
 U 5C39D5E3
 F0 "sdcard" 50
 F1 "sch/sdcard.sch" 50
+$EndSheet
+$Sheet
+S 7000 4000 1000 1000
+U 5CF72B0E
+F0 "connector" 50
+F1 "sch/connector.sch" 50
 $EndSheet
 $EndSCHEMATC
