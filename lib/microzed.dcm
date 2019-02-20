@@ -68,6 +68,14 @@ $CMP BSH-050-01-X-D-A
 D Conn Micro Socket SKT 100 POS 0.5mm Solder ST SMD
 $ENDCMP
 #
+$CMP BSH-060-01-X-D-A
+D Conn Micro Socket SKT 120 POS 0.5mm Solder ST SMD
+$ENDCMP
+#
+$CMP BSH-090-01-X-D-A
+D Conn Micro Socket SKT 180 POS 0.5mm Solder ST SMD
+$ENDCMP
+#
 $CMP CDSOT23-SR208
 D ESD Suppressors / TVS Diodes STEERING DIODE ARRAY
 F https://www.bourns.com/docs/Product-Datasheets/CDSOT23-SR208.pdf
