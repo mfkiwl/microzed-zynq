@@ -3,7 +3,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 18
+Sheet 5 19
 Title ""
 Date ""
 Rev ""
@@ -173,10 +173,8 @@ F 0 "IC1" H 1408 2015 50  0000 C CNN
 F 1 "XC7Z020-1CLG484C" H 1408 1924 50  0000 C CNN
 F 2 "microzed:BGA484C100P22X22_2300X2300X254" H 3550 1950 50  0001 L CNN
 F 3 "http://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pkg-Pinout.pdf" H 3550 1850 50  0001 L CNN
-F 4 "XC7Z020-1CLG484C, FPGA ZYNQ-7 1.2  3.3 V 484-pin CLG" H 3550 1750 50  0001 L CNN "Description"
 F 5 "2.54" H 3550 1650 50  0001 L CNN "Height"
-F 6 "XILINX" H 3550 1550 50  0001 L CNN "Manufacturer_Name"
-F 7 "XC7Z020-1CLG484C" H 3550 1450 50  0001 L CNN "Manufacturer_Part_Number"
+F 6 "XILINX" H 3550 1550 50  0001 L CNN "Manufacture"
 	1    900  1850
 	1    0    0    -1  
 $EndComp

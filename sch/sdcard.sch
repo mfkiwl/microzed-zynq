@@ -3,7 +3,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 17 18
+Sheet 17 19
 Title ""
 Date ""
 Rev ""
@@ -21,9 +21,8 @@ F 0 "J?" H 7850 2865 50  0000 C CNN
 F 1 "5025700893" H 7850 2774 50  0000 C CNN
 F 2 "microzed:5025700893" H 8950 2700 50  0001 L CNN
 F 3 "https://www.molex.com/pdm_docs/sd/5025700893_sd.pdf" H 8950 2600 50  0001 L CNN
-F 4 "CONN MICRO SD CARD PUSH-PUSH R/A" H 8950 2500 50  0001 L CNN "Description"
 F 5 "1" H 8950 2400 50  0001 L CNN "Height"
-F 6 "Molex" H 8950 2300 50  0001 L CNN "Manufacturer_Name"
+F 6 "Molex" H 8950 2300 50  0001 L CNN "Manufacture"
 	1    7150 2600
 	1    0    0    -1  
 $EndComp

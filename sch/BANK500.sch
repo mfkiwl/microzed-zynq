@@ -3,7 +3,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 18
+Sheet 8 19
 Title ""
 Date ""
 Rev ""
@@ -21,7 +21,6 @@ F 0 "U?" H 2825 1615 50  0000 C CNN
 F 1 "ASDMB-33.333MHZ-LC-T" H 2825 1524 50  0000 C CNN
 F 2 "microzed:ABRACON-ASDMB" H 3750 1450 50  0001 L CNN
 F 3 "http://www.abracon.com/Oscillators/ASDMB.pdf" H 3750 1350 50  0001 L CNN
-F 4 "Standard Clock Oscillators 33.333MHZ 50ppm -40 + 85C" H 3750 1250 50  0001 L CNN "Description"
 	1    2250 1350
 	1    0    0    -1  
 $EndComp
@@ -31,7 +30,7 @@ U 1 1 5B9256A7
 P 3600 2000
 F 0 "R?" H 3670 2046 50  0000 L CNN
 F 1 "40.2" H 3670 1955 50  0000 L CNN
-F 2 "Resistors_SMD:R_0402" V 3530 2000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3530 2000 50  0001 C CNN
 F 3 "~" H 3600 2000 50  0001 C CNN
 	1    3600 2000
 	1    0    0    -1  
@@ -86,7 +85,7 @@ U 1 1 5B92D34A
 P 1800 1600
 F 0 "C?" H 1750 1650 50  0000 R BNN
 F 1 "0.1uF" H 1750 1550 50  0000 R TNN
-F 2 "Capacitor_SMD:C_0201" H 1838 1450 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 1838 1450 50  0001 C CNN
 F 3 "~" H 1800 1600 50  0001 C CNN
 	1    1800 1600
 	1    0    0    -1  
@@ -131,7 +130,7 @@ U 1 1 5B960C36
 P 8800 2650
 F 0 "R?" H 8870 2696 50  0000 L CNN
 F 1 "20K" H 8870 2605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402" V 8730 2650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8730 2650 50  0001 C CNN
 F 3 "~" H 8800 2650 50  0001 C CNN
 	1    8800 2650
 	1    0    0    -1  
@@ -139,12 +138,12 @@ $EndComp
 Wire Wire Line
 	2750 3900 3150 3900
 $Comp
-L Device:R R70
+L Device:R R?
 U 1 1 5B9611C5
 P 10000 4500
-F 0 "R70" H 10070 4546 50  0000 L CNN
+F 0 "R?" H 10070 4546 50  0000 L CNN
 F 1 "20K" H 10070 4455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402" V 9930 4500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9930 4500 50  0001 C CNN
 F 3 "~" H 10000 4500 50  0001 C CNN
 	1    10000 4500
 	1    0    0    -1  
@@ -170,9 +169,8 @@ F 0 "LED?" H 5500 2187 50  0000 C CNN
 F 1 "HSMH-C191" H 5500 2096 50  0000 C CNN
 F 2 "microzed:LEDC1608X60N" H 6150 1950 50  0001 L BNN
 F 3 "https://www.broadcom.com/products/leds-and-displays/chip-leds/0603-1.6-x-0.88mm-top-mount/hsmh-c191#documentation" H 6150 1850 50  0001 L BNN
-F 4 "ChipLED,Red,diffused,17mcd,SMD Avago HSMH-C191 Red LED, 639 nm, 1608 (0603) Clear, Dome Lens SMD Package" H 6150 1750 50  0001 L BNN "Description"
 F 5 "0.6" H 6150 1650 50  0001 L BNN "Height"
-F 6 "Avago Technologies" H 6150 1550 50  0001 L BNN "Manufacturer_Name"
+F 6 "Avago Technologies" H 6150 1550 50  0001 L BNN "Manufacture"
 	1    5200 1800
 	1    0    0    -1  
 $EndComp
@@ -299,10 +297,8 @@ F 0 "IC1" H 2308 2715 50  0000 C CNN
 F 1 "XC7Z020-1CLG484C" H 2308 2624 50  0000 C CNN
 F 2 "microzed:BGA484C100P22X22_2300X2300X254" H 4500 2650 50  0001 L CNN
 F 3 "http://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pkg-Pinout.pdf" H 4500 2550 50  0001 L CNN
-F 4 "XC7Z020-1CLG484C, FPGA ZYNQ-7 1.2  3.3 V 484-pin CLG" H 4500 2450 50  0001 L CNN "Description"
 F 5 "2.54" H 4500 2350 50  0001 L CNN "Height"
-F 6 "XILINX" H 4500 2250 50  0001 L CNN "Manufacturer_Name"
-F 7 "XC7Z020-1CLG484C" H 4500 2150 50  0001 L CNN "Manufacturer_Part_Number"
+F 6 "XILINX" H 4500 2250 50  0001 L CNN "Manufacture"
 	7    1850 2550
 	1    0    0    -1  
 $EndComp
@@ -350,7 +346,7 @@ U 1 1 5C3F7CA1
 P 8250 4500
 F 0 "R?" H 8320 4546 50  0000 L CNN
 F 1 "20K" H 8320 4455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402" V 8180 4500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 8180 4500 50  0001 C CNN
 F 3 "~" H 8250 4500 50  0001 C CNN
 	1    8250 4500
 	1    0    0    -1  
@@ -376,7 +372,7 @@ U 1 1 5C402B90
 P 7650 4500
 F 0 "R?" H 7720 4546 50  0000 L CNN
 F 1 "20K" H 7720 4455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402" V 7580 4500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7580 4500 50  0001 C CNN
 F 3 "~" H 7650 4500 50  0001 C CNN
 	1    7650 4500
 	1    0    0    -1  
@@ -411,7 +407,7 @@ U 1 1 5C408F95
 P 7050 2650
 F 0 "R?" H 7120 2696 50  0000 L CNN
 F 1 "20K" H 7120 2605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402" V 6980 2650 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6980 2650 50  0001 C CNN
 F 3 "~" H 7050 2650 50  0001 C CNN
 	1    7050 2650
 	1    0    0    -1  
@@ -424,7 +420,7 @@ U 1 1 5C4157BA
 P 10700 4500
 F 0 "R?" H 10770 4546 50  0000 L CNN
 F 1 "20K" H 10770 4455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402" V 10630 4500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10630 4500 50  0001 C CNN
 F 3 "~" H 10700 4500 50  0001 C CNN
 	1    10700 4500
 	1    0    0    -1  
@@ -450,16 +446,8 @@ F 0 "J?" H 9828 5096 50  0000 L CNN
 F 1 "5-146280-3" H 9828 5005 50  0000 L CNN
 F 2 "microzed:HDRV3W97P0X254_1X3_721X234X821P" H 10150 5250 50  0001 L CNN
 F 3 "http://pdl.designspark.com/api/v1/manufacturers/53f31a629b4759f8698ba80b/part/53f33e0b9b4759f869d709b8/55bff39a8759c5ef5e8d0d63/1.pdf" H 10150 5150 50  0001 L CNN
-F 4 "Header vert 3 way 2.54mm AmpModu" H 10150 5050 50  0001 L CNN "Description"
 F 5 "8.21" H 10150 4950 50  0001 L CNN "Height"
-F 6 "TE Connectivity" H 10150 4850 50  0001 L CNN "Manufacturer_Name"
-F 7 "5-146280-3" H 10150 4750 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "7176592P" H 10150 4650 50  0001 L CNN "RS Part Number"
-F 9 "http://uk.rs-online.com/web/p/products/7176592P" H 10150 4550 50  0001 L CNN "RS Price/Stock"
-F 10 "70042445" H 10150 4450 50  0001 L CNN "Allied_Number"
-F 11 "https://www.alliedelec.com/te-connectivity-5-146280-3/70042445/" H 10150 4350 50  0001 L CNN "Allied Price/Stock"
-F 12 "5-146280-3" H 10150 4250 50  0001 L CNN "Arrow Part Number"
-F 13 "https://www.arrow.com/en/products/5-146280-3/te-connectivity" H 10150 4150 50  0001 L CNN "Arrow Price/Stock"
+F 6 "TE Connectivity" H 10150 4850 50  0001 L CNN "Manufacture"
 	1    9500 5150
 	1    0    0    -1  
 $EndComp
@@ -488,7 +476,7 @@ U 1 1 5C46B1A9
 P 9350 4500
 F 0 "R?" H 9420 4546 50  0000 L CNN
 F 1 "20K" H 9420 4455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402" V 9280 4500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9280 4500 50  0001 C CNN
 F 3 "~" H 9350 4500 50  0001 C CNN
 	1    9350 4500
 	1    0    0    -1  

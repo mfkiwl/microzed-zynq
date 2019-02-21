@@ -3,7 +3,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 16 18
+Sheet 16 19
 Title ""
 Date ""
 Rev ""
@@ -118,10 +118,10 @@ Wire Wire Line
 	1400 7100 1100 7100
 Connection ~ 1100 7100
 $Comp
-L Connector:TestPoint TP2
+L Connector:TestPoint TP?
 U 1 1 5BB74BA2
 P 1900 7300
-F 0 "TP2" H 1843 7327 50  0000 R CNN
+F 0 "TP?" H 1843 7327 50  0000 R CNN
 F 1 "TestPoint" H 1843 7418 50  0000 R CNN
 F 2 "" H 2100 7300 50  0001 C CNN
 F 3 "~" H 2100 7300 50  0001 C CNN
@@ -145,14 +145,13 @@ F 3 "" H 1100 7400 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L microzed:ASDMB-25.000MHZ-LC-T U6
+L microzed:ASDMB-25.000MHZ-LC-T U?
 U 1 1 5BB76A34
 P 2050 7000
-F 0 "U6" H 2625 7265 50  0000 C CNN
+F 0 "U?" H 2625 7265 50  0000 C CNN
 F 1 "ASDMB-25.000MHZ-LC-T" H 2625 7174 50  0000 C CNN
 F 2 "microzed:ABRACON-ASDMB" H 3550 7100 50  0001 L CNN
 F 3 "http://www.abracon.com/Oscillators/ASDMB.pdf" H 3550 7000 50  0001 L CNN
-F 4 "Standard Clock Oscillators 25.000MHZ 50ppm -40 + 85C" H 3550 6900 50  0001 L CNN "Description"
 	1    2050 7000
 	1    0    0    -1  
 $EndComp
@@ -257,8 +256,7 @@ F 1 "RTL8211E-VB-CG" H 3950 1150 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.66x4.66mm" H 5050 3200 50  0001 L CNN
 F 3 "http://download3.dvd-driver.cz/realtek/datasheets/pdf/rtl8211e(g)-vb(vl)-cg_datasheet_1.6.pdf" H 5050 3100 50  0001 L CNN
 F 4 "1" H 5050 3000 50  0001 L CNN "Height"
-F 5 "Realtek" H 5050 2900 50  0001 L CNN "Manufacturer_Name"
-F 6 "RTL8211E-VB-CG" H 5050 2800 50  0001 L CNN "Manufacturer_Part_Number"
+F 5 "Realtek" H 5050 2900 50  0001 L CNN "Manufacture"
 	1    3000 3000
 	1    0    0    -1  
 $EndComp
@@ -1159,7 +1157,7 @@ F 1 "L829-1J1T-43" H 8350 4250 50  0000 L CNN
 F 2 "microzed:L8291J1T43" H 9800 4200 50  0001 L CNN
 F 3 "https://www.belfuse.com/resources/ICMs/ICMs%20Drawings/L829-1J1T-43.pdf" H 9800 4100 50  0001 L CNN
 F 4 "11" H 9800 4000 50  0001 L CNN "Height"
-F 5 "Bel-Stewart" H 9800 3900 50  0001 L CNN "Manufacturer_Name"
+F 5 "Bel-Stewart" H 9800 3900 50  0001 L CNN "Manufacture"
 	1    8350 4100
 	1    0    0    -1  
 $EndComp

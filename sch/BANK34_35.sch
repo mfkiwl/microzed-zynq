@@ -3,7 +3,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 18
+Sheet 7 19
 Title ""
 Date ""
 Rev ""
@@ -21,10 +21,8 @@ F 0 "IC1" H 2667 1165 50  0000 C CNN
 F 1 "XC7Z020-1CLG484C" H 2667 1074 50  0000 C CNN
 F 2 "microzed:BGA484C100P22X22_2300X2300X254" H 4650 1100 50  0001 L CNN
 F 3 "http://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pkg-Pinout.pdf" H 4650 1000 50  0001 L CNN
-F 4 "XC7Z020-1CLG484C, FPGA ZYNQ-7 1.2  3.3 V 484-pin CLG" H 4650 900 50  0001 L CNN "Description"
 F 5 "2.54" H 4650 800 50  0001 L CNN "Height"
-F 6 "XILINX" H 4650 700 50  0001 L CNN "Manufacturer_Name"
-F 7 "XC7Z020-1CLG484C" H 4650 600 50  0001 L CNN "Manufacturer_Part_Number"
+F 6 "XILINX" H 4650 700 50  0001 L CNN "Manufacture"
 	4    2000 1000
 	1    0    0    -1  
 $EndComp
@@ -136,10 +134,8 @@ F 0 "IC1" H 7733 1165 50  0000 C CNN
 F 1 "XC7Z020-1CLG484C" H 7733 1074 50  0000 C CNN
 F 2 "microzed:BGA484C100P22X22_2300X2300X254" H 9650 1100 50  0001 L CNN
 F 3 "http://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pkg-Pinout.pdf" H 9650 1000 50  0001 L CNN
-F 4 "XC7Z020-1CLG484C, FPGA ZYNQ-7 1.2  3.3 V 484-pin CLG" H 9650 900 50  0001 L CNN "Description"
 F 5 "2.54" H 9650 800 50  0001 L CNN "Height"
-F 6 "XILINX" H 9650 700 50  0001 L CNN "Manufacturer_Name"
-F 7 "XC7Z020-1CLG484C" H 9650 600 50  0001 L CNN "Manufacturer_Part_Number"
+F 6 "XILINX" H 9650 700 50  0001 L CNN "Manufacture"
 	5    7000 1000
 	1    0    0    -1  
 $EndComp
@@ -471,16 +467,8 @@ F 0 "J?" H 5078 846 50  0000 L CNN
 F 1 "5-146280-3" H 5078 755 50  0000 L CNN
 F 2 "microzed:HDRV3W97P0X254_1X3_721X234X821P" H 5400 1000 50  0001 L CNN
 F 3 "http://pdl.designspark.com/api/v1/manufacturers/53f31a629b4759f8698ba80b/part/53f33e0b9b4759f869d709b8/55bff39a8759c5ef5e8d0d63/1.pdf" H 5400 900 50  0001 L CNN
-F 4 "Header vert 3 way 2.54mm AmpModu" H 5400 800 50  0001 L CNN "Description"
 F 5 "8.21" H 5400 700 50  0001 L CNN "Height"
-F 6 "TE Connectivity" H 5400 600 50  0001 L CNN "Manufacturer_Name"
-F 7 "5-146280-3" H 5400 500 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "7176592P" H 5400 400 50  0001 L CNN "RS Part Number"
-F 9 "http://uk.rs-online.com/web/p/products/7176592P" H 5400 300 50  0001 L CNN "RS Price/Stock"
-F 10 "70042445" H 5400 200 50  0001 L CNN "Allied_Number"
-F 11 "https://www.alliedelec.com/te-connectivity-5-146280-3/70042445/" H 5400 100 50  0001 L CNN "Allied Price/Stock"
-F 12 "5-146280-3" H 5400 0   50  0001 L CNN "Arrow Part Number"
-F 13 "https://www.arrow.com/en/products/5-146280-3/te-connectivity" H 5400 -100 50  0001 L CNN "Arrow Price/Stock"
+F 6 "TE Connectivity" H 5400 600 50  0001 L CNN "Manufacture"
 	1    4750 900 
 	1    0    0    -1  
 $EndComp

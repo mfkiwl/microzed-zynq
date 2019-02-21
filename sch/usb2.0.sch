@@ -3,7 +3,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 15 18
+Sheet 15 19
 Title ""
 Date ""
 Rev ""
@@ -21,9 +21,8 @@ F 0 "U?" H 2900 500 50  0000 C CNN
 F 1 "USB3320C-EZK" H 2950 350 50  0000 C CNN
 F 2 "microzed:QFN50P500X500X100-33N-D" H 3600 2100 50  0001 L CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/00001792B.pdf" H 3600 2000 50  0001 L CNN
-F 4 "Highly Integrated Full Featured Hi-Speed USB 2.0 ULPI Transceiver" H 3600 1900 50  0001 L CNN "Description"
 F 5 "1" H 3600 1800 50  0001 L CNN "Height"
-F 6 "Microchip" H 3600 1700 50  0001 L CNN "Manufacturer_Name"
+F 6 "Microchip" H 3600 1700 50  0001 L CNN "Manufacture"
 	1    1700 2600
 	1    0    0    -1  
 $EndComp
@@ -197,18 +196,6 @@ F 3 "" H 3400 5400 50  0001 C CNN
 $EndComp
 NoConn ~ 3300 4400
 $Comp
-L microzed:ASDMB-24.000MHZ-LC-T U?
-U 1 1 5BAB3309
-P 5050 6700
-F 0 "U?" H 5625 6965 50  0000 C CNN
-F 1 "ASDMB-24.000MHZ-LC-T" H 5625 6874 50  0000 C CNN
-F 2 "microzed:ABRACON-ASDMB" H 6550 6800 50  0001 L CNN
-F 3 "http://www.abracon.com/Oscillators/ASDMB.pdf" H 6550 6700 50  0001 L CNN
-F 4 "Standard Clock Oscillators 24.000MHZ 50ppm -40 + 85C" H 6550 6600 50  0001 L CNN "Description"
-	1    5050 6700
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Device:R R?
 U 1 1 5BAB48F8
 P 3750 4300
@@ -221,99 +208,10 @@ F 3 "~" H 3750 4300 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3300 4300 3600 4300
-$Comp
-L power:GND #PWR?
-U 1 1 5BAB717F
-P 3900 6900
-F 0 "#PWR?" H 3900 6650 50  0001 C CNN
-F 1 "GND" H 3905 6727 50  0000 C CNN
-F 2 "" H 3900 6900 50  0001 C CNN
-F 3 "" H 3900 6900 50  0001 C CNN
-	1    3900 6900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3900 6800 3900 6900
-$Comp
-L power:+1V8 #PWR?
-U 1 1 5BAB87A7
-P 5200 6600
-F 0 "#PWR?" H 5200 6450 50  0001 C CNN
-F 1 "+1V8" H 5215 6773 50  0000 C CNN
-F 2 "" H 5200 6600 50  0001 C CNN
-F 3 "" H 5200 6600 50  0001 C CNN
-	1    5200 6600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5BAB87C2
-P 5550 6800
-F 0 "R?" V 5650 6650 50  0000 C CNN
-F 1 "4.99K" V 5650 6950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 5480 6800 50  0001 C CNN
-F 3 "~" H 5550 6800 50  0001 C CNN
-	1    5550 6800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5050 6800 5200 6800
-Wire Wire Line
-	5050 6700 5200 6700
-Wire Wire Line
-	6000 6700 6000 6800
-$Comp
-L Device:C C?
-U 1 1 5BAB92FD
-P 6000 6950
-F 0 "C?" H 6115 6996 50  0000 L CNN
-F 1 "0.1μF" H 6115 6905 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 6038 6800 50  0001 C CNN
-F 3 "~" H 6000 6950 50  0001 C CNN
-	1    6000 6950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5200 6600 5200 6700
-Connection ~ 5200 6700
-Wire Wire Line
-	5200 6700 6000 6700
-Wire Wire Line
-	5700 6800 6000 6800
-Connection ~ 6000 6800
-$Comp
-L Connector:TestPoint TP4
-U 1 1 5BAB9F57
-P 5200 7000
-F 0 "TP4" H 5143 7027 50  0000 R CNN
-F 1 "TestPoint" H 5143 7118 50  0000 R CNN
-F 2 "" H 5400 7000 50  0001 C CNN
-F 3 "~" H 5400 7000 50  0001 C CNN
-	1    5200 7000
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	5200 7000 5200 6800
-Connection ~ 5200 6800
-Wire Wire Line
-	5200 6800 5400 6800
-$Comp
-L power:GND #PWR?
-U 1 1 5BAC148F
-P 6000 7100
-F 0 "#PWR?" H 6000 6850 50  0001 C CNN
-F 1 "GND" H 6005 6927 50  0000 C CNN
-F 2 "" H 6000 7100 50  0001 C CNN
-F 3 "" H 6000 7100 50  0001 C CNN
-	1    6000 7100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3300 4500 3400 4500
 Wire Wire Line
 	3400 4500 3400 5100
-Wire Wire Line
-	3900 4300 3900 6700
 $Comp
 L microzed:10104111-0001LF J?
 U 1 1 5BACC517
@@ -322,9 +220,7 @@ F 0 "J?" H 8250 4115 50  0000 C CNN
 F 1 "10104111-0001LF" H 8250 4024 50  0000 C CNN
 F 2 "microzed:MICRO_USB_AB_TYPE_RECEPTACLE" H 8950 3950 50  0001 L CNN
 F 3 "http://docs-europe.electrocomponents.com/webdocs/0ed1/0900766b80ed1ae2.pdf" H 8950 3850 50  0001 L CNN
-F 4 "FCI Right Angle SMT Female Type AB Version 2.0 Micro USB Connector, 100 V ac, 1.8A" H 8950 3750 50  0001 L CNN "Description"
-F 5 "FCI" H 8950 3650 50  0001 L CNN "Manufacturer_Name"
-F 6 "10104111-0001LF" H 8950 3550 50  0001 L CNN "Manufacturer_Part_Number"
+F 5 "FCI" H 8950 3650 50  0001 L CNN "Manufacture"
 	1    8200 3650
 	1    0    0    -1  
 $EndComp
@@ -481,12 +377,8 @@ F 0 "D?" H 7900 4600 50  0000 C CNN
 F 1 "CDSOT23-SR208" H 7900 4500 50  0000 C CNN
 F 2 "microzed:SOT95P280X130-6N" H 8850 4400 50  0001 L CNN
 F 3 "https://www.bourns.com/docs/Product-Datasheets/CDSOT23-SR208.pdf" H 8850 4300 50  0001 L CNN
-F 4 "ESD Suppressors / TVS Diodes STEERING DIODE ARRAY" H 8850 4200 50  0001 L CNN "Description"
 F 5 "1.3" H 8850 4100 50  0001 L CNN "Height"
-F 6 "Bourns" H 8850 4000 50  0001 L CNN "Manufacturer_Name"
-F 7 "CDSOT23-SR208" H 8850 3900 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "CDSOT23-SR208" H 8850 3600 50  0001 L CNN "Arrow Part Number"
-F 9 "https://www.arrow.com/en/products/cdsot23-sr208/bourns" H 8850 3500 50  0001 L CNN "Arrow Price/Stock"
+F 6 "Bourns" H 8850 4000 50  0001 L CNN "Manufacture"
 	1    7300 4300
 	-1   0    0    -1  
 $EndComp
@@ -621,7 +513,7 @@ F 1 "TPS2069D" H 7400 1774 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8300 1700 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tps2069d.pdf" H 8300 1600 50  0001 L CNN
 F 4 "1.45" H 8300 1400 50  0001 L CNN "Height"
-F 5 "Texas Instruments" H 8300 1300 50  0001 L CNN "Manufacturer_Name"
+F 5 "Texas Instruments" H 8300 1300 50  0001 L CNN "Manufacture"
 	1    6900 1600
 	-1   0    0    -1  
 $EndComp
@@ -713,4 +605,108 @@ Wire Wire Line
 Wire Wire Line
 	3750 2200 3250 2200
 Connection ~ 3250 2200
+$Comp
+L power:GND #PWR?
+U 1 1 5C748F07
+P 3800 6600
+F 0 "#PWR?" H 3800 6350 50  0001 C CNN
+F 1 "GND" H 3805 6427 50  0000 C CNN
+F 2 "" H 3800 6600 50  0001 C CNN
+F 3 "" H 3800 6600 50  0001 C CNN
+	1    3800 6600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3800 6500 3800 6600
+$Comp
+L Device:R R?
+U 1 1 5C748F0E
+P 2150 6500
+F 0 "R?" V 2250 6350 50  0000 C CNN
+F 1 "4.99K" V 2250 6650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2080 6500 50  0001 C CNN
+F 3 "~" H 2150 6500 50  0001 C CNN
+	1    2150 6500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 6500 2500 6500
+Wire Wire Line
+	2650 6400 2500 6400
+Wire Wire Line
+	1700 6400 1700 6500
+$Comp
+L Device:C C?
+U 1 1 5C748F17
+P 1700 6650
+F 0 "C?" H 1815 6696 50  0000 L CNN
+F 1 "0.1μF" H 1815 6605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 1738 6500 50  0001 C CNN
+F 3 "~" H 1700 6650 50  0001 C CNN
+	1    1700 6650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 6200 2500 6400
+Connection ~ 2500 6400
+Wire Wire Line
+	2500 6400 1700 6400
+Wire Wire Line
+	2000 6500 1700 6500
+Connection ~ 1700 6500
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5C748F22
+P 2500 6700
+F 0 "TP?" H 2443 6727 50  0000 R CNN
+F 1 "TestPoint" H 2443 6818 50  0000 R CNN
+F 2 "" H 2700 6700 50  0001 C CNN
+F 3 "~" H 2700 6700 50  0001 C CNN
+	1    2500 6700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2500 6700 2500 6500
+Connection ~ 2500 6500
+Wire Wire Line
+	2500 6500 2300 6500
+$Comp
+L power:GND #PWR?
+U 1 1 5C748F2B
+P 1700 6800
+F 0 "#PWR?" H 1700 6550 50  0001 C CNN
+F 1 "GND" H 1705 6627 50  0000 C CNN
+F 2 "" H 1700 6800 50  0001 C CNN
+F 3 "" H 1700 6800 50  0001 C CNN
+	1    1700 6800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4300 3950 6400
+Wire Wire Line
+	3950 6400 3800 6400
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5C74B479
+P 2500 6200
+F 0 "#PWR?" H 2500 6050 50  0001 C CNN
+F 1 "+1V8" H 2515 6373 50  0000 C CNN
+F 2 "" H 2500 6200 50  0001 C CNN
+F 3 "" H 2500 6200 50  0001 C CNN
+	1    2500 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L microzed:ASDMB-24.000MHZ-LC-T U?
+U 1 1 5C74BDD8
+P 2650 6400
+F 0 "U?" H 3225 6665 50  0000 C CNN
+F 1 "ASDMB-24.000MHZ-LC-T" H 3225 6574 50  0000 C CNN
+F 2 "microzed:ABRACON-ASDMB" H 4150 6500 50  0001 L CNN
+F 3 "http://www.abracon.com/Oscillators/ASDMB.pdf" H 4150 6400 50  0001 L CNN
+	1    2650 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 4300 3900 4300
 $EndSCHEMATC

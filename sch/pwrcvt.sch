@@ -3,7 +3,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 18
+Sheet 2 19
 Title ""
 Date ""
 Rev ""
@@ -21,9 +21,8 @@ F 0 "U?" H 2500 1265 50  0000 C CNN
 F 1 "TLV62130RGTR" H 2500 1174 50  0000 C CNN
 F 2 "microzed:QFN50P300X300X100-17N-D" H 3500 1050 50  0001 L CNN
 F 3 "http://www.ti.com/lit/gpn/tlv62130" H 3500 950 50  0001 L CNN
-F 4 "Texas Instruments, TLV62130RGTR DC-DC Converter 3A Adjustable, 0.9  5 V, 16-Pin QFN" H 3500 850 50  0001 L CNN "Description"
 F 5 "1" H 3500 750 50  0001 L CNN "Height"
-F 6 "Texas Instruments" H 3500 650 50  0001 L CNN "Manufacturer_Name"
+F 6 "Texas Instruments" H 3500 650 50  0001 L CNN "Manufacture"
 	1    2100 1100
 	1    0    0    -1  
 $EndComp
@@ -276,9 +275,8 @@ F 0 "U?" H 2500 3765 50  0000 C CNN
 F 1 "TLV62130RGTR" H 2500 3674 50  0000 C CNN
 F 2 "microzed:QFN50P300X300X100-17N-D" H 3500 3550 50  0001 L CNN
 F 3 "http://www.ti.com/lit/gpn/tlv62130" H 3500 3450 50  0001 L CNN
-F 4 "Texas Instruments, TLV62130RGTR DC-DC Converter 3A Adjustable, 0.9  5 V, 16-Pin QFN" H 3500 3350 50  0001 L CNN "Description"
 F 5 "1" H 3500 3250 50  0001 L CNN "Height"
-F 6 "Texas Instruments" H 3500 3150 50  0001 L CNN "Manufacturer_Name"
+F 6 "Texas Instruments" H 3500 3150 50  0001 L CNN "Manufacture"
 	1    2100 3600
 	1    0    0    -1  
 $EndComp
@@ -519,9 +517,8 @@ F 0 "U?" H 7500 3865 50  0000 C CNN
 F 1 "TLV62130RGTR" H 7500 3774 50  0000 C CNN
 F 2 "microzed:QFN50P300X300X100-17N-D" H 8500 3650 50  0001 L CNN
 F 3 "http://www.ti.com/lit/gpn/tlv62130" H 8500 3550 50  0001 L CNN
-F 4 "Texas Instruments, TLV62130RGTR DC-DC Converter 3A Adjustable, 0.9  5 V, 16-Pin QFN" H 8500 3450 50  0001 L CNN "Description"
 F 5 "1" H 8500 3350 50  0001 L CNN "Height"
-F 6 "Texas Instruments" H 8500 3250 50  0001 L CNN "Manufacturer_Name"
+F 6 "Texas Instruments" H 8500 3250 50  0001 L CNN "Manufacture"
 	1    7100 3700
 	1    0    0    -1  
 $EndComp
@@ -754,9 +751,8 @@ F 0 "U?" H 7500 1365 50  0000 C CNN
 F 1 "TLV62130RGTR" H 7500 1274 50  0000 C CNN
 F 2 "microzed:QFN50P300X300X100-17N-D" H 8500 1150 50  0001 L CNN
 F 3 "http://www.ti.com/lit/gpn/tlv62130" H 8500 1050 50  0001 L CNN
-F 4 "Texas Instruments, TLV62130RGTR DC-DC Converter 3A Adjustable, 0.9  5 V, 16-Pin QFN" H 8500 950 50  0001 L CNN "Description"
 F 5 "1" H 8500 850 50  0001 L CNN "Height"
-F 6 "Texas Instruments" H 8500 750 50  0001 L CNN "Manufacturer_Name"
+F 6 "Texas Instruments" H 8500 750 50  0001 L CNN "Manufacture"
 	1    7100 1200
 	1    0    0    -1  
 $EndComp

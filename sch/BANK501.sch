@@ -3,7 +3,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 18
+Sheet 9 19
 Title ""
 Date ""
 Rev ""
@@ -47,10 +47,8 @@ F 0 "S?" H 6800 4415 50  0000 C CNN
 F 1 "7914J-1-000E" H 6800 4324 50  0000 C CNN
 F 2 "microzed:7914J1000E" H 7600 4250 50  0001 L CNN
 F 3 "http://www.bourns.com/docs/Product-Datasheets/7914.pdf" H 7600 4150 50  0001 L CNN
-F 4 "BOURNS - 7914J-1-000E - SWITCH, SPST, 0.1A, 16V, J LEGS" H 7600 4050 50  0001 L CNN "Description"
 F 5 "4" H 7600 3950 50  0001 L CNN "Height"
-F 6 "Bourns" H 7600 3850 50  0001 L CNN "Manufacturer_Name"
-F 7 "7914J-1-000E" H 7600 3750 50  0001 L CNN "Manufacturer_Part_Number"
+F 6 "Bourns" H 7600 3850 50  0001 L CNN "Manufacture"
 	1    6300 4150
 	1    0    0    -1  
 $EndComp
@@ -211,10 +209,8 @@ F 0 "IC1" H 4158 2265 50  0000 C CNN
 F 1 "XC7Z020-1CLG484C" H 4158 2174 50  0000 C CNN
 F 2 "microzed:BGA484C100P22X22_2300X2300X254" H 6300 2200 50  0001 L CNN
 F 3 "http://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pkg-Pinout.pdf" H 6300 2100 50  0001 L CNN
-F 4 "XC7Z020-1CLG484C, FPGA ZYNQ-7 1.2  3.3 V 484-pin CLG" H 6300 2000 50  0001 L CNN "Description"
 F 5 "2.54" H 6300 1900 50  0001 L CNN "Height"
-F 6 "XILINX" H 6300 1800 50  0001 L CNN "Manufacturer_Name"
-F 7 "XC7Z020-1CLG484C" H 6300 1700 50  0001 L CNN "Manufacturer_Part_Number"
+F 6 "XILINX" H 6300 1800 50  0001 L CNN "Manufacture"
 	8    3650 2100
 	1    0    0    -1  
 $EndComp

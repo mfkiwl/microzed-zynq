@@ -3,7 +3,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 14 18
+Sheet 14 19
 Title ""
 Date ""
 Rev ""
@@ -19,10 +19,10 @@ Text GLabel 1800 4100 0    50   Input ~ 0
 USB_UART_TxD
 NoConn ~ 5400 3200
 $Comp
-L Interface_USB:CP2104 U2
+L Interface_USB:CP2104 U?
 U 1 1 5BA1C0F8
 P 5600 4100
-F 0 "U2" H 5200 3100 50  0000 C CNN
+F 0 "U?" H 5200 3100 50  0000 C CNN
 F 1 "CP2104-F03-GM" H 5100 3000 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 5750 3150 50  0001 L CNN
 F 3 "https://www.silabs.com/Support%20Documents/TechnicalDocs/cp2104.pdf" H 5050 5350 50  0001 C CNN
@@ -61,19 +61,15 @@ Wire Wire Line
 Connection ~ 5500 5100
 NoConn ~ 6300 4800
 $Comp
-L microzed:CDSOT23-SR208 D1
+L microzed:CDSOT23-SR208 D?
 U 1 1 5BA007AD
 P 7800 4500
-F 0 "D1" H 8400 4800 50  0000 C CNN
+F 0 "D?" H 8400 4800 50  0000 C CNN
 F 1 "CDSOT23-SR208" H 8400 4700 50  0000 C CNN
 F 2 "microzed:SOT95P280X130-6N" H 9350 4600 50  0001 L CNN
 F 3 "https://www.bourns.com/docs/Product-Datasheets/CDSOT23-SR208.pdf" H 9350 4500 50  0001 L CNN
-F 4 "ESD Suppressors / TVS Diodes STEERING DIODE ARRAY" H 9350 4400 50  0001 L CNN "Description"
 F 5 "1.3" H 9350 4300 50  0001 L CNN "Height"
-F 6 "Bourns" H 9350 4200 50  0001 L CNN "Manufacturer_Name"
-F 7 "CDSOT23-SR208" H 9350 4100 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "CDSOT23-SR208" H 9350 3800 50  0001 L CNN "Arrow Part Number"
-F 9 "https://www.arrow.com/en/products/cdsot23-sr208/bourns" H 9350 3700 50  0001 L CNN "Arrow Price/Stock"
+F 6 "Bourns" H 9350 4200 50  0001 L CNN "Manufacture"
 	1    7800 4500
 	1    0    0    1   
 $EndComp
@@ -85,15 +81,7 @@ F 0 "J?" H 10150 4565 50  0000 C CNN
 F 1 "10104111-0001LF" H 10150 4474 50  0000 C CNN
 F 2 "microzed:MICRO_USB_AB_TYPE_RECEPTACLE" H 10850 4650 50  0001 L CNN
 F 3 "http://docs-europe.electrocomponents.com/webdocs/0ed1/0900766b80ed1ae2.pdf" H 10850 4550 50  0001 L CNN
-F 4 "FCI Right Angle SMT Female Type AB Version 2.0 Micro USB Connector, 100 V ac, 1.8A" H 10850 4450 50  0001 L CNN "Description"
-F 5 "FCI" H 10850 4250 50  0001 L CNN "Manufacturer_Name"
-F 6 "10104111-0001LF" H 10850 4150 50  0001 L CNN "Manufacturer_Part_Number"
-F 7 "1622014" H 10850 4050 50  0001 L CNN "RS Part Number"
-F 8 "http://uk.rs-online.com/web/p/products/1622014" H 10850 3950 50  0001 L CNN "RS Price/Stock"
-F 9 "70236825" H 10850 3650 50  0001 L CNN "Allied_Number"
-F 10 "http://www.alliedelec.com/fci-10104111-0001lf/70236825/" H 10850 3550 50  0001 L CNN "Allied Price/Stock"
-F 11 "10104111-0001LF" H 10850 3450 50  0001 L CNN "Arrow Part Number"
-F 12 "https://www.arrow.com/en/products/10104111-0001lf/amphenol-fci" H 10850 3350 50  0001 L CNN "Arrow Price/Stock"
+F 5 "FCI" H 10850 4250 50  0001 L CNN "Manufacture"
 	1    10100 4100
 	1    0    0    -1  
 $EndComp
@@ -324,10 +312,10 @@ Wire Wire Line
 Wire Wire Line
 	10600 4300 10600 4500
 $Comp
-L Device:R R1
+L Device:R R?
 U 1 1 5BA46C3B
 P 10200 4500
-F 0 "R1" V 10350 4450 50  0000 R BNN
+F 0 "R?" V 10350 4450 50  0000 R BNN
 F 1 "0" V 10350 4600 50  0000 L BNN
 F 2 "" V 10130 4500 50  0001 C CNN
 F 3 "~" H 10200 4500 50  0001 C CNN
@@ -421,7 +409,7 @@ U 1 1 5C508499
 P 4100 3600
 F 0 "R?" H 4170 3646 50  0000 L CNN
 F 1 "10K" H 4170 3555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402" V 4030 3600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4030 3600 50  0001 C CNN
 F 3 "~" H 4100 3600 50  0001 C CNN
 	1    4100 3600
 	1    0    0    -1  
@@ -432,7 +420,7 @@ U 1 1 5C509432
 P 4500 3600
 F 0 "R?" H 4570 3646 50  0000 L CNN
 F 1 "10K" H 4570 3555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402" V 4430 3600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4430 3600 50  0001 C CNN
 F 3 "~" H 4500 3600 50  0001 C CNN
 	1    4500 3600
 	1    0    0    -1  
