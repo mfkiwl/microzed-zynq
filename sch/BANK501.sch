@@ -47,8 +47,8 @@ F 0 "S?" H 6800 4415 50  0000 C CNN
 F 1 "7914J-1-000E" H 6800 4324 50  0000 C CNN
 F 2 "microzed:7914J1000E" H 7600 4250 50  0001 L CNN
 F 3 "http://www.bourns.com/docs/Product-Datasheets/7914.pdf" H 7600 4150 50  0001 L CNN
-F 5 "4" H 7600 3950 50  0001 L CNN "Height"
-F 6 "Bourns" H 7600 3850 50  0001 L CNN "Manufacture"
+F 4 "4" H 7600 3950 50  0001 L CNN "Height"
+F 5 "Bourns" H 7600 3850 50  0001 L CNN "Manufacture"
 	1    6300 4150
 	1    0    0    -1  
 $EndComp
@@ -209,8 +209,8 @@ F 0 "IC1" H 4158 2265 50  0000 C CNN
 F 1 "XC7Z020-1CLG484C" H 4158 2174 50  0000 C CNN
 F 2 "microzed:BGA484C100P22X22_2300X2300X254" H 6300 2200 50  0001 L CNN
 F 3 "http://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pkg-Pinout.pdf" H 6300 2100 50  0001 L CNN
-F 5 "2.54" H 6300 1900 50  0001 L CNN "Height"
-F 6 "XILINX" H 6300 1800 50  0001 L CNN "Manufacture"
+F 4 "2.54" H 6300 1900 50  0001 L CNN "Height"
+F 5 "XILINX" H 6300 1800 50  0001 L CNN "Manufacture"
 	8    3650 2100
 	1    0    0    -1  
 $EndComp
@@ -230,7 +230,7 @@ U 1 1 5C46BA3F
 P 5500 1900
 F 0 "C?" H 5615 1946 50  0000 L CNN
 F 1 " 0.01μF" H 5615 1855 50  0000 L CNN
-F 2 "" H 5538 1750 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 5538 1750 50  0001 C CNN
 F 3 "~" H 5500 1900 50  0001 C CNN
 	1    5500 1900
 	1    0    0    -1  

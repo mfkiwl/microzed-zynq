@@ -169,8 +169,8 @@ F 0 "LED?" H 5500 2187 50  0000 C CNN
 F 1 "HSMH-C191" H 5500 2096 50  0000 C CNN
 F 2 "microzed:LEDC1608X60N" H 6150 1950 50  0001 L BNN
 F 3 "https://www.broadcom.com/products/leds-and-displays/chip-leds/0603-1.6-x-0.88mm-top-mount/hsmh-c191#documentation" H 6150 1850 50  0001 L BNN
-F 5 "0.6" H 6150 1650 50  0001 L BNN "Height"
-F 6 "Avago Technologies" H 6150 1550 50  0001 L BNN "Manufacture"
+F 4 "0.6" H 6150 1650 50  0001 L BNN "Height"
+F 5 "Avago Technologies" H 6150 1550 50  0001 L BNN "Manufacture"
 	1    5200 1800
 	1    0    0    -1  
 $EndComp
@@ -297,8 +297,8 @@ F 0 "IC1" H 2308 2715 50  0000 C CNN
 F 1 "XC7Z020-1CLG484C" H 2308 2624 50  0000 C CNN
 F 2 "microzed:BGA484C100P22X22_2300X2300X254" H 4500 2650 50  0001 L CNN
 F 3 "http://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pkg-Pinout.pdf" H 4500 2550 50  0001 L CNN
-F 5 "2.54" H 4500 2350 50  0001 L CNN "Height"
-F 6 "XILINX" H 4500 2250 50  0001 L CNN "Manufacture"
+F 4 "2.54" H 4500 2350 50  0001 L CNN "Height"
+F 5 "XILINX" H 4500 2250 50  0001 L CNN "Manufacture"
 	7    1850 2550
 	1    0    0    -1  
 $EndComp
@@ -446,8 +446,8 @@ F 0 "J?" H 9828 5096 50  0000 L CNN
 F 1 "5-146280-3" H 9828 5005 50  0000 L CNN
 F 2 "microzed:HDRV3W97P0X254_1X3_721X234X821P" H 10150 5250 50  0001 L CNN
 F 3 "http://pdl.designspark.com/api/v1/manufacturers/53f31a629b4759f8698ba80b/part/53f33e0b9b4759f869d709b8/55bff39a8759c5ef5e8d0d63/1.pdf" H 10150 5150 50  0001 L CNN
-F 5 "8.21" H 10150 4950 50  0001 L CNN "Height"
-F 6 "TE Connectivity" H 10150 4850 50  0001 L CNN "Manufacture"
+F 4 "8.21" H 10150 4950 50  0001 L CNN "Height"
+F 5 "TE Connectivity" H 10150 4850 50  0001 L CNN "Manufacture"
 	1    9500 5150
 	1    0    0    -1  
 $EndComp

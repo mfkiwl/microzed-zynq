@@ -21,8 +21,8 @@ F 0 "U?" H 2900 500 50  0000 C CNN
 F 1 "USB3320C-EZK" H 2950 350 50  0000 C CNN
 F 2 "microzed:QFN50P500X500X100-33N-D" H 3600 2100 50  0001 L CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/00001792B.pdf" H 3600 2000 50  0001 L CNN
-F 5 "1" H 3600 1800 50  0001 L CNN "Height"
-F 6 "Microchip" H 3600 1700 50  0001 L CNN "Manufacture"
+F 4 "1" H 3600 1800 50  0001 L CNN "Height"
+F 5 "Microchip" H 3600 1700 50  0001 L CNN "Manufacture"
 	1    1700 2600
 	1    0    0    -1  
 $EndComp
@@ -220,7 +220,7 @@ F 0 "J?" H 8250 4115 50  0000 C CNN
 F 1 "10104111-0001LF" H 8250 4024 50  0000 C CNN
 F 2 "microzed:MICRO_USB_AB_TYPE_RECEPTACLE" H 8950 3950 50  0001 L CNN
 F 3 "http://docs-europe.electrocomponents.com/webdocs/0ed1/0900766b80ed1ae2.pdf" H 8950 3850 50  0001 L CNN
-F 5 "FCI" H 8950 3650 50  0001 L CNN "Manufacture"
+F 4 "FCI" H 8950 3650 50  0001 L CNN "Manufacture"
 	1    8200 3650
 	1    0    0    -1  
 $EndComp
@@ -377,8 +377,8 @@ F 0 "D?" H 7900 4600 50  0000 C CNN
 F 1 "CDSOT23-SR208" H 7900 4500 50  0000 C CNN
 F 2 "microzed:SOT95P280X130-6N" H 8850 4400 50  0001 L CNN
 F 3 "https://www.bourns.com/docs/Product-Datasheets/CDSOT23-SR208.pdf" H 8850 4300 50  0001 L CNN
-F 5 "1.3" H 8850 4100 50  0001 L CNN "Height"
-F 6 "Bourns" H 8850 4000 50  0001 L CNN "Manufacture"
+F 4 "1.3" H 8850 4100 50  0001 L CNN "Height"
+F 5 "Bourns" H 8850 4000 50  0001 L CNN "Manufacture"
 	1    7300 4300
 	-1   0    0    -1  
 $EndComp

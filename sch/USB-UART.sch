@@ -68,8 +68,8 @@ F 0 "D?" H 8400 4800 50  0000 C CNN
 F 1 "CDSOT23-SR208" H 8400 4700 50  0000 C CNN
 F 2 "microzed:SOT95P280X130-6N" H 9350 4600 50  0001 L CNN
 F 3 "https://www.bourns.com/docs/Product-Datasheets/CDSOT23-SR208.pdf" H 9350 4500 50  0001 L CNN
-F 5 "1.3" H 9350 4300 50  0001 L CNN "Height"
-F 6 "Bourns" H 9350 4200 50  0001 L CNN "Manufacture"
+F 4 "1.3" H 9350 4300 50  0001 L CNN "Height"
+F 5 "Bourns" H 9350 4200 50  0001 L CNN "Manufacture"
 	1    7800 4500
 	1    0    0    1   
 $EndComp
@@ -81,7 +81,7 @@ F 0 "J?" H 10150 4565 50  0000 C CNN
 F 1 "10104111-0001LF" H 10150 4474 50  0000 C CNN
 F 2 "microzed:MICRO_USB_AB_TYPE_RECEPTACLE" H 10850 4650 50  0001 L CNN
 F 3 "http://docs-europe.electrocomponents.com/webdocs/0ed1/0900766b80ed1ae2.pdf" H 10850 4550 50  0001 L CNN
-F 5 "FCI" H 10850 4250 50  0001 L CNN "Manufacture"
+F 4 "FCI" H 10850 4250 50  0001 L CNN "Manufacture"
 	1    10100 4100
 	1    0    0    -1  
 $EndComp
@@ -317,7 +317,7 @@ U 1 1 5BA46C3B
 P 10200 4500
 F 0 "R?" V 10350 4450 50  0000 R BNN
 F 1 "0" V 10350 4600 50  0000 L BNN
-F 2 "" V 10130 4500 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 10130 4500 50  0001 C CNN
 F 3 "~" H 10200 4500 50  0001 C CNN
 	1    10200 4500
 	0    1    1    0   
