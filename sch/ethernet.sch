@@ -256,7 +256,7 @@ F 1 "RTL8211E-VB-CG" H 3950 1150 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.66x4.66mm" H 5050 3200 50  0001 L CNN
 F 3 "http://download3.dvd-driver.cz/realtek/datasheets/pdf/rtl8211e(g)-vb(vl)-cg_datasheet_1.6.pdf" H 5050 3100 50  0001 L CNN
 F 4 "1" H 5050 3000 50  0001 L CNN "Height"
-F 5 "Realtek" H 5050 2900 50  0001 L CNN "Manufacture"
+F 5 "Realtek" H 5050 2900 50  0001 L CNN "Manufacturer"
 	1    3000 3000
 	1    0    0    -1  
 $EndComp
@@ -1157,7 +1157,7 @@ F 1 "L829-1J1T-43" H 8350 4250 50  0000 L CNN
 F 2 "microzed:L8291J1T43" H 9800 4200 50  0001 L CNN
 F 3 "https://www.belfuse.com/resources/ICMs/ICMs%20Drawings/L829-1J1T-43.pdf" H 9800 4100 50  0001 L CNN
 F 4 "11" H 9800 4000 50  0001 L CNN "Height"
-F 5 "Bel-Stewart" H 9800 3900 50  0001 L CNN "Manufacture"
+F 5 "Bel-Stewart" H 9800 3900 50  0001 L CNN "Manufacturer"
 	1    8350 4100
 	1    0    0    -1  
 $EndComp

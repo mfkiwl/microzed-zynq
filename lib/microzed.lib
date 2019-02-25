@@ -63,7 +63,7 @@ F1 "0826-1X1T-23-F" 200 200 50 H V L CNN
 F2 "microzed:08261X1T23F" 1950 100 50 H I L CNN
 F3 "https://belfuse.com/resources/StewartConnector/0826-1X1T-23-F.pdf" 1950 0 50 H I L CNN
 F4 "STEWART CONNECTOR - 0826-1X1T-23-F - CONNECTOR, RJ45, JACK, 8P8C, THT" 1950 -100 50 H I L CNN "Description"
-F5 "Bel-Stewart" 1950 -300 50 H I L CNN "Manufacture"
+F5 "Bel-Stewart" 1950 -300 50 H I L CNN "Manufacturer"
 DRAW
 C 400 -2100 12 1 0 15 N
 C 900 -2100 12 1 0 15 N
@@ -353,7 +353,7 @@ F0 "J" -50 450 50 H V L CNN
 F1 "10104111-0001LF" -350 350 50 H V L CNN
 F2 "microzed:MICRO_USB_AB_TYPE_RECEPTACLE" 750 300 50 H I L CNN
 F3 "" 750 200 50 H I L CNN
-F4 "FCI" 750 200 50 H I L CNN "Manufacture"
+F4 "FCI" 750 200 50 H I L CNN "Manufacturer"
 DRAW
 P 5 0 1 6 -200 300 300 300 300 -300 -200 -300 -200 300 N
 X USB5V0 1 -400 200 200 R 50 50 0 0 W
@@ -376,7 +376,7 @@ F1 "5-146280-3" 200 150 50 H V L CNN
 F2 "microzed:HDRV3W97P0X254_1X3_721X234X821P" 650 100 50 H I L CNN
 F3 "" 650 0 50 H I L CNN
 F4 "8.21" 650 -200 50 H I L CNN "Height"
-F5 "TE Connectivity" 650 -300 50 H I L CNN "Manufacture"
+F5 "TE Connectivity" 650 -300 50 H I L CNN "Manufacturer"
 DRAW
 P 5 0 1 6 200 100 300 100 300 -300 200 -300 200 100 N
 X 1 1 0 0 200 R 50 50 0 0 B
@@ -393,7 +393,7 @@ F1 "5025700893" 200 200 50 H V L CNN
 F2 "microzed:5025700893" 1800 100 50 H I L CNN
 F3 "" 1800 0 50 H I L CNN
 F4 "1" 1800 -200 50 H I L CNN "Height"
-F5 "Molex" 1800 -300 50 H I L CNN "Manufacture"
+F5 "Molex" 1800 -300 50 H I L CNN "Manufacturer"
 DRAW
 P 5 0 1 6 200 100 1200 100 1200 -900 200 -900 200 100 N
 X DAT2 1 0 -400 200 R 50 50 0 0 B
@@ -421,8 +421,8 @@ F1 "61082-101400LF" 200 200 50 H V L CNN
 F2 "61082-101400LF" 1350 100 50 H I L CNN
 F3 "http://portal.fciconnect.com/Comergent/fci/drawing/61082.pdf" 1350 0 50 H I L CNN
 F4 "FCI 0.8mm 100 Way 2 Row Straight PCB Socket Surface Mount Board to Board" 1350 -100 50 H I L CNN "Description"
-F5 "FCI" 1350 -300 50 H I L CNN "Manufacture"
-F6 "61082-101400LF" 1350 -400 50 H I L CNN "Manufacturer_Part_Number"
+F5 "FCI" 1350 -300 50 H I L CNN "Manufacturer"
+F6 "61082-101400LF" 1350 -400 50 H I L CNN "ManufacturerPartNumber"
 F7 "1738697" 1350 -500 50 H I L CNN "RS Part Number"
 F8 "http://uk.rs-online.com/web/p/products/1738697" 1350 -600 50 H I L CNN "RS Price/Stock"
 F9 "61082-101400LF" 1350 -700 50 H I L CNN "Arrow Part Number"
@@ -540,7 +540,7 @@ F1 "7914J-1-000E" 200 200 50 H V L CNN
 F2 "microzed:7914J1000E" 1300 100 50 H I L CNN
 F3 "" 1300 0 50 H I L CNN
 F4 "4" 1300 -200 50 H I L CNN "Height"
-F5 "Bourns" 1300 -300 50 H I L CNN "Manufacture"
+F5 "Bourns" 1300 -300 50 H I L CNN "Manufacturer"
 DRAW
 P 5 0 1 6 200 100 800 100 800 -200 200 -200 200 100 N
 X -_1 1 0 0 200 R 50 50 0 0 B
@@ -691,7 +691,7 @@ F1 "BAT54LT1G" 200 200 50 H V L CNN
 F2 "microzed:SOT96P237X111-3N" 1250 100 50 H I L CNN
 F3 "http://www.onsemi.com/pub/Collateral/BAT54LT1-D.PDF" 1250 0 50 H I L CNN
 F4 "1.11" 1250 -200 50 H I L CNN "Height"
-F5 "ON Semiconductor" 1250 -300 50 H I L CNN "Manufacture"
+F5 "ON Semiconductor" 1250 -300 50 H I L CNN "Manufacturer"
 DRAW
 P 5 0 1 6 200 100 700 100 700 -200 200 -200 200 100 N
 X A 1 0 0 200 R 50 50 0 0 B
@@ -707,7 +707,7 @@ F0 "JX" 200 250 50 H V L BNN
 F1 "BSH-050-01-X-D-A" 200 150 50 H V L BNN
 F2 "microzed:BSH-050-01-X-D-A" 1200 100 50 H I L BNN
 F3 "" 1200 0 50 H I L BNN
-F4 "Samtec Inc." 1200 -100 50 H I L BNN "Manufacture"
+F4 "Samtec Inc." 1200 -100 50 H I L BNN "Manufacturer"
 DRAW
 P 2 0 0 10 200 -5000 200 100 N
 P 2 0 0 10 200 100 700 100 N
@@ -823,7 +823,7 @@ F0 "JX" 200 250 50 H V L BNN
 F1 "BSH-060-01-X-D-A" 200 150 50 H V L BNN
 F2 "microzed:BSH-060-01-X-D-A" 1200 100 50 H I L BNN
 F3 "http://suddendocs.samtec.com/catalog_english/bsh.pdf" 1200 200 50 H I L BNN
-F4 "Samtec Inc." 1200 0 50 H I L BNN "Manufacture"
+F4 "Samtec Inc." 1200 0 50 H I L BNN "Manufacturer"
 DRAW
 P 2 0 0 10 200 100 200 -6000 N
 P 2 0 0 10 200 100 700 100 N
@@ -959,7 +959,7 @@ F0 "JX" 200 200 50 H V L BNN
 F1 "BSH-090-01-X-D-A" 200 100 50 H V L BNN
 F2 "microzed:BSH-090-01-X-D-A" 1200 100 50 H I L BNN
 F3 "http://suddendocs.samtec.com/catalog_english/bsh.pdf" 1200 0 50 H I L BNN
-F4 "Samtec Inc." 1200 -100 50 H I L BNN "Manufacture"
+F4 "Samtec Inc." 1200 -100 50 H I L BNN "Manufacturer"
 DRAW
 S 200 50 700 -4450 1 1 0 N
 S 200 50 700 -4450 2 1 0 N
@@ -1154,7 +1154,7 @@ F1 "CDSOT23-SR208" 200 200 50 H V L CNN
 F2 "microzed:SOT95P280X130-6N" 1550 100 50 H I L CNN
 F3 "" 1550 0 50 H I L CNN
 F4 "1.3" 1550 -200 50 H I L CNN "Height"
-F5 "Bourns" 1550 -300 50 H I L CNN "Manufacture"
+F5 "Bourns" 1550 -300 50 H I L CNN "Manufacturer"
 DRAW
 P 5 0 1 6 200 100 1000 100 1000 -300 200 -300 200 100 N
 X I/O_1 1 0 0 200 R 50 50 0 0 B
@@ -1175,8 +1175,8 @@ F2 "microzed:QFN50P400X400X80-25N-D" 1800 1100 50 H I L CNN
 F3 "https://www.silabs.com/Support%20Documents/TechnicalDocs/cp2104.pdf" 1800 1000 50 H I L CNN
 F4 "USB-to-UART Bridge,2Mbps,OTP,QFN24 Silicon Labs CP2104-F03-GM, USB Controller, 12MBps, USB to UART, 3  3.6 V, 24-Pin QFN" 1800 900 50 H I L CNN "Description"
 F5 "0.8" 1800 800 50 H I L CNN "Height"
-F6 "Silicon Labs" 1800 700 50 H I L CNN "Manufacture"
-F7 "CP2104-F03-GM" 1800 600 50 H I L CNN "Manufacturer_Part_Number"
+F6 "Silicon Labs" 1800 700 50 H I L CNN "Manufacturer"
+F7 "CP2104-F03-GM" 1800 600 50 H I L CNN "ManufacturerPartNumber"
 F8 "1689917" 1800 500 50 H I L CNN "RS Part Number"
 F9 "http://uk.rs-online.com/web/p/products/1689917" 1800 400 50 H I L CNN "RS Price/Stock"
 F10 "R1015870" 1800 300 50 H I L CNN "Allied_Number"
@@ -1236,7 +1236,7 @@ F1 "DSC1001DI1-024.0000" 200 200 50 H V L CNN
 F2 "microzed:DSC1001DI10240000" 1850 100 50 H I L CNN
 F3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005529B.pdf" 1850 0 50 H I L CNN
 F4 "Standard Clock Oscillators MEMS Oscillator, Low Power, -40C-85C, 50ppm" 1850 -100 50 H I L CNN "Description"
-F5 "Microchip" 1850 -300 50 H I L CNN "Manufacture"
+F5 "Microchip" 1850 -300 50 H I L CNN "Manufacturer"
 DRAW
 P 5 0 1 6 200 100 1200 100 1200 -200 200 -200 200 100 N
 X STANDBY# 1 0 0 200 R 50 50 0 0 B
@@ -1254,7 +1254,7 @@ F1 "DSC1001DI1-033.3300" 200 200 50 H V L CNN
 F2 "microzed:DSC1001DI10240000" 1850 100 50 H I L CNN
 F3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20005529B.pdf" 1850 0 50 H I L CNN
 F4 "Standard Clock Oscillators MEMS Oscillator, Low Power, -40C-85C, 50ppm" 1850 -100 50 H I L CNN "Description"
-F5 "Microchip" 1850 -300 50 H I L CNN "Manufacture"
+F5 "Microchip" 1850 -300 50 H I L CNN "Manufacturer"
 DRAW
 P 5 0 1 6 200 100 1200 100 1200 -200 200 -200 200 100 N
 X STANDBY# 1 0 0 200 R 50 50 0 0 B
@@ -1273,8 +1273,8 @@ F2 "microzed:CAPC0603X33N" 350 50 50 H I L CNN
 F3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/capacitor/mlcc/c02e.pdf" 350 -50 50 H I L CNN
 F4 "Ceramic SMT capacitor 100nF 6.3Vdc Murata 0201 GRM 100nF Ceramic Multilayer Capacitor, 6.3 V dc, +85C, X5R Dielectric, 10%" 350 -150 50 H I L CNN "Description"
 F5 "0.33" 350 -250 50 H I L CNN "Height"
-F6 "Murata Electronics" 350 -350 50 H I L CNN "Manufacture"
-F7 "GRM033R60J104KE19D" 350 -450 50 H I L CNN "Manufacturer_Part_Number"
+F6 "Murata Electronics" 350 -350 50 H I L CNN "Manufacturer"
+F7 "GRM033R60J104KE19D" 350 -450 50 H I L CNN "ManufacturerPartNumber"
 F8 "1448452" 350 -550 50 H I L CNN "RS Part Number"
 F9 "http://uk.rs-online.com/web/p/products/1448452" 350 -650 50 H I L CNN "RS Price/Stock"
 F10 "GRM033R60J104KE19D" 350 -750 50 H I L CNN "Arrow Part Number"
@@ -1297,7 +1297,7 @@ F1 "HSMH-C191" 0 250 50 H V L BNN
 F2 "microzed:LEDC1608X60N" 950 150 50 H I L BNN
 F3 "" 950 50 50 H I L BNN
 F4 "0.6" 950 -150 50 H I L BNN "Height"
-F5 "Avago Technologies" 950 -250 50 H I L BNN "Manufacture"
+F5 "Avago Technologies" 950 -250 50 H I L BNN "Manufacturer"
 DRAW
 P 2 0 1 6 100 0 200 0 N
 P 2 0 1 6 200 100 200 -100 N
@@ -1320,7 +1320,7 @@ F1 "L829-1J1T-43" 0 150 50 H V L CNN
 F2 "microzed:L8291J1T43" 1950 600 50 H I L CNN
 F3 "https://www.belfuse.com/resources/ICMs/ICMs%20Drawings/L829-1J1T-43.pdf" 1950 500 50 H I L CNN
 F4 "11" 1950 400 50 H I L CNN "Height"
-F5 "Bel-Stewart" 1950 300 50 H I L CNN "Manufacture"
+F5 "Bel-Stewart" 1950 300 50 H I L CNN "Manufacturer"
 DRAW
 S 0 -1550 950 100 0 1 0 N
 X TRCT3 1 1150 -200 200 L 50 50 0 0 B
@@ -1354,7 +1354,7 @@ F2 "SOT95P237X111-3N" 1200 100 50 H I L CNN
 F3 "http://www.onsemi.com/pub/Collateral/MMBT3904LT1-D.PDF" 1200 0 50 H I L CNN
 F4 "NPN transistor,MMBT3904 0.2A Ic 1Vce ON Semi MMBT3904LT1G NPN Bipolar Transistor,  0.2 A 40 V, 3-Pin SOT-23" 1200 -100 50 H I L CNN "Description"
 F5 "1.11" 1200 -200 50 H I L CNN "Height"
-F6 "ON Semiconductor" 1200 -300 50 H I L CNN "Manufacture"
+F6 "ON Semiconductor" 1200 -300 50 H I L CNN "Manufacturer"
 DRAW
 P 5 0 1 6 200 100 600 100 600 -200 200 -200 200 100 N
 X B 1 0 0 200 R 50 50 0 0 B
@@ -1480,8 +1480,8 @@ F2 "microzed:BGA96C80P9X16_900X1400X120" 1800 100 50 H I L CNN
 F3 "https://www.micron.com/~/media/Documents/Products/Data%20Sheet/DRAM/DDR3/4Gb_1_35V_DDR3L.pdf" 1800 0 50 H I L CNN
 F4 "DRAM Chip DDR3L SDRAM 4Gbit 256Mx16 1.35V 96-Pin FBGA T/R" 1800 -100 50 H I L CNN "Description"
 F5 "1.2" 1800 -200 50 H I L CNN "Height"
-F6 "Micron" 1800 -300 50 H I L CNN "Manufacture"
-F7 "MT41K256M16HA-125:E TR" 1800 -400 50 H I L CNN "Manufacturer_Part_Number"
+F6 "Micron" 1800 -300 50 H I L CNN "Manufacturer"
+F7 "MT41K256M16HA-125:E TR" 1800 -400 50 H I L CNN "ManufacturerPartNumber"
 F8 "MT41K256M16HA-125:E TR" 1800 -700 50 H I L CNN "Arrow Part Number"
 F9 "https://www.arrow.com/en/products/mt41k256m16ha-125etr/micron-technology" 1800 -800 50 H I L CNN "Arrow Price/Stock"
 DRAW
@@ -1593,7 +1593,7 @@ F1 "NC7WZ07FHX" 200 200 50 H V L CNN
 F2 "microzed:6-LEAD_MICROPAK" 1350 100 50 H I L CNN
 F3 "http://www.onsemi.com/pub/Collateral/NC7WZ07-D.pdf" 1350 0 50 H I L CNN
 F4 "Fairchild Semiconductor NC7WZ07FHX, Dual, Buffer, Open Drain, Non-Inverting, 1.65  5.5 V, 6-Pin MicroPak" 1350 -100 50 H I L CNN "Description"
-F5 "Fairchild Semiconductor" 1350 -300 50 H I L CNN "Manufacture"
+F5 "Fairchild Semiconductor" 1350 -300 50 H I L CNN "Manufacturer"
 DRAW
 P 5 0 1 6 200 100 800 100 800 -300 200 -300 200 100 N
 X A1 1 0 -100 200 R 50 50 0 0 I
@@ -1614,7 +1614,7 @@ F2 "microzed:SOT95P237X112-3N" 1450 100 50 H I L CNN
 F3 "http://www.ti.com/lit/gpn/ref3012" 1450 0 50 H I L CNN
 F4 "1.25V 50ppm/Degrees C, 50uA in SOT23-3 Series (Bandgap) Voltage Reference" 1450 -100 50 H I L CNN "Description"
 F5 "1.12" 1450 -200 50 H I L CNN "Height"
-F6 "Texas Instruments" 1450 -300 50 H I L CNN "Manufacture"
+F6 "Texas Instruments" 1450 -300 50 H I L CNN "Manufacturer"
 DRAW
 P 5 0 1 6 200 100 800 100 800 -200 200 -200 200 100 N
 X IN 1 0 0 200 R 50 50 0 0 W
@@ -1631,7 +1631,7 @@ F1 "RTL8211E-VB-CG" 600 -1300 50 H V L CNN
 F2 "Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.66x4.66mm" 2050 200 50 H I L CNN
 F3 "" 2050 100 50 H I L CNN
 F4 "1" 2050 0 50 H I L CNN "Height"
-F5 "Realtek" 2050 -100 50 H I L CNN "Manufacture"
+F5 "Realtek" 2050 -100 50 H I L CNN "Manufacturer"
 DRAW
 S 0 0 1900 -3150 0 1 0 N
 X MDI[0]+ 1 2100 -1100 200 L 50 50 0 0 B
@@ -1746,7 +1746,7 @@ F1 "TLV62130RGTR" 0 50 50 H V L CNN
 F2 "microzed:QFN50P300X300X100-17N-D" 1400 -50 50 H I L CNN
 F3 "" 1400 -150 50 H I L CNN
 F4 "1" 1400 -350 50 H I L CNN "Height"
-F5 "Texas Instruments" 1400 -450 50 H I L CNN "Manufacture"
+F5 "Texas Instruments" 1400 -450 50 H I L CNN "Manufacturer"
 DRAW
 P 5 0 1 6 0 0 800 0 800 -1200 0 -1200 0 0 N
 X SW 1 1000 -100 200 L 50 50 0 0 O
@@ -1777,7 +1777,7 @@ F1 "TPS2069D" 200 150 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-23-5" 1400 100 50 H I L CNN
 F3 "http://www.ti.com/lit/ds/symlink/tps2069d.pdf" 1400 0 50 H I L CNN
 F4 "1.45" 1400 -200 50 H I L CNN "Height"
-F5 "Texas Instruments" 1400 -300 50 H I L CNN "Manufacture"
+F5 "Texas Instruments" 1400 -300 50 H I L CNN "Manufacturer"
 DRAW
 P 5 0 1 6 200 100 800 100 800 -300 200 -300 200 100 N
 X OUT 1 0 0 200 R 50 50 0 0 w
@@ -1796,7 +1796,7 @@ F1 "TPS51206DSQR" 200 200 50 H V L CNN
 F2 "microzed:SON40P200X200X80-11N" 1950 -300 50 H I L CNN
 F3 "" 1950 -400 50 H I L CNN
 F4 "0.8" 1950 -600 50 H I L CNN "Height"
-F5 "Texas Instruments" 1950 -700 50 H I L CNN "Manufacture"
+F5 "Texas Instruments" 1950 -700 50 H I L CNN "Manufacturer"
 DRAW
 P 5 0 1 6 200 100 1200 100 1200 -1150 200 -1150 200 100 N
 X VDDQSNS 1 0 0 200 R 50 50 0 0 I
@@ -1822,7 +1822,7 @@ F2 "microzed:SON35P100X140X40-8N" 1450 100 50 H I L CNN
 F3 "http://www.ti.com/lit/gpn/txs0102" 1450 0 50 H I L CNN
 F4 "2-Bit Bidirectional Voltage-Level Shifter for Open-Drain and Push-Pull Application" 1450 -100 50 H I L CNN "Description"
 F5 "0.4" 1450 -200 50 H I L CNN "Height"
-F6 "Texas Instruments" 1450 -300 50 H I L CNN "Manufacture"
+F6 "Texas Instruments" 1450 -300 50 H I L CNN "Manufacturer"
 DRAW
 P 5 0 1 6 200 100 900 100 900 -400 200 -400 200 100 N
 X VCCA 1 0 0 200 R 50 50 0 0 B
@@ -1845,7 +1845,7 @@ F2 "microzed:QFN50P400X400X80-25N-D" 1950 450 50 H I L CNN
 F3 "http://www.ti.com/lit/gpn/txs02612" 1950 350 50 H I L CNN
 F4 "SDIO Port Expander With Voltage-Level Translation" 1950 250 50 H I L CNN "Description"
 F5 "0.8" 1950 150 50 H I L CNN "Height"
-F6 "Texas Instruments" 1950 50 50 H I L CNN "Manufacture"
+F6 "Texas Instruments" 1950 50 50 H I L CNN "Manufacturer"
 DRAW
 P 5 0 1 6 200 800 1400 800 1400 -600 200 -600 200 800 N
 X DAT2A 1 0 100 200 R 50 50 0 0 B
@@ -1884,7 +1884,7 @@ F1 "USB3320C-EZK" -100 300 50 H V L CNN
 F2 "microzed:QFN50P500X500X100-33N-D" 1900 -500 50 H I L CNN
 F3 "" 1900 -600 50 H I L CNN
 F4 "1" 1900 -800 50 H I L CNN "Height"
-F5 "Microchip" 1900 -900 50 H I L CNN "Manufacture"
+F5 "Microchip" 1900 -900 50 H I L CNN "Manufacturer"
 DRAW
 S 200 200 1400 -2000 0 1 0 N
 X CLKOUT 1 0 -300 200 R 50 50 0 0 O
@@ -2051,7 +2051,7 @@ F1 "XC7Z020-1CLG484C" 0 50 50 H V L CNN
 F2 "microzed:BGA484C100P22X22_2300X2300X254" 2650 100 50 H I L CNN
 F3 "" 2650 0 50 H I L CNN
 F4 "2.54" 2650 -200 50 H I L CNN "Height"
-F5 "XILINX" 2650 -300 50 H I L CNN "Manufacture"
+F5 "XILINX" 2650 -300 50 H I L CNN "Manufacturer"
 DRAW
 T 0 200 -100 50 0 1 1 BANK0 Normal 0 C C
 T 0 200 -100 50 0 2 1 BANK13 Normal 0 C C

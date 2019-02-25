@@ -22,7 +22,7 @@ F 1 "5025700893" H 7850 2774 50  0000 C CNN
 F 2 "microzed:5025700893" H 8950 2700 50  0001 L CNN
 F 3 "https://www.molex.com/pdm_docs/sd/5025700893_sd.pdf" H 8950 2600 50  0001 L CNN
 F 4 "1" H 8950 2400 50  0001 L CNN "Height"
-F 5 "Molex" H 8950 2300 50  0001 L CNN "Manufacture"
+F 5 "Molex" H 8950 2300 50  0001 L CNN "Manufacturer"
 	1    7150 2600
 	1    0    0    -1  
 $EndComp

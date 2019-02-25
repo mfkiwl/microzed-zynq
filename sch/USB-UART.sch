@@ -69,7 +69,7 @@ F 1 "CDSOT23-SR208" H 8400 4700 50  0000 C CNN
 F 2 "microzed:SOT95P280X130-6N" H 9350 4600 50  0001 L CNN
 F 3 "https://www.bourns.com/docs/Product-Datasheets/CDSOT23-SR208.pdf" H 9350 4500 50  0001 L CNN
 F 4 "1.3" H 9350 4300 50  0001 L CNN "Height"
-F 5 "Bourns" H 9350 4200 50  0001 L CNN "Manufacture"
+F 5 "Bourns" H 9350 4200 50  0001 L CNN "Manufacturer"
 	1    7800 4500
 	1    0    0    1   
 $EndComp
@@ -81,7 +81,7 @@ F 0 "J?" H 10150 4565 50  0000 C CNN
 F 1 "10104111-0001LF" H 10150 4474 50  0000 C CNN
 F 2 "microzed:MICRO_USB_AB_TYPE_RECEPTACLE" H 10850 4650 50  0001 L CNN
 F 3 "http://docs-europe.electrocomponents.com/webdocs/0ed1/0900766b80ed1ae2.pdf" H 10850 4550 50  0001 L CNN
-F 4 "FCI" H 10850 4250 50  0001 L CNN "Manufacture"
+F 4 "FCI" H 10850 4250 50  0001 L CNN "Manufacturer"
 	1    10100 4100
 	1    0    0    -1  
 $EndComp
