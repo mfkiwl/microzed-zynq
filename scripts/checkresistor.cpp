@@ -5,114 +5,47 @@
 #include <set>
 #include <thread>
 #include <algorithm>
+#include <tuple>
+
+//#define NDEBUG
 
 typedef struct rinfo {
 	std::string ostr;
-	double v;
+	double r;	/// resistor, unit: ohm
 } rinfo_t;
 
+typedef struct rpinfo {
+	std::size_t r1_idx;
+	std::size_t r2_first;	/// r2: [first, last)
+	std::size_t r2_last;
+} rpinfo_t;
+
 typedef struct rpair {
-	std::size_t s1;
-	std::size_t s2;
+	std::size_t r1;
+	std::size_t r2;
 	double power;
 } rpair_t;
 
+typedef struct vpairs {
+	std::vector<rpair_t> pairs;
+	double volt;
+	double off;
 
-void checkpairs(std::vector<rpair_t> & dst, const std::vector<rinfo_t> & src, double base_v, double off_v)
+	typedef std::tuple<
+		  std::vector<rpair_t>::const_iterator	// [first
+		, std::vector<rpair_t>::const_iterator	// last)
+#ifndef NDEBUG
+		, std::vector<rpair_t>::const_iterator	// aux begin
+#endif
+	> range_t;
+	typedef std::vector<rpair_t>::const_iterator iterator;
+} vpairs_t;
+
+void readResistorInfo(std::vector<rinfo_t> & res_info, std::string && file_name)
 {
-	auto totalN = src.size();
-	for (std::size_t i = 0; i < totalN; ++i) {
-		for (std::size_t j = 0; j < totalN; ++j) {
-			double tmp = (src[i].v + src[j].v) / src[j].v * 0.8;
-			if (base_v - off_v <= tmp && tmp <= base_v + off_v) {
-				//std::cout << "voltage is " << tmp << std::endl;
-				dst.push_back({i, j, (tmp * tmp / (src[i].v + src[j].v))});
-			}
-		}
-	}
-}
-
-void printpairs(const std::vector<rpair_t> & dst)
-{
-	for (auto & i : dst) {
-		std::cout << i.s1 << "; " << i.s2 << std::endl;
-	}
-}
-
-void processCombine(
-	std::vector<std::vector<std::size_t>> & ret,
-	const std::vector<std::size_t> & serial,
-	const std::vector< std::vector<rpair_t> * > & pair_info,
-	const std::vector<rinfo_t> & res_info,
-	const std::size_t limit)
-{
-	std::set<std::size_t> s;
-	for (std::size_t i = 0; i < serial.size(); ++i) {
-		const rpair_t & rp = (*pair_info[i])[serial[i]];
-		s.insert(rp.s1);
-		s.insert(rp.s2);
-	}
-
-	if (s.size() > limit) {
-		return;
-	}
-
-	ret.push_back(serial);
-}
-
-void multithreadprocess(
-	std::vector<std::vector<std::size_t>> & result,
-	const std::vector< rpair_t> & pair_ranges,
-	const std::vector< std::vector<rpair_t> * > & pair_info,
-	const std::vector<rinfo_t> & res_info
-     )
-{
-	std::vector<std::size_t> serial;
-	do {
-		std::size_t cursize = serial.size();
-
-		if (cursize < pair_ranges.size()) {
-			serial.push_back(pair_ranges[cursize].s1);
-		}
-		else {
-			if (0) {
-				std::cout << "loop: ";
-				for (auto i : serial) {
-					std::cout << i << " ";
-				}
-				std::cout << std::endl;
-			}
-			processCombine(result, serial, pair_info, res_info, 5);
-
-			while (*serial.rbegin() == pair_ranges[serial.size()-1].s2) {
-				serial.pop_back();
-			}
-
-			if (serial.size() == 1) { std::cout << "loop: " << serial[0] << std::endl; }
-
-			if (serial.empty()) {
-				break;
-			}
-			else {
-				++(*serial.rbegin());
-			}
-		}
-	} while (true);
-}
-
-int main()
-{
-	std::fstream s("resistor.txt", s.in);
-
-	int modelN = 0;
-
-	std::vector<rinfo_t> res_info;
+	std::fstream s(file_name, s.in);
 
 	for (std::string line; std::getline(s, line); ) {
-		res_info.push_back({"",0});
-		rinfo_t & cinfo = res_info[modelN];
-
-		cinfo.ostr = line;
 		std::size_t pos = 0;
 		double tmp = std::stod(line, &pos);
 		switch (line[pos]) {
@@ -132,69 +65,264 @@ int main()
 				std::cout << "error!!!!" << std::endl;
 				break;
 		}
-		cinfo.v = tmp;
-
-		++modelN;
+		res_info.push_back({ line, tmp });
 	}
+	std::sort(res_info.begin(), res_info.end(), [](const rinfo_t & a, const rinfo_t & b) {
+		return a.r < b.r;
+	});
+}
 
-	std::vector<rpair_t> res_pairs1v;
-	checkpairs(res_pairs1v, res_info, 1, 0.0001);
-	std::cout << "fulfil 1V(+-0.01V) pairs " << res_pairs1v.size() << std::endl;
+double calcVoltage(double r1, double r2)
+{
+	return (r1 + r2)/r2 * 0.8;
+}
 
-	std::vector<rpair_t> res_pairs1v8;
-	checkpairs(res_pairs1v8, res_info, 1.8, 0.001);
-	std::cout << "fulfil 1V8(+-0.01V) pairs " << res_pairs1v8.size() << std::endl;
-	//printpairs(res_pairs1v8);
+double calcR2(double v, double r1)
+{
+	return (r1 * 0.8) / (v - 0.8);
+}
 
-	std::vector<rpair_t> res_pairs1v5;
-	checkpairs(res_pairs1v5, res_info, 1.5, 0.001);
-	std::cout << "fulfil 1V5(+-0.01V) pairs " << res_pairs1v5.size() << std::endl;
+double calcPower(double r1, double r2)
+{
+	return (r1 + r2) * (0.8 * 0.8) / (r2 * r2);
+}
 
-	std::vector<rpair_t> res_pairs3v3;
-	checkpairs(res_pairs3v3, res_info, 3.3, 0.001);
-	std::cout << "fulfil 1V5(+-0.01V) pairs " << res_pairs3v3.size() << std::endl;
+struct AuxStruct
+{
+	bool operator() (const rinfo_t & s, double i) const { return s.r < i; }
+	bool operator() (double i, const rinfo_t & s) const { return i < s.r; }
+};
 
-	std::vector< std::vector<rpair_t> * > pair_info = { &res_pairs1v, &res_pairs1v8, &res_pairs1v5, &res_pairs3v3 };
-	std::vector< std::vector<std::vector<std::size_t>> > v_result;
-	std::vector< std::vector< rpair_t> > v_pair_ranges;
+void findpairs(std::vector<rpinfo_t> & dst, const std::vector<rinfo_t> & src, double base_v, double off_v)
+{
+	const double lftv = base_v - off_v;
+	const double rtv = base_v + off_v;
+#ifndef NDEBUG
+	const double printv = 1.0;
+	if (base_v == printv) {
+		std::cout << "rinfo_t: " << src.size() << ", " << off_v << ", " << rtv - lftv << std::endl;
+	}
+#endif
+	auto totalN = src.size();
+	for (std::size_t i = 0; i < totalN; ++i) {
+		const double r1 = src[i].r;
+		const double lftr2 = calcR2(rtv, r1);
+		const double rtr2 = calcR2(lftv, r1);
 
-	// split for multi thread
-	constexpr std::size_t thread_num = 4;
-	std::size_t firstN = pair_info[0]->size();
-	std::size_t startN = 0;
-	std::size_t remainthread = thread_num;
-	for (std::size_t i = 0; i < thread_num; ++i) {
-		v_result.push_back({});
-		v_pair_ranges.push_back({});
+		auto lower = std::lower_bound(src.begin(), src.end(), lftr2, AuxStruct{});
+		auto upper = std::upper_bound(src.begin(), src.end(), rtr2, AuxStruct{});
 
-		const std::size_t this_num = (firstN + remainthread - 1) / remainthread;
-		v_pair_ranges[i].push_back({0,0});
-		v_pair_ranges[i][0].s1 = startN;
-		v_pair_ranges[i][0].s2 = startN + this_num - 1;
-		startN += this_num;
-		firstN -= this_num;
-		--remainthread;
-		for (std::size_t j = 1; j < pair_info.size(); ++j) {
-			v_pair_ranges[i].push_back({0, pair_info[j]->size()-1});
+		if (lower != upper) {
+#if 0
+			for (auto it = lower; it != upper; ++it) {
+				const double volt = calcVoltage(r1, it->r);
+				if (base_v == printv) {
+					std::cout << "hehe " << base_v << "," << off_v << ": " << volt << "     " << r1 << ", " << it->r << std::endl;
+				}
+				if (volt < lftv || rtv < volt) {
+					std::cout << "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE " << std::endl;
+					exit (1);
+				}
+			}
+#endif
+			dst.push_back({ i,
+				(std::size_t)(lower - src.begin()),
+				(std::size_t)(upper - src.begin())
+			});
 		}
 	}
+}
 
-	for (auto & i : v_pair_ranges) {
+void rpinfo2rpair(std::vector<rpair_t> & dst, const std::vector<rpinfo_t> & src, const std::vector<rinfo_t> & data)
+{
+	for (auto & i : src) {
+		const std::size_t r1 = i.r1_idx;
+		for (auto j = i.r2_first; j < i.r2_last; ++j) {
+			const std::size_t r2 = j;
+			dst.push_back({r1, r2, calcPower(data[r1].r, data[r2].r)});
+		}
+	}
+}
+
+void printpairs(const std::vector<rpair_t> & dst)
+{
+	for (auto & i : dst) {
+		std::cout << i.r1 << "; " << i.r2 << std::endl;
+	}
+}
+
+void spliceRanges4MultiThread(
+	std::vector< std::vector< vpairs_t::range_t > > & ret,	// thread - voltage
+	const std::vector< vpairs_t > & pair_info		// voltage
+)
+{
+	std::size_t remainPairs = pair_info[0].pairs.size();
+	std::size_t startN = 0;
+	std::size_t remainthread = ret.size();
+
+	for (auto & i : ret) {
+		const std::size_t this_num = (remainPairs + remainthread - 1) / remainthread;
+
+		auto vpi_it = pair_info.begin();
+		i.push_back(std::make_tuple(
+			  vpi_it->pairs.begin() + startN
+			, vpi_it->pairs.begin() + startN + this_num
+#ifndef NDEBUG
+			, vpi_it->pairs.begin()
+#endif
+		));
+		while ((++vpi_it) != pair_info.end()) {
+			i.push_back(std::make_tuple(
+				  vpi_it->pairs.begin()
+				, vpi_it->pairs.end()
+#ifndef NDEBUG
+				, vpi_it->pairs.begin()
+#endif
+			));
+		}
+
+		startN += this_num;
+		remainPairs -= this_num;
+		--remainthread;
+	}
+#ifndef NDEBUG
+	for (auto & i : ret) {
 		std::cout << "--- ";
 		for (auto & j : i) {
-			std::cout << "(" << j.s1 << "," << j.s2 << ");";
+			std::cout << "("
+				<< std::get<2>(j) - std::get<0>(j) << ", "
+				<< std::get<2>(j) - std::get<1>(j) << ");";
 		}
 		std::cout << std::endl;
 	}
+#endif
+}
+
+void processCombine(
+	std::vector< std::vector<vpairs_t::iterator> > & ret,
+	const std::vector<vpairs_t::iterator> & serial,
+	const std::vector<rinfo_t> & res_info,
+	const std::size_t limit)
+{
+	std::set<std::size_t> s;
+	for (auto & i : serial) {
+		s.insert(i->r1);
+		s.insert(i->r2);
+	}
+
+	/// condition check
+	if (s.size() > limit) {
+		return;
+	}
+
+	ret.push_back(serial);
+}
+
+void multithreadprocess(
+	std::vector<std::vector<vpairs_t::iterator>> & result,
+	const std::vector<vpairs_t::range_t> & pair_ranges,
+	const std::vector<rinfo_t> & res_info,
+	std::size_t thread_idx
+     )
+{
+#ifndef NDEBUG
+	const bool printth = ((1 << thread_idx) & 0x1);
+	if (printth) {
+		std::cout << "print thread " << thread_idx << std::endl;
+	}
+#endif
+	std::vector<vpairs_t::iterator> serial;
+	do {
+		std::size_t cursize = serial.size();
+
+		if (cursize < pair_ranges.size()) {
+			serial.push_back(std::get<0>(pair_ranges[cursize]));
+		}
+		else {
+			processCombine(result, serial, res_info, 5);
+
+			while (!serial.empty()) {
+				const auto rtidx = serial.size() - 1;
+				++(serial[rtidx]);
+				if (serial[rtidx] != std::get<1>(pair_ranges[rtidx])) {
+					break;
+				}
+				serial.pop_back();
+			}
+
+#ifndef NDEBUG
+			if (printth) {
+				if (serial.size() == 1) {
+					std::cout << " loop: " << thread_idx << ", "
+						<< serial[0]->r1
+						<< ", " << serial[0]->r2 << std::endl;
+				}
+			}
+#endif
+
+			if (serial.empty()) {
+				break;
+			}
+		}
+	} while (true);
+}
+
+int main()
+{
+	/// read file
+	std::vector<rinfo_t> res_info;
+	readResistorInfo(res_info, "resistor.txt");
+
+	/// find all pairs
+	std::vector< vpairs_t > pair_info;
+	pair_info.push_back({{}, 1, 0.001});	/// error 1%: +-0.004V	1/4
+	pair_info.push_back({{}, 1.8, 0.001});	/// error 1%: +-0.02V	5/4
+	pair_info.push_back({{}, 1.5, 0.001});	/// error 1%: +-0.014V	7/8
+	pair_info.push_back({{}, 3.3, 0.001});	/// error 1%: +-0.05V	25/8
+
+	{
+		std::vector<std::thread> threads;
+		for (auto & i : pair_info) {
+			threads.push_back(std::thread(
+				[&i, &res_info](){
+					std::vector<rpinfo_t> tmp;
+					findpairs(tmp, res_info, i.volt, i.off);
+					rpinfo2rpair(i.pairs, tmp, res_info); 
+				}
+			));
+		}
+
+		for (auto & i : threads) {
+			if (i.joinable()) {
+				i.join();
+			}
+		}
+
+		for (auto & i : pair_info) {
+			std::cout << "fullfil " << i.volt << "V(+-" << i.off << "V) pairs " << i.pairs.size() << std::endl;
+#if 0
+			for (auto & j : i.pairs) {
+				std::cout << " --- " << j.r1 << ", " << j.r2 << std::endl;
+			}
+#endif
+		}
+	}
+
+	// split for multi thread
+	constexpr std::size_t thread_num = 4;
+	std::vector< std::vector<std::vector<vpairs_t::iterator>> > v_result(thread_num);
+	std::vector< std::vector<vpairs_t::range_t> > thread_volt_ranges(thread_num);
+
+	spliceRanges4MultiThread(thread_volt_ranges, pair_info);
 
 	std::vector<std::thread> threads;
 	for (std::size_t i = 0; i < thread_num; ++i) {
 		threads.push_back(std::thread(
 			multithreadprocess,
 			std::ref(v_result[i]),
-			std::ref(v_pair_ranges[i]),
-			std::ref(pair_info),
-			std::ref(res_info)
+			std::ref(thread_volt_ranges[i]),
+			std::ref(res_info),
+			i
 		));
 	}
 
@@ -204,6 +332,13 @@ int main()
 		}
 	}
 
+	std::cout << "result: ";
+	for (auto i : v_result) {
+		std::cout << i.size() << " + ";
+	}
+	std::cout << std::endl;
+
+#if 0
 	/// result
 	for (std::size_t i = 0; i < v_result[0][0].size(); ++i) {
 		const rpair_t & rrr = (*pair_info[i])[v_result[0][0][i]];
@@ -230,5 +365,6 @@ int main()
 	for (auto & i : v_result) {
 		std::cout << "result number is " << i.size() << std::endl;
 	}
+#endif
 	return 0;
 }
