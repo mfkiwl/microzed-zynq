@@ -13,6 +13,7 @@
 typedef struct rinfo {
 	std::string ostr;
 	double r;	/// resistor, unit: ohm
+	std::size_t n;	/// model number
 } rinfo_t;
 
 typedef struct rpair {
@@ -36,7 +37,8 @@ typedef struct vpairs {
 typedef struct solution {
 	std::vector<vpairs_t::iterator> sels;
 	double power;
-	std::size_t res_num;
+	std::size_t res_num;	/// how many resistor (by resistance value)
+	std::size_t min_modeln;	/// the min model number of all resistors
 
 	void refresh4newSels()
 	{
@@ -48,15 +50,21 @@ typedef struct solution {
 			power += i->power;
 		}
 		res_num = s.size();
+		min_modeln = sels[0]->r1.n;
+		for (auto & i : sels) {
+			if (i->r1.n < min_modeln) { min_modeln = i->r1.n; }
+			if (i->r2.n < min_modeln) { min_modeln = i->r2.n; }
+		}
 	}
 
-	void print()
+	void print() const
 	{
 		std::cout << "power(" << power << ") ";
-		std::cout << "number(" << res_num << ") ";
+		std::cout << "model(" << res_num << ") ";
 		for (auto i : sels) {
-			std::cout << "r1(" << i->r1.r << ", " << i->r2.r << ") ";
+			std::cout << "(" << i->r1.ostr << ", " << i->r2.ostr << ") ";
 		}
+		std::cout << "min model number(" << min_modeln << ")";
 		std::cout << std::endl;
 	}
 } solution_t;
@@ -68,22 +76,24 @@ void readResistorInfo(std::vector<rinfo_t> & res_info, std::string && file_name)
 	for (std::string line; std::getline(s, line); ) {
 		std::size_t pos = 0;
 		double tmp = std::stod(line, &pos);
+		const std::string ostr = std::string(line, 0, pos+1);
+		std::size_t n = std::strtoul(&line[pos+3], nullptr, 10);
 		switch (line[pos]) {
 			case 'm':
 				tmp *= 0.001;
-				res_info.push_back({ line, tmp });
+				res_info.push_back({ ostr, tmp, n });
 				break;
 			case 'k':
 				tmp *= 1000;
-				res_info.push_back({ line, tmp });
+				res_info.push_back({ ostr, tmp, n });
 				break;
 			case 'K':	/// skip it, the K and k is same
 				tmp *= 1000;
-				///res_info.push_back({ line, tmp });
+				///res_info.push_back({ ostr, tmp, n });
 				break;
 			case 'M':
 				tmp *= 1000000;
-				res_info.push_back({ line, tmp });
+				res_info.push_back({ ostr, tmp, n });
 				break;
 			default:
 				std::cout << "error!!!!" << std::endl;
@@ -116,6 +126,7 @@ struct AuxStruct
 	bool operator() (double i, const rinfo_t & s) const { return i < s.r; }
 };
 
+/// find resitor-pair for specific voltage, with offset limit.
 void findpairs(std::vector<rpair_t> & dst, const std::vector<rinfo_t> & src, double base_v, double off_v)
 {
 	const double lftv = base_v - off_v;
@@ -136,6 +147,8 @@ void findpairs(std::vector<rpair_t> & dst, const std::vector<rinfo_t> & src, dou
 	}
 }
 
+/// splice first voltage pairs for multi thread, others reserve full range.
+/// TODO: maybe we should split the voltage which has the max number of pairs.
 void spliceRanges4MultiThread(
 	std::vector< std::vector< vpairs_t::range_t > > & ret,	// thread - voltage
 	const std::vector< vpairs_t > & pair_info		// voltage
@@ -175,12 +188,14 @@ void spliceRanges4MultiThread(
 #endif
 }
 
+/// find all solution in some range of data source.
+/// @pair_ranges: whose index represents specific voltage, and the corresponding
+///               element represent some range of its pairs data.
 void multithreadprocess(
 	std::vector<solution_t> & result,
 	const std::vector<vpairs_t::range_t> & pair_ranges,
 	std::function<bool(const solution_t &)> solValidater,
-	std::size_t thread_idx
-     )
+	std::size_t thread_idx)
 {
 #ifndef NDEBUG
 	const bool printth = ((1 << thread_idx) & 0x1);
@@ -228,24 +243,29 @@ void multithreadprocess(
 	} while (true);
 }
 
-static constexpr std::size_t thread_num = 4;
+
+/// configuration
+static constexpr std::size_t thread_num = 8;
 bool validateSolution(const solution_t & sol)
 {
-	return sol.res_num <= 4;
+	return sol.res_num <= 5 && sol.min_modeln >= 5;
 }
 
+static constexpr double VoltPrecise = 0.00001;
+
+/// entrance
 int main()
 {
 	/// read file
 	std::vector<rinfo_t> res_info;
 	readResistorInfo(res_info, "resistor.txt");
 
-	/// find all pairs
+	/// find all pairs satisfy voltage standards.
 	std::vector< vpairs_t > pair_info;
-	pair_info.push_back({{}, 1, 0.001});	/// error 1%: +-0.004V	1/4
-	pair_info.push_back({{}, 1.8, 0.01});	/// error 1%: +-0.02V	5/4
-	pair_info.push_back({{}, 1.5, 0.01});	/// error 1%: +-0.014V	7/8
-	pair_info.push_back({{}, 3.3, 0.01});	/// error 1%: +-0.05V	25/8
+	pair_info.push_back({{}, 1, VoltPrecise});	/// error 1%: +-0.004V	1/4
+	pair_info.push_back({{}, 1.8, VoltPrecise});	/// error 1%: +-0.02V	5/4
+	pair_info.push_back({{}, 1.5, VoltPrecise});	/// error 1%: +-0.014V	7/8
+	pair_info.push_back({{}, 3.3, VoltPrecise});	/// error 1%: +-0.05V	25/8
 
 	{
 		std::vector<std::thread> threads;
@@ -309,7 +329,7 @@ int main()
 
 	/// print result
 	std::cout << "result: " << result.size() << std::endl;
-	for (std::size_t i = 0; i < std::min((std::size_t)10, result.size()); ++i) {
+	for (std::size_t i = 0; i < std::min((std::size_t)100, result.size()); ++i) {
 		result[i]->print();
 	}
 	std::cout << std::endl;
