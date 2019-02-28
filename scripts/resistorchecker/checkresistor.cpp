@@ -7,8 +7,10 @@
 #include <algorithm>
 #include <tuple>
 #include <functional>
+#include <chrono>
+#include <map>
 
-//#define NDEBUG
+#define NDEBUG
 
 typedef struct rinfo {
 	std::string ostr;
@@ -20,12 +22,13 @@ typedef struct rpair {
 	const rinfo_t & r1;
 	const rinfo_t & r2;
 	double power;
+	double volt_off;	/// voltage offset
 } rpair_t;
 
 typedef struct vpairs {
 	std::vector<rpair_t> pairs;
 	double volt;
-	double off;
+	double off;	/// voltage offset limit
 
 	typedef std::tuple<
 		  std::vector<rpair_t>::const_iterator	// [first
@@ -36,9 +39,17 @@ typedef struct vpairs {
 
 typedef struct solution {
 	std::vector<vpairs_t::iterator> sels;
-	double power;
-	std::size_t res_num;	/// how many resistor (by resistance value)
-	std::size_t min_modeln;	/// the min model number of all resistors
+	double power = 0;
+	std::size_t res_num = 0;	/// how many resistor (by resistance value)
+	std::size_t min_modeln = 0xFFFFFFFF;	/// the min model number of all resistors
+	double voff_sum = 0;	/// sum of offset for all voltages
+
+	/// NOTE: I have tried to use a std::map<const rinfo_t *, std::size_t>
+	///       to store resistor info, in which the VALUE represents the
+	///       number of resistor. And then implement push_back/pop_back
+	///       for this structure, in which we will update the members.
+	///       but I can't update the 'min_modeln' with high efficiency.
+	///       so here just refresh4newSels whenever push/pop 'sels'.
 
 	void refresh4newSels()
 	{
@@ -50,10 +61,12 @@ typedef struct solution {
 			power += i->power;
 		}
 		res_num = s.size();
-		min_modeln = sels[0]->r1.n;
+		min_modeln = 0xFFFFFFFF;
+		voff_sum = 0;
 		for (auto & i : sels) {
 			if (i->r1.n < min_modeln) { min_modeln = i->r1.n; }
 			if (i->r2.n < min_modeln) { min_modeln = i->r2.n; }
+			voff_sum += std::abs(i->volt_off);
 		}
 	}
 
@@ -61,8 +74,13 @@ typedef struct solution {
 	{
 		std::cout << "power(" << power << ") ";
 		std::cout << "model(" << res_num << ") ";
+		std::cout << "sumVoff(" << voff_sum << ") ";
 		for (auto i : sels) {
-			std::cout << "(" << i->r1.ostr << ", " << i->r2.ostr << ") ";
+			std::cout << "("
+				<< i->r1.ostr << "/"
+				<< i->r2.ostr
+				//<< ", " << i->volt_off
+				<< ") ";
 		}
 		std::cout << "min model number(" << min_modeln << ")";
 		std::cout << std::endl;
@@ -141,7 +159,7 @@ void findpairs(std::vector<rpair_t> & dst, const std::vector<rinfo_t> & src, dou
 		while (lower != upper) {
 			const rinfo_t & r1info = i;
 			const rinfo_t & r2info = *lower;
-			dst.push_back({ r1info, r2info, calcPower(r1info.r, r2info.r) });
+			dst.push_back({ r1info, r2info, calcPower(r1info.r, r2info.r), calcVoltage(r1info.r, r2info.r)-base_v });
 			++lower;
 		}
 	}
@@ -203,42 +221,44 @@ void multithreadprocess(
 		std::cout << "print thread " << thread_idx << std::endl;
 	}
 #endif
+
 	solution_t sol;
 	std::vector<vpairs_t::iterator> & serial = sol.sels;
 	do {
-		std::size_t cursize = serial.size();
-
-		if (cursize < pair_ranges.size()) {
-			serial.push_back(std::get<0>(pair_ranges[cursize]));
-		}
-		else {
-			sol.refresh4newSels();
-			if (solValidater(sol)) {
-				result.push_back(sol);
-			}
-
-			while (!serial.empty()) {
-				const auto rtidx = serial.size() - 1;
-				++(serial[rtidx]);
-				if (serial[rtidx] != std::get<1>(pair_ranges[rtidx])) {
-					break;
-				}
-				serial.pop_back();
-			}
-
+		/// NOTE: if we don't want stop iterate early, i.e. validate
+		///       solution before get all rpairs, we can move the
+		///                if (cursize < pair_ranges.size()) {
+		///       section to the beginning of the do/while loop.
+		sol.refresh4newSels();
+		if (solValidater(sol)) {
+			std::size_t cursize = serial.size();
+			if (cursize < pair_ranges.size()) {
 #ifndef NDEBUG
-			if (printth) {
-				if (serial.size() == 1) {
-					std::cout << " loop: " << thread_idx << ", "
-						<< serial[0]->r1.r
-						<< ", " << serial[0]->r2.r << std::endl;
+				if (printth && serial.size() == 1) {
+					std::cout << " loop for: "
+						<< serial[0]->r1.r << ", "
+						<< serial[0]->r2.r << std::endl;
 				}
-			}
 #endif
+				serial.push_back(std::get<0>(pair_ranges[cursize]));
+				continue;
+			}
+			result.push_back(sol);
+		}
 
-			if (serial.empty()) {
+		/// next rpair for prev voltage
+		while (!serial.empty()) {
+			const auto rtidx = serial.size() - 1;
+			++(serial[rtidx]);
+			if (serial[rtidx] != std::get<1>(pair_ranges[rtidx])) {
 				break;
 			}
+			serial.pop_back();
+		}
+
+		/// check if done
+		if (serial.empty()) {
+			break;
 		}
 	} while (true);
 }
@@ -248,10 +268,10 @@ void multithreadprocess(
 static constexpr std::size_t thread_num = 8;
 bool validateSolution(const solution_t & sol)
 {
-	return sol.res_num <= 5 && sol.min_modeln >= 5;
+	return sol.res_num <= 4 && sol.min_modeln >= 5;
 }
 
-static constexpr double VoltPrecise = 0.00001;
+static constexpr double VoltPrecise = 0.005;
 
 /// entrance
 int main()
@@ -294,6 +314,7 @@ int main()
 
 		spliceRanges4MultiThread(thread_volt_ranges, pair_info);
 
+		const auto starttime = std::chrono::steady_clock::now();
 		// find solution through multi threads
 		std::vector<std::thread> threads;
 		for (std::size_t i = 0; i < thread_num; ++i) {
@@ -311,6 +332,10 @@ int main()
 				i.join();
 			}
 		}
+		auto stoptime = std::chrono::steady_clock::now();
+		std::cout << "Printing took "
+			<< std::chrono::duration_cast<std::chrono::microseconds>(stoptime - starttime).count()
+			<< "us.\n";
 	}
 
 	/// merge sort by power
