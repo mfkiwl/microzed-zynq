@@ -10,7 +10,7 @@
 #include <chrono>
 #include <map>
 
-#define NDEBUG
+//#define NDEBUG
 
 typedef struct rinfo {
 	std::string ostr;
@@ -29,6 +29,10 @@ typedef struct vpairs {
 	std::vector<rpair_t> pairs;
 	double volt;
 	double off;	/// voltage offset limit
+
+	std::function<double(double,double)> calcVolt;
+	std::function<double(double,double)> calcR2;
+	std::function<double(double,double)> calcPower;
 
 	typedef std::tuple<
 		  std::vector<rpair_t>::const_iterator	// [first
@@ -82,7 +86,7 @@ typedef struct solution {
 				//<< ", " << i->volt_off
 				<< ") ";
 		}
-		std::cout << "min model number(" << min_modeln << ")";
+		std::cout << "MMN(" << min_modeln << ")";
 		std::cout << std::endl;
 	}
 } solution_t;
@@ -95,47 +99,39 @@ void readResistorInfo(std::vector<rinfo_t> & res_info, std::string && file_name)
 		std::size_t pos = 0;
 		double tmp = std::stod(line, &pos);
 		const std::string ostr = std::string(line, 0, pos+1);
-		std::size_t n = std::strtoul(&line[pos+3], nullptr, 10);
 		switch (line[pos]) {
-			case 'm':
-				tmp *= 0.001;
-				res_info.push_back({ ostr, tmp, n });
-				break;
-			case 'k':
-				tmp *= 1000;
-				res_info.push_back({ ostr, tmp, n });
-				break;
-			case 'K':	/// skip it, the K and k is same
-				tmp *= 1000;
-				///res_info.push_back({ ostr, tmp, n });
-				break;
-			case 'M':
-				tmp *= 1000000;
-				res_info.push_back({ ostr, tmp, n });
-				break;
-			default:
-				std::cout << "error!!!!" << std::endl;
-				break;
+		case 'm':
+			tmp *= 0.001;
+			break;
+		case 'k':
+			tmp *= 1000;
+			break;
+		case 'K':
+			tmp *= 1000;
+			break;
+		case 'M':
+			tmp *= 1000000;
+			break;
+		default:
+			//std::cout << "error!!!! " << line[pos] << "!!!" << std::endl;
+			break;
 		}
+
+		/// skip it, the K and k is same
+		if (line[pos] == 'K') {
+			continue;
+		}
+
+		/// find number
+		while (line[pos] < '0' || '9' < line[pos]) {
+			++pos;
+		}
+		std::size_t n = std::strtoul(&line[pos], nullptr, 10);
+		res_info.push_back({ ostr, tmp, n });
 	}
 	std::sort(res_info.begin(), res_info.end(), [](const rinfo_t & a, const rinfo_t & b) {
 		return a.r < b.r;
 	});
-}
-
-double calcVoltage(double r1, double r2)
-{
-	return (r1 + r2)/r2 * 0.8;
-}
-
-double calcR2(double v, double r1)
-{
-	return (r1 * 0.8) / (v - 0.8);
-}
-
-double calcPower(double r1, double r2)
-{
-	return (r1 + r2) * (0.8 * 0.8) / (r2 * r2);
 }
 
 struct AuxStruct
@@ -145,21 +141,24 @@ struct AuxStruct
 };
 
 /// find resitor-pair for specific voltage, with offset limit.
-void findpairs(std::vector<rpair_t> & dst, const std::vector<rinfo_t> & src, double base_v, double off_v)
+void findpairs(vpairs_t & dst, const std::vector<rinfo_t> & src)
 {
+	const double base_v = dst.volt;
+	const double off_v = dst.off;
+
 	const double lftv = base_v - off_v;
 	const double rtv = base_v + off_v;
 	for (auto & i : src) {
 		const double r1 = i.r;
-		const double lftr2 = calcR2(rtv, r1);
-		const double rtr2 = calcR2(lftv, r1);
+		const double lftr2 = dst.calcR2(lftv, r1);
+		const double rtr2 = dst.calcR2(rtv, r1);
 
-		auto lower = std::lower_bound(src.begin(), src.end(), lftr2, AuxStruct{});
-		auto upper = std::upper_bound(src.begin(), src.end(), rtr2, AuxStruct{});
+		auto lower = std::lower_bound(src.begin(), src.end(), std::min(lftr2, rtr2), AuxStruct{});
+		auto upper = std::upper_bound(src.begin(), src.end(), std::max(lftr2, rtr2), AuxStruct{});
 		while (lower != upper) {
 			const rinfo_t & r1info = i;
 			const rinfo_t & r2info = *lower;
-			dst.push_back({ r1info, r2info, calcPower(r1info.r, r2info.r), calcVoltage(r1info.r, r2info.r)-base_v });
+			dst.pairs.push_back({ r1info, r2info, dst.calcPower(r1info.r, r2info.r), dst.calcVolt(r1info.r, r2info.r)-base_v });
 			++lower;
 		}
 	}
@@ -268,7 +267,7 @@ void multithreadprocess(
 static constexpr std::size_t thread_num = 8;
 bool validateSolution(const solution_t & sol)
 {
-	return sol.res_num <= 4 && sol.min_modeln >= 5;
+	return sol.res_num <= 5 && sol.min_modeln >= 5;
 }
 
 static constexpr double VoltPrecise = 0.005;
@@ -282,16 +281,54 @@ int main()
 
 	/// find all pairs satisfy voltage standards.
 	std::vector< vpairs_t > pair_info;
-	pair_info.push_back({{}, 1, VoltPrecise});	/// error 1%: +-0.004V	1/4
-	pair_info.push_back({{}, 1.8, VoltPrecise});	/// error 1%: +-0.02V	5/4
-	pair_info.push_back({{}, 1.5, VoltPrecise});	/// error 1%: +-0.014V	7/8
-	pair_info.push_back({{}, 3.3, VoltPrecise});	/// error 1%: +-0.05V	25/8
-
+	pair_info.push_back({{}, 1, VoltPrecise,
+		[](double r1, double r2) { return (r1 + r2)/r2 * 0.8; },
+		[](double v, double r1) { return (r1 * 0.8) / (v - 0.8); },
+		[](double r1, double r2) { return (r1 + r2) * (0.8 * 0.8) / (r2 * r2); },
+	});	/// error 1%: +-0.004V	1/4
+	pair_info.push_back({{}, 1.8, VoltPrecise,
+		[](double r1, double r2) { return (r1 + r2)/r2 * 0.8; },
+		[](double v, double r1) { return (r1 * 0.8) / (v - 0.8); },
+		[](double r1, double r2) { return (r1 + r2) * (0.8 * 0.8) / (r2 * r2); },
+	});	/// error 1%: +-0.02V	5/4
+	pair_info.push_back({{}, 1.5, VoltPrecise,
+		[](double r1, double r2) { return (r1 + r2)/r2 * 0.8; },
+		[](double v, double r1) { return (r1 * 0.8) / (v - 0.8); },
+		[](double r1, double r2) { return (r1 + r2) * (0.8 * 0.8) / (r2 * r2); },
+	});	/// error 1%: +-0.014V	7/8
+	pair_info.push_back({{}, 3.3, VoltPrecise,
+		[](double r1, double r2) { return (r1 + r2)/r2 * 0.8; },
+		[](double v, double r1) { return (r1 * 0.8) / (v - 0.8); },
+		[](double r1, double r2) { return (r1 + r2) * (0.8 * 0.8) / (r2 * r2); },
+	});	/// error 1%: +-0.05V	25/8
+#if 1
+	pair_info.push_back({{}, 0.95, 0.01,
+		[](double r1, double r2) { return r2/(r1 + r2) * 1.0; },
+		[](double v, double r1) { return r1/(1.0/v - 1); },
+		[](double r1, double r2) { return 1.0 * 1.0 / (r1 + r2); },
+	});
+	pair_info.push_back({{}, 1.4, 0.1,
+		[](double r1, double r2) { return r2/(r1 + r2) * 1.8; },
+		[](double v, double r1) { return r1/(1.8/v - 1); },
+		[](double r1, double r2) { return 1.8 * 1.8 / (r1 + r2); },
+	});
+	pair_info.push_back({{}, 1.2, 0.1,
+		[](double r1, double r2) { return r2/(r1 + r2) * 1.5; },
+		[](double v, double r1) { return r1/(1.5/v - 1); },
+		[](double r1, double r2) { return 1.5 * 1.5 / (r1 + r2); },
+	});
+	/// use same resistors of 0.95
+	//pair_info.push_back({{}, 3.2, 0.1,
+	//	[](double r1, double r2) { return r2/(r1 + r2) * 3.3; },
+	//	[](double v, double r1) { return r1/(3.3/v - 1); },
+	//	[](double r1, double r2) { return 3.3 * 3.3 / (r1 + r2); },
+	//});
+#endif
 	{
 		std::vector<std::thread> threads;
 		for (auto & i : pair_info) {
 			threads.push_back(std::thread([&i, &res_info](){
-				findpairs(i.pairs, res_info, i.volt, i.off);
+				findpairs(i, res_info);
 			}));
 		}
 
@@ -354,7 +391,7 @@ int main()
 
 	/// print result
 	std::cout << "result: " << result.size() << std::endl;
-	for (std::size_t i = 0; i < std::min((std::size_t)100, result.size()); ++i) {
+	for (std::size_t i = 0; i < std::min((std::size_t)1000, result.size()); ++i) {
 		result[i]->print();
 	}
 	std::cout << std::endl;
