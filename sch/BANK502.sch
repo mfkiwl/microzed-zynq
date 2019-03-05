@@ -527,6 +527,8 @@ F 0 "R?" V 6300 3600 50  0000 C CNN
 F 1 "40.2" V 6300 4000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 3800 50  0001 C CNN
 F 3 "~" H 6350 3800 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6350 3800
 	0    1    1    0   
 $EndComp
@@ -549,6 +551,8 @@ F 0 "R?" V 6300 3500 50  0000 C CNN
 F 1 "40.2" V 6300 3900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 3700 50  0001 C CNN
 F 3 "~" H 6350 3700 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6350 3700
 	0    1    1    0   
 $EndComp
@@ -560,6 +564,8 @@ F 0 "R?" V 6300 3400 50  0000 C CNN
 F 1 "40.2" V 6300 3800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 3600 50  0001 C CNN
 F 3 "~" H 6350 3600 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6350 3600
 	0    1    1    0   
 $EndComp
@@ -571,6 +577,8 @@ F 0 "R?" V 6300 3300 50  0000 C CNN
 F 1 "40.2" V 6300 3700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 3500 50  0001 C CNN
 F 3 "~" H 6350 3500 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6350 3500
 	0    1    1    0   
 $EndComp
@@ -582,6 +590,8 @@ F 0 "R?" V 6300 3200 50  0000 C CNN
 F 1 "40.2" V 6300 3600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 3400 50  0001 C CNN
 F 3 "~" H 6350 3400 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6350 3400
 	0    1    1    0   
 $EndComp
@@ -593,6 +603,8 @@ F 0 "R?" V 6300 3100 50  0000 C CNN
 F 1 "40.2" V 6300 3500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 3300 50  0001 C CNN
 F 3 "~" H 6350 3300 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6350 3300
 	0    1    1    0   
 $EndComp
@@ -604,6 +616,8 @@ F 0 "R?" V 6300 3000 50  0000 C CNN
 F 1 "40.2" V 6300 3400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 3200 50  0001 C CNN
 F 3 "~" H 6350 3200 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6350 3200
 	0    1    1    0   
 $EndComp
@@ -615,6 +629,8 @@ F 0 "R?" V 6300 2900 50  0000 C CNN
 F 1 "40.2" V 6300 3300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 3100 50  0001 C CNN
 F 3 "~" H 6350 3100 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6350 3100
 	0    1    1    0   
 $EndComp
@@ -626,6 +642,8 @@ F 0 "R?" V 6300 2800 50  0000 C CNN
 F 1 "40.2" V 6300 3200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 3000 50  0001 C CNN
 F 3 "~" H 6350 3000 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6350 3000
 	0    1    1    0   
 $EndComp
@@ -637,6 +655,8 @@ F 0 "R?" V 6300 2700 50  0000 C CNN
 F 1 "40.2" V 6300 3100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 2900 50  0001 C CNN
 F 3 "~" H 6350 2900 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6350 2900
 	0    1    1    0   
 $EndComp
@@ -648,6 +668,8 @@ F 0 "R?" V 6300 2600 50  0000 C CNN
 F 1 "40.2" V 6300 3000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 2800 50  0001 C CNN
 F 3 "~" H 6350 2800 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6350 2800
 	0    1    1    0   
 $EndComp
@@ -659,6 +681,8 @@ F 0 "R?" V 6300 2500 50  0000 C CNN
 F 1 "40.2" V 6300 2900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 2700 50  0001 C CNN
 F 3 "~" H 6350 2700 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6350 2700
 	0    1    1    0   
 $EndComp
@@ -670,6 +694,8 @@ F 0 "R?" V 6300 2400 50  0000 C CNN
 F 1 "40.2" V 6300 2800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 2600 50  0001 C CNN
 F 3 "~" H 6350 2600 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6350 2600
 	0    1    1    0   
 $EndComp
@@ -681,6 +707,8 @@ F 0 "R?" V 6300 2300 50  0000 C CNN
 F 1 "40.2" V 6300 2700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 2500 50  0001 C CNN
 F 3 "~" H 6350 2500 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6350 2500
 	0    1    1    0   
 $EndComp
@@ -692,6 +720,8 @@ F 0 "R?" V 6300 2200 50  0000 C CNN
 F 1 "40.2" V 6300 2600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 2400 50  0001 C CNN
 F 3 "~" H 6350 2400 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6350 2400
 	0    1    1    0   
 $EndComp
@@ -703,6 +733,8 @@ F 0 "R?" V 6300 2100 50  0000 C CNN
 F 1 "40.2" V 6300 2500 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 2300 50  0001 C CNN
 F 3 "~" H 6350 2300 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6350 2300
 	0    1    1    0   
 $EndComp
@@ -714,6 +746,8 @@ F 0 "R?" V 6300 2000 50  0000 C CNN
 F 1 "40.2" V 6300 2400 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 2200 50  0001 C CNN
 F 3 "~" H 6350 2200 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6350 2200
 	0    1    1    0   
 $EndComp
@@ -725,6 +759,8 @@ F 0 "R?" V 6300 1900 50  0000 C CNN
 F 1 "40.2" V 6300 2300 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 2100 50  0001 C CNN
 F 3 "~" H 6350 2100 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6350 2100
 	0    1    1    0   
 $EndComp
@@ -736,6 +772,8 @@ F 0 "R?" V 6300 1800 50  0000 C CNN
 F 1 "40.2" V 6300 2200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 2000 50  0001 C CNN
 F 3 "~" H 6350 2000 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6350 2000
 	0    1    1    0   
 $EndComp
@@ -747,6 +785,8 @@ F 0 "R?" V 6300 1700 50  0000 C CNN
 F 1 "40.2" V 6300 2100 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 1900 50  0001 C CNN
 F 3 "~" H 6350 1900 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6350 1900
 	0    1    1    0   
 $EndComp
@@ -758,6 +798,8 @@ F 0 "R?" V 6300 1600 50  0000 C CNN
 F 1 "40.2" V 6300 2000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 1800 50  0001 C CNN
 F 3 "~" H 6350 1800 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6350 1800
 	0    1    1    0   
 $EndComp
@@ -769,6 +811,8 @@ F 0 "R?" V 6300 1500 50  0000 C CNN
 F 1 "40.2" V 6300 1900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 1700 50  0001 C CNN
 F 3 "~" H 6350 1700 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6350 1700
 	0    1    1    0   
 $EndComp
@@ -780,6 +824,8 @@ F 0 "R?" V 6300 1400 50  0000 C CNN
 F 1 "40.2" V 6300 1800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 1600 50  0001 C CNN
 F 3 "~" H 6350 1600 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6350 1600
 	0    1    1    0   
 $EndComp
@@ -791,6 +837,8 @@ F 0 "R?" V 6300 1300 50  0000 C CNN
 F 1 "40.2" V 6300 1700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 1500 50  0001 C CNN
 F 3 "~" H 6350 1500 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6350 1500
 	0    1    1    0   
 $EndComp

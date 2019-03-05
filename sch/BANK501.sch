@@ -165,6 +165,8 @@ F 0 "R?" V 5200 5100 50  0000 C BNN
 F 1 "40.2" V 5300 5100 50  0000 C TNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 5180 5100 50  0001 C CNN
 F 3 "~" H 5250 5100 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    5250 5100
 	0    1    1    0   
 $EndComp

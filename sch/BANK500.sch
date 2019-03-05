@@ -32,6 +32,8 @@ F 0 "R?" H 3670 2046 50  0000 L CNN
 F 1 "40.2" H 3670 1955 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 3530 2000 50  0001 C CNN
 F 3 "~" H 3600 2000 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    3600 2000
 	1    0    0    -1  
 $EndComp
