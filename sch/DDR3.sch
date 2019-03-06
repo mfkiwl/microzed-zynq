@@ -155,6 +155,8 @@ F 0 "R?" H 4670 6746 50  0000 L CNN
 F 1 "240" H 4670 6655 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 4530 6700 50  0001 C CNN
 F 3 "~" H 4600 6700 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-13240RL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    4600 6700
 	1    0    0    -1  
 $EndComp
@@ -786,6 +788,8 @@ F 0 "R?" H 9120 5696 50  0000 L CNN
 F 1 "240" H 9120 5605 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 8980 5650 50  0001 C CNN
 F 3 "~" H 9050 5650 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-13240RL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    9050 5650
 	1    0    0    -1  
 $EndComp

@@ -106,8 +106,10 @@ U 1 1 5BC7DF6E
 P 4250 1950
 F 0 "R?" H 4320 1996 50  0000 L CNN
 F 1 "240" H 4320 1905 50  0000 L CNN
-F 2 "" V 4180 1950 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4180 1950 50  0001 C CNN
 F 3 "~" H 4250 1950 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-13240RL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    4250 1950
 	1    0    0    -1  
 $EndComp
