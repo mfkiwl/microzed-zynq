@@ -306,6 +306,8 @@ F 0 "C?" H 2250 1400 50  0000 L CNN
 F 1 "47µF" H 2250 1200 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2288 1150 50  0001 C CNN
 F 3 "~" H 2250 1300 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0805MKX5R5BB476" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    2250 1300
 	1    0    0    -1  
 $EndComp
@@ -447,6 +449,8 @@ F 0 "C?" H 2250 2400 50  0000 L CNN
 F 1 "47µF" H 2250 2200 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 2288 2150 50  0001 C CNN
 F 3 "~" H 2250 2300 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0805MKX5R5BB476" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    2250 2300
 	1    0    0    -1  
 $EndComp
@@ -939,6 +943,8 @@ F 0 "C?" H 9200 1350 50  0000 L CNN
 F 1 "47µF" H 9200 1150 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 9238 1100 50  0001 C CNN
 F 3 "~" H 9200 1250 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0805MKX5R5BB476" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    9200 1250
 	1    0    0    -1  
 $EndComp
@@ -1080,6 +1086,8 @@ F 0 "C?" H 6700 1350 50  0000 L CNN
 F 1 "47µF" H 6700 1150 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 6738 1100 50  0001 C CNN
 F 3 "~" H 6700 1250 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0805MKX5R5BB476" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6700 1250
 	1    0    0    -1  
 $EndComp

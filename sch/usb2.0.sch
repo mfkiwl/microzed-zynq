@@ -286,6 +286,8 @@ F 0 "C?" H 4200 3100 50  0000 L CNN
 F 1 "4.7µF" H 4200 2900 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 4188 2850 50  0001 C CNN
 F 3 "~" H 4150 3000 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0402MRX5R5BB475" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    4150 3000
 	1    0    0    -1  
 $EndComp

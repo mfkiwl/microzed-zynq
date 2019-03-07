@@ -39,8 +39,10 @@ U 1 1 5BC5CA2F
 P 4200 3850
 F 0 "RP?" V 4100 4000 50  0000 L CNN
 F 1 "4.7k" V 4200 4000 50  0000 L CNN
-F 2 "Resistor_THT:R_Array_SIP5" V 4475 3850 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 4200 3850 50  0001 C CNN
+F 2 "microzed:YC124FR0749R9L" V 4475 3850 50  0001 C CNN
+F 3 "~" H 4200 3850 50  0001 C CNN
+F 4 "Yageo" H 4200 3850 50  0001 C CNN "Manufacturer"
+F 5 "YC124-JR-074K7L" H 4200 3850 50  0001 C CNN "ManufacturerPartNumber"
 	1    4200 3850
 	0    1    1    0   
 $EndComp
@@ -114,13 +116,15 @@ F 5 "RC0402FR-13240RL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:LED D?
+L Device:LED LED?
 U 1 1 5BC7E29B
 P 4250 2250
-F 0 "D?" V 4242 2133 50  0000 R CNN
-F 1 "LED" V 4197 2133 50  0001 R CNN
-F 2 "" H 4250 2250 50  0001 C CNN
+F 0 "LED?" V 4242 2133 50  0000 R CNN
+F 1 "Blue" V 4197 2133 50  0001 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 4250 2250 50  0001 C CNN
 F 3 "~" H 4250 2250 50  0001 C CNN
+F 4 "Lite-On" H 4250 2250 50  0001 C CNN "Manufacturer"
+F 5 "LTST-C191TBKT" H 4250 2250 50  0001 C CNN "ManufacturerPartNumber"
 	1    4250 2250
 	0    -1   -1   0   
 $EndComp
@@ -142,9 +146,11 @@ L Device:R_Network04 RP?
 U 1 1 5BCAA1A7
 P 2850 2150
 F 0 "RP?" V 2750 2400 50  0000 C CNN
-F 1 "CAT16-472J4LF" V 2850 2600 50  0000 C CNN
-F 2 "Resistor_THT:R_Array_SIP5" V 3125 2150 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 2850 2150 50  0001 C CNN
+F 1 "10K" V 2850 2400 50  0000 C CNN
+F 2 "microzed:YC124FR0749R9L" V 3125 2150 50  0001 C CNN
+F 3 "~" H 2850 2150 50  0001 C CNN
+F 4 "Yageo" H 2850 2150 50  0001 C CNN "Manufacturer"
+F 5 "YC124-JR-0710KL" H 2850 2150 50  0001 C CNN "ManufacturerPartNumber"
 	1    2850 2150
 	0    1    1    0   
 $EndComp

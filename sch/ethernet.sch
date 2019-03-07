@@ -590,8 +590,10 @@ U 1 1 5CADEED7
 P 6950 2950
 F 0 "C?" H 6950 3050 50  0000 L CNN
 F 1 "4.7µF" H 6950 2850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6988 2800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6988 2800 50  0001 C CNN
 F 3 "~" H 6950 2950 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0402MRX5R5BB475" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6950 2950
 	1    0    0    -1  
 $EndComp
@@ -820,8 +822,10 @@ U 1 1 5C579F81
 P 1200 2950
 F 0 "C?" H 1200 3050 50  0000 L CNN
 F 1 "4.7µF" H 1200 2850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1238 2800 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1238 2800 50  0001 C CNN
 F 3 "~" H 1200 2950 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0402MRX5R5BB475" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    1200 2950
 	1    0    0    -1  
 $EndComp

@@ -168,11 +168,11 @@ L microzed:HSMH-C191 LED?
 U 1 1 5BDA4E71
 P 5200 1800
 F 0 "LED?" H 5500 2187 50  0000 C CNN
-F 1 "HSMH-C191" H 5500 2096 50  0000 C CNN
-F 2 "microzed:LEDC1608X60N" H 6150 1950 50  0001 L BNN
-F 3 "https://www.broadcom.com/products/leds-and-displays/chip-leds/0603-1.6-x-0.88mm-top-mount/hsmh-c191#documentation" H 6150 1850 50  0001 L BNN
-F 4 "0.6" H 6150 1650 50  0001 L BNN "Height"
-F 5 "Avago Technologies" H 6150 1550 50  0001 L BNN "Manufacturer"
+F 1 "Blue" H 5500 2096 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 6150 1950 50  0001 L BNN
+F 3 "~" H 6150 1850 50  0001 L BNN
+F 4 "Lite-On" H 6150 1550 50  0001 L BNN "Manufacturer"
+F 5 "LTST-C191TBKT" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    5200 1800
 	1    0    0    -1  
 $EndComp
