@@ -16,115 +16,115 @@ $EndDescr
 $Comp
 L microzed:XC7Z020-1CLG484C IC1
 U 4 1 5C38B8A3
-P 2000 1000
-F 0 "IC1" H 2667 1165 50  0000 C CNN
-F 1 "XC7Z020-1CLG484C" H 2667 1074 50  0000 C CNN
-F 2 "microzed:BGA484C100P22X22_2300X2300X254" H 4650 1100 50  0001 L CNN
-F 3 "http://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pkg-Pinout.pdf" H 4650 1000 50  0001 L CNN
-F 4 "2.54" H 4650 800 50  0001 L CNN "Height"
-F 5 "XILINX" H 4650 700 50  0001 L CNN "Manufacturer"
-	4    2000 1000
+P 1500 2000
+F 0 "IC1" H 2167 2165 50  0000 C CNN
+F 1 "XC7Z020-1CLG484C" H 2167 2074 50  0000 C CNN
+F 2 "microzed:BGA484C100P22X22_2300X2300X254" H 4150 2100 50  0001 L CNN
+F 3 "http://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pkg-Pinout.pdf" H 4150 2000 50  0001 L CNN
+F 4 "2.54" H 4150 1800 50  0001 L CNN "Height"
+F 5 "XILINX" H 4150 1700 50  0001 L CNN "Manufacturer"
+	4    1500 2000
 	1    0    0    -1  
 $EndComp
-Text GLabel 3550 1100 2    50   BiDi ~ 0
+Text GLabel 3050 2100 2    50   BiDi ~ 0
 BANK34_SE_0
-Text GLabel 3550 1400 2    50   BiDi ~ 0
+Text GLabel 3050 2400 2    50   BiDi ~ 0
 BANK34_LVDS_1_P
-Text GLabel 3550 1300 2    50   BiDi ~ 0
+Text GLabel 3050 2300 2    50   BiDi ~ 0
 BANK34_LVDS_1_N
-Text GLabel 3550 1600 2    50   BiDi ~ 0
+Text GLabel 3050 2600 2    50   BiDi ~ 0
 BANK34_LVDS_2_P
-Text GLabel 3550 1500 2    50   BiDi ~ 0
+Text GLabel 3050 2500 2    50   BiDi ~ 0
 BANK34_LVDS_2_N
-Text GLabel 3550 1800 2    50   BiDi ~ 0
+Text GLabel 3050 2800 2    50   BiDi ~ 0
 BANK34_LVDS_3_P
-Text GLabel 3550 1700 2    50   BiDi ~ 0
+Text GLabel 3050 2700 2    50   BiDi ~ 0
 BANK34_LVDS_3_N
-Text GLabel 3550 2000 2    50   BiDi ~ 0
+Text GLabel 3050 3000 2    50   BiDi ~ 0
 BANK34_LVDS_4_P
-Text GLabel 3550 1900 2    50   BiDi ~ 0
+Text GLabel 3050 2900 2    50   BiDi ~ 0
 BANK34_LVDS_4_N
-Text GLabel 3550 2200 2    50   BiDi ~ 0
+Text GLabel 3050 3200 2    50   BiDi ~ 0
 BANK34_LVDS_5_P
-Text GLabel 3550 2100 2    50   BiDi ~ 0
+Text GLabel 3050 3100 2    50   BiDi ~ 0
 BANK34_LVDS_5_N
-Text GLabel 3550 2400 2    50   BiDi ~ 0
+Text GLabel 3050 3400 2    50   BiDi ~ 0
 BANK34_LVDS_6_P
-Text GLabel 3550 2300 2    50   BiDi ~ 0
+Text GLabel 3050 3300 2    50   BiDi ~ 0
 BANK34_LVDS_6_N
-Text GLabel 3550 2600 2    50   BiDi ~ 0
+Text GLabel 3050 3600 2    50   BiDi ~ 0
 BANK34_LVDS_7_P
-Text GLabel 3550 2500 2    50   BiDi ~ 0
+Text GLabel 3050 3500 2    50   BiDi ~ 0
 BANK34_LVDS_7_N
-Text GLabel 3550 2800 2    50   BiDi ~ 0
+Text GLabel 3050 3800 2    50   BiDi ~ 0
 BANK34_LVDS_8_P
-Text GLabel 3550 2700 2    50   BiDi ~ 0
+Text GLabel 3050 3700 2    50   BiDi ~ 0
 BANK34_LVDS_8_N
-Text GLabel 3550 3000 2    50   BiDi ~ 0
+Text GLabel 3050 4000 2    50   BiDi ~ 0
 BANK34_LVDS_9_P
-Text GLabel 3550 2900 2    50   BiDi ~ 0
+Text GLabel 3050 3900 2    50   BiDi ~ 0
 BANK34_LVDS_9_N
-Text GLabel 3550 3200 2    50   BiDi ~ 0
+Text GLabel 3050 4200 2    50   BiDi ~ 0
 BANK34_LVDS_10_P
-Text GLabel 3550 3100 2    50   BiDi ~ 0
+Text GLabel 3050 4100 2    50   BiDi ~ 0
 BANK34_LVDS_10_N
-Text GLabel 3550 3400 2    50   BiDi ~ 0
+Text GLabel 3050 4400 2    50   BiDi ~ 0
 BANK34_LVDS_11_P
-Text GLabel 3550 3300 2    50   BiDi ~ 0
+Text GLabel 3050 4300 2    50   BiDi ~ 0
 BANK34_LVDS_11_N
-Text GLabel 3550 3600 2    50   BiDi ~ 0
+Text GLabel 3050 4600 2    50   BiDi ~ 0
 BANK34_LVDS_12_P
-Text GLabel 3550 3500 2    50   BiDi ~ 0
+Text GLabel 3050 4500 2    50   BiDi ~ 0
 BANK34_LVDS_12_N
-Text GLabel 3550 3800 2    50   BiDi ~ 0
+Text GLabel 3050 4800 2    50   BiDi ~ 0
 BANK34_LVDS_13_P
-Text GLabel 3550 3700 2    50   BiDi ~ 0
+Text GLabel 3050 4700 2    50   BiDi ~ 0
 BANK34_LVDS_13_N
-Text GLabel 3550 4000 2    50   BiDi ~ 0
+Text GLabel 3050 5000 2    50   BiDi ~ 0
 BANK34_LVDS_14_P
-Text GLabel 3550 3900 2    50   BiDi ~ 0
+Text GLabel 3050 4900 2    50   BiDi ~ 0
 BANK34_LVDS_14_N
-Text GLabel 3550 4200 2    50   BiDi ~ 0
+Text GLabel 3050 5200 2    50   BiDi ~ 0
 BANK34_LVDS_15_P
-Text GLabel 3550 4100 2    50   BiDi ~ 0
+Text GLabel 3050 5100 2    50   BiDi ~ 0
 BANK34_LVDS_15_N
-Text GLabel 3550 4400 2    50   BiDi ~ 0
+Text GLabel 3050 5400 2    50   BiDi ~ 0
 BANK34_LVDS_16_P
-Text GLabel 3550 4300 2    50   BiDi ~ 0
+Text GLabel 3050 5300 2    50   BiDi ~ 0
 BANK34_LVDS_16_N
-Text GLabel 3550 4600 2    50   BiDi ~ 0
+Text GLabel 3050 5600 2    50   BiDi ~ 0
 BANK34_LVDS_17_P
-Text GLabel 3550 4500 2    50   BiDi ~ 0
+Text GLabel 3050 5500 2    50   BiDi ~ 0
 BANK34_LVDS_17_N
-Text GLabel 3550 4800 2    50   BiDi ~ 0
+Text GLabel 3050 5800 2    50   BiDi ~ 0
 BANK34_LVDS_18_P
-Text GLabel 3550 4700 2    50   BiDi ~ 0
+Text GLabel 3050 5700 2    50   BiDi ~ 0
 BANK34_LVDS_18_N
-Text GLabel 3550 5000 2    50   BiDi ~ 0
+Text GLabel 3050 6000 2    50   BiDi ~ 0
 BANK34_LVDS_19_P
-Text GLabel 3550 4900 2    50   BiDi ~ 0
+Text GLabel 3050 5900 2    50   BiDi ~ 0
 BANK34_LVDS_19_N
-Text GLabel 3550 5200 2    50   BiDi ~ 0
+Text GLabel 3050 6200 2    50   BiDi ~ 0
 BANK34_LVDS_20_P
-Text GLabel 3550 5100 2    50   BiDi ~ 0
+Text GLabel 3050 6100 2    50   BiDi ~ 0
 BANK34_LVDS_20_N
-Text GLabel 3550 5400 2    50   BiDi ~ 0
+Text GLabel 3050 6400 2    50   BiDi ~ 0
 BANK34_LVDS_21_P
-Text GLabel 3550 5300 2    50   BiDi ~ 0
+Text GLabel 3050 6300 2    50   BiDi ~ 0
 BANK34_LVDS_21_N
-Text GLabel 3550 5600 2    50   BiDi ~ 0
+Text GLabel 3050 6600 2    50   BiDi ~ 0
 BANK34_LVDS_22_P
-Text GLabel 3550 5500 2    50   BiDi ~ 0
+Text GLabel 3050 6500 2    50   BiDi ~ 0
 BANK34_LVDS_22_N
-Text GLabel 3550 5800 2    50   BiDi ~ 0
+Text GLabel 3050 6800 2    50   BiDi ~ 0
 BANK34_LVDS_23_P
-Text GLabel 3550 5700 2    50   BiDi ~ 0
+Text GLabel 3050 6700 2    50   BiDi ~ 0
 BANK34_LVDS_23_N
-Text GLabel 3550 6000 2    50   BiDi ~ 0
+Text GLabel 3050 7000 2    50   BiDi ~ 0
 BANK34_LVDS_24_P
-Text GLabel 3550 5900 2    50   BiDi ~ 0
+Text GLabel 3050 6900 2    50   BiDi ~ 0
 BANK34_LVDS_24_N
-Text GLabel 3550 1200 2    50   BiDi ~ 0
+Text GLabel 3050 2200 2    50   BiDi ~ 0
 BANK34_SE_25
 $Comp
 L microzed:XC7Z020-1CLG484C IC1
@@ -340,153 +340,138 @@ Wire Wire Line
 Wire Wire Line
 	8450 6000 8650 6000
 Wire Wire Line
-	3350 1100 3550 1100
+	2850 2100 3050 2100
 Wire Wire Line
-	3350 1200 3550 1200
+	2850 2200 3050 2200
 Wire Wire Line
-	3350 1300 3550 1300
+	2850 2300 3050 2300
 Wire Wire Line
-	3350 1400 3550 1400
+	2850 2400 3050 2400
 Wire Wire Line
-	3350 1500 3550 1500
+	2850 2500 3050 2500
 Wire Wire Line
-	3350 1600 3550 1600
+	2850 2600 3050 2600
 Wire Wire Line
-	3350 1700 3550 1700
+	2850 2700 3050 2700
 Wire Wire Line
-	3350 1900 3550 1900
+	2850 2900 3050 2900
 Wire Wire Line
-	3350 2000 3550 2000
+	2850 3000 3050 3000
 Wire Wire Line
-	3350 2100 3550 2100
+	2850 3100 3050 3100
 Wire Wire Line
-	3350 2200 3550 2200
+	2850 3200 3050 3200
 Wire Wire Line
-	3350 2300 3550 2300
+	2850 3300 3050 3300
 Wire Wire Line
-	3350 2400 3550 2400
+	2850 3400 3050 3400
 Wire Wire Line
-	3350 2500 3550 2500
+	2850 3500 3050 3500
 Wire Wire Line
-	3350 2600 3550 2600
+	2850 3600 3050 3600
 Wire Wire Line
-	3350 2700 3550 2700
+	2850 3700 3050 3700
 Wire Wire Line
-	3350 2800 3550 2800
+	2850 3800 3050 3800
 Wire Wire Line
-	3350 2900 3550 2900
+	2850 3900 3050 3900
 Wire Wire Line
-	3350 3000 3550 3000
+	2850 4000 3050 4000
 Wire Wire Line
-	3350 3100 3550 3100
+	2850 4100 3050 4100
 Wire Wire Line
-	3350 3200 3550 3200
+	2850 4200 3050 4200
 Wire Wire Line
-	3350 3300 3550 3300
+	2850 4300 3050 4300
 Wire Wire Line
-	3350 3400 3550 3400
+	2850 4400 3050 4400
 Wire Wire Line
-	3350 3500 3550 3500
+	2850 4500 3050 4500
 Wire Wire Line
-	3350 3600 3550 3600
+	2850 4600 3050 4600
 Wire Wire Line
-	3350 3700 3550 3700
+	2850 4700 3050 4700
 Wire Wire Line
-	3350 3800 3550 3800
+	2850 4800 3050 4800
 Wire Wire Line
-	3350 3900 3550 3900
+	2850 4900 3050 4900
 Wire Wire Line
-	3350 4000 3550 4000
+	2850 5000 3050 5000
 Wire Wire Line
-	3350 4100 3550 4100
+	2850 5100 3050 5100
 Wire Wire Line
-	3350 4200 3550 4200
+	2850 5200 3050 5200
 Wire Wire Line
-	3350 4300 3550 4300
+	2850 5300 3050 5300
 Wire Wire Line
-	3350 4400 3550 4400
+	2850 5400 3050 5400
 Wire Wire Line
-	3350 4500 3550 4500
+	2850 5500 3050 5500
 Wire Wire Line
-	3350 4600 3550 4600
+	2850 5600 3050 5600
 Wire Wire Line
-	3350 4700 3550 4700
+	2850 5700 3050 5700
 Wire Wire Line
-	3350 4800 3550 4800
+	2850 5800 3050 5800
 Wire Wire Line
-	3350 4900 3550 4900
+	2850 5900 3050 5900
 Wire Wire Line
-	3350 5000 3550 5000
+	2850 6000 3050 6000
 Wire Wire Line
-	3350 5100 3550 5100
+	2850 6100 3050 6100
 Wire Wire Line
-	3350 5200 3550 5200
+	2850 6200 3050 6200
 Wire Wire Line
-	3350 5300 3550 5300
+	2850 6300 3050 6300
 Wire Wire Line
-	3350 5400 3550 5400
+	2850 6400 3050 6400
 Wire Wire Line
-	3350 5500 3550 5500
+	2850 6500 3050 6500
 Wire Wire Line
-	3350 5600 3550 5600
+	2850 6600 3050 6600
 Wire Wire Line
-	3350 5700 3550 5700
+	2850 6700 3050 6700
 Wire Wire Line
-	3350 5800 3550 5800
+	2850 6800 3050 6800
 Wire Wire Line
-	3350 5900 3550 5900
+	2850 6900 3050 6900
 Wire Wire Line
-	3350 6000 3550 6000
+	2850 7000 3050 7000
 Wire Wire Line
-	3350 1800 3450 1800
+	2850 2800 2950 2800
+Connection ~ 2950 2800
 Wire Wire Line
-	3450 1800 3450 1000
-Wire Wire Line
-	3450 1000 4750 1000
-Connection ~ 3450 1800
-Wire Wire Line
-	3450 1800 3550 1800
-$Comp
-L power:GND #PWR?
-U 1 1 5C443114
-P 4750 1250
-F 0 "#PWR?" H 4750 1000 50  0001 C CNN
-F 1 "GND" H 4755 1077 50  0000 C CNN
-F 2 "" H 4750 1250 50  0001 C CNN
-F 3 "" H 4750 1250 50  0001 C CNN
-	1    4750 1250
-	-1   0    0    -1  
-$EndComp
-Text Notes 4550 3550 0    50   ~ 0
+	2950 2800 3050 2800
+Text Notes 4250 3750 0    50   ~ 0
 UG865 P13\nUG470 P27 Table 2-4\nPull-Up During Configuration (bar)\nActive-Low PUDC_B input enables internal pull-up\nresistors on the SelectIO pins after power-up and during\nconfiguration.\n• When PUDC_B is Low, internal pull-up resistors are\nenabled on each SelectIO pin.\n• When PUDC_B is High, internal pull-up resistors are\ndisabled on each SelectIO pin.\nPUDC_B must be tied either directly, or via a ≤ 1 kΩ to\nVCCO_14 or GND. When PUDC_B is tied to GND, the\nactivation of internal pull-ups during power-on depends\non the power sequence because the PUDC_B control\nsignal is forwarded through an input buffer in bank 14\nand internal paths to the enables of internal pull-ups at\napplicable pins in their respective I/O banks. An\nexternal pull-up resistor is recommended between a pin\nand the pin’s VCCO power supply when it is critical for\nthe pin to be pulled High immediately as the pin’s VCCO\npower ramps up.\nCaution! Do not allow this pin to float before and\nduring configuration.\n
-$Comp
-L microzed:5-146280-3 J?
-U 1 1 5C472AAB
-P 4750 900
-F 0 "J?" H 5078 846 50  0000 L CNN
-F 1 "5-146280-3" H 5078 755 50  0000 L CNN
-F 2 "microzed:HDRV3W97P0X254_1X3_721X234X821P" H 5400 1000 50  0001 L CNN
-F 3 "http://pdl.designspark.com/api/v1/manufacturers/53f31a629b4759f8698ba80b/part/53f33e0b9b4759f869d709b8/55bff39a8759c5ef5e8d0d63/1.pdf" H 5400 900 50  0001 L CNN
-F 4 "8.21" H 5400 700 50  0001 L CNN "Height"
-F 5 "TE Connectivity" H 5400 600 50  0001 L CNN "Manufacturer"
-	1    4750 900 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4750 1100 4750 1250
 $Comp
 L microzed:VCCO_34 #PWR?
 U 1 1 5C491156
-P 4750 750
-F 0 "#PWR?" H 4750 600 50  0001 C CNN
-F 1 "VCCO_34" H 4765 923 50  0000 C CNN
-F 2 "" H 4750 750 50  0001 C CNN
-F 3 "" H 4750 750 50  0001 C CNN
-	1    4750 750 
+P 2950 1400
+F 0 "#PWR?" H 2950 1250 50  0001 C CNN
+F 1 "VCCO_34" H 2965 1573 50  0000 C CNN
+F 2 "" H 2950 1400 50  0001 C CNN
+F 3 "" H 2950 1400 50  0001 C CNN
+	1    2950 1400
 	1    0    0    -1  
 $EndComp
+Text Notes 3200 1750 0    50   ~ 0
+pull-up/down is users responsibility,\nwhich will use SELECTIO as input.\nHere, we keep all SELECTIO float.
 Wire Wire Line
-	4750 900  4750 750 
-Text Notes 4950 1350 0    50   ~ 0
-default: 2-3 R1K
+	2950 2800 2950 1800
+Wire Wire Line
+	2950 1500 2950 1400
+$Comp
+L Device:R R?
+U 1 1 5C8C283B
+P 2950 1650
+F 0 "R?" H 3020 1696 50  0000 L CNN
+F 1 "1k" H 3020 1605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2880 1650 50  0001 C CNN
+F 3 "~" H 2950 1650 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-071KL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
+	1    2950 1650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
