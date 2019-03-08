@@ -21,6 +21,8 @@ F 0 "U?" H 2825 1615 50  0000 C CNN
 F 1 "ASDMB-33.333MHZ-LC-T" H 2825 1524 50  0000 C CNN
 F 2 "microzed:ABRACON-ASDMB" H 3750 1450 50  0001 L CNN
 F 3 "http://www.abracon.com/Oscillators/ASDMB.pdf" H 3750 1350 50  0001 L CNN
+F 4 "ABRACON" H 2250 1350 50  0001 C CNN "Manufacturer"
+F 5 "ASDMB-33.333MHZ-LC-T" H 2250 1350 50  0001 C CNN "ManufacturerPartNumber"
 	1    2250 1350
 	1    0    0    -1  
 $EndComp
@@ -85,8 +87,8 @@ $Comp
 L Device:C C?
 U 1 1 5B92D34A
 P 1800 1600
-F 0 "C?" H 1750 1650 50  0000 R BNN
-F 1 "0.1uF" H 1750 1550 50  0000 R TNN
+F 0 "C?" H 1800 1650 50  0000 R BNN
+F 1 "0.1uF" H 1800 1550 50  0000 R TNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 1838 1450 50  0001 C CNN
 F 3 "~" H 1800 1600 50  0001 C CNN
 	1    1800 1600
@@ -164,99 +166,52 @@ F 3 "" H 10000 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L microzed:HSMH-C191 LED?
-U 1 1 5BDA4E71
-P 5200 1800
-F 0 "LED?" H 5500 2187 50  0000 C CNN
-F 1 "Blue" H 5500 2096 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 6150 1950 50  0001 L BNN
-F 3 "~" H 6150 1850 50  0001 L BNN
-F 4 "Lite-On" H 6150 1550 50  0001 L BNN "Manufacturer"
-F 5 "LTST-C191TBKT" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    5200 1800
-	1    0    0    -1  
-$EndComp
-$Comp
 L Transistor_BJT:MMBT3904 Q?
 U 1 1 5BDA4E78
-P 4900 2200
-F 0 "Q?" H 5091 2246 50  0000 L CNN
-F 1 "MMBT3904" H 5091 2155 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5100 2125 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 4900 2200 50  0001 L CNN
-	1    4900 2200
+P 5700 1350
+F 0 "Q?" H 5891 1396 50  0000 L CNN
+F 1 "MMBT3904" H 5891 1305 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5900 1275 50  0001 L CIN
+F 3 "" H 5700 1350 50  0001 L CNN
+	1    5700 1350
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5BDA4E7F
-P 4550 2200
-F 0 "R?" V 4450 2200 50  0000 C BNN
-F 1 "240" V 4650 2200 50  0000 C TNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4480 2200 50  0001 C CNN
-F 3 "~" H 4550 2200 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "RC0402FR-13240RL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    4550 2200
-	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5BDA4E86
-P 5000 2550
-F 0 "#PWR?" H 5000 2300 50  0001 C CNN
-F 1 "GND" H 5005 2377 50  0000 C CNN
-F 2 "" H 5000 2550 50  0001 C CNN
-F 3 "" H 5000 2550 50  0001 C CNN
-	1    5000 2550
+P 5800 2450
+F 0 "#PWR?" H 5800 2200 50  0001 C CNN
+F 1 "GND" H 5805 2277 50  0000 C CNN
+F 2 "" H 5800 2450 50  0001 C CNN
+F 3 "" H 5800 2450 50  0001 C CNN
+	1    5800 2450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 2000 5000 1800
-Wire Wire Line
-	5000 1800 5200 1800
-$Comp
-L Device:R R?
-U 1 1 5BDA4E8E
-P 6150 1800
-F 0 "R?" V 6050 1800 50  0000 C BNN
-F 1 "240" V 6250 1800 50  0000 C TNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6080 1800 50  0001 C CNN
-F 3 "~" H 6150 1800 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "RC0402FR-13240RL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    6150 1800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5800 1800 6000 1800
+	5800 1150 5800 1050
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5BDA4E96
-P 6500 1600
-F 0 "#PWR?" H 6500 1450 50  0001 C CNN
-F 1 "+3V3" H 6515 1773 50  0000 C CNN
-F 2 "" H 6500 1600 50  0001 C CNN
-F 3 "" H 6500 1600 50  0001 C CNN
-	1    6500 1600
+P 5800 1050
+F 0 "#PWR?" H 5800 900 50  0001 C CNN
+F 1 "+3V3" H 5815 1223 50  0000 C CNN
+F 2 "" H 5800 1050 50  0001 C CNN
+F 3 "" H 5800 1050 50  0001 C CNN
+	1    5800 1050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 1800 6500 1800
-Wire Wire Line
-	6500 1800 6500 1600
-Wire Wire Line
-	5000 2400 5000 2550
+	5800 1550 5800 1650
 Wire Wire Line
 	2750 3300 3150 3300
 Wire Wire Line
 	2750 3600 3150 3600
 Wire Wire Line
-	4000 2200 4000 3100
+	4800 1350 4800 3100
 Wire Wire Line
-	4000 3100 2750 3100
+	4800 3100 2750 3100
 Wire Wire Line
-	4000 2200 4400 2200
+	4800 1350 5500 1350
 Text GLabel 3150 3200 2    50   Output ~ 0
 QSPI_CS
 Text GLabel 3150 3300 2    50   BiDi ~ 0
@@ -524,7 +479,7 @@ $EndComp
 Wire Wire Line
 	9050 5000 9050 4850
 Connection ~ 9050 5000
-Text Notes 8200 1900 0    50   ~ 0
+Text Notes 6150 5800 0    50   ~ 0
 Boot Mode Pin Settings\nUG585 P166 Table 6-4.\n\nUG585 P166 section 6.2.6\nI/O Pin Connections for Boot Devices\nonly SDIO1 can used as boot device, SIO0 can't.\n\nBoot Time:\nhttps://www.xilinx.com/support/answers/55572.html\nZynq-7000_Boot_time_estimator_QSPI_NAND_rev3.0.xlsm\nboot from NAND is slower than boot from QSPI,\nand the NAND will use more pins.
 Text GLabel 3150 3800 2    50   BiDi ~ 0
 PS_MIO7
@@ -572,12 +527,46 @@ Text Notes 2800 2800 0    50   ~ 0
 30M-60MHZ
 Text Notes 3600 3000 0    50   ~ 0
 DS187P8\nPS_PRO_B must connected\nto GND during power-on.
-Text Notes 5400 2000 0    50   ~ 0
-20mA
 Text Notes 4000 3650 0    50   ~ 0
 UG933 P57 Table5-3\nMIO8           MIO16-MIO53\n1.8V mode     20 KΩ resistor to VCCO_MIO0\n3.3V mode     20 KΩ resistor to ground\n 
 Text GLabel 3150 3900 2    50   BiDi ~ 0
 PS_MIO8
 Text GLabel 3150 4000 2    50   BiDi ~ 0
 PS_MIO9
+Text Notes 6000 1000 0    50   ~ 0
+LED driver circuit:\nhttps://electronics.stackexchange.com/questions/60865/how-to-drive-a-20ma-led-from-a-4ma-max-gpio-pin
+$Comp
+L Device:LED LED?
+U 1 1 5C94C6A3
+P 5800 2200
+F 0 "LED?" V 5839 2082 50  0000 R CNN
+F 1 "Blue" V 5748 2082 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 5800 2200 50  0001 C CNN
+F 3 "~" H 5800 2200 50  0001 C CNN
+F 4 "Lite-On" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "LTST-C191TBKT" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
+	1    5800 2200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C950243
+P 5800 1800
+F 0 "R?" H 5870 1846 50  0000 L CNN
+F 1 "40.2" H 5870 1755 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5730 1800 50  0001 C CNN
+F 3 "~" H 5800 1800 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
+	1    5800 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 2050 5800 1950
+Wire Wire Line
+	5800 2450 5800 2350
+Text Notes 6150 1900 0    50   ~ 0
+Vr: 3.3 - 0.7 - 2 = 0.6V\nIr: 0.6 / 40.2 = 0.015A < 20mA
+Text Notes 700  1700 0    50   ~ 0
+datasheet recommand\n0.01uF capacitor.
 $EndSCHEMATC
