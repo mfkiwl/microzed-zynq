@@ -33,30 +33,6 @@ Wire Wire Line
 	1900 2650 2150 2650
 Text GLabel 4000 2950 2    50   Output ~ 0
 FPGA_DONE
-$Comp
-L Device:R_Network04 RP?
-U 1 1 5BC5CA2F
-P 4200 3850
-F 0 "RP?" V 4100 4000 50  0000 L CNN
-F 1 "4.7k" V 4200 4000 50  0000 L CNN
-F 2 "microzed:YC124FR0749R9L" V 4475 3850 50  0001 C CNN
-F 3 "~" H 4200 3850 50  0001 C CNN
-F 4 "Yageo" H 4200 3850 50  0001 C CNN "Manufacturer"
-F 5 "YC124-JR-074K7L" H 4200 3850 50  0001 C CNN "ManufacturerPartNumber"
-	1    4200 3850
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5BC5CAC3
-P 4400 3650
-F 0 "#PWR?" H 4400 3500 50  0001 C CNN
-F 1 "+3V3" H 4415 3823 50  0000 C CNN
-F 2 "" H 4400 3650 50  0001 C CNN
-F 3 "" H 4400 3650 50  0001 C CNN
-	1    4400 3650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2150 2450 2150 2550
 Connection ~ 2150 2550
@@ -92,27 +68,14 @@ $EndComp
 Wire Wire Line
 	1900 2750 2350 2750
 $Comp
-L Device:R_Network04 RP?
-U 1 1 5BCAA1A7
-P 2850 2150
-F 0 "RP?" V 2750 2400 50  0000 C CNN
-F 1 "10k" V 2850 2400 50  0000 C CNN
-F 2 "microzed:YC124FR0749R9L" V 3125 2150 50  0001 C CNN
-F 3 "~" H 2850 2150 50  0001 C CNN
-F 4 "Yageo" H 2850 2150 50  0001 C CNN "Manufacturer"
-F 5 "YC124-JR-0710KL" H 2850 2150 50  0001 C CNN "ManufacturerPartNumber"
-	1    2850 2150
-	0    1    1    0   
-$EndComp
-$Comp
 L power:+3V3 #PWR?
 U 1 1 5BCAA1AE
-P 3050 1950
-F 0 "#PWR?" H 3050 1800 50  0001 C CNN
-F 1 "+3V3" H 3065 2123 50  0000 C CNN
-F 2 "" H 3050 1950 50  0001 C CNN
-F 3 "" H 3050 1950 50  0001 C CNN
-	1    3050 1950
+P 3250 1950
+F 0 "#PWR?" H 3250 1800 50  0001 C CNN
+F 1 "+3V3" H 3265 2123 50  0000 C CNN
+F 2 "" H 3250 1950 50  0001 C CNN
+F 3 "" H 3250 1950 50  0001 C CNN
+	1    3250 1950
 	1    0    0    -1  
 $EndComp
 Text Notes 4850 3450 0    50   ~ 0
@@ -260,4 +223,63 @@ Wire Wire Line
 Connection ~ 3750 2950
 Wire Wire Line
 	3750 2950 4000 2950
+$Comp
+L Device:R_Pack04 RP?
+U 1 1 5C83EA0B
+P 2850 2150
+F 0 "RP?" V 2433 2150 50  0000 C CNN
+F 1 "10k" V 2524 2150 50  0000 C CNN
+F 2 "microzed:YC124FR0749R9L" V 3125 2150 50  0001 C CNN
+F 3 "~" H 2850 2150 50  0001 C CNN
+F 4 "Yageo" H 2850 2150 50  0001 C CNN "Manufacturer"
+F 5 "YC124-JR-0710KL" H 2850 2150 50  0001 C CNN "ManufacturerPartNumber"
+	1    2850 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3050 2250 3050 2150
+Connection ~ 3050 2050
+Wire Wire Line
+	3050 2050 3050 1950
+Connection ~ 3050 2150
+Wire Wire Line
+	3050 2150 3050 2050
+Wire Wire Line
+	3250 1950 3050 1950
+Connection ~ 3050 1950
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5C87F417
+P 4600 3650
+F 0 "#PWR?" H 4600 3500 50  0001 C CNN
+F 1 "+3V3" H 4615 3823 50  0000 C CNN
+F 2 "" H 4600 3650 50  0001 C CNN
+F 3 "" H 4600 3650 50  0001 C CNN
+	1    4600 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Pack04 RP?
+U 1 1 5C87F41F
+P 4200 3850
+F 0 "RP?" V 3783 3850 50  0000 C CNN
+F 1 "4.7k" V 3874 3850 50  0000 C CNN
+F 2 "microzed:YC124FR0749R9L" V 4475 3850 50  0001 C CNN
+F 3 "~" H 4200 3850 50  0001 C CNN
+F 4 "Yageo" H 4200 3850 50  0001 C CNN "Manufacturer"
+F 5 "YC124-JR-074K7L" H 4200 3850 50  0001 C CNN "ManufacturerPartNumber"
+	1    4200 3850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4400 3950 4400 3850
+Connection ~ 4400 3750
+Wire Wire Line
+	4400 3750 4400 3650
+Connection ~ 4400 3850
+Wire Wire Line
+	4400 3850 4400 3750
+Wire Wire Line
+	4600 3650 4400 3650
+Connection ~ 4400 3650
 $EndSCHEMATC
