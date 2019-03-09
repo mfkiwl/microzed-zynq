@@ -92,61 +92,11 @@ $EndComp
 Wire Wire Line
 	1900 2750 2350 2750
 $Comp
-L power:+3V3 #PWR?
-U 1 1 5BC7DF3E
-P 4250 1800
-F 0 "#PWR?" H 4250 1650 50  0001 C CNN
-F 1 "+3V3" H 4265 1973 50  0000 C CNN
-F 2 "" H 4250 1800 50  0001 C CNN
-F 3 "" H 4250 1800 50  0001 C CNN
-	1    4250 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5BC7DF6E
-P 4250 1950
-F 0 "R?" H 4320 1996 50  0000 L CNN
-F 1 "240" H 4320 1905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4180 1950 50  0001 C CNN
-F 3 "~" H 4250 1950 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "RC0402FR-13240RL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    4250 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED LED?
-U 1 1 5BC7E29B
-P 4250 2250
-F 0 "LED?" V 4242 2133 50  0000 R CNN
-F 1 "Blue" V 4197 2133 50  0001 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric" H 4250 2250 50  0001 C CNN
-F 3 "~" H 4250 2250 50  0001 C CNN
-F 4 "Lite-On" H 4250 2250 50  0001 C CNN "Manufacturer"
-F 5 "LTST-C191TBKT" H 4250 2250 50  0001 C CNN "ManufacturerPartNumber"
-	1    4250 2250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5BC95D13
-P 4250 2500
-F 0 "#PWR?" H 4250 2250 50  0001 C CNN
-F 1 "GND" H 4255 2327 50  0000 C CNN
-F 2 "" H 4250 2500 50  0001 C CNN
-F 3 "" H 4250 2500 50  0001 C CNN
-	1    4250 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 2500 4250 2400
-$Comp
 L Device:R_Network04 RP?
 U 1 1 5BCAA1A7
 P 2850 2150
 F 0 "RP?" V 2750 2400 50  0000 C CNN
-F 1 "10K" V 2850 2400 50  0000 C CNN
+F 1 "10k" V 2850 2400 50  0000 C CNN
 F 2 "microzed:YC124FR0749R9L" V 3125 2150 50  0001 C CNN
 F 3 "~" H 2850 2150 50  0001 C CNN
 F 4 "Yageo" H 2850 2150 50  0001 C CNN "Manufacturer"
@@ -167,8 +117,6 @@ F 3 "" H 3050 1950 50  0001 C CNN
 $EndComp
 Text Notes 4850 3450 0    50   ~ 0
 DXN_0, DXP_0:\nUG865 P17 Table 1-5:\nrecommend use XADC external inputs.
-Wire Wire Line
-	3750 2100 4250 2100
 Text GLabel 2150 3750 2    50   Input ~ 0
 XADC0_N
 Text GLabel 2150 3650 2    50   Input ~ 0
@@ -186,14 +134,6 @@ F 5 "XILINX" H 3550 1550 50  0001 L CNN "Manufacturer"
 	1    900  1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1900 2950 3750 2950
-Wire Wire Line
-	3750 2100 3750 2950
-Connection ~ 3750 2950
-Wire Wire Line
-	3750 2950 4000 2950
-Connection ~ 4250 2100
 Wire Wire Line
 	1900 3050 3800 3050
 Wire Wire Line
@@ -240,4 +180,84 @@ F 3 "" H 2250 3350 50  0001 C CNN
 	1    2250 3350
 	1    0    0    -1  
 $EndComp
+$Comp
+L Transistor_BJT:MMBT3904 Q?
+U 1 1 5C84E96A
+P 4650 1500
+F 0 "Q?" H 4841 1546 50  0000 L CNN
+F 1 "MMBT3904" H 4841 1455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4850 1425 50  0001 L CIN
+F 3 "" H 4650 1500 50  0001 L CNN
+	1    4650 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C84E970
+P 4750 2600
+F 0 "#PWR?" H 4750 2350 50  0001 C CNN
+F 1 "GND" H 4755 2427 50  0000 C CNN
+F 2 "" H 4750 2600 50  0001 C CNN
+F 3 "" H 4750 2600 50  0001 C CNN
+	1    4750 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1300 4750 1200
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5C84E977
+P 4750 1200
+F 0 "#PWR?" H 4750 1050 50  0001 C CNN
+F 1 "+3V3" H 4765 1373 50  0000 C CNN
+F 2 "" H 4750 1200 50  0001 C CNN
+F 3 "" H 4750 1200 50  0001 C CNN
+	1    4750 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 1700 4750 1800
+Wire Wire Line
+	3750 1500 4450 1500
+Text Notes 4950 1150 0    50   ~ 0
+LED driver circuit:\nhttps://electronics.stackexchange.com/questions/60865/how-to-drive-a-20ma-led-from-a-4ma-max-gpio-pin
+$Comp
+L Device:LED LED?
+U 1 1 5C84E982
+P 4750 2350
+F 0 "LED?" V 4789 2232 50  0000 R CNN
+F 1 "Blue" V 4698 2232 50  0000 R CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 4750 2350 50  0001 C CNN
+F 3 "~" H 4750 2350 50  0001 C CNN
+F 4 "Lite-On" H -1050 150 50  0001 C CNN "Manufacturer"
+F 5 "LTST-C191TBKT" H -1050 150 50  0001 C CNN "ManufacturerPartNumber"
+	1    4750 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C84E98A
+P 4750 1950
+F 0 "R?" H 4820 1996 50  0000 L CNN
+F 1 "40.2" H 4820 1905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4680 1950 50  0001 C CNN
+F 3 "~" H 4750 1950 50  0001 C CNN
+F 4 "Yageo" H -1050 150 50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H -1050 150 50  0001 C CNN "ManufacturerPartNumber"
+	1    4750 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2200 4750 2100
+Wire Wire Line
+	4750 2600 4750 2500
+Text Notes 5100 2050 0    50   ~ 0
+Vr: 3.3 - 0.7 - 2 = 0.6V\nIr: 0.6 / 40.2 = 0.015A < 20mA
+Wire Wire Line
+	1900 2950 3750 2950
+Wire Wire Line
+	3750 1500 3750 2950
+Connection ~ 3750 2950
+Wire Wire Line
+	3750 2950 4000 2950
 $EndSCHEMATC

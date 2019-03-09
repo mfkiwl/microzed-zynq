@@ -115,7 +115,7 @@ Connection ~ 1800 1450
 Connection ~ 1800 1350
 Wire Wire Line
 	2300 1700 2300 1450
-Text GLabel 3100 2900 2    50   Input ~ 0
+Text GLabel 3150 2900 2    50   Input ~ 0
 PG_MODULE
 $Comp
 L power:+3.3V #PWR?
@@ -136,6 +136,8 @@ F 0 "R?" H 8870 2696 50  0000 L CNN
 F 1 "20K" H 8870 2605 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 8730 2650 50  0001 C CNN
 F 3 "~" H 8800 2650 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0720KL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    8800 2650
 	1    0    0    -1  
 $EndComp
@@ -149,6 +151,8 @@ F 0 "R?" H 10070 4546 50  0000 L CNN
 F 1 "20K" H 10070 4455 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 9930 4500 50  0001 C CNN
 F 3 "~" H 10000 4500 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0720KL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    10000 4500
 	1    0    0    -1  
 $EndComp
@@ -207,10 +211,6 @@ Wire Wire Line
 Wire Wire Line
 	2750 3600 3150 3600
 Wire Wire Line
-	4800 1350 4800 3100
-Wire Wire Line
-	4800 3100 2750 3100
-Wire Wire Line
 	4800 1350 5500 1350
 Text GLabel 3150 3200 2    50   Output ~ 0
 QSPI_CS
@@ -264,7 +264,7 @@ F 5 "XILINX" H 4500 2250 50  0001 L CNN "Manufacturer"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2750 2900 3100 2900
+	2750 2900 3150 2900
 Wire Wire Line
 	3400 1350 3600 1350
 Wire Wire Line
@@ -309,6 +309,8 @@ F 0 "R?" H 8320 4546 50  0000 L CNN
 F 1 "20K" H 8320 4455 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 8180 4500 50  0001 C CNN
 F 3 "~" H 8250 4500 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0720KL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    8250 4500
 	1    0    0    -1  
 $EndComp
@@ -335,6 +337,8 @@ F 0 "R?" H 7720 4546 50  0000 L CNN
 F 1 "20K" H 7720 4455 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 7580 4500 50  0001 C CNN
 F 3 "~" H 7650 4500 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0720KL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    7650 4500
 	1    0    0    -1  
 $EndComp
@@ -352,29 +356,20 @@ F 3 "" H 7650 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR?
-U 1 1 5C408F8F
-P 7050 2500
-F 0 "#PWR?" H 7050 2350 50  0001 C CNN
-F 1 "+3.3V" H 7065 2673 50  0000 C CNN
-F 2 "" H 7050 2500 50  0001 C CNN
-F 3 "" H 7050 2500 50  0001 C CNN
-	1    7050 2500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R?
 U 1 1 5C408F95
-P 7050 2650
-F 0 "R?" H 7120 2696 50  0000 L CNN
-F 1 "20K" H 7120 2605 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6980 2650 50  0001 C CNN
-F 3 "~" H 7050 2650 50  0001 C CNN
-	1    7050 2650
+P 7050 4500
+F 0 "R?" H 7120 4546 50  0000 L CNN
+F 1 "20K" H 7120 4455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6980 4500 50  0001 C CNN
+F 3 "~" H 7050 4500 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0720KL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
+	1    7050 4500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7050 3900 7050 2800
+	7050 3900 7050 4350
 $Comp
 L Device:R R?
 U 1 1 5C4157BA
@@ -383,6 +378,8 @@ F 0 "R?" H 10770 4546 50  0000 L CNN
 F 1 "20K" H 10770 4455 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 10630 4500 50  0001 C CNN
 F 3 "~" H 10700 4500 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0720KL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    10700 4500
 	1    0    0    -1  
 $EndComp
@@ -439,6 +436,8 @@ F 0 "R?" H 9420 4546 50  0000 L CNN
 F 1 "20K" H 9420 4455 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 9280 4500 50  0001 C CNN
 F 3 "~" H 9350 4500 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0720KL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    9350 4500
 	1    0    0    -1  
 $EndComp
@@ -479,7 +478,7 @@ $EndComp
 Wire Wire Line
 	9050 5000 9050 4850
 Connection ~ 9050 5000
-Text Notes 6150 5800 0    50   ~ 0
+Text Notes 5800 5650 0    50   ~ 0
 Boot Mode Pin Settings\nUG585 P166 Table 6-4.\n\nUG585 P166 section 6.2.6\nI/O Pin Connections for Boot Devices\nonly SDIO1 can used as boot device, SIO0 can't.\n\nBoot Time:\nhttps://www.xilinx.com/support/answers/55572.html\nZynq-7000_Boot_time_estimator_QSPI_NAND_rev3.0.xlsm\nboot from NAND is slower than boot from QSPI,\nand the NAND will use more pins.
 Text GLabel 3150 3800 2    50   BiDi ~ 0
 PS_MIO7
@@ -525,10 +524,8 @@ Wire Wire Line
 	2750 4600 3150 4600
 Text Notes 2800 2800 0    50   ~ 0
 30M-60MHZ
-Text Notes 3600 3000 0    50   ~ 0
+Text Notes 3650 3050 0    50   ~ 0
 DS187P8\nPS_PRO_B must connected\nto GND during power-on.
-Text Notes 4000 3650 0    50   ~ 0
-UG933 P57 Table5-3\nMIO8           MIO16-MIO53\n1.8V mode     20 KΩ resistor to VCCO_MIO0\n3.3V mode     20 KΩ resistor to ground\n 
 Text GLabel 3150 3900 2    50   BiDi ~ 0
 PS_MIO8
 Text GLabel 3150 4000 2    50   BiDi ~ 0
@@ -569,4 +566,27 @@ Text Notes 6150 1900 0    50   ~ 0
 Vr: 3.3 - 0.7 - 2 = 0.6V\nIr: 0.6 / 40.2 = 0.015A < 20mA
 Text Notes 700  1700 0    50   ~ 0
 datasheet recommand\n0.01uF capacitor.
+Text GLabel 3150 3100 2    50   Output ~ 0
+PS_MIO0
+Text Label 2750 3100 0    50   ~ 0
+PS_MIO0
+Text Label 4800 1350 0    50   ~ 0
+PS_MIO0
+Wire Wire Line
+	2750 3100 3150 3100
+Text Notes 4400 4200 0    50   ~ 0
+UG933 P57 Table5-3\nMIO7           MIO0-MIO15\n1.8V mode     20 KΩ resistor to VCCO_MIO0\n3.3V mode     20 KΩ resistor to ground\n\nMIO8           MIO16-MIO53\n1.8V mode     20 KΩ resistor to VCCO_MIO0\n3.3V mode     20 KΩ resistor to ground
+$Comp
+L power:GND #PWR?
+U 1 1 5C8DBDA6
+P 7050 4650
+F 0 "#PWR?" H 7050 4400 50  0001 C CNN
+F 1 "GND" H 7055 4477 50  0000 C CNN
+F 2 "" H 7050 4650 50  0001 C CNN
+F 3 "" H 7050 4650 50  0001 C CNN
+	1    7050 4650
+	1    0    0    -1  
+$EndComp
+Text Notes 6150 3150 0    50   ~ 0
+https://electronics.stackexchange.com/questions/76793/pros-and-cons-of-using-resistor-networks-over-individual-resistors
 $EndSCHEMATC
