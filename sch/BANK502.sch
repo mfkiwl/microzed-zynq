@@ -67,6 +67,8 @@ F 0 "C?" H 2850 1750 50  0000 L CNN
 F 1 "0.1µF" H 2850 1550 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 2838 1500 50  0001 C CNN
 F 3 "~" H 2800 1650 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    2800 1650
 	1    0    0    -1  
 $EndComp
@@ -84,6 +86,8 @@ F 0 "C?" H 2500 1750 50  0000 L CNN
 F 1 "0.1µF" H 2500 1550 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 2488 1500 50  0001 C CNN
 F 3 "~" H 2450 1650 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    2450 1650
 	1    0    0    -1  
 $EndComp
@@ -252,6 +256,8 @@ F 0 "C?" H 1865 3996 50  0000 L CNN
 F 1 "0.1µF" H 1865 3905 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 1788 3800 50  0001 C CNN
 F 3 "~" H 1750 3950 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    1750 3950
 	1    0    0    -1  
 $EndComp
@@ -338,6 +344,8 @@ F 0 "R?" V 1850 3200 50  0000 C CNN
 F 1 "10K" V 1850 3600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 1830 3400 50  0001 C CNN
 F 3 "~" H 1900 3400 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402JR-7W10KL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    1900 3400
 	0    1    1    0   
 $EndComp
@@ -349,6 +357,8 @@ F 0 "R?" V 1850 3350 50  0000 C CNN
 F 1 "10K" V 1850 3750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 1830 3550 50  0001 C CNN
 F 3 "~" H 1900 3550 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402JR-7W10KL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    1900 3550
 	0    1    1    0   
 $EndComp
@@ -1257,7 +1267,7 @@ U 1 1 5BCB42E4
 P 6350 4000
 F 0 "R?" V 6300 3800 50  0000 C CNN
 F 1 "4.7K" V 6300 4200 50  0000 C CNN
-F 2 "" V 6280 4000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6280 4000 50  0001 C CNN
 F 3 "~" H 6350 4000 50  0001 C CNN
 	1    6350 4000
 	0    1    1    0   

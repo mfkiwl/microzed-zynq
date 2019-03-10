@@ -319,6 +319,8 @@ F 0 "C?" H 2650 1400 50  0000 L CNN
 F 1 "0.1µF" H 2650 1200 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 2688 1150 50  0001 C CNN
 F 3 "~" H 2650 1300 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    2650 1300
 	1    0    0    -1  
 $EndComp
@@ -330,6 +332,8 @@ F 0 "C?" H 3050 1400 50  0000 L CNN
 F 1 "0.1µF" H 3050 1200 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 3088 1150 50  0001 C CNN
 F 3 "~" H 3050 1300 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    3050 1300
 	1    0    0    -1  
 $EndComp
@@ -341,6 +345,8 @@ F 0 "C?" H 3450 1400 50  0000 L CNN
 F 1 "0.1µF" H 3450 1200 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 3488 1150 50  0001 C CNN
 F 3 "~" H 3450 1300 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    3450 1300
 	1    0    0    -1  
 $EndComp
@@ -352,6 +358,8 @@ F 0 "C?" H 3850 1400 50  0000 L CNN
 F 1 "0.1µF" H 3850 1200 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 3888 1150 50  0001 C CNN
 F 3 "~" H 3850 1300 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    3850 1300
 	1    0    0    -1  
 $EndComp
@@ -462,6 +470,8 @@ F 0 "C?" H 2650 2400 50  0000 L CNN
 F 1 "0.1µF" H 2650 2200 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 2688 2150 50  0001 C CNN
 F 3 "~" H 2650 2300 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    2650 2300
 	1    0    0    -1  
 $EndComp
@@ -473,6 +483,8 @@ F 0 "C?" H 3050 2400 50  0000 L CNN
 F 1 "0.1µF" H 3050 2200 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 3088 2150 50  0001 C CNN
 F 3 "~" H 3050 2300 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    3050 2300
 	1    0    0    -1  
 $EndComp
@@ -484,6 +496,8 @@ F 0 "C?" H 3450 2400 50  0000 L CNN
 F 1 "0.1µF" H 3450 2200 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 3488 2150 50  0001 C CNN
 F 3 "~" H 3450 2300 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    3450 2300
 	1    0    0    -1  
 $EndComp
@@ -495,6 +509,8 @@ F 0 "C?" H 3850 2400 50  0000 L CNN
 F 1 "0.1µF" H 3850 2200 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 3888 2150 50  0001 C CNN
 F 3 "~" H 3850 2300 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    3850 2300
 	1    0    0    -1  
 $EndComp
@@ -956,6 +972,8 @@ F 0 "C?" H 9600 1350 50  0000 L CNN
 F 1 "0.1µF" H 9600 1150 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 9638 1100 50  0001 C CNN
 F 3 "~" H 9600 1250 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    9600 1250
 	1    0    0    -1  
 $EndComp
@@ -967,6 +985,8 @@ F 0 "C?" H 10000 1350 50  0000 L CNN
 F 1 "0.1µF" H 10000 1150 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 10038 1100 50  0001 C CNN
 F 3 "~" H 10000 1250 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    10000 1250
 	1    0    0    -1  
 $EndComp
@@ -978,6 +998,8 @@ F 0 "C?" H 10400 1350 50  0000 L CNN
 F 1 "0.1µF" H 10400 1150 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 10438 1100 50  0001 C CNN
 F 3 "~" H 10400 1250 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    10400 1250
 	1    0    0    -1  
 $EndComp
@@ -989,6 +1011,8 @@ F 0 "C?" H 10800 1350 50  0000 L CNN
 F 1 "0.1µF" H 10800 1150 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 10838 1100 50  0001 C CNN
 F 3 "~" H 10800 1250 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    10800 1250
 	1    0    0    -1  
 $EndComp
@@ -1099,6 +1123,8 @@ F 0 "C?" H 7100 1350 50  0000 L CNN
 F 1 "0.1µF" H 7100 1150 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 7138 1100 50  0001 C CNN
 F 3 "~" H 7100 1250 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    7100 1250
 	1    0    0    -1  
 $EndComp
@@ -1110,6 +1136,8 @@ F 0 "C?" H 7500 1350 50  0000 L CNN
 F 1 "0.1µF" H 7500 1150 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 7538 1100 50  0001 C CNN
 F 3 "~" H 7500 1250 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    7500 1250
 	1    0    0    -1  
 $EndComp
@@ -1121,6 +1149,8 @@ F 0 "C?" H 7900 1350 50  0000 L CNN
 F 1 "0.1µF" H 7900 1150 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 7938 1100 50  0001 C CNN
 F 3 "~" H 7900 1250 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    7900 1250
 	1    0    0    -1  
 $EndComp
@@ -1132,6 +1162,8 @@ F 0 "C?" H 8300 1350 50  0000 L CNN
 F 1 "0.1µF" H 8300 1150 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 8338 1100 50  0001 C CNN
 F 3 "~" H 8300 1250 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    8300 1250
 	1    0    0    -1  
 $EndComp

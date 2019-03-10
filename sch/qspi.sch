@@ -56,6 +56,8 @@ F 0 "C?" H 7815 3446 50  0000 L CNN
 F 1 "0.1µF" H 7815 3355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 7738 3250 50  0001 C CNN
 F 3 "~" H 7700 3400 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    7700 3400
 	1    0    0    -1  
 $EndComp
@@ -92,6 +94,8 @@ F 0 "R?" H 5770 2946 50  0000 L CNN
 F 1 "4.99K" H 5770 2855 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 5630 2900 50  0001 C CNN
 F 3 "~" H 5700 2900 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-074K99L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    5700 2900
 	1    0    0    -1  
 $EndComp
@@ -108,8 +112,8 @@ F 3 "" H 5700 2750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5700 3050 5700 3150
-Text Notes 4550 2900 0    50   ~ 0
-datasheet: P20\nPower-Up and Power-Down
+Text Notes 4350 2950 0    50   ~ 0
+datasheet: P26\n4.4 Power-Up and Power-Down\ngenerally of the order of 100k
 Wire Wire Line
 	4200 3150 5700 3150
 Wire Wire Line

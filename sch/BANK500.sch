@@ -27,19 +27,6 @@ F 5 "ASDMB-33.333MHZ-LC-T" H 2250 1350 50  0001 C CNN "ManufacturerPartNumber"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
-U 1 1 5B9256A7
-P 3600 2000
-F 0 "R?" H 3670 2046 50  0000 L CNN
-F 1 "40.2" H 3670 1955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3530 2000 50  0001 C CNN
-F 3 "~" H 3600 2000 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    3600 2000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5B92CE9C
 P 3400 1450
@@ -56,8 +43,10 @@ U 1 1 5B92CEE9
 P 2100 1450
 F 0 "R?" V 2200 1450 50  0000 C CNN
 F 1 "4.99K" V 2300 1450 50  0000 C CNN
-F 2 "" V 2030 1450 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 2030 1450 50  0001 C CNN
 F 3 "~" H 2100 1450 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-074K99L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    2100 1450
 	0    1    1    0   
 $EndComp
@@ -88,9 +77,11 @@ L Device:C C?
 U 1 1 5B92D34A
 P 1800 1600
 F 0 "C?" H 1800 1650 50  0000 R BNN
-F 1 "0.1uF" H 1800 1550 50  0000 R TNN
+F 1 "0.1µF" H 1800 1550 50  0000 R TNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 1838 1450 50  0001 C CNN
 F 3 "~" H 1800 1600 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    1800 1600
 	1    0    0    -1  
 $EndComp
@@ -266,13 +257,11 @@ $EndComp
 Wire Wire Line
 	2750 2900 3150 2900
 Wire Wire Line
-	3400 1350 3600 1350
+	3400 1350 3550 1350
 Wire Wire Line
-	3600 1350 3600 1850
+	2750 2800 4150 2800
 Wire Wire Line
-	2750 2800 3600 2800
-Wire Wire Line
-	3600 2800 3600 2150
+	4150 2800 4150 1350
 Wire Wire Line
 	6350 3900 7050 3900
 Wire Wire Line
@@ -394,19 +383,6 @@ F 1 "GND" H 10705 4477 50  0000 C CNN
 F 2 "" H 10700 4650 50  0001 C CNN
 F 3 "" H 10700 4650 50  0001 C CNN
 	1    10700 4650
-	1    0    0    -1  
-$EndComp
-$Comp
-L microzed:5-146280-3 J?
-U 1 1 5C45DC70
-P 9500 5150
-F 0 "J?" H 9828 5096 50  0000 L CNN
-F 1 "5-146280-3" H 9828 5005 50  0000 L CNN
-F 2 "microzed:HDRV3W97P0X254_1X3_721X234X821P" H 10150 5250 50  0001 L CNN
-F 3 "http://pdl.designspark.com/api/v1/manufacturers/53f31a629b4759f8698ba80b/part/53f33e0b9b4759f869d709b8/55bff39a8759c5ef5e8d0d63/1.pdf" H 10150 5150 50  0001 L CNN
-F 4 "8.21" H 10150 4950 50  0001 L CNN "Height"
-F 5 "TE Connectivity" H 10150 4850 50  0001 L CNN "Manufacturer"
-	1    9500 5150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -589,4 +565,34 @@ F 3 "" H 7050 4650 50  0001 C CNN
 $EndComp
 Text Notes 6150 3150 0    50   ~ 0
 https://electronics.stackexchange.com/questions/76793/pros-and-cons-of-using-resistor-networks-over-individual-resistors
+$Comp
+L Device:R R?
+U 1 1 5B9256A7
+P 3700 1350
+F 0 "R?" V 3800 1350 50  0000 C CNN
+F 1 "40.2" V 3600 1350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3630 1350 50  0001 C CNN
+F 3 "~" H 3700 1350 50  0001 C CNN
+F 4 "Yageo" H 100 -650 50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H 100 -650 50  0001 C CNN "ManufacturerPartNumber"
+	1    3700 1350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4150 1350 3850 1350
+Text Notes 3650 1100 0    50   ~ 0
+clock termination techniques:\nR=Z0
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5C8CF2E7
+P 9700 5250
+F 0 "J?" H 9780 5292 50  0000 L CNN
+F 1 "640456-3" H 9780 5201 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9700 5250 50  0001 C CNN
+F 3 "~" H 9700 5250 50  0001 C CNN
+F 4 "TE" H 9700 5250 50  0001 C CNN "Manufacturer"
+F 5 "640456-3" H 9700 5250 50  0001 C CNN "ManufacturerPartNumber"
+	1    9700 5250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
