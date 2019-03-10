@@ -181,7 +181,7 @@ L Device:R R?
 U 1 1 5BA7565B
 P 3400 5250
 F 0 "R?" H 3470 5296 50  0000 L CNN
-F 1 "8.06K" H 3470 5205 50  0000 L CNN
+F 1 "8.06k" H 3470 5205 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 3330 5250 50  0001 C CNN
 F 3 "" H 3400 5250 50  0001 C CNN
 	1    3400 5250
@@ -727,4 +727,6 @@ F 3 "http://www.abracon.com/Oscillators/ASDMB.pdf" H 4150 6400 50  0001 L CNN
 $EndComp
 Wire Wire Line
 	3950 4300 3900 4300
+Text Notes 2600 5350 0    50   ~ 0
+Page 8, TABLE 2-1\n8.06kΩ (±1%)
 $EndSCHEMATC

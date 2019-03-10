@@ -13,18 +13,18 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 8750 4150 2    50   Input ~ 0
+Text GLabel 7550 2650 2    50   Input ~ 0
 CARRIER_SRST#
 $Comp
 L Device:R R?
 U 1 1 5B976827
 P 7300 2150
 F 0 "R?" H 7370 2196 50  0000 L CNN
-F 1 "10K" H 7370 2105 50  0000 L CNN
+F 1 "10k" H 7370 2105 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 7230 2150 50  0001 C CNN
 F 3 "~" H 7300 2150 50  0001 C CNN
 F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "RC0402JR-7W10KL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
+F 5 "RC0402FR-0710KL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    7300 2150
 	1    0    0    -1  
 $EndComp
@@ -42,32 +42,18 @@ F 3 "" H 7300 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L microzed:7914J-1-000E S?
-U 1 1 5B97B78C
-P 6300 4150
-F 0 "S?" H 6800 4415 50  0000 C CNN
-F 1 "7914J-1-000E" H 6800 4324 50  0000 C CNN
-F 2 "microzed:7914J1000E" H 7600 4250 50  0001 L CNN
-F 3 "http://www.bourns.com/docs/Product-Datasheets/7914.pdf" H 7600 4150 50  0001 L CNN
-F 4 "4" H 7600 3950 50  0001 L CNN "Height"
-F 5 "Bourns" H 7600 3850 50  0001 L CNN "Manufacturer"
-	1    6300 4150
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5B97B903
-P 6300 4250
-F 0 "#PWR?" H 6300 4000 50  0001 C CNN
-F 1 "GND" H 6305 4077 50  0000 C CNN
-F 2 "" H 6300 4250 50  0001 C CNN
-F 3 "" H 6300 4250 50  0001 C CNN
-	1    6300 4250
+P 7300 3400
+F 0 "#PWR?" H 7300 3150 50  0001 C CNN
+F 1 "GND" H 7305 3227 50  0000 C CNN
+F 2 "" H 7300 3400 50  0001 C CNN
+F 3 "" H 7300 3400 50  0001 C CNN
+	1    7300 3400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 4150 6300 4250
-Connection ~ 6300 4250
+	7300 3300 7300 3400
 Text GLabel 7550 2500 2    50   Output ~ 0
 PS_SRST#
 Connection ~ 7300 2500
@@ -123,31 +109,8 @@ Text GLabel 4650 2800 2    50   Output ~ 0
 ETH_TXD0
 Text GLabel 4650 2700 2    50   Output ~ 0
 ETH_TX_CLK
-$Comp
-L Device:R R?
-U 1 1 5B984C4F
-P 6250 1600
-F 0 "R?" H 6320 1646 50  0000 L CNN
-F 1 "1k" H 6320 1555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6180 1600 50  0001 C CNN
-F 3 "~" H 6250 1600 50  0001 C CNN
-	1    6250 1600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5B984E1F
-P 6250 1900
-F 0 "R?" H 6320 1946 50  0000 L CNN
-F 1 "1k" H 6320 1855 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6180 1900 50  0001 C CNN
-F 3 "~" H 6250 1900 50  0001 C CNN
-	1    6250 1900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4750 1750 5500 1750
-Connection ~ 6250 1750
 $Comp
 L power:GND #PWR?
 U 1 1 5B984FE5
@@ -185,10 +148,7 @@ Wire Wire Line
 Wire Wire Line
 	7300 1900 7300 2000
 Wire Wire Line
-	7300 2500 7300 4150
-Connection ~ 7300 4150
-Wire Wire Line
-	7300 4250 7300 4150
+	7300 2500 7300 2650
 Text GLabel 5600 5100 2    50   Output ~ 0
 SD_CLK
 Text GLabel 4650 5200 2    50   Output ~ 0
@@ -236,6 +196,8 @@ F 0 "C?" H 5615 1946 50  0000 L CNN
 F 1 "0.01µF" H 5615 1855 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 5538 1750 50  0001 C CNN
 F 3 "~" H 5500 1900 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R7BB103" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    5500 1900
 	1    0    0    -1  
 $EndComp
@@ -246,7 +208,6 @@ Wire Wire Line
 	5500 2050 6250 2050
 Wire Wire Line
 	6250 2150 6250 2050
-Connection ~ 6250 2050
 Text Notes 5400 3350 0    50   ~ 0
 UG933 P57 Table5-3\nMIO8           MIO16-MIO53\n1.8V mode     20 KΩ resistor to VCCO_MIO0\n3.3V mode     20 KΩ resistor to ground\n 
 $Comp
@@ -263,9 +224,53 @@ $EndComp
 Wire Wire Line
 	6250 1450 6250 1350
 Wire Wire Line
-	7300 4150 8750 4150
+	7300 2650 7550 2650
 Text GLabel 4650 6000 2    50   Input ~ 0
 USB_UART_RXD
 Text GLabel 4650 5900 2    50   Output ~ 0
 USB_UART_TXD
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5C865F2D
+P 7300 3100
+F 0 "SW?" V 7254 3248 50  0000 L CNN
+F 1 "SW_Push" V 7345 3248 50  0000 L CNN
+F 2 "Button_Switch_THT:SW_PUSH_6mm" H 7300 3300 50  0001 C CNN
+F 3 "~" H 7300 3300 50  0001 C CNN
+F 4 "TE" H 7300 3100 50  0001 C CNN "Manufacturer"
+F 5 "FSM4JH" H 7300 3100 50  0001 C CNN "ManufacturerPartNumber"
+	1    7300 3100
+	0    1    1    0   
+$EndComp
+Connection ~ 7300 2650
+Wire Wire Line
+	7300 2650 7300 2900
+$Comp
+L Device:R R?
+U 1 1 5C922853
+P 6250 1600
+F 0 "R?" H 6320 1646 50  0000 L CNN
+F 1 "10k" H 6320 1555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6180 1600 50  0001 C CNN
+F 3 "~" H 6250 1600 50  0001 C CNN
+F 4 "Yageo" H -1050 -550 50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0710KL" H -1050 -550 50  0001 C CNN "ManufacturerPartNumber"
+	1    6250 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C923079
+P 6250 1900
+F 0 "R?" H 6320 1946 50  0000 L CNN
+F 1 "10k" H 6320 1855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6180 1900 50  0001 C CNN
+F 3 "~" H 6250 1900 50  0001 C CNN
+F 4 "Yageo" H -1050 -250 50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0710KL" H -1050 -250 50  0001 C CNN "ManufacturerPartNumber"
+	1    6250 1900
+	1    0    0    -1  
+$EndComp
+Connection ~ 6250 1750
+Connection ~ 6250 2050
 $EndSCHEMATC

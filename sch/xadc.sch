@@ -137,8 +137,10 @@ U 1 1 5C45BAA0
 P 6100 3850
 F 0 "C?" H 6215 3896 50  0000 L CNN
 F 1 "10µF" H 6215 3805 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 6138 3700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6138 3700 50  0001 C CNN
 F 3 "~" H 6100 3850 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0603MRX5R6BB106" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6100 3850
 	1    0    0    -1  
 $EndComp

@@ -352,9 +352,11 @@ L Device:R R?
 U 1 1 5C700397
 P 10150 1600
 F 0 "R?" V 10150 1800 50  0000 R TNN
-F 1 "4.7K" V 10150 1500 50  0000 R TNN
+F 1 "4.7k" V 10150 1500 50  0000 R TNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 10080 1600 50  0001 C CNN
 F 3 "~" H 10150 1600 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-074K7L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    10150 1600
 	0    -1   -1   0   
 $EndComp
@@ -363,9 +365,11 @@ L Device:R R?
 U 1 1 5C702044
 P 10150 1500
 F 0 "R?" V 10150 1700 50  0000 R TNN
-F 1 "4.7K" V 10150 1400 50  0000 R TNN
+F 1 "4.7k" V 10150 1400 50  0000 R TNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 10080 1500 50  0001 C CNN
 F 3 "~" H 10150 1500 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-074K7L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    10150 1500
 	0    -1   -1   0   
 $EndComp
@@ -387,9 +391,11 @@ L Device:R R?
 U 1 1 5C79D8C1
 P 10150 1700
 F 0 "R?" V 10150 1900 50  0000 R TNN
-F 1 "4.7K" V 10150 1600 50  0000 R TNN
+F 1 "4.7k" V 10150 1600 50  0000 R TNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 10080 1700 50  0001 C CNN
 F 3 "~" H 10150 1700 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-074K7L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    10150 1700
 	0    -1   -1   0   
 $EndComp
@@ -400,9 +406,11 @@ L Device:R R?
 U 1 1 5C7F1747
 P 10150 1800
 F 0 "R?" V 10150 2000 50  0000 R TNN
-F 1 "4.7K" V 10150 1700 50  0000 R TNN
+F 1 "4.7k" V 10150 1700 50  0000 R TNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 10080 1800 50  0001 C CNN
 F 3 "~" H 10150 1800 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-074K7L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    10150 1800
 	0    -1   -1   0   
 $EndComp
@@ -413,9 +421,11 @@ L Device:R R?
 U 1 1 5C8194A5
 P 10150 1900
 F 0 "R?" V 10150 2100 50  0000 R TNN
-F 1 "4.7K" V 10150 1800 50  0000 R TNN
+F 1 "4.7k" V 10150 1800 50  0000 R TNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 10080 1900 50  0001 C CNN
 F 3 "~" H 10150 1900 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-074K7L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    10150 1900
 	0    -1   -1   0   
 $EndComp
@@ -437,9 +447,11 @@ L Device:R R?
 U 1 1 5C888A94
 P 10150 2200
 F 0 "R?" V 10150 2400 50  0000 R TNN
-F 1 "4.7K" V 10150 2100 50  0000 R TNN
+F 1 "4.7k" V 10150 2100 50  0000 R TNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 10080 2200 50  0001 C CNN
 F 3 "~" H 10150 2200 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-074K7L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    10150 2200
 	0    -1   -1   0   
 $EndComp
@@ -448,9 +460,11 @@ L Device:R R?
 U 1 1 5C891C95
 P 10150 2100
 F 0 "R?" V 10150 2300 50  0000 R TNN
-F 1 "4.7K" V 10150 2000 50  0000 R TNN
+F 1 "4.7k" V 10150 2000 50  0000 R TNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 10080 2100 50  0001 C CNN
 F 3 "~" H 10150 2100 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-074K7L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    10150 2100
 	0    -1   -1   0   
 $EndComp
@@ -543,9 +557,11 @@ L Device:R R?
 U 1 1 5C9A1CA9
 P 10150 2000
 F 0 "R?" V 10150 2200 50  0000 R TNN
-F 1 "4.7K" V 10150 1900 50  0000 R TNN
+F 1 "4.7k" V 10150 1900 50  0000 R TNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 10080 2000 50  0001 C CNN
 F 3 "~" H 10150 2000 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-074K7L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    10150 2000
 	0    -1   -1   0   
 $EndComp
@@ -790,9 +806,11 @@ L Device:R R?
 U 1 1 5C5B9718
 P 10150 2300
 F 0 "R?" V 10150 2500 50  0000 R TNN
-F 1 "4.7K" V 10150 2200 50  0000 R TNN
+F 1 "4.7k" V 10150 2200 50  0000 R TNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 10080 2300 50  0001 C CNN
 F 3 "~" H 10150 2300 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-074K7L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    10150 2300
 	0    -1   -1   0   
 $EndComp

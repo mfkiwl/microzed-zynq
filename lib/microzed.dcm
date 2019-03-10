@@ -136,6 +136,12 @@ D 10/100/1000M ethernet phy
 F http://download3.dvd-driver.cz/realtek/datasheets/pdf/rtl8211e(g)-vb(vl)-cg_datasheet_1.6.pdf
 $ENDCMP
 #
+$CMP SW_DIP_1x4
+D 2x DIP Switch, Single Pole Single Throw (SPST) switch, small symbol
+K dip switch
+F ~
+$ENDCMP
+#
 $CMP TLV62130RGTR
 D Texas Instruments, TLV62130RGTR DC-DC Converter 3A Adjustable, 0.9  5 V, 16-Pin QFN
 F http://www.ti.com/lit/gpn/tlv62130

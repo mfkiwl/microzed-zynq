@@ -403,9 +403,11 @@ L Device:R R?
 U 1 1 5C4F1CD8
 P 4300 4600
 F 0 "R?" V 4200 4600 50  0000 C CNN
-F 1 "4.7K" V 4400 4600 50  0000 C CNN
+F 1 "4.7k" V 4400 4600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 4230 4600 50  0001 C CNN
 F 3 "~" H 4300 4600 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-074K7L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    4300 4600
 	0    -1   1    0   
 $EndComp
@@ -416,11 +418,11 @@ L Device:R R?
 U 1 1 5C508499
 P 4100 3600
 F 0 "R?" H 4170 3646 50  0000 L CNN
-F 1 "10K" H 4170 3555 50  0000 L CNN
+F 1 "10k" H 4170 3555 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 4030 3600 50  0001 C CNN
 F 3 "~" H 4100 3600 50  0001 C CNN
 F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "RC0402JR-7W10KL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
+F 5 "RC0402FR-0710KL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    4100 3600
 	1    0    0    -1  
 $EndComp
@@ -429,11 +431,11 @@ L Device:R R?
 U 1 1 5C509432
 P 4500 3600
 F 0 "R?" H 4570 3646 50  0000 L CNN
-F 1 "10K" H 4570 3555 50  0000 L CNN
+F 1 "10k" H 4570 3555 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 4430 3600 50  0001 C CNN
 F 3 "~" H 4500 3600 50  0001 C CNN
 F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "RC0402JR-7W10KL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
+F 5 "RC0402FR-0710KL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    4500 3600
 	1    0    0    -1  
 $EndComp
