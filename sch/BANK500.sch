@@ -38,30 +38,6 @@ F 3 "" H 3400 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
-U 1 1 5B92CEE9
-P 2100 1450
-F 0 "R?" V 2200 1450 50  0000 C CNN
-F 1 "4.99K" V 2300 1450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2030 1450 50  0001 C CNN
-F 3 "~" H 2100 1450 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "RC0402FR-074K99L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    2100 1450
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5B92D064
-P 2300 1700
-F 0 "TP?" H 2300 1950 50  0000 C TNN
-F 1 "TestPoint" H 2243 1818 50  0001 R CNN
-F 2 "" H 2500 1700 50  0001 C CNN
-F 3 "~" H 2500 1700 50  0001 C CNN
-	1    2300 1700
-	1    0    0    1   
-$EndComp
-$Comp
 L power:+3.3V #PWR?
 U 1 1 5B92D2E0
 P 1800 1350
@@ -97,15 +73,13 @@ F 3 "" H 1800 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1950 1450 1800 1450
+	2250 1450 1800 1450
 Wire Wire Line
 	2250 1350 1800 1350
 Wire Wire Line
 	1800 1450 1800 1350
 Connection ~ 1800 1450
 Connection ~ 1800 1350
-Wire Wire Line
-	2300 1700 2300 1450
 Text GLabel 3150 2900 2    50   Input ~ 0
 PG_MODULE
 $Comp
@@ -347,18 +321,18 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 5C408F95
-P 7050 4500
-F 0 "R?" H 7120 4546 50  0000 L CNN
-F 1 "20K" H 7120 4455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6980 4500 50  0001 C CNN
-F 3 "~" H 7050 4500 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "RC0402FR-0720KL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    7050 4500
+P 7050 2650
+F 0 "R?" H 7120 2696 50  0000 L CNN
+F 1 "20K" H 7120 2605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6980 2650 50  0001 C CNN
+F 3 "~" H 7050 2650 50  0001 C CNN
+F 4 "Yageo" H 0   -1850 50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0720KL" H 0   -1850 50  0001 C CNN "ManufacturerPartNumber"
+	1    7050 2650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7050 3900 7050 4350
+	7050 3900 7050 2800
 $Comp
 L Device:R R?
 U 1 1 5C4157BA
@@ -552,17 +526,6 @@ Wire Wire Line
 	2750 3100 3150 3100
 Text Notes 4400 4200 0    50   ~ 0
 UG933 P57 Table5-3\nMIO7           MIO0-MIO15\n1.8V mode     20 KΩ resistor to VCCO_MIO0\n3.3V mode     20 KΩ resistor to ground\n\nMIO8           MIO16-MIO53\n1.8V mode     20 KΩ resistor to VCCO_MIO0\n3.3V mode     20 KΩ resistor to ground
-$Comp
-L power:GND #PWR?
-U 1 1 5C8DBDA6
-P 7050 4650
-F 0 "#PWR?" H 7050 4400 50  0001 C CNN
-F 1 "GND" H 7055 4477 50  0000 C CNN
-F 2 "" H 7050 4650 50  0001 C CNN
-F 3 "" H 7050 4650 50  0001 C CNN
-	1    7050 4650
-	1    0    0    -1  
-$EndComp
 Text Notes 6150 3150 0    50   ~ 0
 https://electronics.stackexchange.com/questions/76793/pros-and-cons-of-using-resistor-networks-over-individual-resistors
 $Comp
@@ -597,4 +560,15 @@ F 5 "640456-3" H 9700 5250 50  0001 C CNN "ManufacturerPartNumber"
 $EndComp
 Text Notes 9650 5550 0    50   ~ 0
 Accessory: Harwin M7581-05
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C90B86D
+P 7050 2500
+F 0 "#PWR?" H 7050 2350 50  0001 C CNN
+F 1 "+3.3V" H 7065 2673 50  0000 C CNN
+F 2 "" H 7050 2500 50  0001 C CNN
+F 3 "" H 7050 2500 50  0001 C CNN
+	1    7050 2500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
