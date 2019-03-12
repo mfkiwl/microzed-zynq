@@ -13,10 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	7500 2950 7800 2950
-Text Notes 7750 2950 2    50   ~ 0
-25mA
 Text Notes 7750 4200 2    50   ~ 0
 50µA
 Text Notes 7750 3700 2    50   ~ 0
@@ -35,8 +31,10 @@ U 1 1 5C39CBE6
 P 3800 4200
 F 0 "L?" V 3850 4200 50  0000 C TNN
 F 1 "220Ω@100MHz" V 3750 4200 50  0000 C BNN
-F 2 "Inductor_SMD:L_0805_2012Metric" H 3800 4200 50  0001 C CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" H 3800 4200 50  0001 C CNN
 F 3 "~" H 3800 4200 50  0001 C CNN
+F 4 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "BLM15AG221SN1D" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    3800 4200
 	0    -1   -1   0   
 $EndComp
@@ -48,22 +46,11 @@ U 1 1 5C39CBED
 P 5500 2200
 F 0 "L?" H 5553 2246 50  0000 L CNN
 F 1 "220Ω@100MHz" H 5553 2155 50  0000 L CNN
-F 2 "Inductor_SMD:L_0805_2012Metric" H 5500 2200 50  0001 C CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" H 5500 2200 50  0001 C CNN
 F 3 "~" H 5500 2200 50  0001 C CNN
+F 4 "Murata" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "BLM15AG221SN1D" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    5500 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5C39CBFC
-P 7500 2650
-F 0 "C?" H 7615 2696 50  0000 L CNN
-F 1 "0.1µF" H 7615 2605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 7538 2500 50  0001 C CNN
-F 3 "~" H 7500 2650 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    7500 2650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -83,8 +70,6 @@ Text GLabel 7800 3700 2    50   Output ~ 0
 VREFP
 Text GLabel 7800 2500 2    50   Output ~ 0
 VCCADC
-Text GLabel 7800 2950 2    50   Output ~ 0
-GNDADC
 Text GLabel 5200 1950 0    50   Input ~ 0
 VCCAUX
 Wire Wire Line
@@ -173,11 +158,6 @@ Connection ~ 7500 4200
 Wire Wire Line
 	4900 4200 4900 4300
 Wire Wire Line
-	7500 2800 7500 2950
-Connection ~ 7500 2950
-Wire Wire Line
-	7500 2950 7500 3100
-Wire Wire Line
 	7500 4200 6100 4200
 Wire Wire Line
 	4900 4000 4900 4200
@@ -217,4 +197,28 @@ Wire Wire Line
 	5500 2500 5500 3400
 Wire Wire Line
 	5500 2500 7500 2500
+Text GLabel 7800 2950 2    50   Output ~ 0
+GNDADC
+Text Notes 7750 2950 2    50   ~ 0
+25mA
+Wire Wire Line
+	7500 2950 7500 3100
+Wire Wire Line
+	7500 2800 7500 2950
+Connection ~ 7500 2950
+Wire Wire Line
+	7500 2950 7800 2950
+$Comp
+L Device:C C?
+U 1 1 5C39CBFC
+P 7500 2650
+F 0 "C?" H 7615 2696 50  0000 L CNN
+F 1 "0.1µF" H 7615 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 7538 2500 50  0001 C CNN
+F 3 "~" H 7500 2650 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
+	1    7500 2650
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

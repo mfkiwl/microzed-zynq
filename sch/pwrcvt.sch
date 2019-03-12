@@ -592,11 +592,11 @@ L Device:R R?
 U 1 1 5BE8E042
 P 9000 4150
 F 0 "R?" H 9070 4196 50  0000 L CNN
-F 1 "261k" H 9070 4105 50  0000 L CNN
+F 1 "205k" H 9070 4105 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 8930 4150 50  0001 C CNN
 F 3 "~" H 9000 4150 50  0001 C CNN
 F 4 "Yageo" H 9000 4150 50  0001 C CNN "Manufacturer"
-F 5 "AC0402FR-07261KL" H 9000 4150 50  0001 C CNN "ManufacturerPartNumber"
+F 5 "RC0402FR-07205KL" H 9000 4150 50  0001 C CNN "ManufacturerPartNumber"
 	1    9000 4150
 	1    0    0    -1  
 $EndComp
@@ -1010,7 +1010,7 @@ Text Notes 3200 2000 0    50   ~ 0
 Text Notes 3200 4500 0    50   ~ 0
 5:4
 Text Notes 8150 4550 0    50   ~ 0
-7:8
+11:16
 Text Notes 8150 2100 0    50   ~ 0
 25:8
 $Comp
@@ -1199,4 +1199,6 @@ F 5 "CC0603MRX5R5BB226" H 9400 1650 50  0001 C CNN "ManufacturerPartNumber"
 	1    9400 1650
 	1    0    0    -1  
 $EndComp
+Text Notes 8300 5350 0    50   ~ 0
+default: 1.35V\nif want 1.5V, change 205k to 261k
 $EndSCHEMATC
