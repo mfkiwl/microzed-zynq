@@ -116,9 +116,8 @@ D NPN transistor,MMBT3904 0.2A Ic 1Vce ON Semi MMBT3904LT1G NPN Bipolar Transist
 F http://www.onsemi.com/pub/Collateral/MMBT3904LT1-D.PDF
 $ENDCMP
 #
-$CMP MT41K256M16HA-125_E_TR
-D DRAM Chip DDR3L SDRAM 4Gbit 256Mx16 1.35V 96-Pin FBGA T/R
-F https://www.micron.com/~/media/Documents/Products/Data%20Sheet/DRAM/DDR3/4Gb_1_35V_DDR3L.pdf
+$CMP MT25QL128ABA8E12-1SIT
+D NOR Flash Serial-SPI 3.3V 128Mbit 128M/64M/32M X 1bit/2bit/4bit 6ns/5ns 24-Pin TPBGA T/R
 $ENDCMP
 #
 $CMP NC7WZ07FHX
