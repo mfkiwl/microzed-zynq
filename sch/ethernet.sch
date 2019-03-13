@@ -3,7 +3,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 16 18
+Sheet 15 18
 Title ""
 Date ""
 Rev ""
@@ -667,6 +667,8 @@ F 0 "R?" V 2150 3700 50  0000 R TNN
 F 1 "22" V 2150 3400 50  0000 R TNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 2080 3500 50  0001 C CNN
 F 3 "~" H 2150 3500 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0722RL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    2150 3500
 	0    -1   -1   0   
 $EndComp
@@ -690,6 +692,8 @@ F 0 "R?" V 2150 3800 50  0000 R TNN
 F 1 "22" V 2150 3500 50  0000 R TNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 2080 3600 50  0001 C CNN
 F 3 "~" H 2150 3600 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0722RL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    2150 3600
 	0    -1   -1   0   
 $EndComp
@@ -701,6 +705,8 @@ F 0 "R?" V 2150 3900 50  0000 R TNN
 F 1 "22" V 2150 3600 50  0000 R TNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 2080 3700 50  0001 C CNN
 F 3 "~" H 2150 3700 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0722RL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    2150 3700
 	0    -1   -1   0   
 $EndComp
@@ -712,6 +718,8 @@ F 0 "R?" V 2150 4000 50  0000 R TNN
 F 1 "22" V 2150 3700 50  0000 R TNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 2080 3800 50  0001 C CNN
 F 3 "~" H 2150 3800 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0722RL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    2150 3800
 	0    -1   -1   0   
 $EndComp
@@ -723,6 +731,8 @@ F 0 "R?" V 2150 4100 50  0000 R TNN
 F 1 "22" V 2150 3800 50  0000 R TNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 2080 3900 50  0001 C CNN
 F 3 "~" H 2150 3900 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0722RL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    2150 3900
 	0    -1   -1   0   
 $EndComp
@@ -734,6 +744,8 @@ F 0 "R?" V 2150 4200 50  0000 R TNN
 F 1 "22" V 2150 3900 50  0000 R TNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 2080 4000 50  0001 C CNN
 F 3 "~" H 2150 4000 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0722RL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    2150 4000
 	0    -1   -1   0   
 $EndComp
@@ -778,6 +790,8 @@ F 0 "R?" V 1550 5000 50  0000 R TNN
 F 1 "1.5K" V 1550 4700 50  0000 R TNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 1480 4800 50  0001 C CNN
 F 3 "~" H 1550 4800 50  0001 C CNN
+F 4 "Yageo" H 1550 4800 50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-071K5L" H 1550 4800 50  0001 C CNN "ManufacturerPartNumber"
 	1    1550 4800
 	0    -1   -1   0   
 $EndComp
