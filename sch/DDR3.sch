@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L microzed:MT41K256M16HA-125_E U?
-U 1 1 5B91DCFF
-P 2850 3400
-F 0 "U?" H 2850 2250 60  0000 C CNN
-F 1 "MT41K256M16HA-125_E" H 2850 2100 60  0000 C CNN
-F 2 "microzed:BGA96C80P9X16_900X1400X120" H 2800 4000 60  0001 C CNN
-F 3 "https://www.micron.com/~/media/Documents/Products/Data%20Sheet/DRAM/DDR3/4Gb_1_35V_DDR3L.pdf" H 2850 4200 60  0001 C CNN
-	1    2850 3400
-	1    0    0    -1  
-$EndComp
 Text GLabel 1300 3600 0    50   Input ~ 0
 DDR3_A0
 Text GLabel 1300 3700 0    50   Input ~ 0
@@ -76,65 +65,6 @@ Text GLabel 1300 6300 0    50   Input ~ 0
 DDR3_CK_N
 Text GLabel 1300 6500 0    50   Input ~ 0
 DDR3_RST#
-Wire Wire Line
-	1900 7400 2000 7400
-Connection ~ 2000 7400
-Wire Wire Line
-	2000 7400 2100 7400
-Connection ~ 2100 7400
-Wire Wire Line
-	2100 7400 2200 7400
-Connection ~ 2200 7400
-Wire Wire Line
-	2200 7400 2300 7400
-Connection ~ 2300 7400
-Wire Wire Line
-	2300 7400 2400 7400
-Connection ~ 2400 7400
-Wire Wire Line
-	2400 7400 2500 7400
-Connection ~ 2500 7400
-Wire Wire Line
-	2500 7400 2600 7400
-Connection ~ 2600 7400
-Wire Wire Line
-	2600 7400 2700 7400
-Connection ~ 2700 7400
-Wire Wire Line
-	2700 7400 2800 7400
-Connection ~ 2800 7400
-Wire Wire Line
-	2800 7400 2900 7400
-Connection ~ 2900 7400
-Wire Wire Line
-	2900 7400 3000 7400
-Connection ~ 3000 7400
-Wire Wire Line
-	3000 7400 3200 7400
-Connection ~ 3200 7400
-Wire Wire Line
-	3200 7400 3300 7400
-Connection ~ 3300 7400
-Wire Wire Line
-	3300 7400 3400 7400
-Connection ~ 3400 7400
-Wire Wire Line
-	3400 7400 3500 7400
-Connection ~ 3500 7400
-Wire Wire Line
-	3500 7400 3600 7400
-Connection ~ 3600 7400
-Wire Wire Line
-	3600 7400 3700 7400
-Connection ~ 3700 7400
-Wire Wire Line
-	3700 7400 3800 7400
-Connection ~ 3800 7400
-Wire Wire Line
-	3800 7400 3900 7400
-Connection ~ 3900 7400
-Wire Wire Line
-	3900 7400 4000 7400
 $Comp
 L power:GND #PWR?
 U 1 1 5B920655
@@ -146,7 +76,6 @@ F 3 "" H 4000 7400 50  0001 C CNN
 	1    4000 7400
 	1    0    0    -1  
 $EndComp
-Connection ~ 4000 7400
 $Comp
 L Device:R R?
 U 1 1 5B92117C
@@ -219,56 +148,6 @@ Text GLabel 4450 5150 2    50   BiDi ~ 0
 DDR3_DQ14
 Text GLabel 4450 5250 2    50   BiDi ~ 0
 DDR3_DQ15
-Wire Wire Line
-	3750 3200 3650 3200
-Connection ~ 2050 3200
-Wire Wire Line
-	2050 3200 1950 3200
-Connection ~ 2150 3200
-Wire Wire Line
-	2150 3200 2050 3200
-Connection ~ 2250 3200
-Wire Wire Line
-	2250 3200 2150 3200
-Connection ~ 2350 3200
-Wire Wire Line
-	2350 3200 2250 3200
-Connection ~ 2450 3200
-Wire Wire Line
-	2450 3200 2350 3200
-Connection ~ 2550 3200
-Wire Wire Line
-	2550 3200 2450 3200
-Connection ~ 2650 3200
-Wire Wire Line
-	2650 3200 2550 3200
-Connection ~ 2750 3200
-Wire Wire Line
-	2750 3200 2650 3200
-Connection ~ 2950 3200
-Wire Wire Line
-	2950 3200 2750 3200
-Connection ~ 3050 3200
-Wire Wire Line
-	3050 3200 2950 3200
-Connection ~ 3150 3200
-Wire Wire Line
-	3150 3200 3050 3200
-Connection ~ 3250 3200
-Wire Wire Line
-	3250 3200 3150 3200
-Connection ~ 3350 3200
-Wire Wire Line
-	3350 3200 3250 3200
-Connection ~ 3450 3200
-Wire Wire Line
-	3450 3200 3350 3200
-Connection ~ 3550 3200
-Wire Wire Line
-	3550 3200 3450 3200
-Connection ~ 3650 3200
-Wire Wire Line
-	3650 3200 3550 3200
 $Comp
 L Device:C C?
 U 1 1 5B934D68
@@ -650,7 +529,6 @@ Wire Wire Line
 	1750 3100 3950 3100
 Wire Wire Line
 	1950 1150 1950 1600
-Connection ~ 1950 3200
 Connection ~ 1950 1600
 Wire Wire Line
 	1950 1600 1950 2150
@@ -684,17 +562,6 @@ F 3 "" H 4550 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4550 3100
-$Comp
-L microzed:MT41K256M16HA-125_E U?
-U 1 1 5B92CDA9
-P 7300 2350
-F 0 "U?" H 7300 1200 60  0000 C CNN
-F 1 "MT41K256M16HA-125_E" H 7300 1050 60  0000 C CNN
-F 2 "microzed:BGA96C80P9X16_900X1400X120" H 7250 2950 60  0001 C CNN
-F 3 "https://www.micron.com/~/media/Documents/Products/Data%20Sheet/DRAM/DDR3/4Gb_1_35V_DDR3L.pdf" H 7300 3150 60  0001 C CNN
-	1    7300 2350
-	1    0    0    -1  
-$EndComp
 Text GLabel 5750 2550 0    50   Input ~ 0
 DDR3_A0
 Text GLabel 5750 2650 0    50   Input ~ 0
@@ -747,65 +614,6 @@ Text GLabel 5750 5250 0    50   Input ~ 0
 DDR3_CK_N
 Text GLabel 5750 5450 0    50   Input ~ 0
 DDR3_RST#
-Wire Wire Line
-	6350 6350 6450 6350
-Connection ~ 6450 6350
-Wire Wire Line
-	6450 6350 6550 6350
-Connection ~ 6550 6350
-Wire Wire Line
-	6550 6350 6650 6350
-Connection ~ 6650 6350
-Wire Wire Line
-	6650 6350 6750 6350
-Connection ~ 6750 6350
-Wire Wire Line
-	6750 6350 6850 6350
-Connection ~ 6850 6350
-Wire Wire Line
-	6850 6350 6950 6350
-Connection ~ 6950 6350
-Wire Wire Line
-	6950 6350 7050 6350
-Connection ~ 7050 6350
-Wire Wire Line
-	7050 6350 7150 6350
-Connection ~ 7150 6350
-Wire Wire Line
-	7150 6350 7250 6350
-Connection ~ 7250 6350
-Wire Wire Line
-	7250 6350 7350 6350
-Connection ~ 7350 6350
-Wire Wire Line
-	7350 6350 7450 6350
-Connection ~ 7450 6350
-Wire Wire Line
-	7450 6350 7650 6350
-Connection ~ 7650 6350
-Wire Wire Line
-	7650 6350 7750 6350
-Connection ~ 7750 6350
-Wire Wire Line
-	7750 6350 7850 6350
-Connection ~ 7850 6350
-Wire Wire Line
-	7850 6350 7950 6350
-Connection ~ 7950 6350
-Wire Wire Line
-	7950 6350 8050 6350
-Connection ~ 8050 6350
-Wire Wire Line
-	8050 6350 8150 6350
-Connection ~ 8150 6350
-Wire Wire Line
-	8150 6350 8250 6350
-Connection ~ 8250 6350
-Wire Wire Line
-	8250 6350 8350 6350
-Connection ~ 8350 6350
-Wire Wire Line
-	8350 6350 8450 6350
 $Comp
 L power:GND #PWR?
 U 1 1 5B92CDF1
@@ -817,7 +625,6 @@ F 3 "" H 8450 6350 50  0001 C CNN
 	1    8450 6350
 	1    0    0    -1  
 $EndComp
-Connection ~ 8450 6350
 $Comp
 L Device:R R?
 U 1 1 5B92CDF8
@@ -890,56 +697,6 @@ Text GLabel 8900 4100 2    50   BiDi ~ 0
 DDR3_DQ14
 Text GLabel 8900 4200 2    50   BiDi ~ 0
 DDR3_DQ15
-Wire Wire Line
-	8200 2150 8100 2150
-Connection ~ 6500 2150
-Wire Wire Line
-	6500 2150 6400 2150
-Connection ~ 6600 2150
-Wire Wire Line
-	6600 2150 6500 2150
-Connection ~ 6700 2150
-Wire Wire Line
-	6700 2150 6600 2150
-Connection ~ 6800 2150
-Wire Wire Line
-	6800 2150 6700 2150
-Connection ~ 6900 2150
-Wire Wire Line
-	6900 2150 6800 2150
-Connection ~ 7000 2150
-Wire Wire Line
-	7000 2150 6900 2150
-Connection ~ 7100 2150
-Wire Wire Line
-	7100 2150 7000 2150
-Connection ~ 7200 2150
-Wire Wire Line
-	7200 2150 7100 2150
-Connection ~ 7400 2150
-Wire Wire Line
-	7400 2150 7200 2150
-Connection ~ 7500 2150
-Wire Wire Line
-	7500 2150 7400 2150
-Connection ~ 7600 2150
-Wire Wire Line
-	7600 2150 7500 2150
-Connection ~ 7700 2150
-Wire Wire Line
-	7700 2150 7600 2150
-Connection ~ 7800 2150
-Wire Wire Line
-	7800 2150 7700 2150
-Connection ~ 7900 2150
-Wire Wire Line
-	7900 2150 7800 2150
-Connection ~ 8000 2150
-Wire Wire Line
-	8000 2150 7900 2150
-Connection ~ 8100 2150
-Wire Wire Line
-	8100 2150 8000 2150
 $Comp
 L Device:C C?
 U 1 1 5B92CE3E
@@ -1321,7 +1078,6 @@ Wire Wire Line
 	6200 2050 8400 2050
 Wire Wire Line
 	8900 1100 8900 1550
-Connection ~ 6400 2150
 Wire Wire Line
 	6400 1100 6400 1550
 Connection ~ 6400 1550
@@ -1379,4 +1135,252 @@ Wire Wire Line
 	10800 1850 10400 1850
 Connection ~ 10800 1400
 Connection ~ 10800 1850
+Wire Wire Line
+	1950 3200 2050 3200
+Wire Wire Line
+	6400 2150 6500 2150
+Wire Wire Line
+	1900 7400 2000 7400
+$Comp
+L microzed:MT41K256M16TW U?
+U 1 1 5C939A8F
+P 2850 3400
+F 0 "U?" H 2850 2250 60  0000 C CNN
+F 1 "MT41K256M16TW" H 2850 2150 60  0000 C CNN
+F 2 "BGA96C80P9X16_800X1400X120" H 5750 3000 60  0001 C CNN
+F 3 "" H 2850 4200 60  0001 C CNN
+F 4 "Micron" H 5150 2900 50  0001 C CNN "Manufacturer"
+F 5 "MT41K256M16TW-107 IT:P" H 5500 2800 50  0001 C CNN "ManufacturerPartNumber"
+	1    2850 3400
+	1    0    0    -1  
+$EndComp
+Connection ~ 1950 3200
+Connection ~ 4000 7400
+Connection ~ 2000 7400
+Wire Wire Line
+	2000 7400 2100 7400
+Connection ~ 2100 7400
+Wire Wire Line
+	2100 7400 2200 7400
+Connection ~ 2200 7400
+Wire Wire Line
+	2200 7400 2300 7400
+Connection ~ 2300 7400
+Wire Wire Line
+	2300 7400 2400 7400
+Connection ~ 2400 7400
+Wire Wire Line
+	2400 7400 2500 7400
+Connection ~ 2500 7400
+Wire Wire Line
+	2500 7400 2600 7400
+Connection ~ 2600 7400
+Wire Wire Line
+	2600 7400 2700 7400
+Connection ~ 2700 7400
+Wire Wire Line
+	2700 7400 2800 7400
+Connection ~ 2800 7400
+Wire Wire Line
+	2800 7400 2900 7400
+Connection ~ 2900 7400
+Wire Wire Line
+	2900 7400 3000 7400
+Connection ~ 3000 7400
+Wire Wire Line
+	3000 7400 3200 7400
+Connection ~ 3200 7400
+Wire Wire Line
+	3200 7400 3300 7400
+Connection ~ 3300 7400
+Wire Wire Line
+	3300 7400 3400 7400
+Connection ~ 3400 7400
+Wire Wire Line
+	3400 7400 3500 7400
+Connection ~ 3500 7400
+Wire Wire Line
+	3500 7400 3600 7400
+Connection ~ 3600 7400
+Wire Wire Line
+	3600 7400 3700 7400
+Connection ~ 3700 7400
+Wire Wire Line
+	3700 7400 3800 7400
+Connection ~ 3800 7400
+Wire Wire Line
+	3800 7400 3900 7400
+Connection ~ 3900 7400
+Wire Wire Line
+	3900 7400 4000 7400
+Connection ~ 2050 3200
+Wire Wire Line
+	2050 3200 2150 3200
+Connection ~ 2150 3200
+Wire Wire Line
+	2150 3200 2250 3200
+Connection ~ 2250 3200
+Wire Wire Line
+	2250 3200 2350 3200
+Connection ~ 2350 3200
+Wire Wire Line
+	2350 3200 2450 3200
+Connection ~ 2450 3200
+Wire Wire Line
+	2450 3200 2550 3200
+Connection ~ 2550 3200
+Wire Wire Line
+	2550 3200 2650 3200
+Connection ~ 2650 3200
+Wire Wire Line
+	2650 3200 2750 3200
+Connection ~ 2750 3200
+Wire Wire Line
+	2750 3200 2950 3200
+Connection ~ 2950 3200
+Wire Wire Line
+	2950 3200 3050 3200
+Connection ~ 3050 3200
+Wire Wire Line
+	3050 3200 3150 3200
+Connection ~ 3150 3200
+Wire Wire Line
+	3150 3200 3250 3200
+Connection ~ 3250 3200
+Wire Wire Line
+	3250 3200 3350 3200
+Connection ~ 3350 3200
+Wire Wire Line
+	3350 3200 3450 3200
+Connection ~ 3450 3200
+Wire Wire Line
+	3450 3200 3550 3200
+Connection ~ 3550 3200
+Wire Wire Line
+	3550 3200 3650 3200
+Connection ~ 3650 3200
+Wire Wire Line
+	3650 3200 3750 3200
+$Comp
+L microzed:MT41K256M16TW U?
+U 1 1 5C962A7B
+P 7300 2350
+F 0 "U?" H 7300 1500 60  0000 C CNN
+F 1 "MT41K256M16TW" H 7300 1400 60  0000 C CNN
+F 2 "BGA96C80P9X16_800X1400X120" H 10200 1950 60  0001 C CNN
+F 3 "" H 7300 3150 60  0001 C CNN
+F 4 "Micron" H 9600 1850 50  0001 C CNN "Manufacturer"
+F 5 "MT41K256M16TW-107 IT:P" H 9950 1750 50  0001 C CNN "ManufacturerPartNumber"
+	1    7300 2350
+	1    0    0    -1  
+$EndComp
+Connection ~ 6400 2150
+Wire Wire Line
+	6350 6350 6450 6350
+Connection ~ 8450 6350
+Connection ~ 6500 2150
+Wire Wire Line
+	6500 2150 6600 2150
+Connection ~ 6600 2150
+Wire Wire Line
+	6600 2150 6700 2150
+Connection ~ 6700 2150
+Wire Wire Line
+	6700 2150 6800 2150
+Connection ~ 6800 2150
+Wire Wire Line
+	6800 2150 6900 2150
+Connection ~ 6900 2150
+Wire Wire Line
+	6900 2150 7000 2150
+Connection ~ 7000 2150
+Wire Wire Line
+	7000 2150 7100 2150
+Connection ~ 7100 2150
+Wire Wire Line
+	7100 2150 7200 2150
+Connection ~ 7200 2150
+Wire Wire Line
+	7200 2150 7400 2150
+Connection ~ 7400 2150
+Wire Wire Line
+	7400 2150 7500 2150
+Connection ~ 7500 2150
+Wire Wire Line
+	7500 2150 7600 2150
+Connection ~ 7600 2150
+Wire Wire Line
+	7600 2150 7700 2150
+Connection ~ 7700 2150
+Wire Wire Line
+	7700 2150 7800 2150
+Connection ~ 7800 2150
+Wire Wire Line
+	7800 2150 7900 2150
+Connection ~ 7900 2150
+Wire Wire Line
+	7900 2150 8000 2150
+Connection ~ 8000 2150
+Wire Wire Line
+	8000 2150 8100 2150
+Connection ~ 8100 2150
+Wire Wire Line
+	8100 2150 8200 2150
+Connection ~ 6450 6350
+Wire Wire Line
+	6450 6350 6550 6350
+Connection ~ 6550 6350
+Wire Wire Line
+	6550 6350 6650 6350
+Connection ~ 6650 6350
+Wire Wire Line
+	6650 6350 6750 6350
+Connection ~ 6750 6350
+Wire Wire Line
+	6750 6350 6850 6350
+Connection ~ 6850 6350
+Wire Wire Line
+	6850 6350 6950 6350
+Connection ~ 6950 6350
+Wire Wire Line
+	6950 6350 7050 6350
+Connection ~ 7050 6350
+Wire Wire Line
+	7050 6350 7150 6350
+Connection ~ 7150 6350
+Wire Wire Line
+	7150 6350 7250 6350
+Connection ~ 7250 6350
+Wire Wire Line
+	7250 6350 7350 6350
+Connection ~ 7350 6350
+Wire Wire Line
+	7350 6350 7450 6350
+Connection ~ 7450 6350
+Wire Wire Line
+	7450 6350 7650 6350
+Connection ~ 7650 6350
+Wire Wire Line
+	7650 6350 7750 6350
+Connection ~ 7750 6350
+Wire Wire Line
+	7750 6350 7850 6350
+Connection ~ 7850 6350
+Wire Wire Line
+	7850 6350 7950 6350
+Connection ~ 7950 6350
+Wire Wire Line
+	7950 6350 8050 6350
+Connection ~ 8050 6350
+Wire Wire Line
+	8050 6350 8150 6350
+Connection ~ 8150 6350
+Wire Wire Line
+	8150 6350 8250 6350
+Connection ~ 8250 6350
+Wire Wire Line
+	8250 6350 8350 6350
+Connection ~ 8350 6350
+Wire Wire Line
+	8350 6350 8450 6350
 $EndSCHEMATC
