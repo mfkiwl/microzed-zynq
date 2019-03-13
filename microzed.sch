@@ -3,7 +3,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 19
+Sheet 1 18
 Title ""
 Date ""
 Rev ""
@@ -84,12 +84,6 @@ S 8500 2500 1000 1000
 U 5C3F5BB1
 F0 "QSPI" 50
 F1 "sch/qspi.sch" 50
-$EndSheet
-$Sheet
-S 2500 4000 1000 1000
-U 5BA19F84
-F0 "USB-UART" 50
-F1 "sch/USB-UART.sch" 50
 $EndSheet
 $Sheet
 S 5500 4000 1000 1000

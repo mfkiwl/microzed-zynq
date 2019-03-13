@@ -3,7 +3,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 15 19
+Sheet 15 18
 Title ""
 Date ""
 Rev ""
@@ -511,7 +511,7 @@ F 3 "" H 4150 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7800 1600 7800 3450
+	7800 1600 7800 2300
 Text Notes 3350 4100 0    50   ~ 0
 P12 Table4-4\nmin: VDD33 - 0.4V
 $Comp
@@ -729,4 +729,84 @@ Wire Wire Line
 	3950 4300 3900 4300
 Text Notes 2600 5350 0    50   ~ 0
 Page 8, TABLE 2-1\n8.06kΩ (±1%)
+$Comp
+L Power_Protection:ZEN056V130A24LS D?
+U 1 1 5C8990A5
+P 9900 2400
+F 0 "D?" H 9900 2767 50  0000 C CNN
+F 1 "ZEN056V130A24LS" H 9900 2676 50  0000 C CNN
+F 2 "Diode_SMD:Littelfuse_PolyZen-LS" H 9900 2050 50  0001 C CNN
+F 3 "http://m.littelfuse.com/~/media/electronics/datasheets/polyzen_devices/littelfuse_polyzen_standard_polyzen_catalog_datasheet.pdf.pdf" H 9900 2800 50  0001 C CNN
+	1    9900 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C8990AB
+P 9500 2800
+F 0 "#PWR?" H 9500 2550 50  0001 C CNN
+F 1 "GND" H 9505 2627 50  0000 C CNN
+F 2 "" H 9500 2800 50  0001 C CNN
+F 3 "" H 9500 2800 50  0001 C CNN
+	1    9500 2800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 2700 9500 2750
+$Comp
+L Device:C C?
+U 1 1 5C8990B3
+P 9500 2550
+F 0 "C?" H 9450 2600 50  0000 R BNN
+F 1 "2.2µF" H 9450 2500 50  0000 R TNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 9538 2400 50  0001 C CNN
+F 3 "~" H 9500 2550 50  0001 C CNN
+	1    9500 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 2300 9500 2300
+Wire Wire Line
+	9500 2400 9500 2300
+Connection ~ 9500 2300
+Wire Wire Line
+	9500 2300 9600 2300
+Wire Wire Line
+	9900 2600 9900 2750
+Wire Wire Line
+	9900 2750 9500 2750
+Connection ~ 9500 2750
+Wire Wire Line
+	9500 2750 9500 2800
+$Comp
+L Diode:B330 D?
+U 1 1 5C8990C1
+P 10550 2300
+F 0 "D?" H 10550 2516 50  0000 C CNN
+F 1 "B330" H 10550 2425 50  0000 C CNN
+F 2 "Diode_SMD:D_SMC" H 10550 2125 50  0001 C CNN
+F 3 "http://www.jameco.com/Jameco/Products/ProdDS/1538777.pdf" H 10550 2300 50  0001 C CNN
+	1    10550 2300
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10200 2300 10400 2300
+$Comp
+L microzed:VIN #PWR?
+U 1 1 5C8990C9
+P 10800 2200
+F 0 "#PWR?" H 10800 2050 50  0001 C CNN
+F 1 "VIN" H 10817 2373 50  0000 C CNN
+F 2 "" H 10800 2200 50  0001 C CNN
+F 3 "" H 10800 2200 50  0001 C CNN
+	1    10800 2200
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	10700 2300 10800 2300
+Wire Wire Line
+	10800 2300 10800 2200
+Connection ~ 7800 2300
+Wire Wire Line
+	7800 2300 7800 3450
 $EndSCHEMATC
