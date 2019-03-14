@@ -3,7 +3,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 17 18
+Sheet 16 18
 Title ""
 Date ""
 Rev ""
@@ -132,6 +132,8 @@ F 0 "R?" H 7220 3996 50  0000 L CNN
 F 1 "0" H 7220 3905 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 7080 3950 50  0001 C CNN
 F 3 "~" H 7150 3950 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-070RL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    7150 3950
 	1    0    0    -1  
 $EndComp
@@ -143,6 +145,8 @@ F 0 "R?" H 8620 3996 50  0000 L CNN
 F 1 "0" H 8620 3905 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 8480 3950 50  0001 C CNN
 F 3 "~" H 8550 3950 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-070RL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    8550 3950
 	1    0    0    -1  
 $EndComp
