@@ -3,7 +3,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 14 18
+Sheet 14 19
 Title ""
 Date ""
 Rev ""
@@ -60,43 +60,8 @@ Wire Wire Line
 	1400 3700 1700 3700
 Wire Wire Line
 	3300 2900 3750 2900
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5BA69A86
-P 1600 1900
-F 0 "#PWR?" H 1600 1750 50  0001 C CNN
-F 1 "+3V3" H 1615 2073 50  0000 C CNN
-F 2 "" H 1600 1900 50  0001 C CNN
-F 3 "" H 1600 1900 50  0001 C CNN
-	1    1600 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5BA69B7B
-P 1600 2150
-F 0 "C?" H 1650 2250 50  0000 L CNN
-F 1 "2.2µF" H 1650 2050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 1638 2000 50  0001 C CNN
-F 3 "~" H 1600 2150 50  0001 C CNN
-	1    1600 2150
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5BA69C26
-P 1600 2300
-F 0 "#PWR?" H 1600 2050 50  0001 C CNN
-F 1 "GND" H 1605 2127 50  0000 C CNN
-F 2 "" H 1600 2300 50  0001 C CNN
-F 3 "" H 1600 2300 50  0001 C CNN
-	1    1600 2300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	1600 2000 2300 2000
-Wire Wire Line
-	2300 2000 2300 2200
+	2550 2200 2300 2200
 $Comp
 L power:+1V8 #PWR?
 U 1 1 5BA6B4CB
@@ -159,9 +124,6 @@ F 3 "" H 3400 1500 50  0001 C CNN
 	1    3400 1500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1600 2000 1600 1900
-Connection ~ 1600 2000
 NoConn ~ 1700 4300
 NoConn ~ 1700 4400
 NoConn ~ 2300 4800
@@ -181,9 +143,11 @@ L Device:R R?
 U 1 1 5BA7565B
 P 3400 5250
 F 0 "R?" H 3470 5296 50  0000 L CNN
-F 1 "8.06k" H 3470 5205 50  0000 L CNN
+F 1 "8.06k 1%" H 3470 5205 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 3330 5250 50  0001 C CNN
 F 3 "" H 3400 5250 50  0001 C CNN
+F 4 "Yageo" H 3400 5250 50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-078K06L" H 3400 5250 50  0001 C CNN "ManufacturerPartNumber"
 	1    3400 5250
 	1    0    0    -1  
 $EndComp
@@ -202,18 +166,18 @@ NoConn ~ 3300 4400
 $Comp
 L Device:R R?
 U 1 1 5BAB48F8
-P 3750 4300
-F 0 "R?" V 3650 4300 50  0000 C CNN
-F 1 "40.2" V 3850 4300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3680 4300 50  0001 C CNN
-F 3 "~" H 3750 4300 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "RC0402FR-0740R2L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    3750 4300
+P 3400 6400
+F 0 "R?" V 3300 6400 50  0000 C CNN
+F 1 "40.2" V 3500 6400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3330 6400 50  0001 C CNN
+F 3 "~" H 3400 6400 50  0001 C CNN
+F 4 "Yageo" H -350 2100 50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0740R2L" H -350 2100 50  0001 C CNN "ManufacturerPartNumber"
+	1    3400 6400
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3300 4300 3600 4300
+	3300 4300 3950 4300
 Wire Wire Line
 	3300 4500 3400 4500
 Wire Wire Line
@@ -244,6 +208,8 @@ F 0 "R?" V 3500 3350 50  0000 R CNN
 F 1 "1k" V 3500 3550 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 3480 3450 50  0001 C CNN
 F 3 "~" H 3550 3450 50  0001 C CNN
+F 4 "RC0402FR-071KL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
+F 5 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
 	1    3550 3450
 	0    1    1    0   
 $EndComp
@@ -301,8 +267,10 @@ U 1 1 5BAE2DDB
 P 7250 1750
 F 0 "C?" H 7365 1796 50  0000 L CNN
 F 1 "150µF" H 7365 1705 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric" H 7288 1600 50  0001 C CNN
+F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-15_AVX-H" H 7288 1600 50  0001 C CNN
 F 3 "~" H 7250 1750 50  0001 C CNN
+F 4 "AVX" H 7250 1750 50  0001 C CNN "Manufacturer"
+F 5 "TCJB157M006R0025" H 7250 1750 50  0001 C CNN "ManufacturerPartNumber"
 	1    7250 1750
 	1    0    0    -1  
 $EndComp
@@ -385,10 +353,11 @@ U 1 1 5BAF513D
 P 7300 4300
 F 0 "D?" H 7900 4600 50  0000 C CNN
 F 1 "CDSOT23-SR208" H 7900 4500 50  0000 C CNN
-F 2 "microzed:SOT95P280X130-6N" H 8850 4400 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-6" H 8850 4400 50  0001 L CNN
 F 3 "https://www.bourns.com/docs/Product-Datasheets/CDSOT23-SR208.pdf" H 8850 4300 50  0001 L CNN
 F 4 "1.3" H 8850 4100 50  0001 L CNN "Height"
 F 5 "Bourns" H 8850 4000 50  0001 L CNN "Manufacturer"
+F 6 "CDSOT23-SR208" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    7300 4300
 	-1   0    0    -1  
 $EndComp
@@ -448,8 +417,8 @@ Wire Wire Line
 	1700 4100 1400 4100
 Text Notes 3800 2450 0    50   ~ 0
 P32 Table5-10\nconnect to VDDIO\nuse 24MHZ REFCLK
-Text Notes 1000 1600 0    50   ~ 0
-P61 Fig.8-3\n\nP23 Fig.5-7\nmaybe can drop 2.2µF
+Text Notes 900  1300 0    50   ~ 0
+P61 Fig.8-3\nP23 Fig.5-7\nuse external 3.3V for VDD33, not internal LDO
 Text Notes 4500 3050 0    50   ~ 0
 P58 Table8-2\nOTG: 1µF - 6.5μF
 Text Notes 3350 3350 0    50   ~ 0
@@ -459,43 +428,43 @@ P19 section5.4.1\nULPI output Clock Mode.\nor CLKOUT should be tied high to VDDI
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5BA7198E
-P 2550 1100
-F 0 "#PWR?" H 2550 950 50  0001 C CNN
-F 1 "+3V3" H 2565 1273 50  0000 C CNN
-F 2 "" H 2550 1100 50  0001 C CNN
-F 3 "" H 2550 1100 50  0001 C CNN
-	1    2550 1100
+P 2300 1600
+F 0 "#PWR?" H 2300 1450 50  0001 C CNN
+F 1 "+3V3" H 2315 1773 50  0000 C CNN
+F 2 "" H 2300 1600 50  0001 C CNN
+F 3 "" H 2300 1600 50  0001 C CNN
+	1    2300 1600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 1200 2550 2200
+	2300 1700 2300 2200
 Wire Wire Line
-	2550 1100 2550 1200
-Connection ~ 2550 1200
+	2300 1600 2300 1700
+Connection ~ 2300 1700
 Wire Wire Line
-	2200 1200 2550 1200
+	1950 1700 2300 1700
 $Comp
 L power:GND #PWR?
 U 1 1 5C5B11BD
-P 2200 1500
-F 0 "#PWR?" H 2200 1250 50  0001 C CNN
-F 1 "GND" H 2205 1327 50  0000 C CNN
-F 2 "" H 2200 1500 50  0001 C CNN
-F 3 "" H 2200 1500 50  0001 C CNN
-	1    2200 1500
+P 1950 2000
+F 0 "#PWR?" H 1950 1750 50  0001 C CNN
+F 1 "GND" H 1955 1827 50  0000 C CNN
+F 2 "" H 1950 2000 50  0001 C CNN
+F 3 "" H 1950 2000 50  0001 C CNN
+	1    1950 2000
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5C5B11B6
-P 2200 1350
-F 0 "C?" H 2250 1450 50  0000 L CNN
-F 1 "0.1µF" H 2250 1250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 2238 1200 50  0001 C CNN
-F 3 "~" H 2200 1350 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    2200 1350
+P 1950 1850
+F 0 "C?" H 2000 1950 50  0000 L CNN
+F 1 "0.1µF" H 2000 1750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 1988 1700 50  0001 C CNN
+F 3 "~" H 1950 1850 50  0001 C CNN
+F 4 "Yageo" H -250 500 50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H -250 500 50  0001 C CNN "ManufacturerPartNumber"
+	1    1950 1850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -512,8 +481,6 @@ F 3 "" H 4150 3150 50  0001 C CNN
 	1    4150 3150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7800 1600 7800 2300
 Text Notes 3350 4100 0    50   ~ 0
 P12 Table4-4\nmin: VDD33 - 0.4V
 $Comp
@@ -624,191 +591,81 @@ Connection ~ 3250 2200
 $Comp
 L power:GND #PWR?
 U 1 1 5C748F07
-P 3800 6600
-F 0 "#PWR?" H 3800 6350 50  0001 C CNN
-F 1 "GND" H 3805 6427 50  0000 C CNN
-F 2 "" H 3800 6600 50  0001 C CNN
-F 3 "" H 3800 6600 50  0001 C CNN
-	1    3800 6600
+P 3100 6600
+F 0 "#PWR?" H 3100 6350 50  0001 C CNN
+F 1 "GND" H 3105 6427 50  0000 C CNN
+F 2 "" H 3100 6600 50  0001 C CNN
+F 3 "" H 3100 6600 50  0001 C CNN
+	1    3100 6600
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 6500 3800 6600
-$Comp
-L Device:R R?
-U 1 1 5C748F0E
-P 2150 6500
-F 0 "R?" V 2250 6350 50  0000 C CNN
-F 1 "4.99K" V 2250 6650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 2080 6500 50  0001 C CNN
-F 3 "~" H 2150 6500 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "RC0402FR-074K99L" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    2150 6500
-	0    1    1    0   
-$EndComp
+	3100 6500 3100 6600
 Wire Wire Line
-	2650 6500 2500 6500
+	1950 6400 1800 6400
 Wire Wire Line
-	2650 6400 2500 6400
-Wire Wire Line
-	1700 6400 1700 6500
+	1800 6400 1800 6500
 $Comp
 L Device:C C?
 U 1 1 5C748F17
-P 1700 6650
-F 0 "C?" H 1815 6696 50  0000 L CNN
-F 1 "0.1µF" H 1815 6605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 1738 6500 50  0001 C CNN
-F 3 "~" H 1700 6650 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    1700 6650
+P 1800 6650
+F 0 "C?" H 1915 6696 50  0000 L CNN
+F 1 "0.1µF" H 1915 6605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 1838 6500 50  0001 C CNN
+F 3 "~" H 1800 6650 50  0001 C CNN
+F 4 "Yageo" H 100 0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 100 0   50  0001 C CNN "ManufacturerPartNumber"
+	1    1800 6650
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2500 6200 2500 6400
-Connection ~ 2500 6400
+	1800 6200 1800 6400
+Connection ~ 1800 6400
 Wire Wire Line
-	2500 6400 1700 6400
-Wire Wire Line
-	2000 6500 1700 6500
-Connection ~ 1700 6500
-$Comp
-L Connector:TestPoint TP?
-U 1 1 5C748F22
-P 2500 6700
-F 0 "TP?" H 2443 6727 50  0000 R CNN
-F 1 "TestPoint" H 2443 6818 50  0000 R CNN
-F 2 "" H 2700 6700 50  0001 C CNN
-F 3 "~" H 2700 6700 50  0001 C CNN
-	1    2500 6700
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2500 6700 2500 6500
-Connection ~ 2500 6500
-Wire Wire Line
-	2500 6500 2300 6500
+	1950 6500 1800 6500
+Connection ~ 1800 6500
 $Comp
 L power:GND #PWR?
 U 1 1 5C748F2B
-P 1700 6800
-F 0 "#PWR?" H 1700 6550 50  0001 C CNN
-F 1 "GND" H 1705 6627 50  0000 C CNN
-F 2 "" H 1700 6800 50  0001 C CNN
-F 3 "" H 1700 6800 50  0001 C CNN
-	1    1700 6800
+P 1800 6800
+F 0 "#PWR?" H 1800 6550 50  0001 C CNN
+F 1 "GND" H 1805 6627 50  0000 C CNN
+F 2 "" H 1800 6800 50  0001 C CNN
+F 3 "" H 1800 6800 50  0001 C CNN
+	1    1800 6800
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	3950 4300 3950 6400
 Wire Wire Line
-	3950 6400 3800 6400
+	3250 6400 3100 6400
 $Comp
 L power:+1V8 #PWR?
 U 1 1 5C74B479
-P 2500 6200
-F 0 "#PWR?" H 2500 6050 50  0001 C CNN
-F 1 "+1V8" H 2515 6373 50  0000 C CNN
-F 2 "" H 2500 6200 50  0001 C CNN
-F 3 "" H 2500 6200 50  0001 C CNN
-	1    2500 6200
+P 1800 6200
+F 0 "#PWR?" H 1800 6050 50  0001 C CNN
+F 1 "+1V8" H 1815 6373 50  0000 C CNN
+F 2 "" H 1800 6200 50  0001 C CNN
+F 3 "" H 1800 6200 50  0001 C CNN
+	1    1800 6200
 	1    0    0    -1  
 $EndComp
 $Comp
 L microzed:ASDMB-24.000MHZ-LC-T U?
 U 1 1 5C74BDD8
-P 2650 6400
-F 0 "U?" H 3225 6665 50  0000 C CNN
-F 1 "ASDMB-24.000MHZ-LC-T" H 3225 6574 50  0000 C CNN
-F 2 "microzed:ABRACON-ASDMB" H 4150 6500 50  0001 L CNN
-F 3 "http://www.abracon.com/Oscillators/ASDMB.pdf" H 4150 6400 50  0001 L CNN
-	1    2650 6400
+P 1950 6400
+F 0 "U?" H 2525 6665 50  0000 C CNN
+F 1 "ASDMB-24.000MHZ-LC-T" H 2525 6574 50  0000 C CNN
+F 2 "microzed:ABRACON-ASDMB" H 3450 6500 50  0001 L CNN
+F 3 "http://www.abracon.com/Oscillators/ASDMB.pdf" H 3450 6400 50  0001 L CNN
+	1    1950 6400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 4300 3900 4300
+	3950 6400 3550 6400
 Text Notes 2600 5350 0    50   ~ 0
 Page 8, TABLE 2-1\n8.06kΩ (±1%)
-$Comp
-L Power_Protection:ZEN056V130A24LS D?
-U 1 1 5C8990A5
-P 9900 2400
-F 0 "D?" H 9900 2767 50  0000 C CNN
-F 1 "ZEN056V130A24LS" H 9900 2676 50  0000 C CNN
-F 2 "Diode_SMD:Littelfuse_PolyZen-LS" H 9900 2050 50  0001 C CNN
-F 3 "http://m.littelfuse.com/~/media/electronics/datasheets/polyzen_devices/littelfuse_polyzen_standard_polyzen_catalog_datasheet.pdf.pdf" H 9900 2800 50  0001 C CNN
-	1    9900 2400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C8990AB
-P 9500 2800
-F 0 "#PWR?" H 9500 2550 50  0001 C CNN
-F 1 "GND" H 9505 2627 50  0000 C CNN
-F 2 "" H 9500 2800 50  0001 C CNN
-F 3 "" H 9500 2800 50  0001 C CNN
-	1    9500 2800
-	-1   0    0    -1  
-$EndComp
+Connection ~ 2300 2200
 Wire Wire Line
-	9500 2700 9500 2750
-$Comp
-L Device:C C?
-U 1 1 5C8990B3
-P 9500 2550
-F 0 "C?" H 9450 2600 50  0000 R BNN
-F 1 "2.2µF" H 9450 2500 50  0000 R TNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 9538 2400 50  0001 C CNN
-F 3 "~" H 9500 2550 50  0001 C CNN
-	1    9500 2550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7800 2300 9500 2300
-Wire Wire Line
-	9500 2400 9500 2300
-Connection ~ 9500 2300
-Wire Wire Line
-	9500 2300 9600 2300
-Wire Wire Line
-	9900 2600 9900 2750
-Wire Wire Line
-	9900 2750 9500 2750
-Connection ~ 9500 2750
-Wire Wire Line
-	9500 2750 9500 2800
-$Comp
-L Diode:B330 D?
-U 1 1 5C8990C1
-P 10550 2300
-F 0 "D?" H 10550 2516 50  0000 C CNN
-F 1 "B330" H 10550 2425 50  0000 C CNN
-F 2 "Diode_SMD:D_SMC" H 10550 2125 50  0001 C CNN
-F 3 "http://www.jameco.com/Jameco/Products/ProdDS/1538777.pdf" H 10550 2300 50  0001 C CNN
-	1    10550 2300
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	10200 2300 10400 2300
-$Comp
-L microzed:VIN #PWR?
-U 1 1 5C8990C9
-P 10800 2200
-F 0 "#PWR?" H 10800 2050 50  0001 C CNN
-F 1 "VIN" H 10817 2373 50  0000 C CNN
-F 2 "" H 10800 2200 50  0001 C CNN
-F 3 "" H 10800 2200 50  0001 C CNN
-	1    10800 2200
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	10700 2300 10800 2300
-Wire Wire Line
-	10800 2300 10800 2200
-Connection ~ 7800 2300
-Wire Wire Line
-	7800 2300 7800 3450
+	7800 1600 7800 3450
 $EndSCHEMATC

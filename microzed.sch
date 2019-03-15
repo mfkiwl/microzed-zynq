@@ -3,7 +3,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 18
+Sheet 1 19
 Title ""
 Date ""
 Rev ""
@@ -102,6 +102,12 @@ S 1000 4000 1000 1000
 U 5C39D5E3
 F0 "sdcard" 50
 F1 "sch/sdcard.sch" 50
+$EndSheet
+$Sheet
+S 2500 4000 1000 1000
+U 5CA92809
+F0 "usb-uart" 50
+F1 "sch/usb-uart.sch" 50
 $EndSheet
 $Sheet
 S 7000 4000 1000 1000

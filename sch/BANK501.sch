@@ -3,7 +3,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 18
+Sheet 9 19
 Title ""
 Date ""
 Rev ""
@@ -269,38 +269,8 @@ F 3 "" H 6250 1350 50  0001 C CNN
 	1    6250 1350
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J?
-U 1 1 5C9B1AD8
-P 6550 6000
-F 0 "J?" H 6630 6042 50  0000 L CNN
-F 1 "640456-3" H 6630 5951 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6550 6000 50  0001 C CNN
-F 3 "~" H 6550 6000 50  0001 C CNN
-F 4 "TE" H 6550 6000 50  0001 C CNN "Manufacturer"
-F 5 "640456-3" H 6550 6000 50  0001 C CNN "ManufacturerPartNumber"
-	1    6550 6000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4650 6000 6350 6000
-Text Label 5150 5900 0    50   ~ 0
-UART_TX
-Text Label 5150 6000 0    50   ~ 0
-UART_RX
-Wire Wire Line
-	4650 5900 6350 5900
-$Comp
-L power:GND #PWR?
-U 1 1 5C9BAB51
-P 6350 6250
-F 0 "#PWR?" H 6350 6000 50  0001 C CNN
-F 1 "GND" H 6355 6077 50  0000 C CNN
-F 2 "" H 6350 6250 50  0001 C CNN
-F 3 "" H 6350 6250 50  0001 C CNN
-	1    6350 6250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6350 6100 6350 6250
+Text GLabel 4650 5900 2    50   Output ~ 0
+USB_UART_TxD
+Text GLabel 4650 6000 2    50   Input ~ 0
+USB_UART_RxD
 $EndSCHEMATC
