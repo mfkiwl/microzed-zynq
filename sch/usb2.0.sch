@@ -23,6 +23,7 @@ F 2 "microzed:QFN50P500X500X100-33N-D" H 3600 2100 50  0001 L CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/00001792B.pdf" H 3600 2000 50  0001 L CNN
 F 4 "1" H 3600 1800 50  0001 L CNN "Height"
 F 5 "Microchip" H 3600 1700 50  0001 L CNN "Manufacturer"
+F 6 "USB3320C-EZK" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    1700 2600
 	1    0    0    -1  
 $EndComp
@@ -494,6 +495,7 @@ F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8300 1700 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/tps2069d.pdf" H 8300 1600 50  0001 L CNN
 F 4 "1.45" H 8300 1400 50  0001 L CNN "Height"
 F 5 "Texas Instruments" H 8300 1300 50  0001 L CNN "Manufacturer"
+F 6 "TPS2069D" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    6900 1600
 	-1   0    0    -1  
 $EndComp
@@ -659,6 +661,8 @@ F 0 "U?" H 2525 6665 50  0000 C CNN
 F 1 "ASDMB-24.000MHZ-LC-T" H 2525 6574 50  0000 C CNN
 F 2 "microzed:ABRACON-ASDMB" H 3450 6500 50  0001 L CNN
 F 3 "http://www.abracon.com/Oscillators/ASDMB.pdf" H 3450 6400 50  0001 L CNN
+F 4 "Abracon" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "ASDMB-24.000MHZ-LC-T" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    1950 6400
 	1    0    0    -1  
 $EndComp

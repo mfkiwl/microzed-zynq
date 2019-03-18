@@ -22,6 +22,7 @@ F 1 "BSH-090-01-X-D-A" H 3250 1674 50  0000 C CNN
 F 2 "microzed:BSH-090-01-X-D-A" H 4000 1650 50  0001 L BNN
 F 3 "" H 4000 1550 50  0001 L BNN
 F 4 "Samtec Inc." H 4000 1450 50  0001 L BNN "Manufacturer"
+F 5 "BSH-090-01-X-D-A" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    2800 1550
 	1    0    0    -1  
 $EndComp
@@ -34,6 +35,7 @@ F 1 "BSH-090-01-X-D-A" H 8250 1674 50  0000 C CNN
 F 2 "microzed:BSH-090-01-X-D-A" H 9000 1650 50  0001 L BNN
 F 3 "" H 9000 1550 50  0001 L BNN
 F 4 "Samtec Inc." H 9000 1450 50  0001 L BNN "Manufacturer"
+F 5 "BSH-090-01-X-D-A" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	2    7800 1550
 	1    0    0    -1  
 $EndComp

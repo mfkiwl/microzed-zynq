@@ -175,6 +175,7 @@ F 2 "microzed:BGA484C100P22X22_2300X2300X254" H 6300 2200 50  0001 L CNN
 F 3 "http://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pkg-Pinout.pdf" H 6300 2100 50  0001 L CNN
 F 4 "2.54" H 6300 1900 50  0001 L CNN "Height"
 F 5 "XILINX" H 6300 1800 50  0001 L CNN "Manufacturer"
+F 6 "XC7Z020-1CLG484C" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	8    3650 2100
 	1    0    0    -1  
 $EndComp

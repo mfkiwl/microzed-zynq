@@ -94,6 +94,7 @@ F 2 "microzed:BGA484C100P22X22_2300X2300X254" H 3550 1950 50  0001 L CNN
 F 3 "http://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pkg-Pinout.pdf" H 3550 1850 50  0001 L CNN
 F 4 "2.54" H 3550 1650 50  0001 L CNN "Height"
 F 5 "XILINX" H 3550 1550 50  0001 L CNN "Manufacturer"
+F 6 "XC7Z020-1CLG484C" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    900  1850
 	1    0    0    -1  
 $EndComp
@@ -151,6 +152,8 @@ F 0 "Q?" H 4841 1546 50  0000 L CNN
 F 1 "MMBT3904" H 4841 1455 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 4850 1425 50  0001 L CIN
 F 3 "" H 4650 1500 50  0001 L CNN
+F 4 "Diodes" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "MMBT3904-7-F" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    4650 1500
 	1    0    0    -1  
 $EndComp

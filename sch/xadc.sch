@@ -113,6 +113,8 @@ F 0 "U?" H 5800 4050 50  0000 L CNN
 F 1 "REF3012" H 5800 3950 50  0000 L CIN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5600 3250 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/ref3033.pdf" H 5700 3350 50  0001 C CIN
+F 4 "Texas Instruments" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "REF3012AIDBZR" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    5600 3700
 	1    0    0    -1  
 $EndComp

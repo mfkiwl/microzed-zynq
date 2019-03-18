@@ -26,6 +26,8 @@ F 0 "U?" H 5200 3100 50  0000 C CNN
 F 1 "CP2104-F03-GM" H 5100 3000 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm" H 5750 3150 50  0001 L CNN
 F 3 "https://www.silabs.com/Support%20Documents/TechnicalDocs/cp2104.pdf" H 5050 5350 50  0001 C CNN
+F 4 "Silicon Labs" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CP2104-F03-GM" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    5600 4100
 	-1   0    0    -1  
 $EndComp
@@ -108,6 +110,8 @@ F 0 "R?" V 6450 3700 50  0000 C CNN
 F 1 "100" V 6650 3700 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 6480 3700 50  0001 C CNN
 F 3 "~" H 6550 3700 50  0001 C CNN
+F 4 "Yageo" H 6550 3700 50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-07100RL" H 6550 3700 50  0001 C CNN "ManufacturerPartNumber"
 	1    6550 3700
 	0    -1   1    0   
 $EndComp

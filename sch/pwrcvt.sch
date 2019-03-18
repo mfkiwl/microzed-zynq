@@ -23,6 +23,7 @@ F 2 "microzed:QFN50P300X300X100-17N-D" H 3500 1050 50  0001 L CNN
 F 3 "http://www.ti.com/lit/gpn/tlv62130" H 3500 950 50  0001 L CNN
 F 4 "1" H 3500 750 50  0001 L CNN "Height"
 F 5 "Texas Instruments" H 3500 650 50  0001 L CNN "Manufacturer"
+F 6 "TLV62130RGTR" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    2100 1100
 	1    0    0    -1  
 $EndComp
@@ -280,6 +281,7 @@ F 2 "microzed:QFN50P300X300X100-17N-D" H 3500 3550 50  0001 L CNN
 F 3 "http://www.ti.com/lit/gpn/tlv62130" H 3500 3450 50  0001 L CNN
 F 4 "1" H 3500 3250 50  0001 L CNN "Height"
 F 5 "Texas Instruments" H 3500 3150 50  0001 L CNN "Manufacturer"
+F 6 "TLV62130RGTR" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    2100 3600
 	1    0    0    -1  
 $EndComp
@@ -495,6 +497,7 @@ F 2 "microzed:QFN50P300X300X100-17N-D" H 8500 3650 50  0001 L CNN
 F 3 "http://www.ti.com/lit/gpn/tlv62130" H 8500 3550 50  0001 L CNN
 F 4 "1" H 8500 3350 50  0001 L CNN "Height"
 F 5 "Texas Instruments" H 8500 3250 50  0001 L CNN "Manufacturer"
+F 6 "TLV62130RGTR" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    7100 3700
 	1    0    0    -1  
 $EndComp
@@ -691,6 +694,7 @@ F 2 "microzed:QFN50P300X300X100-17N-D" H 8500 1150 50  0001 L CNN
 F 3 "http://www.ti.com/lit/gpn/tlv62130" H 8500 1050 50  0001 L CNN
 F 4 "1" H 8500 850 50  0001 L CNN "Height"
 F 5 "Texas Instruments" H 8500 750 50  0001 L CNN "Manufacturer"
+F 6 "TLV62130RGTR" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    7100 1200
 	1    0    0    -1  
 $EndComp
