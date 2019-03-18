@@ -191,6 +191,7 @@ F 1 "10104111-0001LF" H 8250 4024 50  0000 C CNN
 F 2 "microzed:MICRO_USB_AB_TYPE_RECEPTACLE" H 8950 3950 50  0001 L CNN
 F 3 "http://docs-europe.electrocomponents.com/webdocs/0ed1/0900766b80ed1ae2.pdf" H 8950 3850 50  0001 L CNN
 F 4 "FCI" H 8950 3650 50  0001 L CNN "Manufacturer"
+F 5 "10104111-0001LF" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    8200 3650
 	1    0    0    -1  
 $EndComp

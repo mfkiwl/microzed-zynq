@@ -3,7 +3,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 16 19
+Sheet 15 19
 Title ""
 Date ""
 Rev ""
@@ -1175,6 +1175,7 @@ F 2 "microzed:L8291J1T43" H 9800 4200 50  0001 L CNN
 F 3 "https://www.belfuse.com/resources/ICMs/ICMs%20Drawings/L829-1J1T-43.pdf" H 9800 4100 50  0001 L CNN
 F 4 "11" H 9800 4000 50  0001 L CNN "Height"
 F 5 "Bel-Stewart" H 9800 3900 50  0001 L CNN "Manufacturer"
+F 6 "L829-1J1T-43" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    8350 4100
 	1    0    0    -1  
 $EndComp
