@@ -262,35 +262,22 @@ Wire Wire Line
 $Comp
 L Diode:B330 D?
 U 1 1 5BA38660
-P 7150 2050
-F 0 "D?" H 7150 2266 50  0000 C CNN
-F 1 "B330" H 7150 2175 50  0000 C CNN
-F 2 "Diode_SMD:D_SMC" H 7150 1875 50  0001 C CNN
-F 3 "http://www.jameco.com/Jameco/Products/ProdDS/1538777.pdf" H 7150 2050 50  0001 C CNN
-F 4 "Diodes" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "B330A-13-F" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    7150 2050
-	1    0    0    -1  
+P 7850 2050
+F 0 "D?" H 7850 2266 50  0000 C CNN
+F 1 "B330" H 7850 2175 50  0000 C CNN
+F 2 "Diode_SMD:D_SMC" H 7850 1875 50  0001 C CNN
+F 3 "http://www.jameco.com/Jameco/Products/ProdDS/1538777.pdf" H 7850 2050 50  0001 C CNN
+F 4 "Diodes" H 700 0   50  0001 C CNN "Manufacturer"
+F 5 "B330A-13-F" H 700 0   50  0001 C CNN "ManufacturerPartNumber"
+	1    7850 2050
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	7500 2700 7500 2050
 Wire Wire Line
-	7500 2050 7300 2050
-$Comp
-L microzed:VIN #PWR?
-U 1 1 5BA3BFCA
-P 6900 1950
-F 0 "#PWR?" H 6900 1800 50  0001 C CNN
-F 1 "VIN" H 6917 2123 50  0000 C CNN
-F 2 "" H 6900 1950 50  0001 C CNN
-F 3 "" H 6900 1950 50  0001 C CNN
-	1    6900 1950
-	1    0    0    -1  
-$EndComp
+	7500 2050 7700 2050
 Wire Wire Line
-	7000 2050 6900 2050
-Wire Wire Line
-	6900 2050 6900 1950
+	8000 2050 8100 2050
 NoConn ~ 9700 4200
 $Comp
 L power:GND #PWR?
@@ -516,4 +503,6 @@ Wire Wire Line
 Connection ~ 4600 4600
 Wire Wire Line
 	4600 4600 4450 4600
+Text GLabel 8100 2050 2    50   Output ~ 0
+VIN
 $EndSCHEMATC

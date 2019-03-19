@@ -17,13 +17,13 @@ Text Notes 7750 4200 2    50   ~ 0
 50µA
 Text Notes 7750 3700 2    50   ~ 0
 50µA
-Text Notes 7850 2400 2    50   ~ 0
+Text Notes 3750 2400 0    50   ~ 0
 1.8V±5%
-Text Notes 7750 2500 2    50   ~ 0
+Text Notes 3850 2500 0    50   ~ 0
 25mA
 Text Notes 8000 3600 2    50   ~ 0
 1.25V±0.2%
-Text Notes 3300 2850 0    50   ~ 0
+Text Notes 4800 1300 0    50   ~ 0
 UG480 P78.\nxapp554 pcb layout.\nxapp795 driving.
 $Comp
 L Device:L L?
@@ -68,14 +68,12 @@ Text GLabel 7800 4200 2    50   Output ~ 0
 VREFN
 Text GLabel 7800 3700 2    50   Output ~ 0
 VREFP
-Text GLabel 7800 2500 2    50   Output ~ 0
+Text GLabel 3800 2500 0    50   Output ~ 0
 VCCADC
 Text GLabel 5200 1950 0    50   Input ~ 0
 VCCAUX
 Wire Wire Line
 	5200 1950 5500 1950
-Wire Wire Line
-	7500 2500 7800 2500
 Wire Wire Line
 	7800 3700 7500 3700
 $Comp
@@ -89,17 +87,6 @@ F 3 "~" H 7500 3850 50  0001 C CNN
 F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
 F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    7500 3850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDA #PWR?
-U 1 1 5C450AAE
-P 4900 4300
-F 0 "#PWR?" H 4900 4050 50  0001 C CNN
-F 1 "GNDA" H 4905 4127 50  0000 C CNN
-F 2 "" H 4900 4300 50  0001 C CNN
-F 3 "" H 4900 4300 50  0001 C CNN
-	1    4900 4300
 	1    0    0    -1  
 $EndComp
 Connection ~ 7500 3700
@@ -158,8 +145,6 @@ Wire Wire Line
 	7800 4200 7500 4200
 Connection ~ 7500 4200
 Wire Wire Line
-	4900 4200 4900 4300
-Wire Wire Line
 	7500 4200 6100 4200
 Wire Wire Line
 	4900 4000 4900 4200
@@ -174,7 +159,7 @@ Connection ~ 6100 4200
 Wire Wire Line
 	6100 4200 5500 4200
 Wire Wire Line
-	3950 4200 4900 4200
+	3950 4200 4100 4200
 Connection ~ 4900 4200
 Wire Wire Line
 	3650 4200 2850 4200
@@ -182,45 +167,39 @@ Wire Wire Line
 	2850 4200 2850 4300
 Wire Wire Line
 	5500 2350 5500 2500
-$Comp
-L power:GNDA #PWR?
-U 1 1 5C440B43
-P 7500 3100
-F 0 "#PWR?" H 7500 2850 50  0001 C CNN
-F 1 "GNDA" H 7505 2927 50  0000 C CNN
-F 2 "" H 7500 3100 50  0001 C CNN
-F 3 "" H 7500 3100 50  0001 C CNN
-	1    7500 3100
-	1    0    0    -1  
-$EndComp
-Connection ~ 7500 2500
 Connection ~ 5500 2500
 Wire Wire Line
 	5500 2500 5500 3400
-Wire Wire Line
-	5500 2500 7500 2500
-Text GLabel 7800 2950 2    50   Output ~ 0
+Text GLabel 3800 2950 0    50   Output ~ 0
 GNDADC
-Text Notes 7750 2950 2    50   ~ 0
+Text Notes 3850 2950 0    50   ~ 0
 25mA
 Wire Wire Line
-	7500 2950 7500 3100
+	4100 2950 4100 4200
 Wire Wire Line
-	7500 2800 7500 2950
-Connection ~ 7500 2950
+	4100 2800 4100 2950
+Connection ~ 4100 2950
 Wire Wire Line
-	7500 2950 7800 2950
+	4100 2950 3800 2950
 $Comp
 L Device:C C?
 U 1 1 5C39CBFC
-P 7500 2650
-F 0 "C?" H 7615 2696 50  0000 L CNN
-F 1 "0.1µF" H 7615 2605 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 7538 2500 50  0001 C CNN
-F 3 "~" H 7500 2650 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    7500 2650
+P 4100 2650
+F 0 "C?" H 4215 2696 50  0000 L CNN
+F 1 "0.1µF" H 4215 2605 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 4138 2500 50  0001 C CNN
+F 3 "~" H 4100 2650 50  0001 C CNN
+F 4 "Yageo" H -3400 0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H -3400 0   50  0001 C CNN "ManufacturerPartNumber"
+	1    4100 2650
 	1    0    0    -1  
 $EndComp
+Connection ~ 4100 4200
+Wire Wire Line
+	4100 4200 4900 4200
+Wire Wire Line
+	3800 2500 4100 2500
+Connection ~ 4100 2500
+Wire Wire Line
+	4100 2500 5500 2500
 $EndSCHEMATC

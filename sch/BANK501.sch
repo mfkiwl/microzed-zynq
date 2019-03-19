@@ -88,25 +88,25 @@ USB_D4
 Text GLabel 4650 3800 2    50   Input ~ 0
 ETH_RX_CTRL
 Text GLabel 4650 3700 2    50   Input ~ 0
-ETH_RXD3
+ETH_RX_D3
 Text GLabel 4650 3600 2    50   Input ~ 0
-ETH_RXD2
+ETH_RX_D2
 Text GLabel 4650 3500 2    50   Input ~ 0
-ETH_RXD1
+ETH_RX_D1
 Text GLabel 4650 3400 2    50   Input ~ 0
-ETH_RXD0
+ETH_RX_D0
 Text GLabel 4650 3300 2    50   Input ~ 0
 ETH_RX_CLK
 Text GLabel 4650 3200 2    50   Output ~ 0
 ETH_TX_CTRL
 Text GLabel 4650 3100 2    50   Output ~ 0
-ETH_TXD3
+ETH_TX_D3
 Text GLabel 4650 3000 2    50   Output ~ 0
-ETH_TXD2
+ETH_TX_D2
 Text GLabel 4650 2900 2    50   Output ~ 0
-ETH_TXD1
+ETH_TX_D1
 Text GLabel 4650 2800 2    50   Output ~ 0
-ETH_TXD0
+ETH_TX_D0
 Text GLabel 4650 2700 2    50   Output ~ 0
 ETH_TX_CLK
 Wire Wire Line

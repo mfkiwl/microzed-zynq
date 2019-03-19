@@ -986,17 +986,6 @@ Connection ~ 2500 1300
 Wire Wire Line
 	2500 1300 3000 1300
 Connection ~ 3000 1300
-$Comp
-L microzed:VCCO_13 #PWR?
-U 1 1 5D086F52
-P 1500 1000
-F 0 "#PWR?" H 1500 850 50  0001 C CNN
-F 1 "VCCO_13" H 1515 1173 50  0000 C CNN
-F 2 "" H 1500 1000 50  0001 C CNN
-F 3 "" H 1500 1000 50  0001 C CNN
-	1    1500 1000
-	1    0    0    -1  
-$EndComp
 Connection ~ 1500 1000
 Wire Wire Line
 	3500 1300 3500 1800
@@ -1140,17 +1129,6 @@ Connection ~ 3000 4300
 Wire Wire Line
 	3500 4300 3500 4800
 Connection ~ 3500 4800
-$Comp
-L microzed:VCCO_34 #PWR?
-U 1 1 5D086FA3
-P 1500 4000
-F 0 "#PWR?" H 1500 3850 50  0001 C CNN
-F 1 "VCCO_34" H 1515 4173 50  0000 C CNN
-F 2 "" H 1500 4000 50  0001 C CNN
-F 3 "" H 1500 4000 50  0001 C CNN
-	1    1500 4000
-	1    0    0    -1  
-$EndComp
 Connection ~ 1500 4000
 $Comp
 L Device:C C?
@@ -1291,17 +1269,6 @@ Connection ~ 3000 5800
 Wire Wire Line
 	3500 5800 3500 6300
 Connection ~ 3500 6300
-$Comp
-L microzed:VCCO_35 #PWR?
-U 1 1 5D086FF2
-P 1500 5500
-F 0 "#PWR?" H 1500 5350 50  0001 C CNN
-F 1 "VCCO_35" H 1515 5673 50  0000 C CNN
-F 2 "" H 1500 5500 50  0001 C CNN
-F 3 "" H 1500 5500 50  0001 C CNN
-	1    1500 5500
-	1    0    0    -1  
-$EndComp
 Connection ~ 1500 5500
 Wire Wire Line
 	1500 1000 1350 1000
@@ -1468,17 +1435,6 @@ Wire Wire Line
 Wire Wire Line
 	1500 2500 1350 2500
 $Comp
-L microzed:VCCO_33 #PWR?
-U 1 1 5D087052
-P 1500 2500
-F 0 "#PWR?" H 1500 2350 50  0001 C CNN
-F 1 "VCCO_33" H 1515 2673 50  0000 C CNN
-F 2 "" H 1500 2500 50  0001 C CNN
-F 3 "" H 1500 2500 50  0001 C CNN
-	1    1500 2500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3V3 #PWR?
 U 1 1 5D087058
 P 4500 4500
@@ -1542,13 +1498,13 @@ Text GLabel 4300 5500 0    50   Output ~ 0
 VCCPINT
 Text GLabel 7350 1000 0    50   Output ~ 0
 VCCPAUX
-Text GLabel 1350 1000 0    50   Output ~ 0
+Text GLabel 1350 1000 0    50   Input ~ 0
 VCCO_13
-Text GLabel 1350 2500 0    50   Output ~ 0
+Text GLabel 1350 2500 0    50   Input ~ 0
 VCCO_33
-Text GLabel 1350 4000 0    50   Output ~ 0
+Text GLabel 1350 4000 0    50   Input ~ 0
 VCCO_34
-Text GLabel 1350 5500 0    50   Output ~ 0
+Text GLabel 1350 5500 0    50   Input ~ 0
 VCCO_35
 Text GLabel 4300 1000 0    50   Output ~ 0
 VCCINT

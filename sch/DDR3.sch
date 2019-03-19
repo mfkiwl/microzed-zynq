@@ -654,49 +654,49 @@ Wire Wire Line
 Text GLabel 8900 5300 2    50   Input ~ 0
 DDR3_ODT
 Text GLabel 8900 5000 2    50   BiDi ~ 0
-DDR3_DQS0_P
+DDR3_DQS2_P
 Text GLabel 8900 5100 2    50   BiDi ~ 0
-DDR3_DQS0_N
+DDR3_DQS2_N
 Text GLabel 8900 4700 2    50   BiDi ~ 0
-DDR3_DQS1_P
+DDR3_DQS3_P
 Text GLabel 8900 4800 2    50   BiDi ~ 0
-DDR3_DQS1_N
+DDR3_DQS3_N
 Text GLabel 8900 4400 2    50   Input ~ 0
-DDR3_DM1
+DDR3_DM3
 Text GLabel 8900 4500 2    50   Input ~ 0
-DDR3_DM0
+DDR3_DM2
 Text GLabel 8900 2700 2    50   BiDi ~ 0
-DDR3_DQ0
+DDR3_DQ16
 Text GLabel 8900 2800 2    50   BiDi ~ 0
-DDR3_DQ1
+DDR3_DQ17
 Text GLabel 8900 2900 2    50   BiDi ~ 0
-DDR3_DQ2
+DDR3_DQ18
 Text GLabel 8900 3000 2    50   BiDi ~ 0
-DDR3_DQ3
+DDR3_DQ19
 Text GLabel 8900 3100 2    50   BiDi ~ 0
-DDR3_DQ4
+DDR3_DQ20
 Text GLabel 8900 3200 2    50   BiDi ~ 0
-DDR3_DQ5
+DDR3_DQ21
 Text GLabel 8900 3300 2    50   BiDi ~ 0
-DDR3_DQ6
+DDR3_DQ22
 Text GLabel 8900 3400 2    50   BiDi ~ 0
-DDR3_DQ7
+DDR3_DQ23
 Text GLabel 8900 3500 2    50   BiDi ~ 0
-DDR3_DQ8
+DDR3_DQ24
 Text GLabel 8900 3600 2    50   BiDi ~ 0
-DDR3_DQ9
+DDR3_DQ25
 Text GLabel 8900 3700 2    50   BiDi ~ 0
-DDR3_DQ10
+DDR3_DQ26
 Text GLabel 8900 3800 2    50   BiDi ~ 0
-DDR3_DQ11
+DDR3_DQ27
 Text GLabel 8900 3900 2    50   BiDi ~ 0
-DDR3_DQ12
+DDR3_DQ28
 Text GLabel 8900 4000 2    50   BiDi ~ 0
-DDR3_DQ13
+DDR3_DQ29
 Text GLabel 8900 4100 2    50   BiDi ~ 0
-DDR3_DQ14
+DDR3_DQ30
 Text GLabel 8900 4200 2    50   BiDi ~ 0
-DDR3_DQ15
+DDR3_DQ31
 $Comp
 L Device:C C?
 U 1 1 5B92CE3E

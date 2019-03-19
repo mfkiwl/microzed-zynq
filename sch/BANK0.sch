@@ -55,19 +55,6 @@ Wire Wire Line
 	2350 2650 2350 2550
 Connection ~ 2150 2650
 $Comp
-L power:GND #PWR?
-U 1 1 5BC77D8B
-P 2350 2750
-F 0 "#PWR?" H 2350 2500 50  0001 C CNN
-F 1 "GND" H 2500 2700 50  0000 C CNN
-F 2 "" H 2350 2750 50  0001 C CNN
-F 3 "" H 2350 2750 50  0001 C CNN
-	1    2350 2750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1900 2750 2350 2750
-$Comp
 L power:+3V3 #PWR?
 U 1 1 5BCAA1AE
 P 3250 1950
@@ -285,4 +272,5 @@ Wire Wire Line
 Wire Wire Line
 	4600 3650 4400 3650
 Connection ~ 4400 3650
+NoConn ~ 4000 3650
 $EndSCHEMATC

@@ -19,23 +19,12 @@ U 1 1 5BE55E2C
 P 2100 1100
 F 0 "U?" H 2500 1265 50  0000 C CNN
 F 1 "TLV62130RGTR" H 2500 1174 50  0000 C CNN
-F 2 "microzed:QFN50P300X300X100-17N-D" H 3500 1050 50  0001 L CNN
+F 2 "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm" H 3500 1050 50  0001 L CNN
 F 3 "http://www.ti.com/lit/gpn/tlv62130" H 3500 950 50  0001 L CNN
 F 4 "1" H 3500 750 50  0001 L CNN "Height"
 F 5 "Texas Instruments" H 3500 650 50  0001 L CNN "Manufacturer"
 F 6 "TLV62130RGTR" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    2100 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L microzed:VIN #PWR?
-U 1 1 5BE59F70
-P 1500 1000
-F 0 "#PWR?" H 1500 850 50  0001 C CNN
-F 1 "VIN" H 1515 1173 50  0000 C CNN
-F 2 "" H 1500 1000 50  0001 C CNN
-F 3 "" H 1500 1000 50  0001 C CNN
-	1    1500 1000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -277,23 +266,12 @@ U 1 1 5BE755A7
 P 2100 3600
 F 0 "U?" H 2500 3765 50  0000 C CNN
 F 1 "TLV62130RGTR" H 2500 3674 50  0000 C CNN
-F 2 "microzed:QFN50P300X300X100-17N-D" H 3500 3550 50  0001 L CNN
+F 2 "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm" H 3500 3550 50  0001 L CNN
 F 3 "http://www.ti.com/lit/gpn/tlv62130" H 3500 3450 50  0001 L CNN
 F 4 "1" H 3500 3250 50  0001 L CNN "Height"
 F 5 "Texas Instruments" H 3500 3150 50  0001 L CNN "Manufacturer"
 F 6 "TLV62130RGTR" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    2100 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L microzed:VIN #PWR?
-U 1 1 5BE755AE
-P 1500 3500
-F 0 "#PWR?" H 1500 3350 50  0001 C CNN
-F 1 "VIN" H 1515 3673 50  0000 C CNN
-F 2 "" H 1500 3500 50  0001 C CNN
-F 3 "" H 1500 3500 50  0001 C CNN
-	1    1500 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -330,7 +308,6 @@ F 3 "" H 1500 3900 50  0001 C CNN
 	1    1500 3900
 	1    0    0    -1  
 $EndComp
-Connection ~ 1500 3500
 Wire Wire Line
 	1500 3600 1500 3500
 Wire Wire Line
@@ -493,23 +470,12 @@ U 1 1 5BE8DFF2
 P 7100 3700
 F 0 "U?" H 7500 3865 50  0000 C CNN
 F 1 "TLV62130RGTR" H 7500 3774 50  0000 C CNN
-F 2 "microzed:QFN50P300X300X100-17N-D" H 8500 3650 50  0001 L CNN
+F 2 "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm" H 8500 3650 50  0001 L CNN
 F 3 "http://www.ti.com/lit/gpn/tlv62130" H 8500 3550 50  0001 L CNN
 F 4 "1" H 8500 3350 50  0001 L CNN "Height"
 F 5 "Texas Instruments" H 8500 3250 50  0001 L CNN "Manufacturer"
 F 6 "TLV62130RGTR" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    7100 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L microzed:VIN #PWR?
-U 1 1 5BE8DFF9
-P 6500 3600
-F 0 "#PWR?" H 6500 3450 50  0001 C CNN
-F 1 "VIN" H 6515 3773 50  0000 C CNN
-F 2 "" H 6500 3600 50  0001 C CNN
-F 3 "" H 6500 3600 50  0001 C CNN
-	1    6500 3600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -546,7 +512,6 @@ F 3 "" H 6500 4000 50  0001 C CNN
 	1    6500 4000
 	1    0    0    -1  
 $EndComp
-Connection ~ 6500 3600
 Wire Wire Line
 	6500 3700 6500 3600
 Wire Wire Line
@@ -690,23 +655,12 @@ U 1 1 5BEA069B
 P 7100 1200
 F 0 "U?" H 7500 1365 50  0000 C CNN
 F 1 "TLV62130RGTR" H 7500 1274 50  0000 C CNN
-F 2 "microzed:QFN50P300X300X100-17N-D" H 8500 1150 50  0001 L CNN
+F 2 "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm" H 8500 1150 50  0001 L CNN
 F 3 "http://www.ti.com/lit/gpn/tlv62130" H 8500 1050 50  0001 L CNN
 F 4 "1" H 8500 850 50  0001 L CNN "Height"
 F 5 "Texas Instruments" H 8500 750 50  0001 L CNN "Manufacturer"
 F 6 "TLV62130RGTR" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    7100 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L microzed:VIN #PWR?
-U 1 1 5BEA06A2
-P 6500 1100
-F 0 "#PWR?" H 6500 950 50  0001 C CNN
-F 1 "VIN" H 6515 1273 50  0000 C CNN
-F 2 "" H 6500 1100 50  0001 C CNN
-F 3 "" H 6500 1100 50  0001 C CNN
-	1    6500 1100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -743,7 +697,6 @@ F 3 "" H 6500 1500 50  0001 C CNN
 	1    6500 1500
 	1    0    0    -1  
 $EndComp
-Connection ~ 6500 1100
 Wire Wire Line
 	6500 1200 6500 1100
 Wire Wire Line
@@ -1205,4 +1158,23 @@ F 5 "CC0603MRX5R5BB226" H 9400 1650 50  0001 C CNN "ManufacturerPartNumber"
 $EndComp
 Text Notes 8300 5350 0    50   ~ 0
 default: 1.35V\nif want 1.5V, change 205k to 261k
+Text GLabel 1500 900  1    50   Input ~ 0
+VIN
+Wire Wire Line
+	1500 1000 1500 900 
+Text GLabel 1500 3400 1    50   Input ~ 0
+VIN
+Wire Wire Line
+	1500 3500 1500 3400
+Connection ~ 1500 3500
+Text GLabel 6500 1000 1    50   Input ~ 0
+VIN
+Wire Wire Line
+	6500 1100 6500 1000
+Connection ~ 6500 1100
+Text GLabel 6500 3500 1    50   Input ~ 0
+VIN
+Wire Wire Line
+	6500 3600 6500 3500
+Connection ~ 6500 3600
 $EndSCHEMATC
