@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L microzed:XC7Z020-1CLG484C IC1
+L microzed:XC7Z020-1CLG484C IC?
 U 9 1 5C55E10B
 P 1700 1250
-F 0 "IC1" H 2375 1415 50  0000 C CNN
+F 0 "IC?" H 2375 1415 50  0000 C CNN
 F 1 "XC7Z020-1CLG484C" H 2375 1324 50  0000 C CNN
 F 2 "microzed:BGA484C100P22X22_2300X2300X254" H 4350 1350 50  0001 L CNN
 F 3 "http://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pkg-Pinout.pdf" H 4350 1250 50  0001 L CNN
@@ -28,10 +28,10 @@ F 6 "XC7Z020-1CLG484C" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    0    0    -1  
 $EndComp
 $Comp
-L microzed:XC7Z020-1CLG484C IC1
+L microzed:XC7Z020-1CLG484C IC?
 U 10 1 5C578691
 P 7000 1300
-F 0 "IC1" H 7600 1465 50  0000 C CNN
+F 0 "IC?" H 7600 1465 50  0000 C CNN
 F 1 "XC7Z020-1CLG484C" H 7600 1374 50  0000 C CNN
 F 2 "microzed:BGA484C100P22X22_2300X2300X254" H 9650 1400 50  0001 L CNN
 F 3 "http://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pkg-Pinout.pdf" H 9650 1300 50  0001 L CNN

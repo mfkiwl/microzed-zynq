@@ -28,7 +28,7 @@ F 5 "ASDMB-33.333MHZ-LC-T" H 2250 1350 50  0001 C CNN "ManufacturerPartNumber"
 $EndComp
 $Comp
 L power:GND #PWR?
-U 1 1 5B92CE9C
+U 1 1 5C9202F1
 P 3400 1450
 F 0 "#PWR?" H 3400 1200 50  0001 C CNN
 F 1 "GND" H 3405 1277 50  0000 C CNN
@@ -46,19 +46,6 @@ F 1 "+3.3V" H 1815 1523 50  0000 C CNN
 F 2 "" H 1800 1350 50  0001 C CNN
 F 3 "" H 1800 1350 50  0001 C CNN
 	1    1800 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 5B92D34A
-P 1800 1600
-F 0 "C?" H 1800 1650 50  0000 R BNN
-F 1 "0.1µF" H 1800 1550 50  0000 R TNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 1838 1450 50  0001 C CNN
-F 3 "~" H 1800 1600 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    1800 1600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -218,10 +205,10 @@ PS_MIO8
 Wire Wire Line
 	2750 3500 3150 3500
 $Comp
-L microzed:XC7Z020-1CLG484C IC1
+L microzed:XC7Z020-1CLG484C IC?
 U 7 1 5C3AAAB4
 P 1850 2550
-F 0 "IC1" H 2308 2715 50  0000 C CNN
+F 0 "IC?" H 2308 2715 50  0000 C CNN
 F 1 "XC7Z020-1CLG484C" H 2308 2624 50  0000 C CNN
 F 2 "microzed:BGA484C100P22X22_2300X2300X254" H 4500 2650 50  0001 L CNN
 F 3 "http://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pkg-Pinout.pdf" H 4500 2550 50  0001 L CNN
@@ -572,6 +559,19 @@ F 3 "~" H 9700 5250 50  0001 C CNN
 F 4 "TE" H 9700 5250 50  0001 C CNN "Manufacturer"
 F 5 "640456-3" H 9700 5250 50  0001 C CNN "ManufacturerPartNumber"
 	1    9700 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5B92D34A
+P 1800 1600
+F 0 "C?" H 1800 1650 50  0000 R BNN
+F 1 "0.1µF" H 1800 1550 50  0000 R TNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 1838 1450 50  0001 C CNN
+F 3 "~" H 1800 1600 50  0001 C CNN
+F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
+	1    1800 1600
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

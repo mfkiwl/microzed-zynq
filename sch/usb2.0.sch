@@ -205,14 +205,14 @@ Wire Wire Line
 $Comp
 L Device:R R?
 U 1 1 5BACDFC9
-P 3550 3450
-F 0 "R?" V 3500 3350 50  0000 R CNN
-F 1 "1k" V 3500 3550 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 3480 3450 50  0001 C CNN
-F 3 "~" H 3550 3450 50  0001 C CNN
-F 4 "RC0402FR-071KL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-F 5 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-	1    3550 3450
+P 3800 3450
+F 0 "R?" V 3750 3350 50  0000 R CNN
+F 1 "1k" V 3750 3550 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3730 3450 50  0001 C CNN
+F 3 "~" H 3800 3450 50  0001 C CNN
+F 4 "RC0402FR-071KL" H 250 0   50  0001 C CNN "ManufacturerPartNumber"
+F 5 "Yageo" H 250 0   50  0001 C CNN "Manufacturer"
+	1    3800 3450
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -253,14 +253,14 @@ Wire Wire Line
 $Comp
 L Device:C C?
 U 1 1 5BAE2DD4
-P 4150 3000
-F 0 "C?" H 4200 3100 50  0000 L CNN
-F 1 "4.7µF" H 4200 2900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 4188 2850 50  0001 C CNN
-F 3 "~" H 4150 3000 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "CC0402MRX5R5BB475" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    4150 3000
+P 4400 3000
+F 0 "C?" H 4450 3100 50  0000 L CNN
+F 1 "4.7µF" H 4450 2900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4438 2850 50  0001 C CNN
+F 3 "~" H 4400 3000 50  0001 C CNN
+F 4 "Yageo" H 250 0   50  0001 C CNN "Manufacturer"
+F 5 "CC0402MRX5R5BB475" H 250 0   50  0001 C CNN "ManufacturerPartNumber"
+	1    4400 3000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -277,7 +277,7 @@ F 5 "TCJB157M006R0025" H 7250 1750 50  0001 C CNN "ManufacturerPartNumber"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4150 2850 3950 2850
+	4400 2850 4200 2850
 $Comp
 L power:GND #PWR?
 U 1 1 5BAE2DF1
@@ -290,7 +290,7 @@ F 3 "" H 7250 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3950 2850 3950 3450
+	4200 2850 4200 3450
 $Comp
 L power:GND #PWR?
 U 1 1 5BAEBC6F
@@ -421,9 +421,9 @@ Text Notes 3800 2450 0    50   ~ 0
 P32 Table5-10\nconnect to VDDIO\nuse 24MHZ REFCLK
 Text Notes 900  1300 0    50   ~ 0
 P61 Fig.8-3\nP23 Fig.5-7\nuse external 3.3V for VDD33, not internal LDO
-Text Notes 4500 3050 0    50   ~ 0
+Text Notes 4750 3050 0    50   ~ 0
 P58 Table8-2\nOTG: 1µF - 6.5μF
-Text Notes 3350 3350 0    50   ~ 0
+Text Notes 3600 3350 0    50   ~ 0
 P30 Table5-7\nOTG: 1k
 Text Notes 4000 4800 0    50   ~ 0
 P19 section5.4.1\nULPI output Clock Mode.\nor CLKOUT should be tied high to VDDIO.\n\nP20 Fig.5-3\nP21 section5.4.2\nREFCLK: square wave from 0V to VDD18
@@ -470,17 +470,17 @@ F 5 "CC0201KRX5R5BB104" H -250 500 50  0001 C CNN "ManufacturerPartNumber"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3700 3450 3950 3450
-Connection ~ 3950 3450
+	3950 3450 4200 3450
+Connection ~ 4200 3450
 $Comp
 L power:GND #PWR?
 U 1 1 5C6455E2
-P 4150 3150
-F 0 "#PWR?" H 4150 2900 50  0001 C CNN
-F 1 "GND" H 4155 2977 50  0000 C CNN
-F 2 "" H 4150 3150 50  0001 C CNN
-F 3 "" H 4150 3150 50  0001 C CNN
-	1    4150 3150
+P 4400 3150
+F 0 "#PWR?" H 4400 2900 50  0001 C CNN
+F 1 "GND" H 4405 2977 50  0000 C CNN
+F 2 "" H 4400 3150 50  0001 C CNN
+F 3 "" H 4400 3150 50  0001 C CNN
+	1    4400 3150
 	1    0    0    -1  
 $EndComp
 Text Notes 3350 4100 0    50   ~ 0
@@ -531,7 +531,7 @@ Connection ~ 5900 1600
 Wire Wire Line
 	6900 1600 7250 1600
 Wire Wire Line
-	3950 3450 7500 3450
+	4200 3450 7500 3450
 Connection ~ 7800 3450
 Wire Wire Line
 	7800 1600 7250 1600
@@ -673,4 +673,18 @@ Page 8, TABLE 2-1\n8.06kΩ (±1%)
 Connection ~ 2300 2200
 Wire Wire Line
 	7800 1600 7800 3450
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5C951FB5
+P 3400 3450
+F 0 "#FLG?" H 3400 3525 50  0001 C CNN
+F 1 "PWR_FLAG" H 3400 3623 50  0001 C CNN
+F 2 "" H 3400 3450 50  0001 C CNN
+F 3 "~" H 3400 3450 50  0001 C CNN
+	1    3400 3450
+	1    0    0    -1  
+$EndComp
+Connection ~ 3400 3450
+Wire Wire Line
+	3400 3450 3650 3450
 $EndSCHEMATC

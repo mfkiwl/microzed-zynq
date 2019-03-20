@@ -239,7 +239,7 @@ Text GLabel 8700 5050 2    50   BiDi ~ 0
 BANK33_LVDS_24_N
 Text GLabel 8700 1550 2    50   BiDi ~ 0
 BANK33_SE_25
-Text GLabel 3700 1550 2    50   BiDi ~ 0
+Text GLabel 4500 1550 2    50   BiDi ~ 0
 VIN
 Text GLabel 3700 1650 2    50   Output ~ 0
 PWR_EN
@@ -247,13 +247,13 @@ Text GLabel 3700 1750 2    50   Output ~ 0
 XADC0_P
 Text GLabel 3700 1850 2    50   Output ~ 0
 XADC0_N
-Text GLabel 2800 1550 0    50   Output ~ 0
+Text GLabel 2200 1550 0    50   Output ~ 0
 VCCO_13
-Text GLabel 2800 1650 0    50   Output ~ 0
+Text GLabel 2200 1650 0    50   Output ~ 0
 VCCO_33
-Text GLabel 2800 1750 0    50   Output ~ 0
+Text GLabel 2200 1750 0    50   Output ~ 0
 VCCO_34
-Text GLabel 2800 1850 0    50   Output ~ 0
+Text GLabel 2200 1850 0    50   Output ~ 0
 VCCO_35
 Wire Wire Line
 	3700 2550 4600 2550
@@ -619,4 +619,94 @@ Wire Wire Line
 	6900 5650 6900 6150
 Text GLabel 3700 1950 2    50   Output ~ 0
 CARRIER_SRST#
+Wire Wire Line
+	2200 1550 2300 1550
+Wire Wire Line
+	2200 1650 2400 1650
+Wire Wire Line
+	2200 1750 2500 1750
+Wire Wire Line
+	3700 1550 3950 1550
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5C93F6EA
+P 2300 1250
+F 0 "#FLG?" H 2300 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 2300 1423 50  0001 C CNN
+F 2 "" H 2300 1250 50  0001 C CNN
+F 3 "~" H 2300 1250 50  0001 C CNN
+	1    2300 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5C940DF0
+P 2400 1250
+F 0 "#FLG?" H 2400 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 2400 1423 50  0001 C CNN
+F 2 "" H 2400 1250 50  0001 C CNN
+F 3 "~" H 2400 1250 50  0001 C CNN
+	1    2400 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5C940F4B
+P 2500 1250
+F 0 "#FLG?" H 2500 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 2500 1423 50  0001 C CNN
+F 2 "" H 2500 1250 50  0001 C CNN
+F 3 "~" H 2500 1250 50  0001 C CNN
+	1    2500 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5C9410D9
+P 2600 1250
+F 0 "#FLG?" H 2600 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 2600 1423 50  0001 C CNN
+F 2 "" H 2600 1250 50  0001 C CNN
+F 3 "~" H 2600 1250 50  0001 C CNN
+	1    2600 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 1250 2300 1550
+Connection ~ 2300 1550
+Wire Wire Line
+	2300 1550 2800 1550
+Wire Wire Line
+	2400 1250 2400 1650
+Connection ~ 2400 1650
+Wire Wire Line
+	2400 1650 2800 1650
+Wire Wire Line
+	2500 1250 2500 1750
+Connection ~ 2500 1750
+Wire Wire Line
+	2500 1750 2800 1750
+Wire Wire Line
+	2600 1250 2600 1850
+Wire Wire Line
+	2200 1850 2600 1850
+Connection ~ 2600 1850
+Wire Wire Line
+	2600 1850 2800 1850
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5C959320
+P 3950 1250
+F 0 "#FLG?" H 3950 1325 50  0001 C CNN
+F 1 "PWR_FLAG" H 3950 1423 50  0001 C CNN
+F 2 "" H 3950 1250 50  0001 C CNN
+F 3 "~" H 3950 1250 50  0001 C CNN
+	1    3950 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 1250 3950 1550
+Connection ~ 3950 1550
+Wire Wire Line
+	3950 1550 4500 1550
 $EndSCHEMATC

@@ -12,7 +12,9 @@ SCHFILES="$PRJDIR/${PRJNAME}.sch
 #echo "SCHFILES is $SCHFILES"
 
 # restore PWR serial number
-echo $SCHFILES | xargs sed -i 's/#PWR[^" ]*/#PWR?/'
+echo $SCHFILES | xargs sed -i 's/??*/?/'
+echo $SCHFILES | xargs sed -i 's/^\(L .*[^0-9]\)[0-9][0-9]*$/\1?/'
+echo $SCHFILES | xargs sed -i 's/^\(F 0 "[^"]*[^"0-9]\)[0-9][0-9]*"/\1?"/'
 
 rm -f $PRJDIR/fp-info-cache
 rm -f $PRJDIR/${PRJNAME}-cache.lib
