@@ -1365,4 +1365,8 @@ Wire Wire Line
 	10750 4800 10750 4900
 Wire Wire Line
 	9950 4800 9500 4800
+Text GLabel 2400 5200 0    50   Output ~ 0
+ETH_INT
+Wire Wire Line
+	2400 5200 2800 5200
 $EndSCHEMATC

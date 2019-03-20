@@ -136,19 +136,6 @@ Wire Wire Line
 	8850 4100 8850 4700
 Wire Wire Line
 	8450 4100 8450 4200
-$Comp
-L power:GND #PWR?
-U 1 1 5C3A8F8F
-P 3950 5500
-F 0 "#PWR?" H 3950 5250 50  0001 C CNN
-F 1 "GND" H 3955 5327 50  0000 C CNN
-F 2 "" H 3950 5500 50  0001 C CNN
-F 3 "" H 3950 5500 50  0001 C CNN
-	1    3950 5500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2950 5500 3950 5500
 Wire Wire Line
 	8450 4500 8450 4700
 Wire Wire Line
@@ -197,8 +184,6 @@ Text GLabel 5550 2600 0    50   BiDi ~ 0
 SD_D3
 Text GLabel 2950 5400 0    50   Output ~ 0
 SD_CD
-Text GLabel 2950 5500 0    50   Output ~ 0
-SD_WP
 Connection ~ 6650 5400
 $Comp
 L power:+3V3 #PWR?

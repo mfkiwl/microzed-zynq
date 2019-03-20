@@ -141,7 +141,7 @@ Wire Wire Line
 	5400 5100 5600 5100
 Text GLabel 4650 6100 2    50   Output ~ 0
 ETH_RST#
-Text GLabel 4650 6200 2    50   Output ~ 0
+Text GLabel 4650 5800 2    50   Output ~ 0
 USB_RST#
 Wire Wire Line
 	4650 5100 5100 5100
@@ -163,8 +163,6 @@ Text GLabel 4650 5600 2    50   BiDi ~ 0
 SD_D3
 Text GLabel 4650 5700 2    50   Input ~ 0
 SD_CD
-Text GLabel 4650 5800 2    50   Input ~ 0
-SD_WP
 $Comp
 L microzed:XC7Z020-1CLG484C IC1
 U 8 1 5C48C6B6
@@ -276,4 +274,6 @@ Text GLabel 4650 6000 2    50   Input ~ 0
 USB_UART_RxD
 Text Notes 6150 4700 0    50   ~ 0
 We use 3.3V for BANK501\nalthough ug585 said the rgmii does not support it,\nthe main reason is ethernet phy is too expensive.\nwe find rtl8211e is cheaper, but only -VL model\nsupport 1.8V, which has no any solder.\nonother reason is if we use 1.8V, both of\nSDIO/UART-USB need extra level translator (1.8V-3.3V).\n\nhttps://forums.xilinx.com/t5/Embedded-Processor-System-Design/zynq-interface-to-micrel-ksz9021/td-p/464112\nsome one has successful use case for ksz9021 under 3.3V,\nwe should try it.
+Text GLabel 4650 6200 2    50   Input ~ 0
+ETH_INT
 $EndSCHEMATC
