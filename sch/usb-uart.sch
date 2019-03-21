@@ -543,4 +543,15 @@ $EndComp
 Connection ~ 5800 2300
 Text Notes 5600 1950 0    50   ~ 0
 P17 Figure 8 Bus-powered
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5C937E21
+P 10600 4500
+F 0 "#FLG?" H 10600 4575 50  0001 C CNN
+F 1 "PWR_FLAG" H 10600 4673 50  0001 C CNN
+F 2 "" H 10600 4500 50  0001 C CNN
+F 3 "~" H 10600 4500 50  0001 C CNN
+	1    10600 4500
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
