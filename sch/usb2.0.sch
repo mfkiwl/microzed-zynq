@@ -264,7 +264,7 @@ F 5 "CC0402MRX5R5BB475" H 250 0   50  0001 C CNN "ManufacturerPartNumber"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:CP C?
 U 1 1 5BAE2DDB
 P 7250 1750
 F 0 "C?" H 7365 1796 50  0000 L CNN
