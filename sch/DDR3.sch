@@ -550,18 +550,6 @@ F 3 "" H 1950 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 1950 1150
-$Comp
-L microzed:VTTREF #PWR?
-U 1 1 5B922479
-P 4550 3100
-F 0 "#PWR?" H 4550 2950 50  0001 C CNN
-F 1 "VTTREF" H 4567 3273 50  0000 C CNN
-F 2 "" H 4550 3100 50  0001 C CNN
-F 3 "" H 4550 3100 50  0001 C CNN
-	1    4550 3100
-	1    0    0    -1  
-$EndComp
-Connection ~ 4550 3100
 Text GLabel 5750 2550 0    50   Input ~ 0
 DDR3_A0
 Text GLabel 5750 2650 0    50   Input ~ 0
@@ -700,29 +688,29 @@ DDR3_DQ31
 $Comp
 L Device:C C?
 U 1 1 5B92CE3E
-P 9000 2200
-F 0 "C?" H 9115 2246 50  0000 L CNN
-F 1 "0.01µF" H 9115 2155 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 9038 2050 50  0001 C CNN
-F 3 "~" H 9000 2200 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "CC0201KRX5R7BB103" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    9000 2200
+P 8900 2200
+F 0 "C?" H 9015 2246 50  0000 L CNN
+F 1 "0.01µF" H 9015 2155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 8938 2050 50  0001 C CNN
+F 3 "~" H 8900 2200 50  0001 C CNN
+F 4 "Yageo" H -100 0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R7BB103" H -100 0   50  0001 C CNN "ManufacturerPartNumber"
+	1    8900 2200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5B92CE45
-P 9000 2350
-F 0 "#PWR?" H 9000 2100 50  0001 C CNN
-F 1 "GND" H 9200 2300 50  0000 C CNN
-F 2 "" H 9000 2350 50  0001 C CNN
-F 3 "" H 9000 2350 50  0001 C CNN
-	1    9000 2350
+P 8900 2350
+F 0 "#PWR?" H 8900 2100 50  0001 C CNN
+F 1 "GND" H 9100 2300 50  0000 C CNN
+F 2 "" H 8900 2350 50  0001 C CNN
+F 3 "" H 8900 2350 50  0001 C CNN
+	1    8900 2350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9000 2050 8400 2050
+	8900 2050 8400 2050
 Wire Wire Line
 	6200 2050 6200 2150
 Wire Wire Line
@@ -1095,18 +1083,6 @@ F 3 "" H 6400 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 8900 1100
-$Comp
-L microzed:VTTREF #PWR?
-U 1 1 5B92CF31
-P 9000 2050
-F 0 "#PWR?" H 9000 1900 50  0001 C CNN
-F 1 "VTTREF" H 9017 2223 50  0000 C CNN
-F 2 "" H 9000 2050 50  0001 C CNN
-F 3 "" H 9000 2050 50  0001 C CNN
-	1    9000 2050
-	1    0    0    -1  
-$EndComp
-Connection ~ 9000 2050
 Connection ~ 6400 1100
 Wire Wire Line
 	8300 1100 8900 1100
@@ -1383,4 +1359,14 @@ Wire Wire Line
 Connection ~ 8350 6350
 Wire Wire Line
 	8350 6350 8450 6350
+Text GLabel 4800 3100 2    50   Input ~ 0
+VTTREF
+Wire Wire Line
+	4800 3100 4550 3100
+Connection ~ 4550 3100
+Text GLabel 9150 2050 2    50   Input ~ 0
+VTTREF
+Wire Wire Line
+	9150 2050 8900 2050
+Connection ~ 8900 2050
 $EndSCHEMATC

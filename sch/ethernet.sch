@@ -218,12 +218,12 @@ L microzed:RTL8211E-VB-CG IC?
 U 1 1 5C520986
 P 3000 3000
 F 0 "IC?" H 3950 1250 50  0000 C CNN
-F 1 "RTL8211E-VB-CG" H 3950 1150 50  0000 C CNN
+F 1 "RTL8211E-VL-CG" H 3950 1150 50  0000 C CNN
 F 2 "Package_DFN_QFN:QFN-48-1EP_6x6mm_P0.4mm_EP4.66x4.66mm" H 5050 3200 50  0001 L CNN
 F 3 "http://download3.dvd-driver.cz/realtek/datasheets/pdf/rtl8211e(g)-vb(vl)-cg_datasheet_1.6.pdf" H 5050 3100 50  0001 L CNN
 F 4 "1" H 5050 3000 50  0001 L CNN "Height"
 F 5 "Realtek" H 5050 2900 50  0001 L CNN "Manufacturer"
-F 6 "RTL8211E-VB-CG" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
+F 6 "RTL8211E-VL-CG" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    3000 3000
 	1    0    0    -1  
 $EndComp

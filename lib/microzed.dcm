@@ -86,11 +86,6 @@ D USB-to-UART Bridge,2Mbps,OTP,QFN24 Silicon Labs CP2104-F03-GM, USB Controller,
 F https://www.silabs.com/Support%20Documents/TechnicalDocs/cp2104.pdf
 $ENDCMP
 #
-$CMP DDR3_VTT
-D power-flag symbol
-K Power Flag Symbol
-$ENDCMP
-#
 $CMP DSC1001DI1-024.0000
 D Standard Clock Oscillators MEMS Oscillator, Low Power, -40C-85C, 50ppm
 F http://ww1.microchip.com/downloads/en/DeviceDoc/20005529B.pdf
@@ -197,11 +192,6 @@ K Power Flag Symbol
 $ENDCMP
 #
 $CMP VIO_USB
-D power-flag symbol
-K Power Flag Symbol
-$ENDCMP
-#
-$CMP VTTREF
 D power-flag symbol
 K Power Flag Symbol
 $ENDCMP

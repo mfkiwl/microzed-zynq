@@ -16,25 +16,44 @@ $EndDescr
 $Comp
 L power:GND #PWR?
 U 1 1 5BBC7D9C
-P 3500 1800
-F 0 "#PWR?" H 3500 1550 50  0001 C CNN
-F 1 "GND" H 3505 1627 50  0000 C CNN
-F 2 "" H 3500 1800 50  0001 C CNN
-F 3 "" H 3500 1800 50  0001 C CNN
-	1    3500 1800
+P 3850 1800
+F 0 "#PWR?" H 3850 1550 50  0001 C CNN
+F 1 "GND" H 3855 1627 50  0000 C CNN
+F 2 "" H 3850 1800 50  0001 C CNN
+F 3 "" H 3850 1800 50  0001 C CNN
+	1    3850 1800
 	1    0    0    -1  
 $EndComp
-Connection ~ 3500 1800
+Connection ~ 3850 1800
 $Comp
 L Device:C C?
 U 1 1 5BBC7DA3
+P 3850 1650
+F 0 "C?" H 3900 1750 50  0000 L CNN
+F 1 "0.01µF" H 3900 1550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 3888 1500 50  0001 C CNN
+F 3 "~" H 3850 1650 50  0001 C CNN
+F 4 "Yageo" H 350 0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R7BB103" H 350 0   50  0001 C CNN "ManufacturerPartNumber"
+	1    3850 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 1800 3850 1800
+Connection ~ 3500 1800
+Wire Wire Line
+	3500 1500 3850 1500
+Connection ~ 3500 1500
+$Comp
+L Device:C C?
+U 1 1 5BBC7DAE
 P 3500 1650
 F 0 "C?" H 3550 1750 50  0000 L CNN
 F 1 "0.01µF" H 3550 1550 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 3538 1500 50  0001 C CNN
 F 3 "~" H 3500 1650 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "CC0201KRX5R7BB103" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
+F 4 "Yageo" H 350 0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R7BB103" H 350 0   50  0001 C CNN "ManufacturerPartNumber"
 	1    3500 1650
 	1    0    0    -1  
 $EndComp
@@ -46,14 +65,14 @@ Wire Wire Line
 Connection ~ 3150 1500
 $Comp
 L Device:C C?
-U 1 1 5BBC7DAE
+U 1 1 5BBC7DB9
 P 3150 1650
 F 0 "C?" H 3200 1750 50  0000 L CNN
-F 1 "0.01µF" H 3200 1550 50  0000 L CNN
+F 1 "0.1µF" H 3200 1550 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 3188 1500 50  0001 C CNN
 F 3 "~" H 3150 1650 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "CC0201KRX5R7BB103" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
+F 4 "Yageo" H 350 0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 350 0   50  0001 C CNN "ManufacturerPartNumber"
 	1    3150 1650
 	1    0    0    -1  
 $EndComp
@@ -65,14 +84,14 @@ Wire Wire Line
 Connection ~ 2800 1500
 $Comp
 L Device:C C?
-U 1 1 5BBC7DB9
+U 1 1 5BBC7DC4
 P 2800 1650
 F 0 "C?" H 2850 1750 50  0000 L CNN
 F 1 "0.1µF" H 2850 1550 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0201_0603Metric" H 2838 1500 50  0001 C CNN
 F 3 "~" H 2800 1650 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
+F 4 "Yageo" H 350 0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 350 0   50  0001 C CNN "ManufacturerPartNumber"
 	1    2800 1650
 	1    0    0    -1  
 $EndComp
@@ -84,14 +103,14 @@ Wire Wire Line
 Connection ~ 2450 1500
 $Comp
 L Device:C C?
-U 1 1 5BBC7DC4
+U 1 1 5BBC7DCF
 P 2450 1650
 F 0 "C?" H 2500 1750 50  0000 L CNN
-F 1 "0.1µF" H 2500 1550 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 2488 1500 50  0001 C CNN
+F 1 "4.7µF" H 2500 1550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2488 1500 50  0001 C CNN
 F 3 "~" H 2450 1650 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
+F 4 "Yageo" H 350 0   50  0001 C CNN "Manufacturer"
+F 5 "CC0402MRX5R5BB475" H 350 0   50  0001 C CNN "ManufacturerPartNumber"
 	1    2450 1650
 	1    0    0    -1  
 $EndComp
@@ -103,70 +122,51 @@ Wire Wire Line
 Connection ~ 2100 1500
 $Comp
 L Device:C C?
-U 1 1 5BBC7DCF
+U 1 1 5BBC7DDA
 P 2100 1650
 F 0 "C?" H 2150 1750 50  0000 L CNN
 F 1 "4.7µF" H 2150 1550 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 2138 1500 50  0001 C CNN
 F 3 "~" H 2100 1650 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "CC0402MRX5R5BB475" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
+F 4 "Yageo" H 350 0   50  0001 C CNN "Manufacturer"
+F 5 "CC0402MRX5R5BB475" H 350 0   50  0001 C CNN "ManufacturerPartNumber"
 	1    2100 1650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1750 1800 2100 1800
+Wire Wire Line
+	1350 1800 1750 1800
 Connection ~ 1750 1800
 Wire Wire Line
 	1750 1500 2100 1500
+Wire Wire Line
+	1350 1500 1750 1500
 Connection ~ 1750 1500
 $Comp
 L Device:C C?
-U 1 1 5BBC7DDA
+U 1 1 5BBC7DE7
 P 1750 1650
 F 0 "C?" H 1800 1750 50  0000 L CNN
-F 1 "4.7µF" H 1800 1550 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 1788 1500 50  0001 C CNN
+F 1 "100µF" H 1800 1550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 1788 1500 50  0001 C CNN
 F 3 "~" H 1750 1650 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "CC0402MRX5R5BB475" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
+F 4 "Yageo" H 350 0   50  0001 C CNN "Manufacturer"
+F 5 "CC1210MKX5R5BB107" H 350 0   50  0001 C CNN "ManufacturerPartNumber"
 	1    1750 1650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1400 1800 1750 1800
-Wire Wire Line
-	1000 1800 1400 1800
-Connection ~ 1400 1800
-Wire Wire Line
-	1400 1500 1750 1500
-Wire Wire Line
-	1000 1500 1400 1500
-Connection ~ 1400 1500
-$Comp
-L Device:C C?
-U 1 1 5BBC7DE7
-P 1400 1650
-F 0 "C?" H 1450 1750 50  0000 L CNN
-F 1 "100µF" H 1450 1550 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric" H 1438 1500 50  0001 C CNN
-F 3 "~" H 1400 1650 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "CC1210MKX5R5BB107" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    1400 1650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5BBC7DEF
-P 1000 1650
-F 0 "C?" H 1050 1750 50  0000 L CNN
-F 1 "100µF" H 1050 1550 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1210_3225Metric" H 1038 1500 50  0001 C CNN
-F 3 "~" H 1000 1650 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "CC1210MKX5R5BB107" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    1000 1650
+P 1350 1650
+F 0 "C?" H 1400 1750 50  0000 L CNN
+F 1 "100µF" H 1400 1550 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 1388 1500 50  0001 C CNN
+F 3 "~" H 1350 1650 50  0001 C CNN
+F 4 "Yageo" H 350 0   50  0001 C CNN "Manufacturer"
+F 5 "CC1210MKX5R5BB107" H 350 0   50  0001 C CNN "ManufacturerPartNumber"
+	1    1350 1650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -183,7 +183,7 @@ $EndComp
 Wire Wire Line
 	3550 3800 3650 3800
 Wire Wire Line
-	3650 3450 3850 3450
+	3650 3450 3800 3450
 Wire Wire Line
 	3650 3500 3650 3450
 Connection ~ 3650 3800
@@ -239,7 +239,7 @@ Wire Wire Line
 	3550 2750 3650 2750
 Connection ~ 3650 2750
 Wire Wire Line
-	3650 2600 3650 2750
+	4050 2750 3650 2750
 $Comp
 L power:GND #PWR?
 U 1 1 5BBC7E2B
@@ -541,9 +541,6 @@ Wire Wire Line
 	6900 1500 6900 1600
 Wire Wire Line
 	6500 1500 6900 1500
-Connection ~ 6900 1500
-Wire Wire Line
-	6900 1400 6900 1500
 Wire Wire Line
 	4500 4500 6350 4500
 Wire Wire Line
@@ -1234,51 +1231,6 @@ F 3 "" H 2150 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L microzed:DDR3_VTT #PWR?
-U 1 1 5B91E10C
-P 3650 2600
-F 0 "#PWR?" H 3650 2450 50  0001 C CNN
-F 1 "DDR3_VTT" H 3667 2773 50  0000 C CNN
-F 2 "" H 3650 2600 50  0001 C CNN
-F 3 "" H 3650 2600 50  0001 C CNN
-	1    3650 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L microzed:DDR3_VTT #PWR?
-U 1 1 5B91E955
-P 1000 1500
-F 0 "#PWR?" H 1000 1350 50  0001 C CNN
-F 1 "DDR3_VTT" H 1017 1673 50  0000 C CNN
-F 2 "" H 1000 1500 50  0001 C CNN
-F 3 "" H 1000 1500 50  0001 C CNN
-	1    1000 1500
-	1    0    0    -1  
-$EndComp
-Connection ~ 1000 1500
-$Comp
-L microzed:DDR3_VTT #PWR?
-U 1 1 5B91EC16
-P 6900 1400
-F 0 "#PWR?" H 6900 1250 50  0001 C CNN
-F 1 "DDR3_VTT" H 6917 1573 50  0000 C CNN
-F 2 "" H 6900 1400 50  0001 C CNN
-F 3 "" H 6900 1400 50  0001 C CNN
-	1    6900 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L microzed:VTTREF #PWR?
-U 1 1 5B922F90
-P 3850 3450
-F 0 "#PWR?" H 3850 3300 50  0001 C CNN
-F 1 "VTTREF" V 3867 3578 50  0000 L CNN
-F 2 "" H 3850 3450 50  0001 C CNN
-F 3 "" H 3850 3450 50  0001 C CNN
-	1    3850 3450
-	0    1    1    0   
-$EndComp
-$Comp
 L Device:R R?
 U 1 1 5BCB42E4
 P 6350 4000
@@ -1348,17 +1300,6 @@ F 5 "CC0201KRX5R7BB103" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    0    0    -1  
 $EndComp
 $Comp
-L microzed:VTTREF #PWR?
-U 1 1 5C5909EA
-P 8000 5750
-F 0 "#PWR?" H 8000 5600 50  0001 C CNN
-F 1 "VTTREF" H 8015 5923 50  0000 C CNN
-F 2 "" H 8000 5750 50  0001 C CNN
-F 3 "" H 8000 5750 50  0001 C CNN
-	1    8000 5750
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5C5909F0
 P 8000 6050
@@ -1373,7 +1314,6 @@ Wire Wire Line
 	8000 6050 8300 6050
 Wire Wire Line
 	8000 5750 8300 5750
-Connection ~ 8000 5750
 Connection ~ 8000 6050
 Wire Wire Line
 	8300 5450 8300 5550
@@ -1385,8 +1325,25 @@ Text Notes 6950 6000 0    50   ~ 0
 UG933 P55
 Text Notes 6950 5050 0    50   ~ 0
 UG933 P56
-Text Notes 6850 5600 0    50   ~ 0
-VTTREF = VCCO_DDR3/2
 Text Notes 1000 4650 0    50   ~ 0
 S3, S5: P12\n7.4.1 Power State Control\n\nVTT = VDDQSNS / 2\nVTTREF = VDDQSNS / 2
+Text Label 4050 2750 2    50   ~ 0
+DDR3_VTT
+Wire Wire Line
+	1350 1500 950  1500
+Text Label 950  1500 0    50   ~ 0
+DDR3_VTT
+Connection ~ 1350 1500
+Wire Wire Line
+	7300 1500 6900 1500
+Text Label 7300 1500 2    50   ~ 0
+DDR3_VTT
+Connection ~ 6900 1500
+Wire Wire Line
+	8000 5750 7600 5750
+Connection ~ 8000 5750
+Text GLabel 3800 3450 2    50   Output ~ 0
+VTTREF
+Text GLabel 7600 5750 0    50   Input ~ 0
+VTTREF
 $EndSCHEMATC
