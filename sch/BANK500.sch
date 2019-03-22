@@ -428,10 +428,10 @@ Text GLabel 3150 4300 2    50   BiDi ~ 0
 PS_MIO12
 Text GLabel 3150 4400 2    50   BiDi ~ 0
 PS_MIO13
-Text GLabel 3150 4500 2    50   BiDi ~ 0
-PS_MIO14
-Text GLabel 3150 4600 2    50   BiDi ~ 0
-PS_MIO15
+Text GLabel 3150 3900 2    50   BiDi ~ 0
+PS_MIO8
+Text GLabel 3150 4000 2    50   BiDi ~ 0
+PS_MIO9
 Text Label 2750 4000 0    50   ~ 0
 PS_MIO9
 Text Label 2750 4100 0    50   ~ 0
@@ -464,10 +464,6 @@ Text Notes 2800 2800 0    50   ~ 0
 30M-60MHZ
 Text Notes 3650 3050 0    50   ~ 0
 DS187P8\nPS_PRO_B must connected\nto GND during power-on.
-Text GLabel 3150 3900 2    50   BiDi ~ 0
-PS_MIO8
-Text GLabel 3150 4000 2    50   BiDi ~ 0
-PS_MIO9
 Text Notes 6000 1000 0    50   ~ 0
 LED driver circuit:\nhttps://electronics.stackexchange.com/questions/60865/how-to-drive-a-20ma-led-from-a-4ma-max-gpio-pin
 $Comp
@@ -574,4 +570,8 @@ F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    1800 1600
 	1    0    0    -1  
 $EndComp
+Text GLabel 3150 4600 2    50   Output ~ 0
+USB_UART_TxD
+Text GLabel 3150 4500 2    50   Input ~ 0
+USB_UART_RxD
 $EndSCHEMATC

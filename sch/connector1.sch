@@ -584,9 +584,9 @@ PS_MIO12
 Text GLabel 8700 5950 2    50   BiDi ~ 0
 PS_MIO13
 Text GLabel 7800 5950 0    50   BiDi ~ 0
-PS_MIO14
+PS_MIO51
 Text GLabel 7800 5850 0    50   BiDi ~ 0
-PS_MIO15
+PS_MIO50
 Text GLabel 8700 5450 2    50   BiDi ~ 0
 PS_MIO8
 Text GLabel 8700 5550 2    50   BiDi ~ 0
