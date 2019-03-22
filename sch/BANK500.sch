@@ -311,18 +311,18 @@ $EndComp
 $Comp
 L Device:R R?
 U 1 1 5C408F95
-P 7050 4500
-F 0 "R?" H 7120 4546 50  0000 L CNN
-F 1 "20K" H 7120 4455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 6980 4500 50  0001 C CNN
-F 3 "~" H 7050 4500 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "RC0402FR-0720KL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    7050 4500
+P 7050 2650
+F 0 "R?" H 7120 2696 50  0000 L CNN
+F 1 "20K" H 7120 2605 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 6980 2650 50  0001 C CNN
+F 3 "~" H 7050 2650 50  0001 C CNN
+F 4 "Yageo" H 0   -1850 50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0720KL" H 0   -1850 50  0001 C CNN "ManufacturerPartNumber"
+	1    7050 2650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7050 3900 7050 4350
+	7050 3900 7050 2800
 $Comp
 L Device:R R?
 U 1 1 5C4157BA
@@ -508,8 +508,6 @@ Text Label 4800 1350 0    50   ~ 0
 PS_MIO0
 Wire Wire Line
 	2750 3100 3150 3100
-Text Notes 4350 4500 0    50   ~ 0
-UG933 P57 Table5-3\nMIO7           MIO0-MIO15\n1.8V mode     20 KΩ resistor to VCCO_MIO0\n3.3V mode     20 KΩ resistor to ground\n\nMIO8           MIO16-MIO53\n1.8V mode     20 KΩ resistor to VCCO_MIO0\n3.3V mode     20 KΩ resistor to ground\n\nBANK501, MIO16-MIO53 use 3.3V, or:\nthe sd card need 3.3V, sowe should add a voltage translater.\nthe IO of usb-uart need voltage translater.
 Text Notes 6150 3150 0    50   ~ 0
 https://electronics.stackexchange.com/questions/76793/pros-and-cons-of-using-resistor-networks-over-individual-resistors
 $Comp
@@ -533,17 +531,6 @@ Text Notes 9650 5550 0    50   ~ 0
 Accessory: Harwin M7581-05
 Wire Wire Line
 	9050 5600 9050 5500
-$Comp
-L power:GND #PWR?
-U 1 1 5C8BA4DB
-P 7050 4650
-F 0 "#PWR?" H 7050 4400 50  0001 C CNN
-F 1 "GND" H 7055 4477 50  0000 C CNN
-F 2 "" H 7050 4650 50  0001 C CNN
-F 3 "" H 7050 4650 50  0001 C CNN
-	1    7050 4650
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J?
 U 1 1 5C9A5DBF
@@ -574,4 +561,34 @@ Text GLabel 3150 4600 2    50   Output ~ 0
 USB_UART_TxD
 Text GLabel 3150 4500 2    50   Input ~ 0
 USB_UART_RxD
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5C9593F5
+P 7050 2500
+F 0 "#PWR?" H 7050 2350 50  0001 C CNN
+F 1 "+3.3V" H 7065 2673 50  0000 C CNN
+F 2 "" H 7050 2500 50  0001 C CNN
+F 3 "" H 7050 2500 50  0001 C CNN
+	1    7050 2500
+	1    0    0    -1  
+$EndComp
+Text Notes 4350 4500 0    50   ~ 0
+UG933 P57 Table5-3\nMIO7           MIO0-MIO15\n1.8V mode     20 KΩ resistor to VCCO_MIO0\n3.3V mode     20 KΩ resistor to ground\n\nMIO8           MIO16-MIO53\n1.8V mode     20 KΩ resistor to VCCO_MIO0\n3.3V mode     20 KΩ resistor to ground
+Text GLabel 4550 5850 2    50   Output ~ 0
+PWR_B501
+$Comp
+L power:+1V8 #PWR?
+U 1 1 5C96F988
+P 4400 5550
+F 0 "#PWR?" H 4400 5400 50  0001 C CNN
+F 1 "+1V8" H 4415 5723 50  0000 C CNN
+F 2 "" H 4400 5550 50  0001 C CNN
+F 3 "" H 4400 5550 50  0001 C CNN
+	1    4400 5550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 5850 4400 5850
+Wire Wire Line
+	4400 5850 4400 5550
 $EndSCHEMATC

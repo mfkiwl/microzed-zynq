@@ -567,19 +567,6 @@ F 3 "" H 3250 2500 50  0001 C CNN
 	1    3250 2500
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5CEE39CB
-P 3250 2100
-F 0 "#PWR?" H 3250 1950 50  0001 C CNN
-F 1 "+3V3" H 3265 2273 50  0000 C CNN
-F 2 "" H 3250 2100 50  0001 C CNN
-F 3 "" H 3250 2100 50  0001 C CNN
-	1    3250 2100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3250 2100 3250 2200
 Wire Wire Line
 	3300 3100 3300 3000
 Connection ~ 3300 2900
@@ -687,4 +674,10 @@ $EndComp
 Connection ~ 3400 3450
 Wire Wire Line
 	3400 3450 3650 3450
+Text GLabel 3500 2000 2    50   Input ~ 0
+PWR_B501
+Wire Wire Line
+	3250 2200 3250 2000
+Wire Wire Line
+	3250 2000 3500 2000
 $EndSCHEMATC

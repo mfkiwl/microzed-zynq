@@ -42,8 +42,6 @@ Wire Wire Line
 Wire Wire Line
 	2800 4500 2400 4500
 Wire Wire Line
-	2800 4900 2500 4900
-Wire Wire Line
 	2800 5000 2400 5000
 Text GLabel 2400 4700 0    50   Input ~ 0
 ETH_TX_CLK
@@ -57,11 +55,6 @@ Text GLabel 2400 4400 0    50   Input ~ 0
 ETH_TX_D2
 Text GLabel 2400 4500 0    50   Input ~ 0
 ETH_TX_D3
-Wire Wire Line
-	2500 4800 2500 4900
-Connection ~ 2500 4900
-Wire Wire Line
-	2500 4900 2400 4900
 Text GLabel 2400 5600 0    50   Input ~ 0
 ETH_RST#
 Wire Wire Line
@@ -235,18 +228,7 @@ F 6 "RTL8211E-VB-CG" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2500 4800 1700 4800
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5C5BB232
-P 1250 4650
-F 0 "#PWR?" H 1250 4500 50  0001 C CNN
-F 1 "+3V3" H 1265 4823 50  0000 C CNN
-F 2 "" H 1250 4650 50  0001 C CNN
-F 3 "" H 1250 4650 50  0001 C CNN
-	1    1250 4650
-	1    0    0    -1  
-$EndComp
+	10300 1500 10000 1500
 NoConn ~ 2800 5300
 $Comp
 L power:GND #PWR?
@@ -312,27 +294,27 @@ Text Notes 1750 2250 0    50   ~ 0
 $Comp
 L Device:R R?
 U 1 1 5C700397
-P 10100 1150
-F 0 "R?" V 10100 1250 50  0000 L TNN
-F 1 "4.7k" V 10100 1050 50  0000 R TNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 10030 1150 50  0001 C CNN
-F 3 "~" H 10100 1150 50  0001 C CNN
-F 4 "Yageo" H -50 -450 50  0001 C CNN "Manufacturer"
-F 5 "RC0402FR-074K7L" H -50 -450 50  0001 C CNN "ManufacturerPartNumber"
-	1    10100 1150
+P 3600 1150
+F 0 "R?" V 3600 1250 50  0000 L TNN
+F 1 "4.7k" V 3600 1050 50  0000 R TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3530 1150 50  0001 C CNN
+F 3 "~" H 3600 1150 50  0001 C CNN
+F 4 "Yageo" H -6550 -450 50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-074K7L" H -6550 -450 50  0001 C CNN "ManufacturerPartNumber"
+	1    3600 1150
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 5C702044
-P 10100 1050
-F 0 "R?" V 10100 1150 50  0000 L TNN
-F 1 "4.7k" V 10100 950 50  0000 R TNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 10030 1050 50  0001 C CNN
-F 3 "~" H 10100 1050 50  0001 C CNN
-F 4 "Yageo" H -50 -450 50  0001 C CNN "Manufacturer"
-F 5 "RC0402FR-074K7L" H -50 -450 50  0001 C CNN "ManufacturerPartNumber"
-	1    10100 1050
+P 1600 1100
+F 0 "R?" V 1600 1200 50  0000 L TNN
+F 1 "4.7k" V 1600 1000 50  0000 R TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 1530 1100 50  0001 C CNN
+F 3 "~" H 1600 1100 50  0001 C CNN
+F 4 "Yageo" H -8550 -400 50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-074K7L" H -8550 -400 50  0001 C CNN "ManufacturerPartNumber"
+	1    1600 1100
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -346,34 +328,34 @@ F 3 "" H 1050 6750 50  0001 C CNN
 	1    1050 6750
 	1    0    0    -1  
 $EndComp
-Text Notes 8300 750  0    50   ~ 0
+Text Notes 9000 1050 0    50   ~ 0
 P25 section7.7 Table13
 $Comp
 L Device:R R?
 U 1 1 5C79D8C1
-P 10100 1250
-F 0 "R?" V 10100 1350 50  0000 L TNN
-F 1 "4.7k" V 10100 1150 50  0000 R TNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 10030 1250 50  0001 C CNN
-F 3 "~" H 10100 1250 50  0001 C CNN
-F 4 "Yageo" H -50 -450 50  0001 C CNN "Manufacturer"
-F 5 "RC0402FR-074K7L" H -50 -450 50  0001 C CNN "ManufacturerPartNumber"
-	1    10100 1250
+P 3600 1050
+F 0 "R?" V 3600 1150 50  0000 L TNN
+F 1 "4.7k" V 3600 950 50  0000 R TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3530 1050 50  0001 C CNN
+F 3 "~" H 3600 1050 50  0001 C CNN
+F 4 "Yageo" H -6550 -650 50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-074K7L" H -6550 -650 50  0001 C CNN "ManufacturerPartNumber"
+	1    3600 1050
 	0    -1   -1   0   
 $EndComp
-Text Notes 8300 1050 0    50   ~ 0
+Text Notes 1000 950  0    50   ~ 0
 SELRGV:\n1: VB-3.3V, VL-1.5V/1.8V\n0: VB-2.5V
 $Comp
 L Device:R R?
 U 1 1 5C7F1747
-P 10100 1350
-F 0 "R?" V 10100 1450 50  0000 L TNN
-F 1 "4.7k" V 10100 1250 50  0000 R TNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 10030 1350 50  0001 C CNN
-F 3 "~" H 10100 1350 50  0001 C CNN
-F 4 "Yageo" H -50 -450 50  0001 C CNN "Manufacturer"
-F 5 "RC0402FR-074K7L" H -50 -450 50  0001 C CNN "ManufacturerPartNumber"
-	1    10100 1350
+P 5600 1050
+F 0 "R?" V 5600 1150 50  0000 L TNN
+F 1 "4.7k" V 5600 950 50  0000 R TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5530 1050 50  0001 C CNN
+F 3 "~" H 5600 1050 50  0001 C CNN
+F 4 "Yageo" H -4550 -750 50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-074K7L" H -4550 -750 50  0001 C CNN "ManufacturerPartNumber"
+	1    5600 1050
 	0    -1   -1   0   
 $EndComp
 Text Notes 4900 4000 0    50   ~ 0
@@ -381,85 +363,38 @@ internal terminal resistors
 $Comp
 L Device:R R?
 U 1 1 5C8194A5
-P 10100 1450
-F 0 "R?" V 10100 1550 50  0000 L TNN
-F 1 "4.7k" V 10100 1350 50  0000 R TNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 10030 1450 50  0001 C CNN
-F 3 "~" H 10100 1450 50  0001 C CNN
-F 4 "Yageo" H -50 -450 50  0001 C CNN "Manufacturer"
-F 5 "RC0402FR-074K7L" H -50 -450 50  0001 C CNN "ManufacturerPartNumber"
-	1    10100 1450
+P 5600 1150
+F 0 "R?" V 5600 1250 50  0000 L TNN
+F 1 "4.7k" V 5600 1050 50  0000 R TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5530 1150 50  0001 C CNN
+F 3 "~" H 5600 1150 50  0001 C CNN
+F 4 "Yageo" H -4550 -750 50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-074K7L" H -4550 -750 50  0001 C CNN "ManufacturerPartNumber"
+	1    5600 1150
 	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5C841799
-P 10500 900
-F 0 "#PWR?" H 10500 750 50  0001 C CNN
-F 1 "+3V3" H 10515 1073 50  0000 C CNN
-F 2 "" H 10500 900 50  0001 C CNN
-F 3 "" H 10500 900 50  0001 C CNN
-	1    10500 900 
-	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5100 5450 5750 5450
-$Comp
-L Device:R R?
-U 1 1 5C888A94
-P 10100 1750
-F 0 "R?" V 10100 1850 50  0000 L TNN
-F 1 "4.7k" V 10100 1650 50  0000 R TNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 10030 1750 50  0001 C CNN
-F 3 "~" H 10100 1750 50  0001 C CNN
-F 4 "Yageo" H -50 -450 50  0001 C CNN "Manufacturer"
-F 5 "RC0402FR-074K7L" H -50 -450 50  0001 C CNN "ManufacturerPartNumber"
-	1    10100 1750
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 5C891C95
-P 10100 1650
-F 0 "R?" V 10100 1750 50  0000 L TNN
-F 1 "4.7k" V 10100 1550 50  0000 R TNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 10030 1650 50  0001 C CNN
-F 3 "~" H 10100 1650 50  0001 C CNN
-F 4 "Yageo" H -50 -450 50  0001 C CNN "Manufacturer"
-F 5 "RC0402FR-074K7L" H -50 -450 50  0001 C CNN "ManufacturerPartNumber"
-	1    10100 1650
-	0    -1   -1   0   
-$EndComp
-Text Notes 8300 1600 0    50   ~ 0
-PHY_AD[2:0]: 111
+Text Notes 7000 850  0    50   ~ 0
+PHY_AD[2:0]: 001
 Wire Wire Line
-	9950 1050 9500 1050
+	1450 1100 1000 1100
 Wire Wire Line
-	9950 1150 9500 1150
+	3450 1150 3000 1150
 Wire Wire Line
-	9950 1250 9500 1250
+	3450 1050 3000 1050
 Wire Wire Line
-	9950 1350 9500 1350
+	5450 1050 5000 1050
 Wire Wire Line
-	9950 1450 9500 1450
+	5450 1150 5000 1150
 Wire Wire Line
-	9950 1650 9500 1650
+	1750 1100 2200 1100
 Wire Wire Line
-	9950 1750 9500 1750
+	3750 1050 4000 1050
 Wire Wire Line
-	10250 1050 10500 1050
+	5750 1050 6000 1050
 Wire Wire Line
-	10250 1150 10500 1150
-Wire Wire Line
-	10250 1250 10500 1250
-Wire Wire Line
-	10250 1350 10500 1350
-Wire Wire Line
-	10250 1450 10500 1450
-Wire Wire Line
-	10250 1650 10500 1650
-Wire Wire Line
-	10250 1750 10500 1750
+	5750 1150 6000 1150
 Wire Wire Line
 	2300 3700 2800 3700
 Wire Wire Line
@@ -490,61 +425,24 @@ Text Label 5100 5350 0    50   ~ 0
 PHY_AD1
 Text Label 5100 5450 0    50   ~ 0
 RXDLY
-Text Label 9500 1050 0    50   ~ 0
+Text Label 1000 1100 0    50   ~ 0
 SELRGV
-Text Label 9500 1150 0    50   ~ 0
+Text Label 3000 1150 0    50   ~ 0
 TXDLY
-Text Label 9500 1250 0    50   ~ 0
+Text Label 3000 1050 0    50   ~ 0
 RXDLY
-Text Label 9500 1350 0    50   ~ 0
+Text Label 5000 1050 0    50   ~ 0
 AN0
-Text Label 9500 1450 0    50   ~ 0
+Text Label 5000 1150 0    50   ~ 0
 AN1
 Wire Wire Line
-	10500 1450 10500 1350
-Connection ~ 10500 1050
-Wire Wire Line
-	10500 1050 10500 900 
-Connection ~ 10500 1150
-Wire Wire Line
-	10500 1150 10500 1050
-Connection ~ 10500 1250
-Wire Wire Line
-	10500 1250 10500 1150
-Connection ~ 10500 1350
-Wire Wire Line
-	10500 1350 10500 1250
-$Comp
-L Device:R R?
-U 1 1 5C9A1CA9
-P 10100 1550
-F 0 "R?" V 10100 1650 50  0000 L TNN
-F 1 "4.7k" V 10100 1450 50  0000 R TNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 10030 1550 50  0001 C CNN
-F 3 "~" H 10100 1550 50  0001 C CNN
-F 4 "Yageo" H -50 -450 50  0001 C CNN "Manufacturer"
-F 5 "RC0402FR-074K7L" H -50 -450 50  0001 C CNN "ManufacturerPartNumber"
-	1    10100 1550
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	9950 1550 9500 1550
-Wire Wire Line
-	10250 1550 10500 1550
-Text Label 9500 1750 0    50   ~ 0
-PHY_AD2
-Text Label 9500 1650 0    50   ~ 0
-PHY_AD1
-Text Label 9500 1550 0    50   ~ 0
-PHY_AD0
-Wire Wire Line
-	10500 1550 10500 1450
-Connection ~ 10500 1450
-Text Notes 8300 1150 0    50   ~ 0
+	6000 1150 6000 1050
+Connection ~ 6000 1050
+Text Notes 3000 800  0    50   ~ 0
 add 2ns delay to TXC for TXD
-Text Notes 8300 1250 0    50   ~ 0
+Text Notes 3000 900  0    50   ~ 0
 add 2ns delay to RXC for RXD
-Text Notes 8300 1450 0    50   ~ 0
+Text Notes 5000 850  0    50   ~ 0
 AN[1:0]: capability
 $Comp
 L Device:R R?
@@ -703,20 +601,18 @@ Wire Wire Line
 $Comp
 L Device:R R?
 U 1 1 5C55DD73
-P 1550 4800
-F 0 "R?" V 1600 4800 50  0000 C TNN
-F 1 "1.5k" V 1450 4800 50  0000 C BNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 1480 4800 50  0001 C CNN
-F 3 "~" H 1550 4800 50  0001 C CNN
-F 4 "Yageo" H 1550 4800 50  0001 C CNN "Manufacturer"
-F 5 "RC0402FR-071K5L" H 1550 4800 50  0001 C CNN "ManufacturerPartNumber"
-	1    1550 4800
+P 9850 1500
+F 0 "R?" V 9900 1500 50  0000 C TNN
+F 1 "1.5k" V 9750 1500 50  0000 C BNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 9780 1500 50  0001 C CNN
+F 3 "~" H 9850 1500 50  0001 C CNN
+F 4 "Yageo" H 9850 1500 50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-071K5L" H 9850 1500 50  0001 C CNN "ManufacturerPartNumber"
+	1    9850 1500
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1400 4800 1250 4800
-Wire Wire Line
-	1250 4800 1250 4650
+	9700 1500 9500 1500
 Wire Wire Line
 	2150 6350 3000 6350
 Wire Wire Line
@@ -743,10 +639,7 @@ F 5 "RC0402FR-074K7L" H -50 -450 50  0001 C CNN "ManufacturerPartNumber"
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	10250 1850 10500 1850
-Wire Wire Line
-	10500 1850 10500 1750
-Connection ~ 10500 1550
+	10250 1850 10750 1850
 $Comp
 L Device:C C?
 U 1 1 5C6039F8
@@ -907,82 +800,69 @@ Wire Wire Line
 Wire Wire Line
 	3750 2800 3650 2800
 Connection ~ 3650 2800
-Wire Wire Line
-	3650 2800 3400 2800
 $Comp
 L Device:C C?
 U 1 1 5C6F7A9E
-P 3150 2350
-F 0 "C?" H 3150 2450 50  0000 L CNN
-F 1 "0.1µF" H 3150 2250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 3188 2200 50  0001 C CNN
-F 3 "~" H 3150 2350 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    3150 2350
+P 4100 2350
+F 0 "C?" H 4100 2450 50  0000 L CNN
+F 1 "0.1µF" H 4100 2250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 4138 2200 50  0001 C CNN
+F 3 "~" H 4100 2350 50  0001 C CNN
+F 4 "Yageo" H 950 0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 950 0   50  0001 C CNN "ManufacturerPartNumber"
+	1    4100 2350
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
 U 1 1 5C6F7AA4
-P 2850 2350
-F 0 "C?" H 2850 2450 50  0000 L CNN
-F 1 "0.1µF" H 2850 2250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 2888 2200 50  0001 C CNN
-F 3 "~" H 2850 2350 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    2850 2350
+P 3800 2350
+F 0 "C?" H 3800 2450 50  0000 L CNN
+F 1 "0.1µF" H 3800 2250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 3838 2200 50  0001 C CNN
+F 3 "~" H 3800 2350 50  0001 C CNN
+F 4 "Yageo" H 950 0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 950 0   50  0001 C CNN "ManufacturerPartNumber"
+	1    3800 2350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2850 2500 3150 2500
-Connection ~ 2850 2500
+	3800 2500 4100 2500
 Wire Wire Line
 	3400 2800 3400 2200
 $Comp
 L Device:C C?
 U 1 1 5C6F7AAD
-P 2550 2350
-F 0 "C?" H 2550 2450 50  0000 L CNN
-F 1 "0.1µF" H 2550 2250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 2588 2200 50  0001 C CNN
-F 3 "~" H 2550 2350 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    2550 2350
+P 3100 2350
+F 0 "C?" H 3100 2450 50  0000 L CNN
+F 1 "0.1µF" H 3100 2250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 3138 2200 50  0001 C CNN
+F 3 "~" H 3100 2350 50  0001 C CNN
+F 4 "Yageo" H 550 0   50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 550 0   50  0001 C CNN "ManufacturerPartNumber"
+	1    3100 2350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2850 2500 2550 2500
-Wire Wire Line
-	3150 2200 2850 2200
-Connection ~ 2850 2200
-Wire Wire Line
-	2850 2200 2550 2200
-Wire Wire Line
-	3150 2200 3400 2200
-Connection ~ 3150 2200
 $Comp
 L power:GND #PWR?
 U 1 1 5C7015CF
-P 2850 2500
-F 0 "#PWR?" H 2850 2250 50  0001 C CNN
-F 1 "GND" H 2855 2327 50  0000 C CNN
-F 2 "" H 2850 2500 50  0001 C CNN
-F 3 "" H 2850 2500 50  0001 C CNN
-	1    2850 2500
+P 3100 2500
+F 0 "#PWR?" H 3100 2250 50  0001 C CNN
+F 1 "GND" H 3105 2327 50  0000 C CNN
+F 2 "" H 3100 2500 50  0001 C CNN
+F 3 "" H 3100 2500 50  0001 C CNN
+	1    3100 2500
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5C70450E
-P 2550 2200
-F 0 "#PWR?" H 2550 2050 50  0001 C CNN
-F 1 "+3V3" H 2565 2373 50  0000 C CNN
-F 2 "" H 2550 2200 50  0001 C CNN
-F 3 "" H 2550 2200 50  0001 C CNN
-	1    2550 2200
+P 3100 2200
+F 0 "#PWR?" H 3100 2050 50  0001 C CNN
+F 1 "+3V3" H 3115 2373 50  0000 C CNN
+F 2 "" H 3100 2200 50  0001 C CNN
+F 3 "" H 3100 2200 50  0001 C CNN
+	1    3100 2200
 	1    0    0    -1  
 $EndComp
 NoConn ~ 3950 2800
@@ -1023,11 +903,10 @@ Wire Wire Line
 	2700 2800 2400 2800
 Wire Wire Line
 	2700 2800 3100 2800
-Connection ~ 3400 2800
 Wire Wire Line
 	4800 2800 5200 2800
 Connection ~ 5200 2800
-Connection ~ 2550 2200
+Connection ~ 3100 2200
 $Comp
 L Device:L L?
 U 1 1 5C84DF6C
@@ -1165,12 +1044,6 @@ Wire Wire Line
 	9700 4100 9500 4100
 Connection ~ 9700 4100
 Connection ~ 9500 4100
-Connection ~ 10500 1650
-Wire Wire Line
-	10500 1650 10500 1550
-Connection ~ 10500 1750
-Wire Wire Line
-	10500 1750 10500 1650
 Wire Wire Line
 	8150 5350 7950 5350
 Wire Wire Line
@@ -1271,8 +1144,6 @@ Wire Wire Line
 Connection ~ 1050 6950
 Wire Wire Line
 	1050 6950 1250 6950
-Text Label 2450 4000 0    50   ~ 0
-RXC
 Wire Wire Line
 	2300 4000 2800 4000
 $Comp
@@ -1320,18 +1191,6 @@ Text GLabel 2400 5200 0    50   Output ~ 0
 ETH_INT
 Wire Wire Line
 	2400 5200 2800 5200
-Wire Wire Line
-	5800 3100 6650 3100
-Connection ~ 5800 3100
-Connection ~ 6650 3100
-Wire Wire Line
-	2400 3100 1500 3100
-Connection ~ 2400 3100
-Connection ~ 1500 3100
-Text Notes 5150 3250 0    50   ~ 0
-may be we should add L for analog ground
-Text Notes 1300 3200 0    50   ~ 0
-may be we should add L for analog ground
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5C940606
@@ -1380,4 +1239,179 @@ F 5 "RC0402FR-0722RL" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 	1    2150 3500
 	0    -1   -1   0   
 $EndComp
+Wire Wire Line
+	3100 2200 3400 2200
+$Comp
+L power:GND #PWR?
+U 1 1 5C990D81
+P 4100 2500
+F 0 "#PWR?" H 4100 2250 50  0001 C CNN
+F 1 "GND" H 4105 2327 50  0000 C CNN
+F 2 "" H 4100 2500 50  0001 C CNN
+F 3 "" H 4100 2500 50  0001 C CNN
+	1    4100 2500
+	1    0    0    -1  
+$EndComp
+Connection ~ 4100 2500
+Wire Wire Line
+	4100 2200 3800 2200
+Wire Wire Line
+	3650 2200 3650 2800
+Connection ~ 3800 2200
+Wire Wire Line
+	3800 2200 3650 2200
+Wire Wire Line
+	3650 2200 3650 1750
+Connection ~ 3650 2200
+Wire Wire Line
+	6350 1050 6000 1050
+Wire Wire Line
+	3750 1150 4250 1150
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CA237D4
+P 4000 1050
+F 0 "#PWR?" H 4000 900 50  0001 C CNN
+F 1 "+3V3" V 4000 1200 50  0000 L CNN
+F 2 "" H 4000 1050 50  0001 C CNN
+F 3 "" H 4000 1050 50  0001 C CNN
+	1    4000 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	8000 1250 8000 1150
+Connection ~ 8000 1250
+Wire Wire Line
+	8000 1350 8000 1250
+Text Label 7000 1150 0    50   ~ 0
+PHY_AD1
+Text Label 7000 1250 0    50   ~ 0
+PHY_AD2
+Wire Wire Line
+	7750 1250 8000 1250
+Wire Wire Line
+	7750 1150 8000 1150
+Wire Wire Line
+	7450 1250 7000 1250
+Wire Wire Line
+	7450 1150 7000 1150
+$Comp
+L Device:R R?
+U 1 1 5C891C95
+P 7600 1150
+F 0 "R?" V 7600 1250 50  0000 L TNN
+F 1 "4.7k" V 7600 1050 50  0000 R TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7530 1150 50  0001 C CNN
+F 3 "~" H 7600 1150 50  0001 C CNN
+F 4 "Yageo" H -2550 -950 50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-074K7L" H -2550 -950 50  0001 C CNN "ManufacturerPartNumber"
+	1    7600 1150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5C888A94
+P 7600 1250
+F 0 "R?" V 7600 1350 50  0000 L TNN
+F 1 "4.7k" V 7600 1150 50  0000 R TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7530 1250 50  0001 C CNN
+F 3 "~" H 7600 1250 50  0001 C CNN
+F 4 "Yageo" H -2550 -950 50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-074K7L" H -2550 -950 50  0001 C CNN "ManufacturerPartNumber"
+	1    7600 1250
+	0    -1   -1   0   
+$EndComp
+Text Label 7000 1050 0    50   ~ 0
+PHY_AD0
+Wire Wire Line
+	7750 1050 8000 1050
+Wire Wire Line
+	7450 1050 7000 1050
+$Comp
+L Device:R R?
+U 1 1 5C9A1CA9
+P 7600 1050
+F 0 "R?" V 7600 1150 50  0000 L TNN
+F 1 "4.7k" V 7600 950 50  0000 R TNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7530 1050 50  0001 C CNN
+F 3 "~" H 7600 1050 50  0001 C CNN
+F 4 "Yageo" H -2550 -950 50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-074K7L" H -2550 -950 50  0001 C CNN "ManufacturerPartNumber"
+	1    7600 1050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5CA968F8
+P 8000 1050
+F 0 "#PWR?" H 8000 900 50  0001 C CNN
+F 1 "+3V3" V 8000 1200 50  0000 L CNN
+F 2 "" H 8000 1050 50  0001 C CNN
+F 3 "" H 8000 1050 50  0001 C CNN
+	1    8000 1050
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CA96E6C
+P 8000 1350
+F 0 "#PWR?" H 8000 1100 50  0001 C CNN
+F 1 "GND" H 8005 1177 50  0000 C CNN
+F 2 "" H 8000 1350 50  0001 C CNN
+F 3 "" H 8000 1350 50  0001 C CNN
+	1    8000 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5CAA582F
+P 5200 3100
+F 0 "#PWR?" H 5200 2850 50  0001 C CNN
+F 1 "GND" H 5205 2927 50  0000 C CNN
+F 2 "" H 5200 3100 50  0001 C CNN
+F 3 "" H 5200 3100 50  0001 C CNN
+	1    5200 3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 5200 3100
+$Comp
+L power:GND #PWR?
+U 1 1 5CAA5BCD
+P 2700 3100
+F 0 "#PWR?" H 2700 2850 50  0001 C CNN
+F 1 "GND" H 2705 2927 50  0000 C CNN
+F 2 "" H 2700 3100 50  0001 C CNN
+F 3 "" H 2700 3100 50  0001 C CNN
+	1    2700 3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 2700 3100
+Text GLabel 1300 1650 0    50   Input ~ 0
+PWR_B501
+Wire Wire Line
+	1300 1650 1850 1650
+Text Label 1850 1650 2    50   ~ 0
+ETH_VIO
+Text Label 2200 1100 2    50   ~ 0
+ETH_VIO
+Text Label 3650 1750 3    50   ~ 0
+ETH_VIO
+Text Label 4250 1150 2    50   ~ 0
+ETH_VIO
+Text Label 6350 1050 2    50   ~ 0
+ETH_VIO
+Text Label 10750 1850 2    50   ~ 0
+ETH_VIO
+Text Label 2500 4900 0    50   ~ 0
+MDIO
+Text Label 2450 4000 0    50   ~ 0
+RXC
+Wire Wire Line
+	2400 4900 2800 4900
+Text Label 9500 1500 0    50   ~ 0
+MDIO
+Text Label 10300 1500 2    50   ~ 0
+ETH_VIO
+Text Notes 9500 1350 0    50   ~ 0
+P28: 7.10.4 Management Interface
 $EndSCHEMATC

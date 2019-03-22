@@ -31,17 +31,6 @@ $EndComp
 Wire Wire Line
 	7300 2300 7300 2500
 $Comp
-L power:+3V3 #PWR?
-U 1 1 5B977486
-P 7300 1900
-F 0 "#PWR?" H 7300 1750 50  0001 C CNN
-F 1 "+3V3" H 7315 2073 50  0000 C CNN
-F 2 "" H 7300 1900 50  0001 C CNN
-F 3 "" H 7300 1900 50  0001 C CNN
-	1    7300 1900
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 5B97B903
 P 7300 3400
@@ -205,8 +194,6 @@ Wire Wire Line
 	5500 2050 6250 2050
 Wire Wire Line
 	6250 2150 6250 2050
-Text Notes 5400 3350 0    50   ~ 0
-UG933 P57 Table5-3\nMIO8           MIO16-MIO53\n1.8V mode     20 KΩ resistor to VCCO_MIO0\n3.3V mode     20 KΩ resistor to ground\n 
 Wire Wire Line
 	6250 1450 6250 1350
 Wire Wire Line
@@ -255,19 +242,8 @@ F 5 "RC0402FR-0710KL" H -1050 -250 50  0001 C CNN "ManufacturerPartNumber"
 $EndComp
 Connection ~ 6250 1750
 Connection ~ 6250 2050
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5CE7BB2E
-P 6250 1350
-F 0 "#PWR?" H 6250 1200 50  0001 C CNN
-F 1 "+3V3" H 6265 1523 50  0000 C CNN
-F 2 "" H 6250 1350 50  0001 C CNN
-F 3 "" H 6250 1350 50  0001 C CNN
-	1    6250 1350
-	1    0    0    -1  
-$EndComp
 Text Notes 6150 4700 0    50   ~ 0
-We use 3.3V for BANK501\nalthough ug585 said the rgmii does not support it,\nthe main reason is ethernet phy is too expensive.\nwe find rtl8211e is cheaper, but only -VL model\nsupport 1.8V, which has no any solder.\nonother reason is if we use 1.8V, both of\nSDIO/UART-USB need extra level translator (1.8V-3.3V).\n\nhttps://forums.xilinx.com/t5/Embedded-Processor-System-Design/zynq-interface-to-micrel-ksz9021/td-p/464112\nsome one has successful use case for ksz9021 under 3.3V,\nwe should try it.
+We use 1.8V for BANK501\nug585 said the rgmii does not support 3.3V\nbut the SDIO need extra level translator (1.8V-3.3V),\nthe UART-USB moved to BANK500 to save translator.\n\nhttps://forums.xilinx.com/t5/Embedded-Processor-System-Design/zynq-interface-to-micrel-ksz9021/td-p/464112\nsome one has successful use case for ksz9021 under 3.3V,\nwe should try it.
 Text GLabel 4650 6000 2    50   Input ~ 0
 ETH_INT
 Text GLabel 4650 5900 2    50   Output ~ 0
@@ -276,4 +252,8 @@ Text GLabel 4650 6200 2    50   BiDi ~ 0
 PS_MIO50
 Text GLabel 4650 6100 2    50   BiDi ~ 0
 PS_MIO51
+Text GLabel 6250 1350 1    50   Input ~ 0
+PWR_B501
+Text GLabel 7300 1900 1    50   Input ~ 0
+PWR_B501
 $EndSCHEMATC
