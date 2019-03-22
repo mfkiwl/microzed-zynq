@@ -622,7 +622,7 @@ Connection ~ 9900 4400
 Wire Wire Line
 	9900 4400 9900 4700
 Wire Wire Line
-	4900 4300 6900 4300
+	4900 4300 5400 4300
 Text Label 5550 4300 0    50   ~ 0
 PG_1V8
 $Comp
@@ -1214,4 +1214,13 @@ F 5 "CC0805KKX5R8BB106" H 1500 3750 50  0001 C CNN "ManufacturerPartNumber"
 	1    1500 3750
 	1    0    0    -1  
 $EndComp
+Text GLabel 5650 3700 2    50   Output ~ 0
+PG_1V8
+Wire Wire Line
+	5650 3700 5400 3700
+Wire Wire Line
+	5400 3700 5400 4300
+Connection ~ 5400 4300
+Wire Wire Line
+	5400 4300 6900 4300
 $EndSCHEMATC

@@ -591,16 +591,6 @@ Text GLabel 8700 5450 2    50   BiDi ~ 0
 PS_MIO8
 Text GLabel 8700 5550 2    50   BiDi ~ 0
 PS_MIO9
-Connection ~ 6900 5650
-Wire Wire Line
-	6900 5650 7800 5650
-Wire Wire Line
-	6900 5550 6900 5650
-Connection ~ 6900 5550
-Wire Wire Line
-	6900 5550 7800 5550
-Wire Wire Line
-	6900 5450 6900 5550
 Connection ~ 6900 5450
 Wire Wire Line
 	6900 5450 7800 5450
@@ -613,10 +603,8 @@ Wire Wire Line
 	6900 5350 7800 5350
 Wire Wire Line
 	9600 5250 9600 6200
-Text GLabel 7800 5750 0    50   Input ~ 0
+Text GLabel 7800 5550 0    50   Input ~ 0
 PS_MIO0
-Wire Wire Line
-	6900 5650 6900 6150
 Text GLabel 3700 1950 2    50   Output ~ 0
 CARRIER_SRST#
 Wire Wire Line
@@ -709,4 +697,10 @@ Wire Wire Line
 Connection ~ 3950 1550
 Wire Wire Line
 	3950 1550 4500 1550
+Text GLabel 7800 5650 0    50   Output ~ 0
+PG_MODULE
+Text GLabel 7800 5750 0    50   Output ~ 0
+PG_1V8
+Wire Wire Line
+	6900 5450 6900 6150
 $EndSCHEMATC
