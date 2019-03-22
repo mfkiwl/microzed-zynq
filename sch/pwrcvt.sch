@@ -828,7 +828,7 @@ Wire Wire Line
 Wire Wire Line
 	6000 1800 6900 1800
 Text Label 8150 3000 0    50   ~ 0
-PG_1V5
+PG_1V35
 Text GLabel 10200 1900 2    50   Output ~ 0
 PG_MODULE
 Wire Wire Line
@@ -1223,4 +1223,29 @@ Wire Wire Line
 Connection ~ 5400 4300
 Wire Wire Line
 	5400 4300 6900 4300
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5CABCDB4
+P 1200 1000
+F 0 "#FLG?" H 1200 1075 50  0001 C CNN
+F 1 "PWR_FLAG" H 1200 1173 50  0001 C CNN
+F 2 "" H 1200 1000 50  0001 C CNN
+F 3 "~" H 1200 1000 50  0001 C CNN
+	1    1200 1000
+	1    0    0    -1  
+$EndComp
+Connection ~ 1200 1000
+Text GLabel 10300 800  2    50   Output ~ 0
+V3V3
+Wire Wire Line
+	9900 1300 9900 800 
+Wire Wire Line
+	9900 800  10300 800 
+Text GLabel 5300 3400 2    50   Output ~ 0
+V1V8
+Wire Wire Line
+	4900 3700 4900 3400
+Wire Wire Line
+	4900 3400 5300 3400
+Connection ~ 4900 3700
 $EndSCHEMATC
