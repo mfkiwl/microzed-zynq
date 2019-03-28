@@ -18,13 +18,13 @@ Wire Wire Line
 Wire Wire Line
 	1900 3750 2150 3750
 Wire Wire Line
-	1900 1950 2650 1950
+	1900 1950 2550 1950
 Wire Wire Line
 	1900 2050 2650 2050
 Wire Wire Line
-	1900 2150 2650 2150
+	1900 2150 2750 2150
 Wire Wire Line
-	1900 2250 2650 2250
+	1900 2250 2850 2250
 Wire Wire Line
 	1900 2450 2150 2450
 Wire Wire Line
@@ -57,12 +57,12 @@ Connection ~ 2150 2650
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5BCAA1AE
-P 3250 1950
-F 0 "#PWR?" H 3250 1800 50  0001 C CNN
-F 1 "+3V3" H 3265 2123 50  0000 C CNN
-F 2 "" H 3250 1950 50  0001 C CNN
-F 3 "" H 3250 1950 50  0001 C CNN
-	1    3250 1950
+P 2550 1100
+F 0 "#PWR?" H 2550 950 50  0001 C CNN
+F 1 "+3V3" H 2565 1273 50  0000 C CNN
+F 2 "" H 2550 1100 50  0001 C CNN
+F 3 "" H 2550 1100 50  0001 C CNN
+	1    2550 1100
 	1    0    0    -1  
 $EndComp
 Text Notes 4850 3450 0    50   ~ 0
@@ -107,7 +107,7 @@ Text Notes 2700 3050 0    50   ~ 0
 pull-up, ≤4.7kΩ
 Text Notes 1900 4200 0    50   ~ 0
 1: 2.5V or 3.3V\n0: 1.8V or 1.5V\ncontrol BANK14 / BANK15 during configuration
-Text Notes 2900 1350 0    50   ~ 0
+Text Notes 3650 950  0    50   ~ 0
 BANK0\n3.3V\nUG470
 Text Notes 1950 1950 0    50   ~ 0
 pull-up, 10kΩ
@@ -213,30 +213,8 @@ Wire Wire Line
 Connection ~ 3750 2950
 Wire Wire Line
 	3750 2950 4000 2950
-$Comp
-L Device:R_Pack04 RP?
-U 1 1 5C83EA0B
-P 2850 2150
-F 0 "RP?" V 2433 2150 50  0000 C CNN
-F 1 "10k" V 2524 2150 50  0000 C CNN
-F 2 "microzed:YC124FR0749R9L" V 3125 2150 50  0001 C CNN
-F 3 "~" H 2850 2150 50  0001 C CNN
-F 4 "Yageo" H 2850 2150 50  0001 C CNN "Manufacturer"
-F 5 "YC124-JR-0710KL" H 2850 2150 50  0001 C CNN "ManufacturerPartNumber"
-	1    2850 2150
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	3050 2250 3050 2150
-Connection ~ 3050 2050
-Wire Wire Line
-	3050 2050 3050 1950
-Connection ~ 3050 2150
-Wire Wire Line
-	3050 2150 3050 2050
-Wire Wire Line
-	3250 1950 3050 1950
-Connection ~ 3050 1950
+	2550 1100 2550 1250
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5C87F417
@@ -273,4 +251,54 @@ Wire Wire Line
 	4600 3650 4400 3650
 Connection ~ 4400 3650
 NoConn ~ 4000 3650
+Text GLabel 3250 1950 2    50   Input ~ 0
+JTAG_TMS
+Text GLabel 3250 2050 2    50   Input ~ 0
+JTAG_TCK
+Text GLabel 3250 2150 2    50   Input ~ 0
+JTAG_TDI
+Text GLabel 3250 2250 2    50   Output ~ 0
+JTAG_TDO
+$Comp
+L Device:R_Pack04 RP?
+U 1 1 5C83EA0B
+P 2650 1450
+F 0 "RP?" H 2300 1450 50  0000 C CNN
+F 1 "10k" H 2300 1550 50  0000 C CNN
+F 2 "microzed:YC124FR0749R9L" V 2925 1450 50  0001 C CNN
+F 3 "~" H 2650 1450 50  0001 C CNN
+F 4 "Yageo" H 2650 1450 50  0001 C CNN "Manufacturer"
+F 5 "YC124-JR-0710KL" H 2650 1450 50  0001 C CNN "ManufacturerPartNumber"
+	1    2650 1450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2850 1250 2750 1250
+Connection ~ 2550 1250
+Connection ~ 2650 1250
+Wire Wire Line
+	2650 1250 2550 1250
+Connection ~ 2750 1250
+Wire Wire Line
+	2750 1250 2650 1250
+Wire Wire Line
+	2550 1650 2550 1950
+Connection ~ 2550 1950
+Wire Wire Line
+	2550 1950 3250 1950
+Wire Wire Line
+	2650 1650 2650 2050
+Connection ~ 2650 2050
+Wire Wire Line
+	2650 2050 3250 2050
+Wire Wire Line
+	2750 1650 2750 2150
+Connection ~ 2750 2150
+Wire Wire Line
+	2750 2150 3250 2150
+Wire Wire Line
+	2850 1650 2850 2250
+Connection ~ 2850 2250
+Wire Wire Line
+	2850 2250 3250 2250
 $EndSCHEMATC
