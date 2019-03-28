@@ -388,9 +388,9 @@ Wire Wire Line
 	3700 3350 4600 3350
 Wire Wire Line
 	3700 3050 4600 3050
-Text GLabel 3700 2550 2    50   Output ~ 0
+Text GLabel 2800 1950 0    50   Output ~ 0
 XADC0_P
-Text GLabel 3700 2650 2    50   Output ~ 0
+Text GLabel 2800 2050 0    50   Output ~ 0
 XADC0_N
 Text GLabel 2400 2950 0    50   Output ~ 0
 VCCO_34
@@ -409,22 +409,16 @@ F 3 "" H 4600 6150 50  0001 C CNN
 $EndComp
 Text GLabel 4050 1550 2    50   BiDi ~ 0
 VIN
-Text GLabel 2800 2250 0    50   BiDi ~ 0
-PS_MIO7
-Text GLabel 2800 2550 0    50   BiDi ~ 0
-PS_MIO10
-Text GLabel 2800 2650 0    50   BiDi ~ 0
-PS_MIO11
 Text GLabel 3700 2250 2    50   BiDi ~ 0
-PS_MIO12
+PS_MIO10
 Text GLabel 3700 2350 2    50   BiDi ~ 0
+PS_MIO11
+Text GLabel 3700 2450 2    50   BiDi ~ 0
+PS_MIO12
+Text GLabel 3700 2550 2    50   BiDi ~ 0
 PS_MIO13
-Text GLabel 2800 2350 0    50   BiDi ~ 0
-PS_MIO8
-Text GLabel 2800 2450 0    50   BiDi ~ 0
+Text GLabel 3700 2150 2    50   BiDi ~ 0
 PS_MIO9
-Text GLabel 950  1000 2    50   Input ~ 0
-PS_MIO0
 Connection ~ 6900 4850
 Connection ~ 6900 5150
 Connection ~ 6900 5450
@@ -489,11 +483,11 @@ Wire Wire Line
 	3700 2950 4000 2950
 Wire Wire Line
 	2800 2950 2400 2950
-Text GLabel 3700 2150 2    50   Input ~ 0
+Text GLabel 3700 1950 2    50   Input ~ 0
 PG_MODULE
 Wire Wire Line
-	3700 1950 4900 1950
-Text GLabel 2800 2150 0    50   Input ~ 0
+	3700 1850 4900 1850
+Text GLabel 3700 2050 2    50   Input ~ 0
 FPGA_DONE
 Text GLabel 2450 1550 0    50   BiDi ~ 0
 VIN
@@ -508,29 +502,9 @@ Wire Wire Line
 Wire Wire Line
 	3700 1750 4600 1750
 Wire Wire Line
-	4600 1750 4600 1850
+	2800 1850 1600 1850
 Wire Wire Line
-	3700 1850 4600 1850
-Connection ~ 4600 1850
-Wire Wire Line
-	4600 1850 4600 2050
-Wire Wire Line
-	2800 1850 1900 1850
-Connection ~ 1900 1850
-Wire Wire Line
-	1900 1850 1900 1750
-Wire Wire Line
-	2800 1950 1600 1950
-Wire Wire Line
-	2800 2050 1900 2050
-Connection ~ 1900 2050
-Wire Wire Line
-	1900 2050 1900 1850
-Wire Wire Line
-	3700 2050 4600 2050
-Connection ~ 4600 2050
-Wire Wire Line
-	3700 2450 4600 2450
+	1900 2150 2800 2150
 Connection ~ 9600 1850
 Wire Wire Line
 	9600 1850 9600 1550
@@ -608,8 +582,6 @@ Wire Wire Line
 Wire Wire Line
 	1900 3050 1900 3350
 Wire Wire Line
-	1900 2050 1900 3050
-Wire Wire Line
 	1900 3950 1900 4250
 Wire Wire Line
 	1900 5450 1900 5750
@@ -621,13 +593,29 @@ Wire Wire Line
 	2800 2850 2800 2950
 Connection ~ 2800 2850
 Connection ~ 2800 2950
-Wire Wire Line
-	4600 2050 4600 2450
-Connection ~ 4600 2450
-Wire Wire Line
-	4600 2450 4600 3050
-Text GLabel 4900 1950 2    50   Input ~ 0
+Text GLabel 4900 1850 2    50   Input ~ 0
 V3V3
-Text GLabel 1600 1950 0    50   Input ~ 0
+Text GLabel 1600 1850 0    50   Input ~ 0
 V3V3
+Wire Wire Line
+	2800 2650 2800 2750
+Connection ~ 2800 2750
+Wire Wire Line
+	3700 2650 3700 2750
+Connection ~ 3700 2750
+Wire Wire Line
+	1900 1750 1900 2150
+Text GLabel 2800 2250 0    50   Output ~ 0
+JTAG_TMS
+Text GLabel 2800 2350 0    50   Output ~ 0
+JTAG_TCK
+Text GLabel 2800 2450 0    50   Output ~ 0
+JTAG_TDI
+Text GLabel 2800 2550 0    50   Input ~ 0
+JTAG_TDO
+Connection ~ 1900 2150
+Wire Wire Line
+	1900 2150 1900 3050
+Wire Wire Line
+	4600 1750 4600 3050
 $EndSCHEMATC

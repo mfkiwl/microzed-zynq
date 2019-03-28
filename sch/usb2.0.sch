@@ -218,38 +218,7 @@ $EndComp
 Wire Wire Line
 	3300 3450 3400 3450
 Wire Wire Line
-	3300 4100 5900 4100
-Wire Wire Line
-	5900 4100 5900 1700
-NoConn ~ 6900 1800
-$Comp
-L power:GND #PWR?
-U 1 1 5BAD867D
-P 7000 1800
-F 0 "#PWR?" H 7000 1550 50  0001 C CNN
-F 1 "GND" H 7005 1627 50  0000 C CNN
-F 2 "" H 7000 1800 50  0001 C CNN
-F 3 "" H 7000 1800 50  0001 C CNN
-	1    7000 1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6900 1700 7000 1700
-Wire Wire Line
-	7000 1700 7000 1800
-$Comp
-L power:+5V #PWR?
-U 1 1 5BADD125
-P 5900 1400
-F 0 "#PWR?" H 5900 1250 50  0001 C CNN
-F 1 "+5V" H 5915 1573 50  0000 C CNN
-F 2 "" H 5900 1400 50  0001 C CNN
-F 3 "" H 5900 1400 50  0001 C CNN
-	1    5900 1400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 1400 5900 1600
+	3300 4100 4550 4100
 $Comp
 L Device:C C?
 U 1 1 5BAE2DD4
@@ -263,32 +232,8 @@ F 5 "CC0402MRX5R5BB475" H 250 0   50  0001 C CNN "ManufacturerPartNumber"
 	1    4400 3000
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:CP C?
-U 1 1 5BAE2DDB
-P 7250 1750
-F 0 "C?" H 7365 1796 50  0000 L CNN
-F 1 "150µF" H 7365 1705 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-3528-15_AVX-H" H 7288 1600 50  0001 C CNN
-F 3 "~" H 7250 1750 50  0001 C CNN
-F 4 "AVX" H 7250 1750 50  0001 C CNN "Manufacturer"
-F 5 "TCJB157M006R0025" H 7250 1750 50  0001 C CNN "ManufacturerPartNumber"
-	1    7250 1750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4400 2850 4200 2850
-$Comp
-L power:GND #PWR?
-U 1 1 5BAE2DF1
-P 7250 1900
-F 0 "#PWR?" H 7250 1650 50  0001 C CNN
-F 1 "GND" H 7255 1727 50  0000 C CNN
-F 2 "" H 7250 1900 50  0001 C CNN
-F 3 "" H 7250 1900 50  0001 C CNN
-	1    7250 1900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4200 2850 4200 3450
 $Comp
@@ -485,59 +430,9 @@ F 3 "" H 4400 3150 50  0001 C CNN
 $EndComp
 Text Notes 3350 4100 0    50   ~ 0
 P12 Table4-4\nmin: VDD33 - 0.4V
-$Comp
-L microzed:TPS2069D U?
-U 1 1 5C660448
-P 6900 1600
-F 0 "U?" H 7400 1865 50  0000 C CNN
-F 1 "TPS2069D" H 7400 1774 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8300 1700 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps2069d.pdf" H 8300 1600 50  0001 L CNN
-F 4 "1.45" H 8300 1400 50  0001 L CNN "Height"
-F 5 "Texas Instruments" H 8300 1300 50  0001 L CNN "Manufacturer"
-F 6 "TPS2069D" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    6900 1600
-	-1   0    0    -1  
-$EndComp
-Text Notes 6150 1150 0    50   ~ 0
-changed from TPS2051
-$Comp
-L Device:C C?
-U 1 1 5C6708A2
-P 5650 1750
-F 0 "C?" H 5765 1796 50  0000 L CNN
-F 1 "0.1µF" H 5765 1705 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0201_0603Metric" H 5688 1600 50  0001 C CNN
-F 3 "~" H 5650 1750 50  0001 C CNN
-F 4 "Yageo" H 0   0   50  0001 C CNN "Manufacturer"
-F 5 "CC0201KRX5R5BB104" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
-	1    5650 1750
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C6708A9
-P 5650 1900
-F 0 "#PWR?" H 5650 1650 50  0001 C CNN
-F 1 "GND" H 5655 1727 50  0000 C CNN
-F 2 "" H 5650 1900 50  0001 C CNN
-F 3 "" H 5650 1900 50  0001 C CNN
-	1    5650 1900
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 1600 5650 1600
-Connection ~ 5900 1600
-Wire Wire Line
-	6900 1600 7250 1600
 Wire Wire Line
 	4200 3450 7500 3450
 Connection ~ 7800 3450
-Wire Wire Line
-	7800 1600 7250 1600
-Connection ~ 7250 1600
-Text Notes 5900 2300 0    50   ~ 0
-P11 section8.3.2\ncompatible with both TTL and CMOS logic levels.\nso maybe we don't need level translator.
 Wire Wire Line
 	2850 1200 3050 1200
 Connection ~ 3400 1500
@@ -658,8 +553,6 @@ Wire Wire Line
 Text Notes 2600 5350 0    50   ~ 0
 Page 8, TABLE 2-1\n8.06kΩ (±1%)
 Connection ~ 2300 2200
-Wire Wire Line
-	7800 1600 7800 3450
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5C951FB5
@@ -680,4 +573,19 @@ Wire Wire Line
 	3250 2200 3250 2000
 Wire Wire Line
 	3250 2000 3500 2000
+Text GLabel 4550 4100 2    50   Output ~ 0
+5V_EN
+Wire Wire Line
+	7800 3000 7800 3450
+$Comp
+L power:+5V #PWR?
+U 1 1 5BADD125
+P 7800 3000
+F 0 "#PWR?" H 7800 2850 50  0001 C CNN
+F 1 "+5V" H 7815 3173 50  0000 C CNN
+F 2 "" H 7800 3000 50  0001 C CNN
+F 3 "" H 7800 3000 50  0001 C CNN
+	1    7800 3000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

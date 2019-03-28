@@ -189,7 +189,7 @@ Text GLabel 8700 5850 2    50   BiDi ~ 0
 BANK33_LVDS_24_N
 Text GLabel 8700 2350 2    50   BiDi ~ 0
 BANK33_SE_25
-Text GLabel 2800 1950 0    50   Output ~ 0
+Text GLabel 2800 1850 0    50   Output ~ 0
 PWR_EN
 Wire Wire Line
 	8700 2450 9600 2450
@@ -346,11 +346,11 @@ F 3 "" H 1900 6250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2800 3050 1900 3050
-Text GLabel 2800 2450 0    50   BiDi ~ 0
-PS_MIO51
 Text GLabel 2800 2350 0    50   BiDi ~ 0
+PS_MIO51
+Text GLabel 2800 2250 0    50   BiDi ~ 0
 PS_MIO50
-Text GLabel 3700 1950 2    50   BiDi ~ 0
+Text GLabel 3700 2150 2    50   BiDi ~ 0
 CARRIER_SRST#
 Wire Wire Line
 	3700 3050 4600 3050
@@ -457,9 +457,7 @@ Wire Wire Line
 Wire Wire Line
 	2800 4850 1900 4850
 Wire Wire Line
-	3700 1850 3700 1750
-Wire Wire Line
-	2800 2050 1450 2050
+	2800 1950 1450 1950
 Wire Wire Line
 	6900 5750 6900 6100
 Connection ~ 9600 2450
@@ -478,7 +476,7 @@ Connection ~ 3700 2750
 Wire Wire Line
 	2800 2850 2800 2750
 Connection ~ 2800 2750
-Text GLabel 2800 2250 0    50   Input ~ 0
+Text GLabel 2800 2150 0    50   Input ~ 0
 PG_1V8
 Wire Wire Line
 	2800 1750 1900 1750
@@ -490,23 +488,15 @@ Wire Wire Line
 	2800 1650 2800 1550
 Connection ~ 2800 1550
 Wire Wire Line
-	2800 1850 2800 1750
-Connection ~ 2800 1750
-Wire Wire Line
-	1900 1750 1900 2150
+	1900 1750 1900 2050
 Wire Wire Line
 	4600 1750 3700 1750
-Connection ~ 3700 1750
 Wire Wire Line
-	4950 2050 3700 2050
+	4950 1950 3700 1950
 Wire Wire Line
-	2800 2150 1900 2150
+	2800 2050 1900 2050
 Wire Wire Line
-	3700 2150 4600 2150
-Connection ~ 1900 2150
-Connection ~ 4600 2150
-Wire Wire Line
-	4600 2150 4600 1750
+	3700 2050 4600 2050
 Connection ~ 9600 2150
 Wire Wire Line
 	9600 2150 9600 2450
@@ -550,8 +540,6 @@ Wire Wire Line
 Wire Wire Line
 	4600 3350 4600 3650
 Wire Wire Line
-	4600 2150 4600 3050
-Wire Wire Line
 	4600 3050 4600 3350
 Wire Wire Line
 	4600 4250 4600 4550
@@ -580,8 +568,6 @@ Wire Wire Line
 Wire Wire Line
 	1900 3950 1900 4250
 Wire Wire Line
-	1900 2150 1900 3050
-Wire Wire Line
 	1900 3050 1900 3350
 Wire Wire Line
 	1900 3350 1900 3650
@@ -599,18 +585,9 @@ Wire Wire Line
 	2800 2850 2800 2950
 Connection ~ 2800 2850
 Connection ~ 2800 2950
-Text GLabel 3700 2250 2    50   Output ~ 0
-JTAG_TMS
-Text GLabel 3700 2350 2    50   Output ~ 0
-JTAG_TCK
-Text GLabel 3700 2450 2    50   Output ~ 0
-JTAG_TDI
-Text GLabel 3700 2550 2    50   Input ~ 0
-JTAG_TDO
-NoConn ~ 2800 2550
-Text GLabel 1450 2050 0    50   Input ~ 0
+Text GLabel 1450 1950 0    50   Input ~ 0
 V1V8
-Text GLabel 4950 2050 2    50   Input ~ 0
+Text GLabel 4950 1950 2    50   Input ~ 0
 V1V8
 Wire Wire Line
 	8700 4250 9600 4250
@@ -622,6 +599,19 @@ Wire Wire Line
 Connection ~ 6900 4250
 Wire Wire Line
 	6900 4250 6900 4550
-Text Notes 4750 2450 0    50   ~ 0
-JTAG interface use 3.3V
+Connection ~ 4600 2050
+Wire Wire Line
+	4600 2050 4600 1750
+Wire Wire Line
+	4600 2050 4600 3050
+Connection ~ 1900 2050
+Wire Wire Line
+	1900 2050 1900 3050
+NoConn ~ 3700 1850
+NoConn ~ 3700 2250
+NoConn ~ 3700 2350
+NoConn ~ 3700 2450
+NoConn ~ 3700 2550
+NoConn ~ 2800 2450
+NoConn ~ 2800 2550
 $EndSCHEMATC

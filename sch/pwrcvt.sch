@@ -957,22 +957,7 @@ Text Notes 8150 4550 0    50   ~ 0
 11:16
 Text Notes 8150 2100 0    50   ~ 0
 25:8
-$Comp
-L power:+5V #PWR?
-U 1 1 5CF9B150
-P 2250 6050
-F 0 "#PWR?" H 2250 5900 50  0001 C CNN
-F 1 "+5V" H 2265 6223 50  0000 C CNN
-F 2 "" H 2250 6050 50  0001 C CNN
-F 3 "" H 2250 6050 50  0001 C CNN
-	1    2250 6050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1500 6050 2250 6050
-Text Notes 1500 6250 0    50   ~ 0
-VIN must be +5V
-Text Notes 4850 5900 0    50   ~ 0
+Text Notes 5700 5750 0    50   ~ 0
 power on/off requirement\nhttps://www.xilinx.com/support/answers/65240.html
 $Comp
 L Device:R R?
@@ -1153,10 +1138,6 @@ VIN
 Wire Wire Line
 	6500 3600 6500 3500
 Connection ~ 6500 3600
-Text GLabel 1500 5950 1    50   Input ~ 0
-VIN
-Wire Wire Line
-	1500 6050 1500 5950
 $Comp
 L power:PWR_FLAG #FLG?
 U 1 1 5C977765
@@ -1248,4 +1229,276 @@ Wire Wire Line
 Wire Wire Line
 	4900 3400 5300 3400
 Connection ~ 4900 3700
+$Comp
+L microzed:TLV62130RGTR U?
+U 1 1 5CA23E45
+P 2100 5850
+F 0 "U?" H 2500 6015 50  0000 C CNN
+F 1 "TLV62130RGTR" H 2500 5924 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm" H 3500 5800 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/tlv62130" H 3500 5700 50  0001 L CNN
+F 4 "1" H 3500 5500 50  0001 L CNN "Height"
+F 5 "Texas Instruments" H 3500 5400 50  0001 L CNN "Manufacturer"
+F 6 "TLV62130RGTR" H 0   2250 50  0001 C CNN "ManufacturerPartNumber"
+	1    2100 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 6150 1900 6050
+Wire Wire Line
+	1900 5750 1500 5750
+Connection ~ 1900 5950
+Wire Wire Line
+	1900 5950 1900 5750
+Connection ~ 1900 6050
+Wire Wire Line
+	1900 6050 1900 5950
+$Comp
+L power:GND #PWR?
+U 1 1 5CA23E51
+P 1500 6150
+F 0 "#PWR?" H 1500 5900 50  0001 C CNN
+F 1 "GND" H 1505 5977 50  0000 C CNN
+F 2 "" H 1500 6150 50  0001 C CNN
+F 3 "" H 1500 6150 50  0001 C CNN
+	1    1500 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 5850 1500 5750
+Wire Wire Line
+	1900 6450 1100 6450
+Wire Wire Line
+	1900 6650 1900 6750
+Wire Wire Line
+	1900 7250 2400 7250
+Connection ~ 1900 6750
+Wire Wire Line
+	1900 6750 1900 7250
+Connection ~ 2400 7250
+Wire Wire Line
+	2400 7250 2500 7250
+Connection ~ 2500 7250
+Wire Wire Line
+	2500 7250 2600 7250
+Connection ~ 2600 7250
+Wire Wire Line
+	2600 7250 2700 7250
+Wire Wire Line
+	1900 6550 1500 6550
+Wire Wire Line
+	1500 6550 1500 6750
+Wire Wire Line
+	1500 7050 1500 7250
+Wire Wire Line
+	1500 7250 1900 7250
+Connection ~ 1900 7250
+$Comp
+L power:GND #PWR?
+U 1 1 5CA23E68
+P 1900 7250
+F 0 "#PWR?" H 1900 7000 50  0001 C CNN
+F 1 "GND" H 1905 7077 50  0000 C CNN
+F 2 "" H 1900 7250 50  0001 C CNN
+F 3 "" H 1900 7250 50  0001 C CNN
+	1    1900 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 6150 3100 6050
+Connection ~ 3100 6050
+Wire Wire Line
+	3100 6050 3100 5950
+$Comp
+L Device:R R?
+U 1 1 5CA23E73
+P 4000 6300
+F 0 "R?" H 4070 6346 50  0000 L CNN
+F 1 "226k" H 4070 6255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3930 6300 50  0001 C CNN
+F 3 "~" H 4000 6300 50  0001 C CNN
+F 4 "Yageo" H 4000 6300 50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-07226KL" H 4000 6300 50  0001 C CNN "ManufacturerPartNumber"
+	1    4000 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CA23E83
+P 4900 7000
+F 0 "R?" H 4970 7046 50  0000 L CNN
+F 1 "300k" H 4970 6955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4830 7000 50  0001 C CNN
+F 3 "~" H 4900 7000 50  0001 C CNN
+F 4 "Yageo" H 4900 7000 50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-13300KL" H 4900 7000 50  0001 C CNN "ManufacturerPartNumber"
+	1    4900 7000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 6450 4000 6750
+Wire Wire Line
+	3100 6750 4000 6750
+Connection ~ 4000 6750
+Wire Wire Line
+	4000 6750 4000 6850
+Wire Wire Line
+	3100 5950 3300 5950
+Connection ~ 3100 5950
+Wire Wire Line
+	3600 5950 3800 5950
+Wire Wire Line
+	4000 5950 4000 6150
+Wire Wire Line
+	2700 7250 4000 7250
+Wire Wire Line
+	4000 7250 4000 7150
+Connection ~ 2700 7250
+Wire Wire Line
+	4400 6450 4400 7250
+Wire Wire Line
+	4400 7250 4000 7250
+Connection ~ 4000 7250
+Wire Wire Line
+	4400 5950 4000 5950
+Connection ~ 4000 5950
+Connection ~ 4400 5950
+Wire Wire Line
+	3100 6350 3800 6350
+Wire Wire Line
+	3800 6350 3800 5950
+Connection ~ 3800 5950
+Wire Wire Line
+	3800 5950 4000 5950
+Wire Wire Line
+	4900 6150 4900 5950
+Wire Wire Line
+	4900 5950 4400 5950
+Wire Wire Line
+	4900 6450 4900 6550
+Wire Wire Line
+	4900 7150 4900 7250
+Wire Wire Line
+	4900 7250 4400 7250
+Connection ~ 4400 7250
+Wire Wire Line
+	3100 6550 4900 6550
+Connection ~ 4900 6550
+Wire Wire Line
+	4900 6550 4900 6850
+Wire Wire Line
+	4900 6550 5400 6550
+$Comp
+L Device:L L?
+U 1 1 5CA23EB0
+P 3450 5950
+F 0 "L?" V 3550 5950 50  0000 C BNN
+F 1 "1.0µH" V 3350 5950 50  0000 C TNN
+F 2 "microzed:SRN3015" H 3450 5950 50  0001 C CNN
+F 3 "~" H 3450 5950 50  0001 C CNN
+F 4 "Bourns" H 3450 5950 50  0001 C CNN "Manufacturer"
+F 5 "SRN3015" H 3450 5950 50  0001 C CNN "ManufacturerPartNumber"
+	1    3450 5950
+	0    -1   -1   0   
+$EndComp
+Text Notes 3200 6750 0    50   ~ 0
+5:4
+$Comp
+L Device:R R?
+U 1 1 5CA23EB9
+P 4900 6300
+F 0 "R?" H 4970 6346 50  0000 L CNN
+F 1 "76.8k" H 4970 6255 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4830 6300 50  0001 C CNN
+F 3 "~" H 4900 6300 50  0001 C CNN
+F 4 "Yageo" H 4900 6300 50  0001 C CNN "Manufacturer"
+F 5 "RT0402DRE0776K8L" H 4900 6300 50  0001 C CNN "ManufacturerPartNumber"
+	1    4900 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CA23EC1
+P 1500 6900
+F 0 "C?" H 1550 7000 50  0000 L CNN
+F 1 "3300pF" H 1550 6800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1538 6750 50  0001 C CNN
+F 3 "~" H 1500 6900 50  0001 C CNN
+F 4 "Yageo" H 1500 6900 50  0001 C CNN "Manufacturer"
+F 5 "CC0402KRX7R9BB332" H 1500 6900 50  0001 C CNN "ManufacturerPartNumber"
+	1    1500 6900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 6150 4400 5950
+$Comp
+L Device:C C?
+U 1 1 5CA23ECA
+P 4400 6300
+F 0 "C?" H 4450 6350 50  0000 L BNN
+F 1 "22µF" H 4450 6250 50  0000 L TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4438 6150 50  0001 C CNN
+F 3 "~" H 4400 6300 50  0001 C CNN
+F 4 "Yageo" H 4400 6300 50  0001 C CNN "Manufacturer"
+F 5 "CC0603MRX5R5BB226" H 4400 6300 50  0001 C CNN "ManufacturerPartNumber"
+	1    4400 6300
+	1    0    0    -1  
+$EndComp
+Text GLabel 1500 5650 1    50   Input ~ 0
+VIN
+Wire Wire Line
+	1500 5750 1500 5650
+Connection ~ 1500 5750
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5CA23ED3
+P 3800 5950
+F 0 "#FLG?" H 3800 6025 50  0001 C CNN
+F 1 "PWR_FLAG" H 3800 6123 50  0001 C CNN
+F 2 "" H 3800 5950 50  0001 C CNN
+F 3 "~" H 3800 5950 50  0001 C CNN
+	1    3800 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CA23EDB
+P 1500 6000
+F 0 "C?" H 1550 6050 50  0000 L BNN
+F 1 "10µF" H 1550 5950 50  0000 L TNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1538 5850 50  0001 C CNN
+F 3 "~" H 1500 6000 50  0001 C CNN
+F 4 "Yageo" H 1500 6000 50  0001 C CNN "Manufacturer"
+F 5 "CC0805KKX5R8BB106" H 1500 6000 50  0001 C CNN "ManufacturerPartNumber"
+	1    1500 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5CA419B2
+P 4400 5950
+F 0 "#PWR?" H 4400 5800 50  0001 C CNN
+F 1 "+5V" H 4415 6123 50  0000 C CNN
+F 2 "" H 4400 5950 50  0001 C CNN
+F 3 "" H 4400 5950 50  0001 C CNN
+	1    4400 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5CA23E7B
+P 4000 7000
+F 0 "R?" H 4070 7046 50  0000 L CNN
+F 1 "43k" H 4070 6955 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 3930 7000 50  0001 C CNN
+F 3 "~" H 4000 7000 50  0001 C CNN
+F 4 "Yageo" H 4000 7000 50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0743KL" H 4000 7000 50  0001 C CNN "ManufacturerPartNumber"
+	1    4000 7000
+	1    0    0    -1  
+$EndComp
+Text GLabel 1100 6450 0    50   Input ~ 0
+5V_EN
+Text Label 5100 6550 0    50   ~ 0
+PG_5V
 $EndSCHEMATC
