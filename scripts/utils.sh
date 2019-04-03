@@ -27,3 +27,6 @@ echo $PRJDIR/sym-lib-table | xargs sed -i "/${PRJNAME}-rescue/d"
 echo $SCHFILES | xargs sed -i "/LIBS:${PRJNAME}-cache/d"
 echo $SCHFILES | xargs sed -i "s/${PRJNAME}-rescue:\([^ ]*\)-${PRJNAME}/${PRJNAME}:\1/"
 echo $SCHFILES | xargs sed -i '/AR Path/d'
+
+# footprint
+rm -f $PRJDIR/${PRJNAME}.kicad_pcb-bak

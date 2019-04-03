@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L microzed:XC7Z020-1CLG484C IC?
+L microzed:XC7Z020-1CLG484C IC1
 U 4 1 5C38B8A3
 P 1500 2000
-F 0 "IC?" H 2167 2165 50  0000 C CNN
+F 0 "IC1" H 2167 2165 50  0000 C CNN
 F 1 "XC7Z020-1CLG484C" H 2167 2074 50  0000 C CNN
 F 2 "microzed:BGA484C100P22X22_2300X2300X254" H 4150 2100 50  0001 L CNN
 F 3 "http://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pkg-Pinout.pdf" H 4150 2000 50  0001 L CNN
@@ -128,10 +128,10 @@ BANK34_LVDS_24_N
 Text GLabel 3050 2200 2    50   BiDi ~ 0
 BANK34_SE_25
 $Comp
-L microzed:XC7Z020-1CLG484C IC?
+L microzed:XC7Z020-1CLG484C IC1
 U 5 1 5C3B03AD
 P 7000 1000
-F 0 "IC?" H 7733 1165 50  0000 C CNN
+F 0 "IC1" H 7733 1165 50  0000 C CNN
 F 1 "XC7Z020-1CLG484C" H 7733 1074 50  0000 C CNN
 F 2 "microzed:BGA484C100P22X22_2300X2300X254" H 9650 1100 50  0001 L CNN
 F 3 "http://www.xilinx.com/support/documentation/user_guides/ug865-Zynq-7000-Pkg-Pinout.pdf" H 9650 1000 50  0001 L CNN
@@ -447,10 +447,10 @@ Wire Wire Line
 Text Notes 4250 3750 0    50   ~ 0
 UG865 P13\nUG470 P27 Table 2-4\nPull-Up During Configuration (bar)\nActive-Low PUDC_B input enables internal pull-up\nresistors on the SelectIO pins after power-up and during\nconfiguration.\n• When PUDC_B is Low, internal pull-up resistors are\nenabled on each SelectIO pin.\n• When PUDC_B is High, internal pull-up resistors are\ndisabled on each SelectIO pin.\nPUDC_B must be tied either directly, or via a ≤ 1 kΩ to\nVCCO_14 or GND. When PUDC_B is tied to GND, the\nactivation of internal pull-ups during power-on depends\non the power sequence because the PUDC_B control\nsignal is forwarded through an input buffer in bank 14\nand internal paths to the enables of internal pull-ups at\napplicable pins in their respective I/O banks. An\nexternal pull-up resistor is recommended between a pin\nand the pin’s VCCO power supply when it is critical for\nthe pin to be pulled High immediately as the pin’s VCCO\npower ramps up.\nCaution! Do not allow this pin to float before and\nduring configuration.\n
 $Comp
-L microzed:VCCO_34 #PWR?
+L microzed:VCCO_34 #PWR050
 U 1 1 5C491156
 P 2950 1400
-F 0 "#PWR?" H 2950 1250 50  0001 C CNN
+F 0 "#PWR050" H 2950 1250 50  0001 C CNN
 F 1 "VCCO_34" H 2965 1573 50  0000 C CNN
 F 2 "" H 2950 1400 50  0001 C CNN
 F 3 "" H 2950 1400 50  0001 C CNN
@@ -464,10 +464,10 @@ Wire Wire Line
 Wire Wire Line
 	2950 1500 2950 1400
 $Comp
-L Device:R R?
+L Device:R R24
 U 1 1 5C8C283B
 P 2950 1650
-F 0 "R?" H 3020 1696 50  0000 L CNN
+F 0 "R24" H 3020 1696 50  0000 L CNN
 F 1 "1k" H 3020 1605 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 2880 1650 50  0001 C CNN
 F 3 "~" H 2950 1650 50  0001 C CNN
