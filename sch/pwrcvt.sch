@@ -1663,4 +1663,6 @@ Wire Wire Line
 Connection ~ 1100 1200
 Wire Wire Line
 	1100 1200 1450 1200
+Text Notes 3350 1000 0    50   ~ 0
+Inductor:\nSRF > 10 * Freq_ON_OFF
 $EndSCHEMATC
