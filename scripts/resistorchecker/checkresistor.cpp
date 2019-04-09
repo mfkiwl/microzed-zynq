@@ -267,7 +267,7 @@ void multithreadprocess(
 static constexpr std::size_t thread_num = 8;
 bool validateSolution(const solution_t & sol)
 {
-	return sol.res_num <= 4 && sol.min_modeln >= 5;
+	return sol.res_num <= 5 && sol.min_modeln >= 5;
 }
 
 static constexpr double VoltPrecise = 0.005;
@@ -301,6 +301,11 @@ int main()
 		[](double v, double r1) { return (r1 * 0.8) / (v - 0.8); },
 		[](double r1, double r2) { return (r1 + r2) * (0.8 * 0.8) / (r2 * r2); },
 	});	/// error 1%: +-0.05V	25/8
+	pair_info.push_back({{}, 5, VoltPrecise,
+		[](double r1, double r2) { return (r1 + r2)/r2 * 0.8; },
+		[](double v, double r1) { return (r1 * 0.8) / (v - 0.8); },
+		[](double r1, double r2) { return (r1 + r2) * (0.8 * 0.8) / (r2 * r2); },
+	});	/// error 1%: +-0.05V	42/8
 #if 0
 	pair_info.push_back({{}, 0.95, 0.01,
 		[](double r1, double r2) { return r2/(r1 + r2) * 1.0; },

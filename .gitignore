@@ -1,2 +1,8 @@
 *.bck
 *.bak
+source/*
+output/*
+*.kicad_pcb-bak
+*-cache.lib
+*-cache
+scripts/resistorchecker/resistorChecker
