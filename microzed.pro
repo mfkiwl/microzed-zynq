@@ -1,4 +1,4 @@
-update=Tue 09 Apr 2019 11:11:32 PM CST
+update=Sat 13 Apr 2019 12:42:07 PM CST
 version=1
 last_client=kicad
 [general]
@@ -28,18 +28,18 @@ PageLayoutDescrFile=
 LastNetListRead=
 CopperLayerCount=10
 BoardThickness=1.6
-AllowMicroVias=1
+AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=0
 ProhibitOverlappingCourtyards=0
-MinTrackWidth=0.15
+MinTrackWidth=0.09999999999999999
 MinViaDiameter=0.4
 MinViaDrill=0.2
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.2
 TrackWidth1=0.25
-TrackWidth2=0.15
+TrackWidth2=0.1
 ViaDiameter1=0.5
 ViaDrill1=0.3
 ViaDiameter2=0.4
@@ -101,7 +101,7 @@ Type=1
 [pcbnew/Netclasses/1]
 Name=DDRSignal
 Clearance=0.1
-TrackWidth=0.15
+TrackWidth=0.1
 ViaDiameter=0.4
 ViaDrill=0.2
 uViaDiameter=0.3

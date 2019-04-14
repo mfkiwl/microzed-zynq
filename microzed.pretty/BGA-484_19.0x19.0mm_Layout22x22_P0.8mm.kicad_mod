@@ -1,4 +1,4 @@
-(module BGA-484_19.0x19.0mm_Layout22x22_P0.8mm (layer F.Cu) (tedit 5CAC094D)
+(module BGA-484_19.0x19.0mm_Layout22x22_P0.8mm (layer F.Cu) (tedit 5CB34094)
   (descr "CLG484 - Wire-Bond Chip-Scale BGA (0.8 mm Pitch)")
   (tags "Integrated Circuit")
   (attr smd)
@@ -507,7 +507,7 @@
   (pad AB20 smd circle (at 6.8 8.4 90) (size 0.43 0.43) (layers F.Cu F.Paste))
   (pad AB21 smd circle (at 7.6 8.4 90) (size 0.43 0.43) (layers F.Cu F.Paste))
   (pad AB22 smd circle (at 8.4 8.4 90) (size 0.43 0.43) (layers F.Cu F.Paste))
-  (model XC7Z020-1CLG484CES.stp
+  (model ${KIPRJMOD}/packages3d/XC7Z020-1CLG484C.stp
     (at (xyz 0 0 0))
     (scale (xyz 1 1 1))
     (rotate (xyz 0 0 0))
