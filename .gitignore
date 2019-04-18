@@ -6,3 +6,4 @@ output/*
 *-cache.lib
 *-cache
 scripts/resistorchecker/resistorChecker
+resources/microzed/layout/*.svg
