@@ -103,7 +103,7 @@ Type=1
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/1]
 Name=DDRSignal
-Clearance=0.1
+Clearance=0.2
 TrackWidth=0.15
 ViaDiameter=0.4
 ViaDrill=0.2

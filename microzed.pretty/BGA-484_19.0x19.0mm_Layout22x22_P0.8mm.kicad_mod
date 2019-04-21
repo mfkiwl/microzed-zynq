@@ -1,8 +1,8 @@
-(module BGA-484_19.0x19.0mm_Layout22x22_P0.8mm (layer F.Cu) (tedit 5CB34094)
+(module BGA-484_19.0x19.0mm_Layout22x22_P0.8mm (layer F.Cu) (tedit 5CBB08CC)
   (descr "CLG484 - Wire-Bond Chip-Scale BGA (0.8 mm Pitch)")
   (tags "Integrated Circuit")
   (attr smd)
-  (fp_text reference IC** (at 0 -11.5) (layer F.SilkS)
+  (fp_text reference REF** (at 0 -11.5) (layer F.SilkS)
     (effects (font (size 1.27 1.27) (thickness 0.254)))
   )
   (fp_text value BGA-484_19.0x19.0mm_Layout22x22_P0.8mm (at 0 12.5) (layer F.SilkS) hide
