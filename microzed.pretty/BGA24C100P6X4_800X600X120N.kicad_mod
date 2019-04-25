@@ -1,6 +1,6 @@
-(module BGA24C100P6X4_800X600X120N (layer F.Cu) (tedit 0)
+(module BGA24C100P6X4_800X600X120N (layer F.Cu) (tedit 5CC12479)
   (attr smd)
-  (fp_text reference BGA24C100P6X4_800X600X120N (at -0.69236 -5.92523) (layer F.SilkS)
+  (fp_text reference BGA24C100P6X4_800X600X120N (at 0 -5.3) (layer F.Fab)
     (effects (font (size 1.00343 1.00343) (thickness 0.05)))
   )
   (fp_text value VAL** (at -0.055077 5.64308) (layer F.SilkS)

@@ -111,7 +111,58 @@ $EndComp
 Wire Wire Line
 	6950 2400 7350 2400
 Wire Wire Line
-	5250 2450 5550 2450
+	4050 2450 4300 2450
 Wire Wire Line
 	5550 2450 5550 2200
+$Comp
+L Transistor_FET:BSS138 Q3
+U 1 1 5CD70A03
+P 3850 2350
+F 0 "Q3" V 4101 2350 50  0000 C CNN
+F 1 "BSS138" V 4192 2350 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4050 2275 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 3850 2350 50  0001 L CNN
+	1    3850 2350
+	0    1    1    0   
+$EndComp
+Text GLabel 3850 2050 1    50   Input ~ 6
+PWR_B501
+Wire Wire Line
+	3850 2050 3850 2150
+Wire Wire Line
+	4300 2450 4300 2250
+$Comp
+L Device:R R?
+U 1 1 5CD7C4EB
+P 4300 2100
+AR Path="/5BE4514C/5CD7C4EB" Ref="R?"  Part="1" 
+AR Path="/5B95643F/5CD7C4EB" Ref="R?"  Part="1" 
+AR Path="/5C3F5BB1/5CD7C4EB" Ref="R106"  Part="1" 
+F 0 "R106" H 4050 2150 50  0000 L CNN
+F 1 "10K" H 4100 2050 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4230 2100 50  0001 C CNN
+F 3 "~" H 4300 2100 50  0001 C CNN
+F 4 "Yageo" H 4300 2100 50  0001 C CNN "Manufacturer"
+F 5 "RC0402FR-0710KL" H 4300 2100 50  0001 C CNN "ManufacturerPartNumber"
+	1    4300 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0170
+U 1 1 5CD7D2BD
+P 4300 1850
+F 0 "#PWR0170" H 4300 1700 50  0001 C CNN
+F 1 "+3.3V" H 4315 2023 50  0000 C CNN
+F 2 "" H 4300 1850 50  0001 C CNN
+F 3 "" H 4300 1850 50  0001 C CNN
+	1    4300 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1850 4300 1950
+Wire Wire Line
+	3500 2450 3650 2450
+Connection ~ 4300 2450
+Wire Wire Line
+	4300 2450 5550 2450
 $EndSCHEMATC

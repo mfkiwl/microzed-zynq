@@ -1,11 +1,11 @@
-(module BGA96C80P9X16_900X1400X120 (layer F.Cu) (tedit 5B84D72E)
+(module BGA96C80P9X16_900X1400X120 (layer F.Cu) (tedit 5CC1246C)
   (descr "96-BALL FBGA-X16 (HA)_1")
   (tags "Integrated Circuit")
   (attr smd)
   (fp_text reference IC** (at -3.81 -8.89) (layer F.SilkS)
     (effects (font (size 1.27 1.27) (thickness 0.254)))
   )
-  (fp_text value BGA96C80P9X16_900X1400X120 (at 0 10.16) (layer F.SilkS) hide
+  (fp_text value BGA96C80P9X16_900X1400X120 (at 0 10.16) (layer F.Fab) hide
     (effects (font (size 1.27 1.27) (thickness 0.254)))
   )
   (fp_line (start -5.55 -8.05) (end 5.55 -8.05) (layer Dwgs.User) (width 0.05))

@@ -1,11 +1,11 @@
-(module BGA400C80P20X20_1700X1700X160 (layer F.Cu) (tedit 5B83BB89)
+(module BGA400C80P20X20_1700X1700X160 (layer F.Cu) (tedit 5CC1245B)
   (descr CLG400)
   (tags "Integrated Circuit")
   (attr smd)
   (fp_text reference IC** (at 0 0) (layer F.SilkS)
     (effects (font (size 1.27 1.27) (thickness 0.254)))
   )
-  (fp_text value BGA400C80P20X20_1700X1700X160 (at 0 0) (layer F.SilkS) hide
+  (fp_text value BGA400C80P20X20_1700X1700X160 (at 0 0) (layer F.Fab) hide
     (effects (font (size 1.27 1.27) (thickness 0.254)))
   )
   (fp_line (start -9.5 -9.5) (end 9.5 -9.5) (layer Dwgs.User) (width 0.05))
