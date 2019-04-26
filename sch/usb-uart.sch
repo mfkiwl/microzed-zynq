@@ -265,7 +265,7 @@ U 1 1 5BA38660
 P 7850 2050
 F 0 "D3" H 7850 2266 50  0000 C CNN
 F 1 "B330" H 7850 2175 50  0000 C CNN
-F 2 "Diode_SMD:D_SMC" H 7850 1875 50  0001 C CNN
+F 2 "Diode_SMD:D_SMA" H 7850 1875 50  0001 C CNN
 F 3 "http://www.jameco.com/Jameco/Products/ProdDS/1538777.pdf" H 7850 2050 50  0001 C CNN
 F 4 "Diodes" H 700 0   50  0001 C CNN "Manufacturer"
 F 5 "B330A-13-F" H 700 0   50  0001 C CNN "ManufacturerPartNumber"

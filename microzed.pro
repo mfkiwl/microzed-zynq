@@ -42,7 +42,8 @@ TrackWidth1=0.25
 TrackWidth2=0.1
 TrackWidth3=0.15
 TrackWidth4=0.2
-TrackWidth5=0.5
+TrackWidth5=0.3
+TrackWidth6=0.5
 ViaDiameter1=0.5
 ViaDrill1=0.3
 ViaDiameter2=0.4
@@ -103,7 +104,7 @@ Type=1
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/1]
 Name=DDRSignal
-Clearance=0.2
+Clearance=0.1
 TrackWidth=0.15
 ViaDiameter=0.4
 ViaDrill=0.2
