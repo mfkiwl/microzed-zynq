@@ -75,7 +75,7 @@
     (pad_to_mask_clearance 0.05)
     (solder_mask_min_width 0.25)
     (aux_axis_origin 0 0)
-    (visible_elements 7FFFFFFF)
+    (visible_elements 7FFFF7FF)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
       (usegerberextensions false)
@@ -1909,6 +1909,11 @@
       (net 390 "Net-(IC2-Pad8)"))
     (pad 1 thru_hole circle (at -5.075 7.8 270) (size 1.53 1.53) (drill 1.02) (layers *.Cu *.Mask F.SilkS)
       (net 490 "Net-(C162-Pad1)"))
+    (model ${KIPRJMOD}/packages3d/c-1-2301994-1-b-3d.stp
+      (offset (xyz 0 12 5))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 180))
+    )
   )
 
   (module Resistor_SMD:R_Array_Convex_4x0402 (layer F.Cu) (tedit 58E0A8A8) (tstamp 5C9D53F0)
