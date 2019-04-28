@@ -41,151 +41,151 @@ F 5 "BSH-090-01-X-D-A" H 0   0   50  0001 C CNN "ManufacturerPartNumber"
 $EndComp
 Text GLabel 7800 2250 0    50   BiDi ~ 0
 BANK13_SE_0
-Text GLabel 2800 3550 0    50   BiDi ~ 0
-BANK13_LVDS_21_N
 Text GLabel 2800 3450 0    50   BiDi ~ 0
+BANK13_LVDS_21_N
+Text GLabel 2800 3550 0    50   BiDi ~ 0
 BANK13_LVDS_21_P
-Text GLabel 2800 3850 0    50   BiDi ~ 0
-BANK13_LVDS_19_N
 Text GLabel 2800 3750 0    50   BiDi ~ 0
+BANK13_LVDS_19_N
+Text GLabel 2800 3850 0    50   BiDi ~ 0
 BANK13_LVDS_19_P
-Text GLabel 2800 4150 0    50   BiDi ~ 0
-BANK13_LVDS_17_N
 Text GLabel 2800 4050 0    50   BiDi ~ 0
+BANK13_LVDS_17_N
+Text GLabel 2800 4150 0    50   BiDi ~ 0
 BANK13_LVDS_17_P
-Text GLabel 2800 4450 0    50   BiDi ~ 0
-BANK13_LVDS_15_N
 Text GLabel 2800 4350 0    50   BiDi ~ 0
+BANK13_LVDS_15_N
+Text GLabel 2800 4450 0    50   BiDi ~ 0
 BANK13_LVDS_15_P
-Text GLabel 2800 4750 0    50   BiDi ~ 0
-BANK13_LVDS_13_N
 Text GLabel 2800 4650 0    50   BiDi ~ 0
+BANK13_LVDS_13_N
+Text GLabel 2800 4750 0    50   BiDi ~ 0
 BANK13_LVDS_13_P
-Text GLabel 2800 5050 0    50   BiDi ~ 0
-BANK13_LVDS_11_N
 Text GLabel 2800 4950 0    50   BiDi ~ 0
+BANK13_LVDS_11_N
+Text GLabel 2800 5050 0    50   BiDi ~ 0
 BANK13_LVDS_11_P
-Text GLabel 2800 5350 0    50   BiDi ~ 0
-BANK13_LVDS_9_N
 Text GLabel 2800 5250 0    50   BiDi ~ 0
+BANK13_LVDS_9_N
+Text GLabel 2800 5350 0    50   BiDi ~ 0
 BANK13_LVDS_9_P
-Text GLabel 2800 5650 0    50   BiDi ~ 0
-BANK13_LVDS_7_N
 Text GLabel 2800 5550 0    50   BiDi ~ 0
+BANK13_LVDS_7_N
+Text GLabel 2800 5650 0    50   BiDi ~ 0
 BANK13_LVDS_7_P
-Text GLabel 2800 5950 0    50   BiDi ~ 0
-BANK13_LVDS_5_N
 Text GLabel 2800 5850 0    50   BiDi ~ 0
+BANK13_LVDS_5_N
+Text GLabel 2800 5950 0    50   BiDi ~ 0
 BANK13_LVDS_5_P
-Text GLabel 7800 1750 0    50   BiDi ~ 0
-BANK13_LVDS_3_N
 Text GLabel 7800 1650 0    50   BiDi ~ 0
+BANK13_LVDS_3_N
+Text GLabel 7800 1750 0    50   BiDi ~ 0
 BANK13_LVDS_3_P
-Text GLabel 7800 2050 0    50   BiDi ~ 0
-BANK13_LVDS_1_N
 Text GLabel 7800 1950 0    50   BiDi ~ 0
+BANK13_LVDS_1_N
+Text GLabel 7800 2050 0    50   BiDi ~ 0
 BANK13_LVDS_1_P
-Text GLabel 2800 3250 0    50   BiDi ~ 0
-BANK13_LVDS_23_N
 Text GLabel 2800 3150 0    50   BiDi ~ 0
+BANK13_LVDS_23_N
+Text GLabel 2800 3250 0    50   BiDi ~ 0
 BANK13_LVDS_23_P
 Text GLabel 7800 2350 0    50   BiDi ~ 0
 BANK33_SE_0
-Text GLabel 7800 2650 0    50   BiDi ~ 0
-BANK33_LVDS_1_P
-Text GLabel 7800 2550 0    50   BiDi ~ 0
-BANK33_LVDS_1_N
-Text GLabel 8700 2650 2    50   BiDi ~ 0
-BANK33_LVDS_2_P
-Text GLabel 8700 2550 2    50   BiDi ~ 0
-BANK33_LVDS_2_N
-Text GLabel 7800 2950 0    50   BiDi ~ 0
-BANK33_LVDS_3_P
-Text GLabel 7800 2850 0    50   BiDi ~ 0
-BANK33_LVDS_3_N
-Text GLabel 8700 2950 2    50   BiDi ~ 0
-BANK33_LVDS_4_P
-Text GLabel 8700 2850 2    50   BiDi ~ 0
-BANK33_LVDS_4_N
-Text GLabel 7800 3250 0    50   BiDi ~ 0
-BANK33_LVDS_5_P
-Text GLabel 7800 3150 0    50   BiDi ~ 0
-BANK33_LVDS_5_N
-Text GLabel 8700 3250 2    50   BiDi ~ 0
-BANK33_LVDS_6_P
-Text GLabel 8700 3150 2    50   BiDi ~ 0
-BANK33_LVDS_6_N
-Text GLabel 7800 3550 0    50   BiDi ~ 0
-BANK33_LVDS_7_P
-Text GLabel 7800 3450 0    50   BiDi ~ 0
-BANK33_LVDS_7_N
-Text GLabel 8700 3550 2    50   BiDi ~ 0
-BANK33_LVDS_8_P
-Text GLabel 8700 3450 2    50   BiDi ~ 0
-BANK33_LVDS_8_N
-Text GLabel 7800 3850 0    50   BiDi ~ 0
-BANK33_LVDS_9_P
-Text GLabel 7800 3750 0    50   BiDi ~ 0
-BANK33_LVDS_9_N
-Text GLabel 8700 3850 2    50   BiDi ~ 0
-BANK33_LVDS_10_P
-Text GLabel 8700 3750 2    50   BiDi ~ 0
-BANK33_LVDS_10_N
-Text GLabel 7800 4150 0    50   BiDi ~ 0
-BANK33_LVDS_11_P
-Text GLabel 7800 4050 0    50   BiDi ~ 0
-BANK33_LVDS_11_N
-Text GLabel 8700 4150 2    50   BiDi ~ 0
-BANK33_LVDS_12_P
-Text GLabel 8700 4050 2    50   BiDi ~ 0
-BANK33_LVDS_12_N
-Text GLabel 7800 4450 0    50   BiDi ~ 0
-BANK33_LVDS_13_P
-Text GLabel 7800 4350 0    50   BiDi ~ 0
-BANK33_LVDS_13_N
-Text GLabel 8700 4450 2    50   BiDi ~ 0
-BANK33_LVDS_14_P
-Text GLabel 8700 4350 2    50   BiDi ~ 0
-BANK33_LVDS_14_N
-Text GLabel 7800 4750 0    50   BiDi ~ 0
-BANK33_LVDS_15_P
-Text GLabel 7800 4650 0    50   BiDi ~ 0
-BANK33_LVDS_15_N
-Text GLabel 8700 4750 2    50   BiDi ~ 0
-BANK33_LVDS_16_P
-Text GLabel 8700 4650 2    50   BiDi ~ 0
-BANK33_LVDS_16_N
-Text GLabel 7800 5050 0    50   BiDi ~ 0
-BANK33_LVDS_17_P
-Text GLabel 7800 4950 0    50   BiDi ~ 0
-BANK33_LVDS_17_N
-Text GLabel 8700 5050 2    50   BiDi ~ 0
-BANK33_LVDS_18_P
-Text GLabel 8700 4950 2    50   BiDi ~ 0
-BANK33_LVDS_18_N
-Text GLabel 7800 5350 0    50   BiDi ~ 0
-BANK33_LVDS_19_P
-Text GLabel 7800 5250 0    50   BiDi ~ 0
-BANK33_LVDS_19_N
-Text GLabel 8700 5350 2    50   BiDi ~ 0
-BANK33_LVDS_20_P
-Text GLabel 8700 5250 2    50   BiDi ~ 0
-BANK33_LVDS_20_N
-Text GLabel 7800 5650 0    50   BiDi ~ 0
-BANK33_LVDS_21_P
-Text GLabel 7800 5550 0    50   BiDi ~ 0
-BANK33_LVDS_21_N
-Text GLabel 8700 5650 2    50   BiDi ~ 0
-BANK33_LVDS_22_P
-Text GLabel 8700 5550 2    50   BiDi ~ 0
-BANK33_LVDS_22_N
-Text GLabel 7800 5950 0    50   BiDi ~ 0
-BANK33_LVDS_23_P
-Text GLabel 7800 5850 0    50   BiDi ~ 0
-BANK33_LVDS_23_N
-Text GLabel 8700 5950 2    50   BiDi ~ 0
-BANK33_LVDS_24_P
 Text GLabel 8700 5850 2    50   BiDi ~ 0
+BANK33_LVDS_1_P
+Text GLabel 8700 5950 2    50   BiDi ~ 0
+BANK33_LVDS_1_N
+Text GLabel 7800 5850 0    50   BiDi ~ 0
+BANK33_LVDS_2_P
+Text GLabel 7800 5950 0    50   BiDi ~ 0
+BANK33_LVDS_2_N
+Text GLabel 8700 5550 2    50   BiDi ~ 0
+BANK33_LVDS_3_P
+Text GLabel 8700 5650 2    50   BiDi ~ 0
+BANK33_LVDS_3_N
+Text GLabel 7800 5550 0    50   BiDi ~ 0
+BANK33_LVDS_4_P
+Text GLabel 7800 5650 0    50   BiDi ~ 0
+BANK33_LVDS_4_N
+Text GLabel 8700 5250 2    50   BiDi ~ 0
+BANK33_LVDS_5_P
+Text GLabel 8700 5350 2    50   BiDi ~ 0
+BANK33_LVDS_5_N
+Text GLabel 7800 5250 0    50   BiDi ~ 0
+BANK33_LVDS_6_P
+Text GLabel 7800 5350 0    50   BiDi ~ 0
+BANK33_LVDS_6_N
+Text GLabel 8700 4950 2    50   BiDi ~ 0
+BANK33_LVDS_7_P
+Text GLabel 8700 5050 2    50   BiDi ~ 0
+BANK33_LVDS_7_N
+Text GLabel 7800 4950 0    50   BiDi ~ 0
+BANK33_LVDS_8_P
+Text GLabel 7800 5050 0    50   BiDi ~ 0
+BANK33_LVDS_8_N
+Text GLabel 8700 4650 2    50   BiDi ~ 0
+BANK33_LVDS_9_P
+Text GLabel 8700 4750 2    50   BiDi ~ 0
+BANK33_LVDS_9_N
+Text GLabel 7800 4650 0    50   BiDi ~ 0
+BANK33_LVDS_10_P
+Text GLabel 7800 4750 0    50   BiDi ~ 0
+BANK33_LVDS_10_N
+Text GLabel 8700 4350 2    50   BiDi ~ 0
+BANK33_LVDS_11_P
+Text GLabel 8700 4450 2    50   BiDi ~ 0
+BANK33_LVDS_11_N
+Text GLabel 7800 4350 0    50   BiDi ~ 0
+BANK33_LVDS_12_P
+Text GLabel 7800 4450 0    50   BiDi ~ 0
+BANK33_LVDS_12_N
+Text GLabel 8700 4050 2    50   BiDi ~ 0
+BANK33_LVDS_13_P
+Text GLabel 8700 4150 2    50   BiDi ~ 0
+BANK33_LVDS_13_N
+Text GLabel 7800 4050 0    50   BiDi ~ 0
+BANK33_LVDS_14_P
+Text GLabel 7800 4150 0    50   BiDi ~ 0
+BANK33_LVDS_14_N
+Text GLabel 8700 3750 2    50   BiDi ~ 0
+BANK33_LVDS_15_P
+Text GLabel 8700 3850 2    50   BiDi ~ 0
+BANK33_LVDS_15_N
+Text GLabel 7800 3750 0    50   BiDi ~ 0
+BANK33_LVDS_16_P
+Text GLabel 7800 3850 0    50   BiDi ~ 0
+BANK33_LVDS_16_N
+Text GLabel 8700 3450 2    50   BiDi ~ 0
+BANK33_LVDS_17_P
+Text GLabel 8700 3550 2    50   BiDi ~ 0
+BANK33_LVDS_17_N
+Text GLabel 7800 3450 0    50   BiDi ~ 0
+BANK33_LVDS_18_P
+Text GLabel 7800 3550 0    50   BiDi ~ 0
+BANK33_LVDS_18_N
+Text GLabel 8700 3150 2    50   BiDi ~ 0
+BANK33_LVDS_19_P
+Text GLabel 8700 3250 2    50   BiDi ~ 0
+BANK33_LVDS_19_N
+Text GLabel 7800 3150 0    50   BiDi ~ 0
+BANK33_LVDS_20_P
+Text GLabel 7800 3250 0    50   BiDi ~ 0
+BANK33_LVDS_20_N
+Text GLabel 8700 2850 2    50   BiDi ~ 0
+BANK33_LVDS_21_P
+Text GLabel 8700 2950 2    50   BiDi ~ 0
+BANK33_LVDS_21_N
+Text GLabel 7800 2850 0    50   BiDi ~ 0
+BANK33_LVDS_22_P
+Text GLabel 7800 2950 0    50   BiDi ~ 0
+BANK33_LVDS_22_N
+Text GLabel 8700 2550 2    50   BiDi ~ 0
+BANK33_LVDS_23_P
+Text GLabel 8700 2650 2    50   BiDi ~ 0
+BANK33_LVDS_23_N
+Text GLabel 7800 2550 0    50   BiDi ~ 0
+BANK33_LVDS_24_P
+Text GLabel 7800 2650 0    50   BiDi ~ 0
 BANK33_LVDS_24_N
 Text GLabel 8700 2350 2    50   BiDi ~ 0
 BANK33_SE_25
@@ -194,53 +194,25 @@ PWR_EN
 Wire Wire Line
 	8700 2450 9600 2450
 Wire Wire Line
-	9600 2450 9600 2750
+	7800 5750 6900 5750
 Wire Wire Line
-	8700 2750 9600 2750
-Connection ~ 9600 2750
+	7800 5450 6900 5450
 Wire Wire Line
-	9600 2750 9600 3050
+	7800 5150 6900 5150
 Wire Wire Line
-	8700 3050 9600 3050
-Connection ~ 9600 3050
+	7800 4850 6900 4850
 Wire Wire Line
-	9600 3050 9600 3350
+	6900 4550 7800 4550
 Wire Wire Line
-	8700 3350 9600 3350
-Connection ~ 9600 3350
+	7800 3950 6900 3950
 Wire Wire Line
-	9600 3350 9600 3650
+	7800 3650 6900 3650
 Wire Wire Line
-	8700 3650 9600 3650
-Connection ~ 9600 3650
+	7800 3350 6900 3350
 Wire Wire Line
-	9600 3650 9600 3950
+	7800 3050 6900 3050
 Wire Wire Line
-	9600 3950 8700 3950
-Connection ~ 9600 3950
-Wire Wire Line
-	8700 4550 9600 4550
-Connection ~ 9600 4550
-Wire Wire Line
-	8700 4850 9600 4850
-Wire Wire Line
-	9600 4550 9600 4850
-Connection ~ 9600 4850
-Wire Wire Line
-	9600 4850 9600 5150
-Wire Wire Line
-	8700 5150 9600 5150
-Connection ~ 9600 5150
-Wire Wire Line
-	9600 5150 9600 5450
-Wire Wire Line
-	8700 5450 9600 5450
-Connection ~ 9600 5450
-Wire Wire Line
-	8700 5750 9600 5750
-Wire Wire Line
-	9600 5450 9600 5750
-Connection ~ 9600 5750
+	7800 2750 6900 2750
 $Comp
 L power:GND #PWR0160
 U 1 1 5C92772C
@@ -255,53 +227,25 @@ $EndComp
 Wire Wire Line
 	7800 2450 6900 2450
 Wire Wire Line
-	6900 2450 6900 2750
+	8700 5750 9600 5750
 Wire Wire Line
-	7800 2750 6900 2750
-Connection ~ 6900 2750
+	8700 5450 9600 5450
 Wire Wire Line
-	6900 2750 6900 3050
+	8700 5150 9600 5150
 Wire Wire Line
-	7800 3050 6900 3050
-Connection ~ 6900 3050
+	8700 4850 9600 4850
 Wire Wire Line
-	6900 3050 6900 3350
+	9600 4550 8700 4550
 Wire Wire Line
-	7800 3350 6900 3350
-Connection ~ 6900 3350
+	8700 3950 9600 3950
 Wire Wire Line
-	6900 3350 6900 3650
+	8700 3650 9600 3650
 Wire Wire Line
-	7800 3650 6900 3650
-Connection ~ 6900 3650
+	8700 3350 9600 3350
 Wire Wire Line
-	6900 3650 6900 3950
+	8700 3050 9600 3050
 Wire Wire Line
-	6900 3950 7800 3950
-Connection ~ 6900 3950
-Wire Wire Line
-	7800 4550 6900 4550
-Connection ~ 6900 4550
-Wire Wire Line
-	7800 4850 6900 4850
-Wire Wire Line
-	6900 4550 6900 4850
-Connection ~ 6900 4850
-Wire Wire Line
-	6900 4850 6900 5150
-Wire Wire Line
-	7800 5150 6900 5150
-Connection ~ 6900 5150
-Wire Wire Line
-	6900 5150 6900 5450
-Wire Wire Line
-	7800 5450 6900 5450
-Connection ~ 6900 5450
-Wire Wire Line
-	7800 5750 6900 5750
-Wire Wire Line
-	6900 5450 6900 5750
-Connection ~ 6900 5750
+	8700 2750 9600 2750
 $Comp
 L power:GND #PWR0159
 U 1 1 5C9286E4
@@ -387,64 +331,58 @@ Wire Wire Line
 	3700 3350 4600 3350
 Text GLabel 8700 2250 2    50   BiDi ~ 0
 BANK13_SE_25
-Text GLabel 3700 3250 2    50   BiDi ~ 0
-BANK13_LVDS_24_N
 Text GLabel 3700 3150 2    50   BiDi ~ 0
+BANK13_LVDS_24_N
+Text GLabel 3700 3250 2    50   BiDi ~ 0
 BANK13_LVDS_24_P
-Text GLabel 3700 3550 2    50   BiDi ~ 0
-BANK13_LVDS_22_N
 Text GLabel 3700 3450 2    50   BiDi ~ 0
+BANK13_LVDS_22_N
+Text GLabel 3700 3550 2    50   BiDi ~ 0
 BANK13_LVDS_22_P
-Text GLabel 3700 3850 2    50   BiDi ~ 0
-BANK13_LVDS_20_N
 Text GLabel 3700 3750 2    50   BiDi ~ 0
+BANK13_LVDS_20_N
+Text GLabel 3700 3850 2    50   BiDi ~ 0
 BANK13_LVDS_20_P
-Text GLabel 3700 4150 2    50   BiDi ~ 0
-BANK13_LVDS_18_N
 Text GLabel 3700 4050 2    50   BiDi ~ 0
+BANK13_LVDS_18_N
+Text GLabel 3700 4150 2    50   BiDi ~ 0
 BANK13_LVDS_18_P
-Text GLabel 3700 4450 2    50   BiDi ~ 0
-BANK13_LVDS_16_N
 Text GLabel 3700 4350 2    50   BiDi ~ 0
+BANK13_LVDS_16_N
+Text GLabel 3700 4450 2    50   BiDi ~ 0
 BANK13_LVDS_16_P
-Text GLabel 3700 4750 2    50   BiDi ~ 0
-BANK13_LVDS_14_N
 Text GLabel 3700 4650 2    50   BiDi ~ 0
+BANK13_LVDS_14_N
+Text GLabel 3700 4750 2    50   BiDi ~ 0
 BANK13_LVDS_14_P
-Text GLabel 3700 5050 2    50   BiDi ~ 0
-BANK13_LVDS_12_N
 Text GLabel 3700 4950 2    50   BiDi ~ 0
+BANK13_LVDS_12_N
+Text GLabel 3700 5050 2    50   BiDi ~ 0
 BANK13_LVDS_12_P
-Text GLabel 3700 5350 2    50   BiDi ~ 0
-BANK13_LVDS_10_N
 Text GLabel 3700 5250 2    50   BiDi ~ 0
+BANK13_LVDS_10_N
+Text GLabel 3700 5350 2    50   BiDi ~ 0
 BANK13_LVDS_10_P
-Text GLabel 3700 5650 2    50   BiDi ~ 0
-BANK13_LVDS_8_N
 Text GLabel 3700 5550 2    50   BiDi ~ 0
+BANK13_LVDS_8_N
+Text GLabel 3700 5650 2    50   BiDi ~ 0
 BANK13_LVDS_8_P
-Text GLabel 3700 5950 2    50   BiDi ~ 0
-BANK13_LVDS_6_N
 Text GLabel 3700 5850 2    50   BiDi ~ 0
+BANK13_LVDS_6_N
+Text GLabel 3700 5950 2    50   BiDi ~ 0
 BANK13_LVDS_6_P
-Text GLabel 8700 1750 2    50   BiDi ~ 0
-BANK13_LVDS_4_N
 Text GLabel 8700 1650 2    50   BiDi ~ 0
+BANK13_LVDS_4_N
+Text GLabel 8700 1750 2    50   BiDi ~ 0
 BANK13_LVDS_4_P
-Text GLabel 8700 2050 2    50   BiDi ~ 0
-BANK13_LVDS_2_N
 Text GLabel 8700 1950 2    50   BiDi ~ 0
+BANK13_LVDS_2_N
+Text GLabel 8700 2050 2    50   BiDi ~ 0
 BANK13_LVDS_2_P
 Text GLabel 4050 1550 2    50   BiDi ~ 0
 VIN
-Wire Wire Line
-	9600 5750 9600 6100
 Text GLabel 2450 2950 0    50   Output ~ 0
 VCCO_13
-Wire Wire Line
-	6900 3950 6900 4250
-Wire Wire Line
-	9600 3950 9600 4250
 Text GLabel 4100 2950 2    50   Output ~ 0
 VCCO_33
 Wire Wire Line
@@ -458,8 +396,6 @@ Wire Wire Line
 	2800 4850 1900 4850
 Wire Wire Line
 	2800 1950 1450 1950
-Wire Wire Line
-	6900 5750 6900 6100
 Connection ~ 9600 2450
 Connection ~ 6900 2450
 Wire Wire Line
@@ -500,83 +436,15 @@ Wire Wire Line
 Connection ~ 9600 2150
 Wire Wire Line
 	9600 2150 9600 2450
-Wire Wire Line
-	9600 1850 9600 2150
-Connection ~ 6900 1850
 Connection ~ 6900 2150
 Wire Wire Line
 	6900 2150 6900 2450
 Wire Wire Line
-	6900 1850 6900 2150
-Wire Wire Line
-	9600 1850 9600 1550
-Wire Wire Line
 	9600 1550 8700 1550
-Connection ~ 9600 1850
 Wire Wire Line
 	7800 1550 6900 1550
-Wire Wire Line
-	6900 1550 6900 1850
 Connection ~ 4600 3050
-Connection ~ 4600 3350
-Connection ~ 4600 3650
-Connection ~ 4600 3950
-Connection ~ 4600 4250
-Connection ~ 4600 4550
-Connection ~ 4600 4850
-Connection ~ 4600 5150
-Connection ~ 4600 5450
-Connection ~ 4600 5750
-Wire Wire Line
-	4600 5750 4600 6200
-Wire Wire Line
-	4600 5150 4600 5450
-Wire Wire Line
-	4600 4850 4600 5150
-Wire Wire Line
-	4600 3950 4600 4250
-Wire Wire Line
-	4600 3650 4600 3950
-Wire Wire Line
-	4600 3350 4600 3650
-Wire Wire Line
-	4600 3050 4600 3350
-Wire Wire Line
-	4600 4250 4600 4550
-Wire Wire Line
-	4600 4550 4600 4850
-Wire Wire Line
-	4600 5450 4600 5750
 Connection ~ 1900 3050
-Connection ~ 1900 3350
-Connection ~ 1900 3650
-Connection ~ 1900 3950
-Connection ~ 1900 4250
-Connection ~ 1900 4550
-Connection ~ 1900 4850
-Connection ~ 1900 5150
-Connection ~ 1900 5450
-Connection ~ 1900 5750
-Wire Wire Line
-	1900 5750 1900 6250
-Wire Wire Line
-	1900 4850 1900 5150
-Wire Wire Line
-	1900 5150 1900 5450
-Wire Wire Line
-	1900 4550 1900 4850
-Wire Wire Line
-	1900 3950 1900 4250
-Wire Wire Line
-	1900 3050 1900 3350
-Wire Wire Line
-	1900 3350 1900 3650
-Wire Wire Line
-	1900 3650 1900 3950
-Wire Wire Line
-	1900 4250 1900 4550
-Wire Wire Line
-	1900 5450 1900 5750
 Wire Wire Line
 	3700 2850 3700 2950
 Connection ~ 3700 2850
@@ -590,15 +458,9 @@ V1V8
 Text GLabel 4950 1950 2    50   Input ~ 0
 V1V8
 Wire Wire Line
-	8700 4250 9600 4250
-Connection ~ 9600 4250
-Wire Wire Line
-	9600 4250 9600 4550
-Wire Wire Line
 	7800 4250 6900 4250
-Connection ~ 6900 4250
 Wire Wire Line
-	6900 4250 6900 4550
+	8700 4250 9600 4250
 Connection ~ 4600 2050
 Wire Wire Line
 	4600 2050 4600 1750
@@ -614,4 +476,142 @@ NoConn ~ 3700 2450
 NoConn ~ 3700 2550
 NoConn ~ 2800 2450
 NoConn ~ 2800 2550
+Wire Wire Line
+	6900 2450 6900 2750
+Connection ~ 6900 2750
+Wire Wire Line
+	6900 2750 6900 3050
+Connection ~ 6900 3050
+Wire Wire Line
+	6900 3050 6900 3350
+Connection ~ 6900 3350
+Wire Wire Line
+	6900 3350 6900 3650
+Connection ~ 6900 3650
+Wire Wire Line
+	6900 3650 6900 3950
+Connection ~ 6900 3950
+Wire Wire Line
+	6900 3950 6900 4250
+Connection ~ 6900 4250
+Wire Wire Line
+	6900 4250 6900 4550
+Connection ~ 6900 4550
+Wire Wire Line
+	6900 4550 6900 4850
+Connection ~ 6900 4850
+Wire Wire Line
+	6900 4850 6900 5150
+Connection ~ 6900 5150
+Wire Wire Line
+	6900 5150 6900 5450
+Connection ~ 6900 5450
+Wire Wire Line
+	6900 5450 6900 5750
+Connection ~ 6900 5750
+Wire Wire Line
+	6900 5750 6900 6100
+Wire Wire Line
+	9600 2450 9600 2750
+Connection ~ 9600 2750
+Wire Wire Line
+	9600 2750 9600 3050
+Connection ~ 9600 3050
+Wire Wire Line
+	9600 3050 9600 3350
+Connection ~ 9600 3350
+Wire Wire Line
+	9600 3350 9600 3650
+Connection ~ 9600 3650
+Wire Wire Line
+	9600 3650 9600 3950
+Connection ~ 9600 3950
+Wire Wire Line
+	9600 3950 9600 4250
+Connection ~ 9600 4250
+Wire Wire Line
+	9600 4250 9600 4550
+Connection ~ 9600 4550
+Wire Wire Line
+	9600 4550 9600 4850
+Connection ~ 9600 4850
+Wire Wire Line
+	9600 4850 9600 5150
+Connection ~ 9600 5150
+Wire Wire Line
+	9600 5150 9600 5450
+Connection ~ 9600 5450
+Wire Wire Line
+	9600 5450 9600 5750
+Connection ~ 9600 5750
+Wire Wire Line
+	9600 5750 9600 6100
+Wire Wire Line
+	1900 3050 1900 3350
+Connection ~ 1900 3350
+Wire Wire Line
+	1900 3350 1900 3650
+Connection ~ 1900 3650
+Wire Wire Line
+	1900 3650 1900 3950
+Connection ~ 1900 3950
+Wire Wire Line
+	1900 3950 1900 4250
+Connection ~ 1900 4250
+Wire Wire Line
+	1900 4250 1900 4550
+Connection ~ 1900 4550
+Wire Wire Line
+	1900 4550 1900 4850
+Connection ~ 1900 4850
+Wire Wire Line
+	1900 4850 1900 5150
+Connection ~ 1900 5150
+Wire Wire Line
+	1900 5150 1900 5450
+Connection ~ 1900 5450
+Wire Wire Line
+	1900 5450 1900 5750
+Connection ~ 1900 5750
+Wire Wire Line
+	1900 5750 1900 6250
+Wire Wire Line
+	4600 3050 4600 3350
+Connection ~ 4600 3350
+Wire Wire Line
+	4600 3350 4600 3650
+Connection ~ 4600 3650
+Wire Wire Line
+	4600 3650 4600 3950
+Connection ~ 4600 3950
+Wire Wire Line
+	4600 3950 4600 4250
+Connection ~ 4600 4250
+Wire Wire Line
+	4600 4250 4600 4550
+Connection ~ 4600 4550
+Wire Wire Line
+	4600 4550 4600 4850
+Connection ~ 4600 4850
+Wire Wire Line
+	4600 4850 4600 5150
+Connection ~ 4600 5150
+Wire Wire Line
+	4600 5150 4600 5450
+Connection ~ 4600 5450
+Wire Wire Line
+	4600 5450 4600 5750
+Connection ~ 4600 5750
+Wire Wire Line
+	4600 5750 4600 6200
+Wire Wire Line
+	6900 1550 6900 1850
+Connection ~ 6900 1850
+Wire Wire Line
+	6900 1850 6900 2150
+Wire Wire Line
+	9600 1550 9600 1850
+Connection ~ 9600 1850
+Wire Wire Line
+	9600 1850 9600 2150
 $EndSCHEMATC
