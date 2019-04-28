@@ -1843,6 +1843,11 @@
       (net 329 CARRIER_SRST#))
     (pad A3 smd circle (at 0 -2 90) (size 0.35 0.35) (layers F.Cu F.Paste F.Mask))
     (pad A2 smd circle (at -1 -2 90) (size 0.35 0.35) (layers F.Cu F.Paste F.Mask))
+    (model ${KIPRJMOD}/packages3d/N25Q512A11G1240E.stp
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module microzed:L8291J1T43 (layer F.Cu) (tedit 5CBB11F8) (tstamp 5CC53121)
@@ -1850,8 +1855,8 @@
     (descr L829-1J1T-43)
     (tags Connector)
     (path /5BB10DF7/5CA8CE4E)
-    (fp_text reference J3 (at 0 -13.97 180) (layer F.SilkS)
-      (effects (font (size 1.27 1.27) (thickness 0.254)))
+    (fp_text reference J3 (at 9.9 -8 180) (layer F.SilkS)
+      (effects (font (size 0.8 0.8) (thickness 0.15)))
     )
     (fp_text value L829-1J1T-43 (at 0 13.97 180) (layer F.Fab)
       (effects (font (size 1.27 1.27) (thickness 0.254)))
@@ -3568,6 +3573,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KIPRJMOD}/packages3d/TLV62130RGTR.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Capacitor_SMD:C_0402_1005Metric (layer F.Cu) (tedit 5B301BBE) (tstamp 5CAADAAB)
@@ -3802,6 +3812,11 @@
       (net 1 GND))
     (pad 1 smd rect (at -2 -1.25 90) (size 0.3 0.8) (layers F.Cu F.Paste F.Mask)
       (net 292 SD_D2))
+    (model ${KIPRJMOD}/packages3d/TXS02612RTWR.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module microzed:ABRACON-ASDMB (layer F.Cu) (tedit 5B90EFD4) (tstamp 5CC38125)
@@ -3860,6 +3875,11 @@
       (net 1 GND))
     (pad 1 smd rect (at -0.825 0.775 180) (size 0.65 0.85) (layers F.Cu F.Paste F.Mask)
       (net 7 PWR_B501))
+    (model ${KIPRJMOD}/packages3d/ASDMB.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module microzed:QFN50P500X500X100-33N-D (layer F.Cu) (tedit 5BA0BE89) (tstamp 5CC5A7B8)
@@ -3950,6 +3970,11 @@
       (net 278 USB_NXT))
     (pad 1 smd rect (at -2.5 -1.75) (size 0.3 0.8) (layers F.Cu F.Paste F.Mask)
       (net 364 USB_CLK))
+    (model ${KIPRJMOD}/packages3d/USB3320C-EZK.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Package_TO_SOT_SMD:SOT-23 (layer F.Cu) (tedit 5A02FF57) (tstamp 5CC32205)
@@ -4037,7 +4062,7 @@
       (net 9 V3V3))
     (pad 1 smd rect (at -1.05 -0.8 90) (size 0.2 0.7) (layers F.Cu F.Paste F.Mask)
       (net 10 VCCO_DDR))
-    (model ${KIPRJMOD}/packages3d/TPS51206DSQR.stp
+    (model ${KIPRJMOD}/packages3d/TPS51206DSQR.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -4071,6 +4096,11 @@
       (net 1 GND))
     (pad 1 smd rect (at -0.825 0.775 180) (size 0.65 0.85) (layers F.Cu F.Paste F.Mask)
       (net 9 V3V3))
+    (model ${KIPRJMOD}/packages3d/ASDMB.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 0))
+    )
   )
 
   (module Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm (layer F.Cu) (tedit 5C1D45D2) (tstamp 5CA1F2A0)
@@ -4143,6 +4173,11 @@
     (pad 17 smd roundrect (at 0 0 180) (size 1.7 1.7) (layers F.Cu F.Mask) (roundrect_rratio 0.147059)
       (net 1 GND))
     (model ${KISYS3DMOD}/Package_DFN_QFN.3dshapes/QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ${KIPRJMOD}/packages3d/TLV62130RGTR.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -4223,6 +4258,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KIPRJMOD}/packages3d/TLV62130RGTR.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm (layer F.Cu) (tedit 5C1D45D2) (tstamp 5C9D52B0)
@@ -4299,6 +4339,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KIPRJMOD}/packages3d/TLV62130RGTR.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Package_DFN_QFN:QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm (layer F.Cu) (tedit 5C1D45D2) (tstamp 5CAF32AF)
@@ -4371,6 +4416,11 @@
     (pad 17 smd roundrect (at 0 0 180) (size 1.7 1.7) (layers F.Cu F.Mask) (roundrect_rratio 0.147059)
       (net 1 GND))
     (model ${KISYS3DMOD}/Package_DFN_QFN.3dshapes/QFN-16-1EP_3x3mm_P0.5mm_EP1.7x1.7mm.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ${KIPRJMOD}/packages3d/TLV62130RGTR.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -9330,6 +9380,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KIPRJMOD}/packages3d/DM3AT-SF-PEJM5.stp
+      (offset (xyz -165.2 -154 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module microzed:MICRO_USB_AB_TYPE_RECEPTACLE (layer F.Cu) (tedit 5B83C6F4) (tstamp 5C9D749E)
@@ -9602,7 +9657,7 @@
       (net 492 "Net-(C175-Pad1)"))
     (pad 1 smd rect (at -1.72 0 180) (size 0.56 2.21) (layers F.Cu F.Paste F.Mask)
       (net 493 "Net-(C177-Pad1)"))
-    (model ${KISYS3DMOD}/Diode_SMD.3dshapes/Littelfuse_PolyZen-LS.wrl
+    (model ${KIPRJMOD}/packages3d/Littelfuse_PolyZen-LS.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -9652,6 +9707,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model ${KISYS3DMOD}/Package_TO_SOT_SMD.3dshapes/TSOT-23-6_MK06A.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (module Package_TO_SOT_SMD:TSOT-23-6 (layer B.Cu) (tedit 5A02FF57) (tstamp 5CC5A631)
@@ -9693,6 +9753,11 @@
     (pad 1 smd rect (at -1.31 0.95) (size 1.22 0.65) (layers B.Cu B.Paste B.Mask)
       (net 27 "Net-(D1-Pad1)"))
     (model ${KISYS3DMOD}/Package_TO_SOT_SMD.3dshapes/TSOT-23-6.wrl
+      (at (xyz 0 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
+    (model ${KISYS3DMOD}/Package_TO_SOT_SMD.3dshapes/TSOT-23-6_MK06A.wrl
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -15892,7 +15957,7 @@
   (via (at 0.3 19.3) (size 0.4) (drill 0.2) (layers F.Cu B.Cu) (net 1) (tstamp 5CB661E5))
   (via (at 0.3 19.8) (size 0.4) (drill 0.2) (layers F.Cu B.Cu) (net 1) (tstamp 5CB661E8))
   (via (at 0.3 20.3) (size 0.4) (drill 0.2) (layers F.Cu B.Cu) (net 1) (tstamp 5CB66AE2))
-  (segment (start 19.55 18) (end 18.5 18) (width 0.25) (layer F.Cu) (net 1) (tstamp 5CB789A3))
+  (segment (start 19.55 18) (end 18.5 18) (width 0.2) (layer F.Cu) (net 1) (tstamp 5CB789A3))
   (segment (start 18.1 18.4) (end 18.45 18.05) (width 0.25) (layer F.Cu) (net 1) (tstamp 5CB789AC))
   (segment (start 17.45 18.4) (end 18.1 18.4) (width 0.25) (layer F.Cu) (net 1) (tstamp 5CB789A0))
   (via (at 21.6 16.4) (size 0.4) (drill 0.2) (layers F.Cu B.Cu) (net 1))

@@ -1,0 +1,156 @@
+#VRML V2.0 utf8
+#kicad StepUp wrl exported
+
+# Copyright (C) 2018, kicad StepUp
+# 
+# This work is licensed under the [Creative Commons CC-BY-SA 4.0 License](https://creativecommons.org/licenses/by-sa/4.0/legalcode), 
+# with the following exception:
+# To the extent that the creation of electronic designs that use 'Licensed Material' can be considered to be 'Adapted Material', 
+# then the copyright holder waives article 3 of the license with respect to these designs and any generated files which use data provided 
+# as part of the 'Licensed Material'.
+# You are free to use the library data in your own projects without the obligation to share your project files under this or any other license agreement.
+# However, if you wish to redistribute these libraries, or parts thereof (including in modified form) as a collection then the exception above does not apply. 
+# Please refer to https://github.com/KiCad/kicad-packages3D/blob/master/LICENSE.md for further clarification of the exception.
+# Disclaimer of Warranties and Limitation of Liability.
+# These libraries are provided in the hope that they will be useful, but are provided without warranty of any kind, express or implied.
+# *USE 3D CAD DATA AT YOUR OWN RISK*
+# *DO NOT RELY UPON ANY INFORMATION FOUND HERE WITHOUT INDEPENDENT VERIFICATION.*
+# 
+Transform {
+# KiCad normalizes VRML model dimension to units of 0.1 Inches
+# the source file use 1mm as VRML unit
+# so here we scale it
+scale 0.3937 0.3937 0.3937
+children [
+
+Shape {
+	appearance Appearance {material DEF PLASTIC-GREEN-27 Material {
+		ambientIntensity 0.248407
+		diffuseColor 0.135944 0.190588 0.122239
+		specularColor 0.209184 0.113842 0.111328
+		emissiveColor 0.0 0.0 0.0
+		transparency 0.0
+		shininess 0.086735
+		}
+	}
+}
+Shape {
+	appearance Appearance {material DEF PIN-01 Material {
+		ambientIntensity 0.271
+		diffuseColor 0.824 0.82 0.781
+		specularColor 0.328 0.258 0.172
+		emissiveColor 0.0 0.0 0.0
+		transparency 0.0
+		shininess 0.7
+		}
+	}
+}
+Shape {
+	appearance Appearance {material DEF IC-LABEL-01 Material {
+		ambientIntensity 0.082
+		diffuseColor 0.691 0.664 0.598
+		specularColor 0.0 0.0 0.0
+		emissiveColor 0.0 0.0 0.0
+		transparency 0.0
+		shininess 0.01
+		}
+	}
+}
+Shape {
+	appearance Appearance {material DEF IC-BODY-EPOXY-04 Material {
+		ambientIntensity 0.293
+		diffuseColor 0.148 0.145 0.145
+		specularColor 0.18 0.168 0.16
+		emissiveColor 0.0 0.0 0.0
+		transparency 0.0
+		shininess 0.35
+		}
+	}
+}
+
+# body
+Transform {
+	translation 0 0 0.05
+	children [
+		Transform {
+			translation 0 0 0.25
+			children [
+				Shape {
+					appearance Appearance{material USE PLASTIC-GREEN-27 }
+					geometry Box {
+						size 4 4 0.5
+					}
+				}
+				Transform {
+					translation -1.8 0 0.3
+					children [
+						Shape {
+							appearance Appearance{material USE IC-LABEL-01 }
+							geometry Box {
+								size 0.3 0.3 0.1
+							}
+						}
+					]
+				}
+			]
+		}
+
+		Transform {
+			translation 0.25 -0.25 1
+			children [
+				Shape {
+					appearance Appearance{material USE IC-BODY-EPOXY-04 }
+					geometry Box {
+						size 3 3 1.5
+					}
+				}
+			]
+		}
+	]
+}
+
+# pins
+Transform {
+	translation 0 0 0.025
+	children [
+		Transform {
+			translation -1.72 0 0
+			children [
+				Shape {
+					appearance Appearance{material USE PIN-01 }
+					geometry Box {
+						size 0.56 2.21 0.05
+					}
+				}
+			]
+		}
+
+		Transform {
+			translation 1.72 0.635 0
+			children [
+				Shape {
+					appearance Appearance{material USE PIN-01 }
+					geometry Box {
+						size 0.56 0.94 0.05
+					}
+				}
+			]
+		}
+
+		Transform {
+			translation 1.72 -0.635 0
+			children [
+				Shape {
+					appearance Appearance{material USE PIN-01 }
+					geometry Box {
+						size 0.56 0.94 0.05
+					}
+				}
+			]
+		}
+	]
+}
+
+
+]
+}
