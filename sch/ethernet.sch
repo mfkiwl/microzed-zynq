@@ -1418,4 +1418,8 @@ Text Notes 3000 1350 0    50   ~ 0
 reference: UG933 P67
 Text Notes 800  3400 3    50   ~ 0
 https://e2e.ti.com/support/processors/f/791/t/555157?AM437x-RGMII-series-resistors\n22ohm resistor:\nhttp://www.360doc.com/content/17/1227/16/441458_716761983.shtml\nhttp://blog.chinaunix.net/uid-20768928-id-5705481.html
+Text Label 6100 2800 0    50   ~ 0
+ETH_AVDD10
+Text Label 1700 2800 0    50   ~ 0
+ETH_AVDD33
 $EndSCHEMATC

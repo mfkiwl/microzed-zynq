@@ -13,7 +13,7 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text GLabel 5250 2450 0    50   Input ~ 0
+Text GLabel 3500 2450 0    50   Input ~ 0
 PS_SRST#
 $Comp
 L power:+3.3V #PWR095
@@ -124,8 +124,6 @@ F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 3850 2350 50  000
 	1    3850 2350
 	0    1    1    0   
 $EndComp
-Text GLabel 3850 2050 1    50   Input ~ 6
-PWR_B501
 Wire Wire Line
 	3850 2050 3850 2150
 Wire Wire Line
@@ -164,4 +162,6 @@ Wire Wire Line
 Connection ~ 4300 2450
 Wire Wire Line
 	4300 2450 5550 2450
+Text GLabel 3850 2050 1    50   Input ~ 0
+PWR_B501
 $EndSCHEMATC

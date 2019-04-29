@@ -604,7 +604,7 @@ F 5 "RC0402FR-0710KL" H 6850 2650 50  0001 C CNN "ManufacturerPartNumber"
 	1    6850 2650
 	1    0    0    -1  
 $EndComp
-Text Label 6350 3000 0    50   ~ 6
+Text Label 6350 3000 0    50   ~ 0
 PS_MIO1
 $Comp
 L power:+3.3V #PWR0169
