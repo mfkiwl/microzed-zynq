@@ -618,4 +618,293 @@ Wire Wire Line
 Connection ~ 6900 4150
 Wire Wire Line
 	6900 4150 6900 4450
+Text GLabel 1000 6400 1    50   BiDi ~ 0
+VIN
+$Comp
+L Device:C C?
+U 1 1 5CC95063
+P 1300 6650
+AR Path="/5CF72B0E/5CC95063" Ref="C?"  Part="1" 
+AR Path="/5C759BF4/5CC95063" Ref="C195"  Part="1" 
+F 0 "C195" H 1300 6700 50  0000 L BNN
+F 1 "100µF" H 1300 6600 50  0000 L TNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 1338 6500 50  0001 C CNN
+F 3 "~" H 1300 6650 50  0001 C CNN
+F 4 "Yageo" H 0   -150 50  0001 C CNN "Manufacturer"
+F 5 "CC1210MKX5R7BB107" H 0   -150 50  0001 C CNN "ManufacturerPartNumber"
+	1    1300 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CC9506B
+P 1650 6650
+AR Path="/5CF72B0E/5CC9506B" Ref="C?"  Part="1" 
+AR Path="/5C759BF4/5CC9506B" Ref="C197"  Part="1" 
+F 0 "C197" H 1650 6700 50  0000 L BNN
+F 1 "2.2µF" H 1650 6600 50  0000 L TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1688 6500 50  0001 C CNN
+F 3 "~" H 1650 6650 50  0001 C CNN
+F 4 "Yageo" H 0   -150 50  0001 C CNN "Manufacturer"
+F 5 "CC0603KRX5R7BB225" H 0   -150 50  0001 C CNN "ManufacturerPartNumber"
+	1    1650 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CC95073
+P 1950 6650
+AR Path="/5CF72B0E/5CC95073" Ref="C?"  Part="1" 
+AR Path="/5C759BF4/5CC95073" Ref="C199"  Part="1" 
+F 0 "C199" H 1950 6700 50  0000 L BNN
+F 1 "0.1µF" H 1950 6600 50  0000 L TNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1988 6500 50  0001 C CNN
+F 3 "~" H 1950 6650 50  0001 C CNN
+F 4 "Yageo" H 0   -150 50  0001 C CNN "Manufacturer"
+F 5 "CC0402KRX5R8BB104" H 0   -150 50  0001 C CNN "ManufacturerPartNumber"
+	1    1950 6650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CC9507B
+P 1000 7100
+AR Path="/5CF72B0E/5CC9507B" Ref="C?"  Part="1" 
+AR Path="/5C759BF4/5CC9507B" Ref="C194"  Part="1" 
+F 0 "C194" H 1000 7150 50  0000 L BNN
+F 1 "100µF" H 1000 7050 50  0000 L TNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 1038 6950 50  0001 C CNN
+F 3 "~" H 1000 7100 50  0001 C CNN
+F 4 "Yageo" H 0   -150 50  0001 C CNN "Manufacturer"
+F 5 "CC1210MKX5R7BB107" H 0   -150 50  0001 C CNN "ManufacturerPartNumber"
+	1    1000 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CC95083
+P 1350 7100
+AR Path="/5CF72B0E/5CC95083" Ref="C?"  Part="1" 
+AR Path="/5C759BF4/5CC95083" Ref="C196"  Part="1" 
+F 0 "C196" H 1350 7150 50  0000 L BNN
+F 1 "2.2µF" H 1350 7050 50  0000 L TNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1388 6950 50  0001 C CNN
+F 3 "~" H 1350 7100 50  0001 C CNN
+F 4 "Yageo" H 0   -150 50  0001 C CNN "Manufacturer"
+F 5 "CC0603KRX5R7BB225" H 0   -150 50  0001 C CNN "ManufacturerPartNumber"
+	1    1350 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CC9508B
+P 1650 7100
+AR Path="/5CF72B0E/5CC9508B" Ref="C?"  Part="1" 
+AR Path="/5C759BF4/5CC9508B" Ref="C198"  Part="1" 
+F 0 "C198" H 1650 7150 50  0000 L BNN
+F 1 "0.1µF" H 1650 7050 50  0000 L TNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1688 6950 50  0001 C CNN
+F 3 "~" H 1650 7100 50  0001 C CNN
+F 4 "Yageo" H 0   -150 50  0001 C CNN "Manufacturer"
+F 5 "CC0402KRX5R8BB104" H 0   -150 50  0001 C CNN "ManufacturerPartNumber"
+	1    1650 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 6500 1650 6500
+Connection ~ 1300 6500
+Wire Wire Line
+	1300 6500 1000 6500
+Connection ~ 1650 6500
+Wire Wire Line
+	1650 6500 1300 6500
+Connection ~ 1000 6950
+Wire Wire Line
+	1000 6950 1350 6950
+Connection ~ 1350 6950
+Wire Wire Line
+	1350 6950 1650 6950
+Wire Wire Line
+	1950 6800 1950 7250
+Connection ~ 1650 6800
+Wire Wire Line
+	1650 6800 1950 6800
+Wire Wire Line
+	1000 7250 1350 7250
+Connection ~ 1350 7250
+Wire Wire Line
+	1350 7250 1650 7250
+Connection ~ 1650 7250
+Wire Wire Line
+	1650 7250 1950 7250
+$Comp
+L power:GND #PWR?
+U 1 1 5CC950A2
+P 1950 7250
+AR Path="/5CF72B0E/5CC950A2" Ref="#PWR?"  Part="1" 
+AR Path="/5C759BF4/5CC950A2" Ref="#PWR0174"  Part="1" 
+F 0 "#PWR0174" H 1950 7000 50  0001 C CNN
+F 1 "GND" H 1955 7077 50  0000 C CNN
+F 2 "" H 1950 7250 50  0001 C CNN
+F 3 "" H 1950 7250 50  0001 C CNN
+	1    1950 7250
+	-1   0    0    -1  
+$EndComp
+Connection ~ 1950 7250
+Connection ~ 1950 6800
+Wire Wire Line
+	1000 6400 1000 6500
+Wire Wire Line
+	1300 6800 1650 6800
+Connection ~ 1000 6500
+Wire Wire Line
+	1000 6500 1000 6950
+$Comp
+L Device:C C?
+U 1 1 5CCF7C2E
+P 2500 6950
+AR Path="/5CF72B0E/5CCF7C2E" Ref="C?"  Part="1" 
+AR Path="/5C759BF4/5CCF7C2E" Ref="C200"  Part="1" 
+F 0 "C200" H 2500 7000 50  0000 L BNN
+F 1 "100µF" H 2500 6900 50  0000 L TNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 2538 6800 50  0001 C CNN
+F 3 "~" H 2500 6950 50  0001 C CNN
+F 4 "Yageo" H 1500 -300 50  0001 C CNN "Manufacturer"
+F 5 "CC1210MKX5R5BB107" H 1500 -300 50  0001 C CNN "ManufacturerPartNumber"
+	1    2500 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CCF7C36
+P 2850 6950
+AR Path="/5CF72B0E/5CCF7C36" Ref="C?"  Part="1" 
+AR Path="/5C759BF4/5CCF7C36" Ref="C201"  Part="1" 
+F 0 "C201" H 2850 7000 50  0000 L BNN
+F 1 "4.7µF" H 2850 6900 50  0000 L TNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2888 6800 50  0001 C CNN
+F 3 "~" H 2850 6950 50  0001 C CNN
+F 4 "Yageo" H 1500 -300 50  0001 C CNN "Manufacturer"
+F 5 "CC0402MRX5R5BB475" H 1500 -300 50  0001 C CNN "ManufacturerPartNumber"
+	1    2850 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CCF7C3E
+P 3150 6950
+AR Path="/5CF72B0E/5CCF7C3E" Ref="C?"  Part="1" 
+AR Path="/5C759BF4/5CCF7C3E" Ref="C202"  Part="1" 
+F 0 "C202" H 3150 7000 50  0000 L BNN
+F 1 "0.1µF" H 3150 6900 50  0000 L TNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 3188 6800 50  0001 C CNN
+F 3 "~" H 3150 6950 50  0001 C CNN
+F 4 "Yageo" H 1500 -300 50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 1500 -300 50  0001 C CNN "ManufacturerPartNumber"
+	1    3150 6950
+	1    0    0    -1  
+$EndComp
+Connection ~ 2500 6800
+Wire Wire Line
+	2500 6800 2850 6800
+Connection ~ 2850 6800
+Wire Wire Line
+	2850 6800 3150 6800
+Wire Wire Line
+	2500 7100 2850 7100
+Connection ~ 2850 7100
+Wire Wire Line
+	2850 7100 3150 7100
+$Comp
+L power:GND #PWR?
+U 1 1 5CCF7C4B
+P 3150 7100
+AR Path="/5CF72B0E/5CCF7C4B" Ref="#PWR?"  Part="1" 
+AR Path="/5C759BF4/5CCF7C4B" Ref="#PWR0175"  Part="1" 
+F 0 "#PWR0175" H 3150 6850 50  0001 C CNN
+F 1 "GND" H 3155 6927 50  0000 C CNN
+F 2 "" H 3150 7100 50  0001 C CNN
+F 3 "" H 3150 7100 50  0001 C CNN
+	1    3150 7100
+	-1   0    0    -1  
+$EndComp
+Text GLabel 2500 6650 1    50   Input ~ 0
+VCCO_34
+Wire Wire Line
+	2500 6650 2500 6800
+Connection ~ 3150 7100
+$Comp
+L Device:C C?
+U 1 1 5CD003B8
+P 3650 6950
+AR Path="/5CF72B0E/5CD003B8" Ref="C?"  Part="1" 
+AR Path="/5C759BF4/5CD003B8" Ref="C203"  Part="1" 
+F 0 "C203" H 3650 7000 50  0000 L BNN
+F 1 "100µF" H 3650 6900 50  0000 L TNN
+F 2 "Capacitor_SMD:C_1210_3225Metric" H 3688 6800 50  0001 C CNN
+F 3 "~" H 3650 6950 50  0001 C CNN
+F 4 "Yageo" H 2650 -300 50  0001 C CNN "Manufacturer"
+F 5 "CC1210MKX5R5BB107" H 2650 -300 50  0001 C CNN "ManufacturerPartNumber"
+	1    3650 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CD003C0
+P 4000 6950
+AR Path="/5CF72B0E/5CD003C0" Ref="C?"  Part="1" 
+AR Path="/5C759BF4/5CD003C0" Ref="C204"  Part="1" 
+F 0 "C204" H 4000 7000 50  0000 L BNN
+F 1 "4.7µF" H 4000 6900 50  0000 L TNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4038 6800 50  0001 C CNN
+F 3 "~" H 4000 6950 50  0001 C CNN
+F 4 "Yageo" H 2650 -300 50  0001 C CNN "Manufacturer"
+F 5 "CC0402MRX5R5BB475" H 2650 -300 50  0001 C CNN "ManufacturerPartNumber"
+	1    4000 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5CD003C8
+P 4300 6950
+AR Path="/5CF72B0E/5CD003C8" Ref="C?"  Part="1" 
+AR Path="/5C759BF4/5CD003C8" Ref="C205"  Part="1" 
+F 0 "C205" H 4300 7000 50  0000 L BNN
+F 1 "0.1µF" H 4300 6900 50  0000 L TNN
+F 2 "Capacitor_SMD:C_0201_0603Metric" H 4338 6800 50  0001 C CNN
+F 3 "~" H 4300 6950 50  0001 C CNN
+F 4 "Yageo" H 2650 -300 50  0001 C CNN "Manufacturer"
+F 5 "CC0201KRX5R5BB104" H 2650 -300 50  0001 C CNN "ManufacturerPartNumber"
+	1    4300 6950
+	1    0    0    -1  
+$EndComp
+Connection ~ 3650 6800
+Wire Wire Line
+	3650 6800 4000 6800
+Connection ~ 4000 6800
+Wire Wire Line
+	4000 6800 4300 6800
+Wire Wire Line
+	3650 7100 4000 7100
+Connection ~ 4000 7100
+Wire Wire Line
+	4000 7100 4300 7100
+$Comp
+L power:GND #PWR?
+U 1 1 5CD003D5
+P 4300 7100
+AR Path="/5CF72B0E/5CD003D5" Ref="#PWR?"  Part="1" 
+AR Path="/5C759BF4/5CD003D5" Ref="#PWR0176"  Part="1" 
+F 0 "#PWR0176" H 4300 6850 50  0001 C CNN
+F 1 "GND" H 4305 6927 50  0000 C CNN
+F 2 "" H 4300 7100 50  0001 C CNN
+F 3 "" H 4300 7100 50  0001 C CNN
+	1    4300 7100
+	-1   0    0    -1  
+$EndComp
+Text GLabel 3650 6650 1    50   Input ~ 0
+VCCO_35
+Wire Wire Line
+	3650 6650 3650 6800
+Connection ~ 4300 7100
 $EndSCHEMATC

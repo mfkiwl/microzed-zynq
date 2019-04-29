@@ -87,10 +87,10 @@ Type=0
 Name=In3.Cu.signal
 Type=0
 [pcbnew/Layer.In4.Cu]
-Name=In4.Cu.VDD
+Name=In4.Cu.PWR1
 Type=1
 [pcbnew/Layer.In5.Cu]
-Name=In5.Cu.GND
+Name=In5.Cu.PWR2
 Type=1
 [pcbnew/Layer.In6.Cu]
 Name=In6.Cu.signal
@@ -99,7 +99,7 @@ Type=0
 Name=In7.Cu.signal
 Type=0
 [pcbnew/Layer.In8.Cu]
-Name=In8.Cu.VCC
+Name=In8.Cu.GND
 Type=1
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/1]
