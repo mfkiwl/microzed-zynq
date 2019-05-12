@@ -554,4 +554,8 @@ F 3 "~" H 10600 4500 50  0001 C CNN
 	1    10600 4500
 	0    1    1    0   
 $EndComp
+Text Label 6700 4000 0    50   ~ 0
+USB2_N
+Text Label 6700 4100 0    50   ~ 0
+USB2_P
 $EndSCHEMATC
